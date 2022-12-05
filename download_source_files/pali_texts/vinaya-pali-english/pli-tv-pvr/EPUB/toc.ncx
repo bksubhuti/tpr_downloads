@@ -1,0 +1,320 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1">
+  <head>
+    <meta content="pli-tv-pvr" name="dtb:uid"/>
+    <meta content="0" name="dtb:depth"/>
+    <meta content="0" name="dtb:totalPageCount"/>
+    <meta content="0" name="dtb:maxPageNumber"/>
+  </head>
+  <docTitle>
+    <text>The Compendium</text>
+  </docTitle>
+  <navMap>
+    <navPoint id="chapter_0">
+      <navLabel>
+        <text>Paṭhamabhāga - Part one </text>
+      </navLabel>
+      <content src="pli-tv-pvr1.1_translation-en-brahmali..xhtml"/>
+    </navPoint>
+    <navPoint id="chapter_1">
+      <navLabel>
+        <text>Paṭhamabhāga - Part one </text>
+      </navLabel>
+      <content src="pli-tv-pvr1.2_translation-en-brahmali..xhtml"/>
+    </navPoint>
+    <navPoint id="chapter_2">
+      <navLabel>
+        <text>Paṭhamabhāga - Part one </text>
+      </navLabel>
+      <content src="pli-tv-pvr1.3_translation-en-brahmali..xhtml"/>
+    </navPoint>
+    <navPoint id="chapter_3">
+      <navLabel>
+        <text>Paṭhamabhāga - Part one </text>
+      </navLabel>
+      <content src="pli-tv-pvr1.4_translation-en-brahmali..xhtml"/>
+    </navPoint>
+    <navPoint id="chapter_4">
+      <navLabel>
+        <text>Paṭhamabhāga - Part one </text>
+      </navLabel>
+      <content src="pli-tv-pvr1.5_translation-en-brahmali..xhtml"/>
+    </navPoint>
+    <navPoint id="chapter_5">
+      <navLabel>
+        <text>Paṭhamabhāga - Part one </text>
+      </navLabel>
+      <content src="pli-tv-pvr1.6_translation-en-brahmali..xhtml"/>
+    </navPoint>
+    <navPoint id="chapter_6">
+      <navLabel>
+        <text>Paṭhamabhāga - Part one </text>
+      </navLabel>
+      <content src="pli-tv-pvr1.7_translation-en-brahmali..xhtml"/>
+    </navPoint>
+    <navPoint id="chapter_7">
+      <navLabel>
+        <text>Paṭhamabhāga - Part one </text>
+      </navLabel>
+      <content src="pli-tv-pvr1.8_translation-en-brahmali..xhtml"/>
+    </navPoint>
+    <navPoint id="chapter_8">
+      <navLabel>
+        <text>Dutiyabhāga - Part two </text>
+      </navLabel>
+      <content src="pli-tv-pvr1.9_translation-en-brahmali..xhtml"/>
+    </navPoint>
+    <navPoint id="chapter_9">
+      <navLabel>
+        <text>Dutiyabhāga - Part two </text>
+      </navLabel>
+      <content src="pli-tv-pvr1.10_translation-en-brahmali..xhtml"/>
+    </navPoint>
+    <navPoint id="chapter_10">
+      <navLabel>
+        <text>Dutiyabhāga - Part two </text>
+      </navLabel>
+      <content src="pli-tv-pvr1.11_translation-en-brahmali..xhtml"/>
+    </navPoint>
+    <navPoint id="chapter_11">
+      <navLabel>
+        <text>Dutiyabhāga - Part two </text>
+      </navLabel>
+      <content src="pli-tv-pvr1.12_translation-en-brahmali..xhtml"/>
+    </navPoint>
+    <navPoint id="chapter_12">
+      <navLabel>
+        <text>Dutiyabhāga - Part two </text>
+      </navLabel>
+      <content src="pli-tv-pvr1.13_translation-en-brahmali..xhtml"/>
+    </navPoint>
+    <navPoint id="chapter_13">
+      <navLabel>
+        <text>Dutiyabhāga - Part two </text>
+      </navLabel>
+      <content src="pli-tv-pvr1.14_translation-en-brahmali..xhtml"/>
+    </navPoint>
+    <navPoint id="chapter_14">
+      <navLabel>
+        <text>Dutiyabhāga - Part two </text>
+      </navLabel>
+      <content src="pli-tv-pvr1.15_translation-en-brahmali..xhtml"/>
+    </navPoint>
+    <navPoint id="chapter_15">
+      <navLabel>
+        <text>Dutiyabhāga - Part two </text>
+      </navLabel>
+      <content src="pli-tv-pvr1.16_translation-en-brahmali..xhtml"/>
+    </navPoint>
+    <navPoint id="chapter_16">
+      <navLabel>
+        <text>Paṭhamabhāga - Part one </text>
+      </navLabel>
+      <content src="pli-tv-pvr2.1_translation-en-brahmali..xhtml"/>
+    </navPoint>
+    <navPoint id="chapter_17">
+      <navLabel>
+        <text>Paṭhamabhāga - Part one </text>
+      </navLabel>
+      <content src="pli-tv-pvr2.2_translation-en-brahmali..xhtml"/>
+    </navPoint>
+    <navPoint id="chapter_18">
+      <navLabel>
+        <text>Paṭhamabhāga - Part one </text>
+      </navLabel>
+      <content src="pli-tv-pvr2.3_translation-en-brahmali..xhtml"/>
+    </navPoint>
+    <navPoint id="chapter_19">
+      <navLabel>
+        <text>Paṭhamabhāga - Part one </text>
+      </navLabel>
+      <content src="pli-tv-pvr2.4_translation-en-brahmali..xhtml"/>
+    </navPoint>
+    <navPoint id="chapter_20">
+      <navLabel>
+        <text>Paṭhamabhāga - Part one </text>
+      </navLabel>
+      <content src="pli-tv-pvr2.5_translation-en-brahmali..xhtml"/>
+    </navPoint>
+    <navPoint id="chapter_21">
+      <navLabel>
+        <text>Paṭhamabhāga - Part one </text>
+      </navLabel>
+      <content src="pli-tv-pvr2.6_translation-en-brahmali..xhtml"/>
+    </navPoint>
+    <navPoint id="chapter_22">
+      <navLabel>
+        <text>Paṭhamabhāga - Part one </text>
+      </navLabel>
+      <content src="pli-tv-pvr2.7_translation-en-brahmali..xhtml"/>
+    </navPoint>
+    <navPoint id="chapter_23">
+      <navLabel>
+        <text>Paṭhamabhāga - Part one </text>
+      </navLabel>
+      <content src="pli-tv-pvr2.8_translation-en-brahmali..xhtml"/>
+    </navPoint>
+    <navPoint id="chapter_24">
+      <navLabel>
+        <text>Dutiyabhāga - Part two </text>
+      </navLabel>
+      <content src="pli-tv-pvr2.9_translation-en-brahmali..xhtml"/>
+    </navPoint>
+    <navPoint id="chapter_25">
+      <navLabel>
+        <text>Dutiyabhāga - Part two </text>
+      </navLabel>
+      <content src="pli-tv-pvr2.10_translation-en-brahmali..xhtml"/>
+    </navPoint>
+    <navPoint id="chapter_26">
+      <navLabel>
+        <text>Dutiyabhāga - Part two </text>
+      </navLabel>
+      <content src="pli-tv-pvr2.11_translation-en-brahmali..xhtml"/>
+    </navPoint>
+    <navPoint id="chapter_27">
+      <navLabel>
+        <text>Dutiyabhāga - Part two </text>
+      </navLabel>
+      <content src="pli-tv-pvr2.12_translation-en-brahmali..xhtml"/>
+    </navPoint>
+    <navPoint id="chapter_28">
+      <navLabel>
+        <text>Dutiyabhāga - Part two </text>
+      </navLabel>
+      <content src="pli-tv-pvr2.13_translation-en-brahmali..xhtml"/>
+    </navPoint>
+    <navPoint id="chapter_29">
+      <navLabel>
+        <text>Dutiyabhāga - Part two </text>
+      </navLabel>
+      <content src="pli-tv-pvr2.14_translation-en-brahmali..xhtml"/>
+    </navPoint>
+    <navPoint id="chapter_30">
+      <navLabel>
+        <text>Dutiyabhāga - Part two </text>
+      </navLabel>
+      <content src="pli-tv-pvr2.15_translation-en-brahmali..xhtml"/>
+    </navPoint>
+    <navPoint id="chapter_31">
+      <navLabel>
+        <text>Dutiyabhāga - Part two </text>
+      </navLabel>
+      <content src="pli-tv-pvr2.16_translation-en-brahmali..xhtml"/>
+    </navPoint>
+    <navPoint id="chapter_32">
+      <navLabel>
+        <text>1. Samuṭṭhānassuddāna - 1. Summary of origins </text>
+      </navLabel>
+      <content src="pli-tv-pvr3_translation-en-brahmali..xhtml"/>
+    </navPoint>
+    <navPoint id="chapter_33">
+      <navLabel>
+        <text>Katipucchāvāra - The section on questioning “how many” </text>
+      </navLabel>
+      <content src="pli-tv-pvr4_translation-en-brahmali..xhtml"/>
+    </navPoint>
+    <navPoint id="chapter_34">
+      <navLabel>
+        <text>1. Adhikaraṇapariyāyavāra - 1. The section with a succession on legal issues</text>
+      </navLabel>
+      <content src="pli-tv-pvr5_translation-en-brahmali..xhtml"/>
+    </navPoint>
+    <navPoint id="chapter_35">
+      <navLabel>
+        <text>Upasampadaṁ pucchissaṁ sanidānaṁ saniddesaṁ, - I will ask about the full ordination, together with its origin story and its detailed explanation: </text>
+      </navLabel>
+      <content src="pli-tv-pvr6_translation-en-brahmali..xhtml"/>
+    </navPoint>
+    <navPoint id="chapter_36">
+      <navLabel>
+        <text>1. Ekakavāra - 1. The section on ones </text>
+      </navLabel>
+      <content src="pli-tv-pvr7_translation-en-brahmali..xhtml"/>
+    </navPoint>
+    <navPoint id="chapter_37">
+      <navLabel>
+        <text>1 Ādimajjhantapucchana - 1. Questions on the beginning, the middle, and the end </text>
+      </navLabel>
+      <content src="pli-tv-pvr8_translation-en-brahmali..xhtml"/>
+    </navPoint>
+    <navPoint id="chapter_38">
+      <navLabel>
+        <text>Dasa atthavase paṭicca tathāgatena sāvakānaṁ sikkhāpadaṁ paññattaṁ— - “The Buddha laid down the training rules for his disciples for ten reasons: </text>
+      </navLabel>
+      <content src="pli-tv-pvr9_translation-en-brahmali..xhtml"/>
+    </navPoint>
+    <navPoint id="chapter_39">
+      <navLabel>
+        <text>1. Sattanagaresupaññattasikkhāpada - 1. Training rules laid down in seven towns </text>
+      </navLabel>
+      <content src="pli-tv-pvr10_translation-en-brahmali..xhtml"/>
+    </navPoint>
+    <navPoint id="chapter_40">
+      <navLabel>
+        <text>1. Ukkoṭanabhedādi - 1. The sub-division on reopening, etc. </text>
+      </navLabel>
+      <content src="pli-tv-pvr11_translation-en-brahmali..xhtml"/>
+    </navPoint>
+    <navPoint id="chapter_41">
+      <navLabel>
+        <text>1. Codanādipucchāvissajjanā - 1. Questions and responses on accusing, etc. </text>
+      </navLabel>
+      <content src="pli-tv-pvr12_translation-en-brahmali..xhtml"/>
+    </navPoint>
+    <navPoint id="chapter_42">
+      <navLabel>
+        <text>1. Anuvijjakaanuyoga - 1. Investigation </text>
+      </navLabel>
+      <content src="pli-tv-pvr13_translation-en-brahmali..xhtml"/>
+    </navPoint>
+    <navPoint id="chapter_43">
+      <navLabel>
+        <text>1. Anuvijjakassapaṭipatti - 1. The procedure for an investigator </text>
+      </navLabel>
+      <content src="pli-tv-pvr14_translation-en-brahmali..xhtml"/>
+    </navPoint>
+    <navPoint id="chapter_44">
+      <navLabel>
+        <text>1. Voharantenajānitabbādi - 1. What is to be known by one who is speaking, etc. </text>
+      </navLabel>
+      <content src="pli-tv-pvr15_translation-en-brahmali..xhtml"/>
+    </navPoint>
+    <navPoint id="chapter_45">
+      <navLabel>
+        <text>1. Kathinaatthatādi - 1. The robe-making procedure, etc. </text>
+      </navLabel>
+      <content src="pli-tv-pvr16_translation-en-brahmali..xhtml"/>
+    </navPoint>
+    <navPoint id="chapter_46">
+      <navLabel>
+        <text>1. Anissitavagga - 1. The sub-chapter on “without formal support” </text>
+      </navLabel>
+      <content src="pli-tv-pvr17_translation-en-brahmali..xhtml"/>
+    </navPoint>
+    <navPoint id="chapter_47">
+      <navLabel>
+        <text>1. Pārājika - 1. The offenses entailing expulsion </text>
+      </navLabel>
+      <content src="pli-tv-pvr18_translation-en-brahmali..xhtml"/>
+    </navPoint>
+    <navPoint id="chapter_48">
+      <navLabel>
+        <text>1. Kāyikādiāpatti - 1. Offenses by body, etc. </text>
+      </navLabel>
+      <content src="pli-tv-pvr19_translation-en-brahmali..xhtml"/>
+    </navPoint>
+    <navPoint id="chapter_49">
+      <navLabel>
+        <text>1. Avippavāsapañhā - 1. Questions on staying apart </text>
+      </navLabel>
+      <content src="pli-tv-pvr20_translation-en-brahmali..xhtml"/>
+    </navPoint>
+    <navPoint id="chapter_50">
+      <navLabel>
+        <text>1. Kammavagga - 1. The sub-chapter on legal procedures </text>
+      </navLabel>
+      <content src="pli-tv-pvr21_translation-en-brahmali..xhtml"/>
+    </navPoint>
+  </navMap>
+</ncx>

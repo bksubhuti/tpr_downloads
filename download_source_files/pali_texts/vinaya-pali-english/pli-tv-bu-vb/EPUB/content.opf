@@ -1,0 +1,459 @@
+<?xml version='1.0' encoding='utf-8'?>
+<package xmlns="http://www.idpf.org/2007/opf" unique-identifier="id" version="3.0" prefix="rendition: http://www.idpf.org/vocab/rendition/#">
+  <metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:opf="http://www.idpf.org/2007/opf">
+    <meta property="dcterms:modified">2022-03-20T06:16:02Z</meta>
+    <meta name="generator" content="Ebook-lib 0.17.1"/>
+    <dc:identifier id="id">pli-tv-bu-vb</dc:identifier>
+    <dc:title>Monks’ Rules and Their Analysis</dc:title>
+    <dc:language>en</dc:language>
+    <dc:creator id="creator">Bhikkhu Brahmali</dc:creator>
+  </metadata>
+  <manifest>
+    <item href="pli-tv-bu-vb-pj1_translation-en-brahmali..xhtml" id="chapter_0" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-pj2_translation-en-brahmali..xhtml" id="chapter_1" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-pj3_translation-en-brahmali..xhtml" id="chapter_2" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-pj4_translation-en-brahmali..xhtml" id="chapter_3" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-ss10_translation-en-brahmali..xhtml" id="chapter_4" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-ss11_translation-en-brahmali..xhtml" id="chapter_5" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-ss12_translation-en-brahmali..xhtml" id="chapter_6" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-ss13_translation-en-brahmali..xhtml" id="chapter_7" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-ss1_translation-en-brahmali..xhtml" id="chapter_8" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-ss2_translation-en-brahmali..xhtml" id="chapter_9" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-ss3_translation-en-brahmali..xhtml" id="chapter_10" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-ss4_translation-en-brahmali..xhtml" id="chapter_11" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-ss5_translation-en-brahmali..xhtml" id="chapter_12" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-ss6_translation-en-brahmali..xhtml" id="chapter_13" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-ss7_translation-en-brahmali..xhtml" id="chapter_14" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-ss8_translation-en-brahmali..xhtml" id="chapter_15" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-ss9_translation-en-brahmali..xhtml" id="chapter_16" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-ay1_translation-en-brahmali..xhtml" id="chapter_17" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-ay2_translation-en-brahmali..xhtml" id="chapter_18" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-np10_translation-en-brahmali..xhtml" id="chapter_19" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-np11_translation-en-brahmali..xhtml" id="chapter_20" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-np12_translation-en-brahmali..xhtml" id="chapter_21" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-np13_translation-en-brahmali..xhtml" id="chapter_22" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-np14_translation-en-brahmali..xhtml" id="chapter_23" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-np15_translation-en-brahmali..xhtml" id="chapter_24" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-np16_translation-en-brahmali..xhtml" id="chapter_25" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-np17_translation-en-brahmali..xhtml" id="chapter_26" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-np18_translation-en-brahmali..xhtml" id="chapter_27" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-np19_translation-en-brahmali..xhtml" id="chapter_28" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-np1_translation-en-brahmali..xhtml" id="chapter_29" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-np20_translation-en-brahmali..xhtml" id="chapter_30" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-np21_translation-en-brahmali..xhtml" id="chapter_31" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-np22_translation-en-brahmali..xhtml" id="chapter_32" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-np23_translation-en-brahmali..xhtml" id="chapter_33" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-np24_translation-en-brahmali..xhtml" id="chapter_34" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-np25_translation-en-brahmali..xhtml" id="chapter_35" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-np26_translation-en-brahmali..xhtml" id="chapter_36" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-np27_translation-en-brahmali..xhtml" id="chapter_37" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-np28_translation-en-brahmali..xhtml" id="chapter_38" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-np29_translation-en-brahmali..xhtml" id="chapter_39" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-np2_translation-en-brahmali..xhtml" id="chapter_40" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-np30_translation-en-brahmali..xhtml" id="chapter_41" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-np3_translation-en-brahmali..xhtml" id="chapter_42" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-np4_translation-en-brahmali..xhtml" id="chapter_43" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-np5_translation-en-brahmali..xhtml" id="chapter_44" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-np6_translation-en-brahmali..xhtml" id="chapter_45" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-np7_translation-en-brahmali..xhtml" id="chapter_46" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-np8_translation-en-brahmali..xhtml" id="chapter_47" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-np9_translation-en-brahmali..xhtml" id="chapter_48" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-pc10_translation-en-brahmali..xhtml" id="chapter_49" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-pc11_translation-en-brahmali..xhtml" id="chapter_50" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-pc12_translation-en-brahmali..xhtml" id="chapter_51" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-pc13_translation-en-brahmali..xhtml" id="chapter_52" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-pc14_translation-en-brahmali..xhtml" id="chapter_53" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-pc15_translation-en-brahmali..xhtml" id="chapter_54" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-pc16_translation-en-brahmali..xhtml" id="chapter_55" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-pc17_translation-en-brahmali..xhtml" id="chapter_56" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-pc18_translation-en-brahmali..xhtml" id="chapter_57" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-pc19_translation-en-brahmali..xhtml" id="chapter_58" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-pc1_translation-en-brahmali..xhtml" id="chapter_59" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-pc20_translation-en-brahmali..xhtml" id="chapter_60" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-pc21_translation-en-brahmali..xhtml" id="chapter_61" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-pc22_translation-en-brahmali..xhtml" id="chapter_62" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-pc23_translation-en-brahmali..xhtml" id="chapter_63" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-pc24_translation-en-brahmali..xhtml" id="chapter_64" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-pc25_translation-en-brahmali..xhtml" id="chapter_65" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-pc26_translation-en-brahmali..xhtml" id="chapter_66" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-pc27_translation-en-brahmali..xhtml" id="chapter_67" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-pc28_translation-en-brahmali..xhtml" id="chapter_68" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-pc29_translation-en-brahmali..xhtml" id="chapter_69" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-pc2_translation-en-brahmali..xhtml" id="chapter_70" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-pc30_translation-en-brahmali..xhtml" id="chapter_71" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-pc31_translation-en-brahmali..xhtml" id="chapter_72" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-pc32_translation-en-brahmali..xhtml" id="chapter_73" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-pc33_translation-en-brahmali..xhtml" id="chapter_74" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-pc34_translation-en-brahmali..xhtml" id="chapter_75" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-pc35_translation-en-brahmali..xhtml" id="chapter_76" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-pc36_translation-en-brahmali..xhtml" id="chapter_77" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-pc37_translation-en-brahmali..xhtml" id="chapter_78" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-pc38_translation-en-brahmali..xhtml" id="chapter_79" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-pc39_translation-en-brahmali..xhtml" id="chapter_80" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-pc3_translation-en-brahmali..xhtml" id="chapter_81" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-pc40_translation-en-brahmali..xhtml" id="chapter_82" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-pc41_translation-en-brahmali..xhtml" id="chapter_83" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-pc42_translation-en-brahmali..xhtml" id="chapter_84" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-pc43_translation-en-brahmali..xhtml" id="chapter_85" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-pc44_translation-en-brahmali..xhtml" id="chapter_86" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-pc45_translation-en-brahmali..xhtml" id="chapter_87" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-pc46_translation-en-brahmali..xhtml" id="chapter_88" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-pc47_translation-en-brahmali..xhtml" id="chapter_89" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-pc48_translation-en-brahmali..xhtml" id="chapter_90" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-pc49_translation-en-brahmali..xhtml" id="chapter_91" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-pc4_translation-en-brahmali..xhtml" id="chapter_92" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-pc50_translation-en-brahmali..xhtml" id="chapter_93" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-pc51_translation-en-brahmali..xhtml" id="chapter_94" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-pc52_translation-en-brahmali..xhtml" id="chapter_95" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-pc53_translation-en-brahmali..xhtml" id="chapter_96" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-pc54_translation-en-brahmali..xhtml" id="chapter_97" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-pc55_translation-en-brahmali..xhtml" id="chapter_98" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-pc56_translation-en-brahmali..xhtml" id="chapter_99" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-pc57_translation-en-brahmali..xhtml" id="chapter_100" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-pc58_translation-en-brahmali..xhtml" id="chapter_101" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-pc59_translation-en-brahmali..xhtml" id="chapter_102" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-pc5_translation-en-brahmali..xhtml" id="chapter_103" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-pc60_translation-en-brahmali..xhtml" id="chapter_104" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-pc61_translation-en-brahmali..xhtml" id="chapter_105" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-pc62_translation-en-brahmali..xhtml" id="chapter_106" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-pc63_translation-en-brahmali..xhtml" id="chapter_107" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-pc64_translation-en-brahmali..xhtml" id="chapter_108" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-pc65_translation-en-brahmali..xhtml" id="chapter_109" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-pc66_translation-en-brahmali..xhtml" id="chapter_110" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-pc67_translation-en-brahmali..xhtml" id="chapter_111" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-pc68_translation-en-brahmali..xhtml" id="chapter_112" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-pc69_translation-en-brahmali..xhtml" id="chapter_113" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-pc6_translation-en-brahmali..xhtml" id="chapter_114" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-pc70_translation-en-brahmali..xhtml" id="chapter_115" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-pc71_translation-en-brahmali..xhtml" id="chapter_116" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-pc72_translation-en-brahmali..xhtml" id="chapter_117" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-pc73_translation-en-brahmali..xhtml" id="chapter_118" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-pc74_translation-en-brahmali..xhtml" id="chapter_119" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-pc75_translation-en-brahmali..xhtml" id="chapter_120" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-pc76_translation-en-brahmali..xhtml" id="chapter_121" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-pc77_translation-en-brahmali..xhtml" id="chapter_122" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-pc78_translation-en-brahmali..xhtml" id="chapter_123" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-pc79_translation-en-brahmali..xhtml" id="chapter_124" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-pc7_translation-en-brahmali..xhtml" id="chapter_125" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-pc80_translation-en-brahmali..xhtml" id="chapter_126" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-pc81_translation-en-brahmali..xhtml" id="chapter_127" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-pc82_translation-en-brahmali..xhtml" id="chapter_128" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-pc83_translation-en-brahmali..xhtml" id="chapter_129" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-pc84_translation-en-brahmali..xhtml" id="chapter_130" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-pc85_translation-en-brahmali..xhtml" id="chapter_131" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-pc86_translation-en-brahmali..xhtml" id="chapter_132" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-pc87_translation-en-brahmali..xhtml" id="chapter_133" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-pc88_translation-en-brahmali..xhtml" id="chapter_134" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-pc89_translation-en-brahmali..xhtml" id="chapter_135" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-pc8_translation-en-brahmali..xhtml" id="chapter_136" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-pc90_translation-en-brahmali..xhtml" id="chapter_137" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-pc91_translation-en-brahmali..xhtml" id="chapter_138" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-pc92_translation-en-brahmali..xhtml" id="chapter_139" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-pc9_translation-en-brahmali..xhtml" id="chapter_140" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-pd1_translation-en-brahmali..xhtml" id="chapter_141" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-pd2_translation-en-brahmali..xhtml" id="chapter_142" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-pd3_translation-en-brahmali..xhtml" id="chapter_143" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-pd4_translation-en-brahmali..xhtml" id="chapter_144" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-sk10_translation-en-brahmali..xhtml" id="chapter_145" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-sk11_translation-en-brahmali..xhtml" id="chapter_146" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-sk12_translation-en-brahmali..xhtml" id="chapter_147" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-sk13_translation-en-brahmali..xhtml" id="chapter_148" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-sk14_translation-en-brahmali..xhtml" id="chapter_149" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-sk15_translation-en-brahmali..xhtml" id="chapter_150" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-sk16_translation-en-brahmali..xhtml" id="chapter_151" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-sk17_translation-en-brahmali..xhtml" id="chapter_152" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-sk18_translation-en-brahmali..xhtml" id="chapter_153" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-sk19_translation-en-brahmali..xhtml" id="chapter_154" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-sk1_translation-en-brahmali..xhtml" id="chapter_155" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-sk20_translation-en-brahmali..xhtml" id="chapter_156" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-sk21_translation-en-brahmali..xhtml" id="chapter_157" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-sk22_translation-en-brahmali..xhtml" id="chapter_158" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-sk23_translation-en-brahmali..xhtml" id="chapter_159" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-sk24_translation-en-brahmali..xhtml" id="chapter_160" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-sk25_translation-en-brahmali..xhtml" id="chapter_161" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-sk26_translation-en-brahmali..xhtml" id="chapter_162" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-sk27_translation-en-brahmali..xhtml" id="chapter_163" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-sk28_translation-en-brahmali..xhtml" id="chapter_164" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-sk29_translation-en-brahmali..xhtml" id="chapter_165" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-sk2_translation-en-brahmali..xhtml" id="chapter_166" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-sk30_translation-en-brahmali..xhtml" id="chapter_167" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-sk31_translation-en-brahmali..xhtml" id="chapter_168" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-sk32_translation-en-brahmali..xhtml" id="chapter_169" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-sk33_translation-en-brahmali..xhtml" id="chapter_170" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-sk34_translation-en-brahmali..xhtml" id="chapter_171" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-sk35_translation-en-brahmali..xhtml" id="chapter_172" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-sk36_translation-en-brahmali..xhtml" id="chapter_173" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-sk37_translation-en-brahmali..xhtml" id="chapter_174" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-sk38_translation-en-brahmali..xhtml" id="chapter_175" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-sk39_translation-en-brahmali..xhtml" id="chapter_176" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-sk3_translation-en-brahmali..xhtml" id="chapter_177" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-sk40_translation-en-brahmali..xhtml" id="chapter_178" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-sk41_translation-en-brahmali..xhtml" id="chapter_179" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-sk42_translation-en-brahmali..xhtml" id="chapter_180" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-sk43_translation-en-brahmali..xhtml" id="chapter_181" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-sk44_translation-en-brahmali..xhtml" id="chapter_182" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-sk45_translation-en-brahmali..xhtml" id="chapter_183" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-sk46_translation-en-brahmali..xhtml" id="chapter_184" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-sk47_translation-en-brahmali..xhtml" id="chapter_185" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-sk48_translation-en-brahmali..xhtml" id="chapter_186" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-sk49_translation-en-brahmali..xhtml" id="chapter_187" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-sk4_translation-en-brahmali..xhtml" id="chapter_188" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-sk50_translation-en-brahmali..xhtml" id="chapter_189" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-sk51_translation-en-brahmali..xhtml" id="chapter_190" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-sk52_translation-en-brahmali..xhtml" id="chapter_191" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-sk53_translation-en-brahmali..xhtml" id="chapter_192" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-sk54_translation-en-brahmali..xhtml" id="chapter_193" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-sk55_translation-en-brahmali..xhtml" id="chapter_194" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-sk56_translation-en-brahmali..xhtml" id="chapter_195" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-sk57_translation-en-brahmali..xhtml" id="chapter_196" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-sk58_translation-en-brahmali..xhtml" id="chapter_197" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-sk59_translation-en-brahmali..xhtml" id="chapter_198" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-sk5_translation-en-brahmali..xhtml" id="chapter_199" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-sk60_translation-en-brahmali..xhtml" id="chapter_200" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-sk61_translation-en-brahmali..xhtml" id="chapter_201" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-sk62_translation-en-brahmali..xhtml" id="chapter_202" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-sk63_translation-en-brahmali..xhtml" id="chapter_203" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-sk64_translation-en-brahmali..xhtml" id="chapter_204" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-sk65_translation-en-brahmali..xhtml" id="chapter_205" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-sk66_translation-en-brahmali..xhtml" id="chapter_206" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-sk67_translation-en-brahmali..xhtml" id="chapter_207" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-sk68_translation-en-brahmali..xhtml" id="chapter_208" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-sk69_translation-en-brahmali..xhtml" id="chapter_209" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-sk6_translation-en-brahmali..xhtml" id="chapter_210" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-sk70_translation-en-brahmali..xhtml" id="chapter_211" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-sk71_translation-en-brahmali..xhtml" id="chapter_212" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-sk72_translation-en-brahmali..xhtml" id="chapter_213" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-sk73_translation-en-brahmali..xhtml" id="chapter_214" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-sk74_translation-en-brahmali..xhtml" id="chapter_215" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-sk75_translation-en-brahmali..xhtml" id="chapter_216" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-sk7_translation-en-brahmali..xhtml" id="chapter_217" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-sk8_translation-en-brahmali..xhtml" id="chapter_218" media-type="application/xhtml+xml"/>
+    <item href="pli-tv-bu-vb-sk9_translation-en-brahmali..xhtml" id="chapter_219" media-type="application/xhtml+xml"/>
+    <item href="style.css" id="style_nav" media-type="text/css"/>
+    <item href="toc.ncx" id="ncx" media-type="application/x-dtbncx+xml"/>
+    <item href="nav.xhtml" id="nav" media-type="application/xhtml+xml" properties="nav"/>
+  </manifest>
+  <spine toc="ncx">
+    <itemref idref="nav"/>
+    <itemref idref="chapter_0"/>
+    <itemref idref="chapter_1"/>
+    <itemref idref="chapter_2"/>
+    <itemref idref="chapter_3"/>
+    <itemref idref="chapter_4"/>
+    <itemref idref="chapter_5"/>
+    <itemref idref="chapter_6"/>
+    <itemref idref="chapter_7"/>
+    <itemref idref="chapter_8"/>
+    <itemref idref="chapter_9"/>
+    <itemref idref="chapter_10"/>
+    <itemref idref="chapter_11"/>
+    <itemref idref="chapter_12"/>
+    <itemref idref="chapter_13"/>
+    <itemref idref="chapter_14"/>
+    <itemref idref="chapter_15"/>
+    <itemref idref="chapter_16"/>
+    <itemref idref="chapter_17"/>
+    <itemref idref="chapter_18"/>
+    <itemref idref="chapter_19"/>
+    <itemref idref="chapter_20"/>
+    <itemref idref="chapter_21"/>
+    <itemref idref="chapter_22"/>
+    <itemref idref="chapter_23"/>
+    <itemref idref="chapter_24"/>
+    <itemref idref="chapter_25"/>
+    <itemref idref="chapter_26"/>
+    <itemref idref="chapter_27"/>
+    <itemref idref="chapter_28"/>
+    <itemref idref="chapter_29"/>
+    <itemref idref="chapter_30"/>
+    <itemref idref="chapter_31"/>
+    <itemref idref="chapter_32"/>
+    <itemref idref="chapter_33"/>
+    <itemref idref="chapter_34"/>
+    <itemref idref="chapter_35"/>
+    <itemref idref="chapter_36"/>
+    <itemref idref="chapter_37"/>
+    <itemref idref="chapter_38"/>
+    <itemref idref="chapter_39"/>
+    <itemref idref="chapter_40"/>
+    <itemref idref="chapter_41"/>
+    <itemref idref="chapter_42"/>
+    <itemref idref="chapter_43"/>
+    <itemref idref="chapter_44"/>
+    <itemref idref="chapter_45"/>
+    <itemref idref="chapter_46"/>
+    <itemref idref="chapter_47"/>
+    <itemref idref="chapter_48"/>
+    <itemref idref="chapter_49"/>
+    <itemref idref="chapter_50"/>
+    <itemref idref="chapter_51"/>
+    <itemref idref="chapter_52"/>
+    <itemref idref="chapter_53"/>
+    <itemref idref="chapter_54"/>
+    <itemref idref="chapter_55"/>
+    <itemref idref="chapter_56"/>
+    <itemref idref="chapter_57"/>
+    <itemref idref="chapter_58"/>
+    <itemref idref="chapter_59"/>
+    <itemref idref="chapter_60"/>
+    <itemref idref="chapter_61"/>
+    <itemref idref="chapter_62"/>
+    <itemref idref="chapter_63"/>
+    <itemref idref="chapter_64"/>
+    <itemref idref="chapter_65"/>
+    <itemref idref="chapter_66"/>
+    <itemref idref="chapter_67"/>
+    <itemref idref="chapter_68"/>
+    <itemref idref="chapter_69"/>
+    <itemref idref="chapter_70"/>
+    <itemref idref="chapter_71"/>
+    <itemref idref="chapter_72"/>
+    <itemref idref="chapter_73"/>
+    <itemref idref="chapter_74"/>
+    <itemref idref="chapter_75"/>
+    <itemref idref="chapter_76"/>
+    <itemref idref="chapter_77"/>
+    <itemref idref="chapter_78"/>
+    <itemref idref="chapter_79"/>
+    <itemref idref="chapter_80"/>
+    <itemref idref="chapter_81"/>
+    <itemref idref="chapter_82"/>
+    <itemref idref="chapter_83"/>
+    <itemref idref="chapter_84"/>
+    <itemref idref="chapter_85"/>
+    <itemref idref="chapter_86"/>
+    <itemref idref="chapter_87"/>
+    <itemref idref="chapter_88"/>
+    <itemref idref="chapter_89"/>
+    <itemref idref="chapter_90"/>
+    <itemref idref="chapter_91"/>
+    <itemref idref="chapter_92"/>
+    <itemref idref="chapter_93"/>
+    <itemref idref="chapter_94"/>
+    <itemref idref="chapter_95"/>
+    <itemref idref="chapter_96"/>
+    <itemref idref="chapter_97"/>
+    <itemref idref="chapter_98"/>
+    <itemref idref="chapter_99"/>
+    <itemref idref="chapter_100"/>
+    <itemref idref="chapter_101"/>
+    <itemref idref="chapter_102"/>
+    <itemref idref="chapter_103"/>
+    <itemref idref="chapter_104"/>
+    <itemref idref="chapter_105"/>
+    <itemref idref="chapter_106"/>
+    <itemref idref="chapter_107"/>
+    <itemref idref="chapter_108"/>
+    <itemref idref="chapter_109"/>
+    <itemref idref="chapter_110"/>
+    <itemref idref="chapter_111"/>
+    <itemref idref="chapter_112"/>
+    <itemref idref="chapter_113"/>
+    <itemref idref="chapter_114"/>
+    <itemref idref="chapter_115"/>
+    <itemref idref="chapter_116"/>
+    <itemref idref="chapter_117"/>
+    <itemref idref="chapter_118"/>
+    <itemref idref="chapter_119"/>
+    <itemref idref="chapter_120"/>
+    <itemref idref="chapter_121"/>
+    <itemref idref="chapter_122"/>
+    <itemref idref="chapter_123"/>
+    <itemref idref="chapter_124"/>
+    <itemref idref="chapter_125"/>
+    <itemref idref="chapter_126"/>
+    <itemref idref="chapter_127"/>
+    <itemref idref="chapter_128"/>
+    <itemref idref="chapter_129"/>
+    <itemref idref="chapter_130"/>
+    <itemref idref="chapter_131"/>
+    <itemref idref="chapter_132"/>
+    <itemref idref="chapter_133"/>
+    <itemref idref="chapter_134"/>
+    <itemref idref="chapter_135"/>
+    <itemref idref="chapter_136"/>
+    <itemref idref="chapter_137"/>
+    <itemref idref="chapter_138"/>
+    <itemref idref="chapter_139"/>
+    <itemref idref="chapter_140"/>
+    <itemref idref="chapter_141"/>
+    <itemref idref="chapter_142"/>
+    <itemref idref="chapter_143"/>
+    <itemref idref="chapter_144"/>
+    <itemref idref="chapter_145"/>
+    <itemref idref="chapter_146"/>
+    <itemref idref="chapter_147"/>
+    <itemref idref="chapter_148"/>
+    <itemref idref="chapter_149"/>
+    <itemref idref="chapter_150"/>
+    <itemref idref="chapter_151"/>
+    <itemref idref="chapter_152"/>
+    <itemref idref="chapter_153"/>
+    <itemref idref="chapter_154"/>
+    <itemref idref="chapter_155"/>
+    <itemref idref="chapter_156"/>
+    <itemref idref="chapter_157"/>
+    <itemref idref="chapter_158"/>
+    <itemref idref="chapter_159"/>
+    <itemref idref="chapter_160"/>
+    <itemref idref="chapter_161"/>
+    <itemref idref="chapter_162"/>
+    <itemref idref="chapter_163"/>
+    <itemref idref="chapter_164"/>
+    <itemref idref="chapter_165"/>
+    <itemref idref="chapter_166"/>
+    <itemref idref="chapter_167"/>
+    <itemref idref="chapter_168"/>
+    <itemref idref="chapter_169"/>
+    <itemref idref="chapter_170"/>
+    <itemref idref="chapter_171"/>
+    <itemref idref="chapter_172"/>
+    <itemref idref="chapter_173"/>
+    <itemref idref="chapter_174"/>
+    <itemref idref="chapter_175"/>
+    <itemref idref="chapter_176"/>
+    <itemref idref="chapter_177"/>
+    <itemref idref="chapter_178"/>
+    <itemref idref="chapter_179"/>
+    <itemref idref="chapter_180"/>
+    <itemref idref="chapter_181"/>
+    <itemref idref="chapter_182"/>
+    <itemref idref="chapter_183"/>
+    <itemref idref="chapter_184"/>
+    <itemref idref="chapter_185"/>
+    <itemref idref="chapter_186"/>
+    <itemref idref="chapter_187"/>
+    <itemref idref="chapter_188"/>
+    <itemref idref="chapter_189"/>
+    <itemref idref="chapter_190"/>
+    <itemref idref="chapter_191"/>
+    <itemref idref="chapter_192"/>
+    <itemref idref="chapter_193"/>
+    <itemref idref="chapter_194"/>
+    <itemref idref="chapter_195"/>
+    <itemref idref="chapter_196"/>
+    <itemref idref="chapter_197"/>
+    <itemref idref="chapter_198"/>
+    <itemref idref="chapter_199"/>
+    <itemref idref="chapter_200"/>
+    <itemref idref="chapter_201"/>
+    <itemref idref="chapter_202"/>
+    <itemref idref="chapter_203"/>
+    <itemref idref="chapter_204"/>
+    <itemref idref="chapter_205"/>
+    <itemref idref="chapter_206"/>
+    <itemref idref="chapter_207"/>
+    <itemref idref="chapter_208"/>
+    <itemref idref="chapter_209"/>
+    <itemref idref="chapter_210"/>
+    <itemref idref="chapter_211"/>
+    <itemref idref="chapter_212"/>
+    <itemref idref="chapter_213"/>
+    <itemref idref="chapter_214"/>
+    <itemref idref="chapter_215"/>
+    <itemref idref="chapter_216"/>
+    <itemref idref="chapter_217"/>
+    <itemref idref="chapter_218"/>
+    <itemref idref="chapter_219"/>
+  </spine>
+</package>

@@ -1,0 +1,146 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1">
+  <head>
+    <meta content="pli-tv-kd" name="dtb:uid"/>
+    <meta content="0" name="dtb:depth"/>
+    <meta content="0" name="dtb:totalPageCount"/>
+    <meta content="0" name="dtb:maxPageNumber"/>
+  </head>
+  <docTitle>
+    <text>Chapters on Legal Topics</text>
+  </docTitle>
+  <navMap>
+    <navPoint id="chapter_0">
+      <navLabel>
+        <text>Mahākhandhaka - The long chapter </text>
+      </navLabel>
+      <content src="pli-tv-kd1_translation-en-brahmali..xhtml"/>
+    </navPoint>
+    <navPoint id="chapter_1">
+      <navLabel>
+        <text>Uposathakkhandhaka - The chapter on the observance day </text>
+      </navLabel>
+      <content src="pli-tv-kd2_translation-en-brahmali..xhtml"/>
+    </navPoint>
+    <navPoint id="chapter_2">
+      <navLabel>
+        <text>Vassūpanāyikakkhandhaka - The chapter on entering the rainy-season residence </text>
+      </navLabel>
+      <content src="pli-tv-kd3_translation-en-brahmali..xhtml"/>
+    </navPoint>
+    <navPoint id="chapter_3">
+      <navLabel>
+        <text>Pavāraṇākkhandhaka - The chapter on the invitation procedure </text>
+      </navLabel>
+      <content src="pli-tv-kd4_translation-en-brahmali..xhtml"/>
+    </navPoint>
+    <navPoint id="chapter_4">
+      <navLabel>
+        <text>Cammakkhandhaka - The chapter on skins </text>
+      </navLabel>
+      <content src="pli-tv-kd5_translation-en-brahmali..xhtml"/>
+    </navPoint>
+    <navPoint id="chapter_5">
+      <navLabel>
+        <text>Bhesajjakkhandhaka - The chapter on medicines </text>
+      </navLabel>
+      <content src="pli-tv-kd6_translation-en-brahmali..xhtml"/>
+    </navPoint>
+    <navPoint id="chapter_6">
+      <navLabel>
+        <text>Kathinakkhandhaka - The chapter on the robe-making procedure </text>
+      </navLabel>
+      <content src="pli-tv-kd7_translation-en-brahmali..xhtml"/>
+    </navPoint>
+    <navPoint id="chapter_7">
+      <navLabel>
+        <text>Cīvarakkhandhaka - The chapter on robes </text>
+      </navLabel>
+      <content src="pli-tv-kd8_translation-en-brahmali..xhtml"/>
+    </navPoint>
+    <navPoint id="chapter_8">
+      <navLabel>
+        <text>Campeyyakkhandhaka - The chapter on those from Campā </text>
+      </navLabel>
+      <content src="pli-tv-kd9_translation-en-brahmali..xhtml"/>
+    </navPoint>
+    <navPoint id="chapter_9">
+      <navLabel>
+        <text>Kosambakakkhandhaka - The chapter on those from Kosambī </text>
+      </navLabel>
+      <content src="pli-tv-kd10_translation-en-brahmali..xhtml"/>
+    </navPoint>
+    <navPoint id="chapter_10">
+      <navLabel>
+        <text>Kammakkhandhaka - The chapter on legal procedures </text>
+      </navLabel>
+      <content src="pli-tv-kd11_translation-en-brahmali..xhtml"/>
+    </navPoint>
+    <navPoint id="chapter_11">
+      <navLabel>
+        <text>Pārivāsikakkhandhaka - The chapter on those on probation </text>
+      </navLabel>
+      <content src="pli-tv-kd12_translation-en-brahmali..xhtml"/>
+    </navPoint>
+    <navPoint id="chapter_12">
+      <navLabel>
+        <text>Samuccayakkhandhaka - The chapter containing the collection of processes for the clearing of offenses entailing suspension </text>
+      </navLabel>
+      <content src="pli-tv-kd13_translation-en-brahmali..xhtml"/>
+    </navPoint>
+    <navPoint id="chapter_13">
+      <navLabel>
+        <text>Samathakkhandhaka - The chapter on the settling of legal issues </text>
+      </navLabel>
+      <content src="pli-tv-kd14_translation-en-brahmali..xhtml"/>
+    </navPoint>
+    <navPoint id="chapter_14">
+      <navLabel>
+        <text>Khuddakavatthukkhandhaka - The chapter with short topics </text>
+      </navLabel>
+      <content src="pli-tv-kd15_translation-en-brahmali..xhtml"/>
+    </navPoint>
+    <navPoint id="chapter_15">
+      <navLabel>
+        <text>Senāsanakkhandhaka - The chapter on dwellings </text>
+      </navLabel>
+      <content src="pli-tv-kd16_translation-en-brahmali..xhtml"/>
+    </navPoint>
+    <navPoint id="chapter_16">
+      <navLabel>
+        <text>Saṅghabhedakakkhandhaka - The chapter on schism in the Sangha </text>
+      </navLabel>
+      <content src="pli-tv-kd17_translation-en-brahmali..xhtml"/>
+    </navPoint>
+    <navPoint id="chapter_17">
+      <navLabel>
+        <text>Vattakkhandhaka - The chapter on proper conduct </text>
+      </navLabel>
+      <content src="pli-tv-kd18_translation-en-brahmali..xhtml"/>
+    </navPoint>
+    <navPoint id="chapter_18">
+      <navLabel>
+        <text>Pātimokkhaṭṭhapanakkhandhaka - The chapter on the cancellation of the Monastic Code </text>
+      </navLabel>
+      <content src="pli-tv-kd19_translation-en-brahmali..xhtml"/>
+    </navPoint>
+    <navPoint id="chapter_19">
+      <navLabel>
+        <text>Bhikkhunikkhandhaka - The chapter on nuns </text>
+      </navLabel>
+      <content src="pli-tv-kd20_translation-en-brahmali..xhtml"/>
+    </navPoint>
+    <navPoint id="chapter_20">
+      <navLabel>
+        <text>Pañcasatikakkhandhaka - The chapter on the group of five hundred </text>
+      </navLabel>
+      <content src="pli-tv-kd21_translation-en-brahmali..xhtml"/>
+    </navPoint>
+    <navPoint id="chapter_21">
+      <navLabel>
+        <text>Sattasatikakkhandhaka - The chapter on the group of seven hundred </text>
+      </navLabel>
+      <content src="pli-tv-kd22_translation-en-brahmali..xhtml"/>
+    </navPoint>
+  </navMap>
+</ncx>

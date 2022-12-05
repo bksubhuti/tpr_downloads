@@ -1,0 +1,16 @@
+@font-face{font-family:"ITM_TMS_UNI";font-style:normal;font-weight:normal;src:url(fonts/itmsu-r_D.ttf)}
+@font-face{font-family:"ITM_TMS_UNI";font-style:italic;font-weight:normal;src:url(fonts/itmsu-i_C.ttf)}
+@font-face{font-family:"ITM_TMS_UNI";font-style:normal;font-weight:bold;src:url(fonts/itmsu-b_C.ttf)}
+p{text-indent:0;margin-left:0;margin-right:0;margin-top:0;margin-bottom:0;font-family:ITM_TMS_UNI,serif;font-size:109%;color:maroon}
+.p0{text-indent:0;text-align:center}
+.p2{text-indent:0;margin-top:.42em;margin-bottom:.42em}
+.p3{text-indent:0}
+h3{text-indent:0;margin-left:0;margin-right:0;margin-top:0;margin-bottom:0;font-family:ITM_TMS_UNI,serif;font-size:127%;font-weight:bold;color:navy}
+.h31{text-indent:0}
+.t1{color:black}
+.t2{font-size:1.5em}
+.t3{font-size:1.2em;font-style:italic}
+.t4{font-size:1.2em}
+.t5{font-weight:bold;color:navy}
+.t7{color:blue;text-decoration:underline}
+.th31{font-size:1.3em}
