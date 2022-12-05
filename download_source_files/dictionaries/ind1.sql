@@ -544,7 +544,7 @@ INSERT INTO "dictionary" ("word","definition","book_id") VALUES ('āvasatha','<p
 INSERT INTO "dictionary" ("word","definition","book_id") VALUES ('āvaha','<p class="definition">a.  membawa, mendatangkan, menimbulkan, memunculkan, menghantarkan.</p>',51);
 INSERT INTO "dictionary" ("word","definition","book_id") VALUES ('āvāsa','<p class="definition">m.  persinggahan, kediaman (para bhikkhu), rumah, permukiman; kompleks bangunan yang terdiri dari balai uposatha, ruang makan, ruang sauna, kamar tinggal (wihara), bilik kediaman (tunggal atau sederet).</p>',51);
 INSERT INTO "dictionary" ("word","definition","book_id") VALUES ('āvāsika','<p class="definition">a.  berdiam di, menghuni di rumah, penghuni tetap.</p>',51);
-INSERT INTO "dictionary" ("word","definition","book_id") VALUES ('āvāha','<p class="definition">mengambil sang gadis\'' (kaññā-gahaṇaṃ); perkawinan, pernikahan.</p>',51);
+INSERT INTO "dictionary" ("word","definition","book_id") VALUES ('āvāha','<p class="definition">mengambil sang gadis (kaññā-gahaṇaṃ); perkawinan, pernikahan.</p>',51);
 INSERT INTO "dictionary" ("word","definition","book_id") VALUES ('āvi','<p class="definition">adv.  jelas, terungkap, nyata, terbuka, di depan mata, tampak.</p>',51);
 INSERT INTO "dictionary" ("word","definition","book_id") VALUES ('āvikamma','<p class="definition">nt.  hal membuat jelas, mengungkapkan, menyingkapkan, menyatakan, menjelaskan.</p>',51);
 INSERT INTO "dictionary" ("word","definition","book_id") VALUES ('āvikaroti','<p class="definition">memaklumkan, menunjukkan, menjelaskan, mengungkapkan.</p>',51);
