@@ -56,14 +56,6 @@
         "size": "2.0 MB"
     },
     {
-        "name": "Indonesian Pali English Dictionary",
-        "release_date": "5.12.2022",
-        "type": "dictionary",
-        "url": "https://github.com/bksubhuti/tpr_downloads/raw/master/download_source_files/dictionaries/ind1.zip",
-        "filename": "ind1.sql",
-        "size": "0.143 MB"
-    },
-    {
         "name": "Vietnamese Pali English Dictionary",
         "release_date": "5.12.2022",
         "type": "dictionary",
