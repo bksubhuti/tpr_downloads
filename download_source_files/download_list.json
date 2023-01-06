@@ -8,6 +8,14 @@
         "size": "5.9 MB"
     },
     {
+        "name": "iit Chanting Book",
+        "release_date": "6.1.2023",
+        "type": "books",
+        "url": "https://github.com/bksubhuti/tpr_downloads/raw/master/iit_chantingbook.zip",
+        "filename": "iit_chantingbook.sql",
+        "size": "1 MB"
+    },    
+    {
         "name": "Worldnet English to English Dictionary",
         "release_date": "5.12.2022",
         "type": "dictionary",
