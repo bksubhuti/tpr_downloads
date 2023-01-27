@@ -75,7 +75,7 @@
         "name": "TESTING DO NOT USE-dpd October 2022 release",
         "release_date": "10.10.2022",
         "type": "dictionary",
-        "url": "https://github.com/dhammacakka/pm12e/blob/main/release/dpd.zip",
+        "url": "https://github.com/dhammacakka/pm12e/raw/main/release/dpd.zip",
         "filename": "dpd.sql",
         "size": "7.00 MB"
     },
