@@ -16,6 +16,14 @@
         "size": "1 MB"
     },    
     {
+        "name": "DPD January 7, 2023 release",
+        "release_date": "7.1.2023",
+        "type": "dictionary",
+        "url": "https://github.com/bksubhuti/tpr_downloads/raw/master/download_source_files/dictionaries/dpd.zip",
+        "filename": "dpd.sql",
+        "size": "9.00 MB"
+    },
+    {
         "name": "Worldnet English to English Dictionary",
         "release_date": "5.12.2022",
         "type": "dictionary",
@@ -78,14 +86,6 @@
         "url": "https://github.com/dhammacakka/pm12e/raw/main/release/dpd.zip",
         "filename": "dpd.sql",
         "size": "7.00 MB"
-    },
-    {
-        "name": "TESTING DO NOT USE newerdpd, will crash",
-        "release_date": "7.1.2023",
-        "type": "dictionary",
-        "url": "https://github.com/bksubhuti/tpr_downloads/raw/master/download_source_files/dictionaries/dpd.zip",
-        "filename": "dpd.sql",
-        "size": "9.00 MB"
     }
-    
+        
 ]
