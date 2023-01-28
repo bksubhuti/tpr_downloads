@@ -83,7 +83,7 @@
         "name": "TESTING DO NOT USE-dpd",
         "release_date": "28.01.2023",
         "type": "dictionary",
-        "url": "https://github.com/bksubhuti/tpr_downloads/blob/master/download_source_files/dictionaries/dpd_test.zip",
+        "url": "https://github.com/bksubhuti/tpr_downloads/raw/master/download_source_files/dictionaries/dpd_test.zip",
         "filename": "dpd.sql",
         "size": "8.91 MB"
     }
