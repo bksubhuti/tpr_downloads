@@ -16,12 +16,12 @@
         "size": "1 MB"
     },
     {
-        "name": "DPD April 2023 release",
-        "release_date": "5.4.2023",
+        "name": "DPD May 2023 release",
+        "release_date": "4.5.2023",
         "type": "dictionary",
         "url": "https://github.com/bksubhuti/tpr_downloads/raw/master/download_source_files/dictionaries/dpd.zip",
         "filename": "dpd.sql",
-        "size": "16.7 MB"
+        "size": "31.0 MB"
     },
     {
         "name": "PEU February 11, 2023 release 200,000 records",
@@ -89,10 +89,10 @@
     },
     {
         "name": "DPD Beta",
-        "release_date": "25.4.2023",
+        "release_date": "3.5.2023",
         "type": "dictionary",
         "url": "https://github.com/bksubhuti/tpr_downloads/raw/master/download_source_files/dictionaries/dpd_beta.zip",
         "filename": "dpd.sql",
-        "size": "16.2 MB"
+        "size": "31.0 MB"
     }
 ]
