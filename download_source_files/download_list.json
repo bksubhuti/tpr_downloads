@@ -88,6 +88,14 @@
         "size": "0.07 MB"
     },
     {
+        "name": "DPD Grammar Beta",
+        "release_date": "14.5.2023",
+        "type": "dpd_grammar",
+        "url": "https://github.com/bksubhuti/tpr_downloads/raw/master/download_source_files/dictionaries/dpd_grammar.zip",
+        "filename": "dpd_grammar.sql",
+        "size": "3.0 MB"
+    },
+    {
         "name": "DPD Beta",
         "release_date": "3.5.2023",
         "type": "dictionary",
