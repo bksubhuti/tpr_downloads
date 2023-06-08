@@ -102,5 +102,13 @@
         "url": "https://github.com/bksubhuti/tpr_downloads/raw/master/download_source_files/dictionaries/dpd_beta.zip",
         "filename": "dpd.sql",
         "size": "21.3 MB"
+    },
+    {
+        "name": "Buddhist Legends Beta",
+        "release_date": "8.6.2023",
+        "type": "books index",
+        "url": "https://github.com/bksubhuti/tpr_downloads/raw/master/buddhist-legends-output.zip",
+        "filename": "buddhist-legends-output.sql",
+        "size": "0.9 MB"
     }
 ]
