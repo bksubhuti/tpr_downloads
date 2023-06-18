@@ -1,7 +1,7 @@
 [
     {
-        "name": "Pali English 4 Sutta Nikaya Books (dn, mn, sn, and an) and 5 Vinaya Books",
-        "release_date": "2.12.2022",
+        "name": "Pali English 4 Sutta Nikaya + English dhpA (dn, mn, sn, an, dhpA) and 5 Vinaya Books",
+        "release_date": "18.6.2023",
         "type": "books index",
         "url": "https://github.com/bksubhuti/tpr_downloads/raw/master/pali-english-books.zip",
         "filename": "pali-english-books.sql",
@@ -9,7 +9,7 @@
     },
     {
         "name": "iit Chanting Book",
-        "release_date": "6.1.2023",
+        "release_date": "18.6.2023",
         "type": "books",
         "url": "https://github.com/bksubhuti/tpr_downloads/raw/master/iit_chantingbook.zip",
         "filename": "iit_chantingbook.sql",
@@ -24,8 +24,8 @@
         "size": "31.0 MB"
     },
     {
-        "name": "PEU February 11, 2023 release 200,000 records",
-        "release_date": "11.2.2023",
+        "name": "PEU June 18, 2023 release 200,000 records",
+        "release_date": "15.6.2023",
         "type": "dictionary",
         "url": "https://github.com/bksubhuti/tpr_downloads/raw/master/download_source_files/dictionaries/peu1.zip",
         "filename": "peu1.sql",
@@ -88,27 +88,11 @@
         "size": "0.07 MB"
     },
     {
-        "name": "DPD Grammar Beta",
-        "release_date": "14.5.2023",
-        "type": "dpd_grammar",
-        "url": "https://github.com/bksubhuti/tpr_downloads/raw/master/download_source_files/dictionaries/dpd_grammar.zip",
-        "filename": "dpd_grammar.sql",
-        "size": "3.0 MB"
-    },
-    {
         "name": "DPD Beta",
         "release_date": "1.6.2023",
         "type": "dictionary",
         "url": "https://github.com/bksubhuti/tpr_downloads/raw/master/download_source_files/dictionaries/dpd_beta.zip",
         "filename": "dpd.sql",
         "size": "21.3 MB"
-    },
-    {
-        "name": "Buddhist Legends Beta",
-        "release_date": "8.6.2023",
-        "type": "books index",
-        "url": "https://github.com/bksubhuti/tpr_downloads/raw/master/buddhist-legends-output.zip",
-        "filename": "buddhist-legends-output.sql",
-        "size": "0.9 MB"
     }
 ]
