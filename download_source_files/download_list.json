@@ -16,6 +16,14 @@
         "size": "1 MB"
     },
     {
+        "name": "Safeguard Recitals Book",
+        "release_date": "25.6.2023",
+        "type": "books",
+        "url": "https://github.com/bksubhuti/tpr_downloads/raw/master/download_source_files/iit_chanting/Safeguard-Recitals.zip",
+        "filename": "Safeguard-Recitals.sql",
+        "size": "114 KB"
+    },
+    {
         "name": "DPD May 2023 release",
         "release_date": "4.5.2023",
         "type": "dictionary",
