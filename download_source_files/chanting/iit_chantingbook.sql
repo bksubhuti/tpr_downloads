@@ -6,7 +6,7 @@ DELETE from fts_pages where bookid = 'annya_iit_chants';
 COMMIT;
 Begin Transaction;
 INSERT INTO category (id, name, basket) Select 'annya_chant', 'Chanting', 'annya' WHERE NOT EXISTS(SELECT 1 FROM category WHERE id = 'annya_chant');
-INSERT INTO books (id, basket, category, name, firstpage, lastpage, pagecount) VALUES ('annya_chant_iit', 'annya', 'annya_chant', 'IIT Chants', 1, 78, 78); 
+INSERT INTO books (id, basket, category, name, firstpage, lastpage, pagecount) VALUES ('annya_iit_chants', 'annya', 'annya_chant', 'IIT Chants', 1, 78, 78); 
 
 COMMIT;Begin Transaction;
 INSERT INTO tocs (book_id, name, type, page_number) VALUES ('annya_iit_chants', 'Morning Chanting', 'title', 1);
