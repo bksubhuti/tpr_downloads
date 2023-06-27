@@ -23,6 +23,22 @@
         "filename": "Safeguard-Recitals.sql",
         "size": "114 KB"
     },
+     {
+        "name": "Daily Chanting Book",
+        "release_date": "27.6.2023",
+        "type": "books",
+        "url": "https://github.com/bksubhuti/tpr_downloads/raw/master/download_source_files/iit_chanting/Daily_Chanting.zip",
+        "filename": "Daily_Chanting.sql",
+        "size": "29 KB"
+    },
+    {
+        "name": "Chanting For Meditators Book",
+        "release_date": "27.6.2023",
+        "type": "books",
+        "url": "https://github.com/bksubhuti/tpr_downloads/raw/master/download_source_files/iit_chanting/Chanting_for_Meditators.zip",
+        "filename": "Chanting_for_Meditators.sql",
+        "size": "34 KB"
+    },
     {
         "name": "DPD May 2023 release",
         "release_date": "4.5.2023",
