@@ -11,7 +11,7 @@
         "name": "iit Chanting Book",
         "release_date": "18.6.2023",
         "type": "books",
-        "url": "https://github.com/bksubhuti/tpr_downloads/raw/master/iit_chantingbook.zip",
+        "url": "https://github.com/bksubhuti/tpr_downloads/raw/master/download_source_files/chanting/iit_chantingbook.zip",
         "filename": "iit_chantingbook.sql",
         "size": "1 MB"
     },
@@ -19,7 +19,7 @@
         "name": "Safeguard Recitals Book",
         "release_date": "25.6.2023",
         "type": "books",
-        "url": "https://github.com/bksubhuti/tpr_downloads/raw/master/download_source_files/iit_chanting/Safeguard-Recitals.zip",
+        "url": "https://github.com/bksubhuti/tpr_downloads/raw/master/download_source_files/chanting/Safeguard-Recitals.zip",
         "filename": "Safeguard-Recitals.sql",
         "size": "114 KB"
     },
@@ -27,7 +27,7 @@
         "name": "Daily Chanting Book",
         "release_date": "27.6.2023",
         "type": "books",
-        "url": "https://github.com/bksubhuti/tpr_downloads/raw/master/download_source_files/iit_chanting/Daily_Chanting.zip",
+        "url": "https://github.com/bksubhuti/tpr_downloads/raw/master/download_source_files/chanting/Daily_Chanting.zip",
         "filename": "Daily_Chanting.sql",
         "size": "29 KB"
     },
@@ -35,7 +35,7 @@
         "name": "Chanting For Meditators Book",
         "release_date": "27.6.2023",
         "type": "books",
-        "url": "https://github.com/bksubhuti/tpr_downloads/raw/master/download_source_files/iit_chanting/Chanting_for_Meditators.zip",
+        "url": "https://github.com/bksubhuti/tpr_downloads/raw/master/download_source_files/chanting/Chanting_for_Meditators.zip",
         "filename": "Chanting_for_Meditators.sql",
         "size": "34 KB"
     },
