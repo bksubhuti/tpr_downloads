@@ -113,10 +113,10 @@
     },
     {
         "name": "DPD Beta",
-        "release_date": "15.7.2023",
+        "release_date": "24.7.2023",
         "type": "dictionary",
         "url": "https://github.com/bksubhuti/tpr_downloads/raw/master/download_source_files/dictionaries/dpd_beta.zip",
         "filename": "dpd.sql",
-        "size": "22.1 MB"
+        "size": "21.8 MB"
     }
 ]
