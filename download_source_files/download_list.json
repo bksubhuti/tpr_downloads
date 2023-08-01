@@ -40,12 +40,12 @@
         "size": "34 KB"
     },
     {
-        "name": "DPD July 2023 release",
-        "release_date": "2.7.2023",
+        "name": "DPD August 2023 release",
+        "release_date": "1.8.2023",
         "type": "dictionary",
         "url": "https://github.com/bksubhuti/tpr_downloads/raw/master/download_source_files/dictionaries/dpd.zip",
         "filename": "dpd.sql",
-        "size": "21.7 MB"
+        "size": "22.0 MB"
     },
     {
         "name": "PEU June 18, 2023 release 200,000 records",
