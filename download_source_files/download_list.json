@@ -23,7 +23,7 @@
         "filename": "Safeguard-Recitals.sql",
         "size": "114 KB"
     },
-     {
+    {
         "name": "Daily Chanting Book, by Ānandajoti Bhikkhu",
         "release_date": "27.6.2023",
         "type": "books",
@@ -40,12 +40,12 @@
         "size": "34 KB"
     },
     {
-        "name": "DPD May 2023 release",
-        "release_date": "4.5.2023",
+        "name": "DPD August 2023 release",
+        "release_date": "1.8.2023",
         "type": "dictionary",
         "url": "https://github.com/bksubhuti/tpr_downloads/raw/master/download_source_files/dictionaries/dpd.zip",
         "filename": "dpd.sql",
-        "size": "31.0 MB"
+        "size": "22.0 MB"
     },
     {
         "name": "PEU June 18, 2023 release 200,000 records",
@@ -113,10 +113,10 @@
     },
     {
         "name": "DPD Beta",
-        "release_date": "1.6.2023",
+        "release_date": "30.7.2023",
         "type": "dictionary",
         "url": "https://github.com/bksubhuti/tpr_downloads/raw/master/download_source_files/dictionaries/dpd_beta.zip",
         "filename": "dpd.sql",
-        "size": "21.3 MB"
+        "size": "22.0 MB"
     }
 ]
