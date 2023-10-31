@@ -1,0 +1,4617 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ncx PUBLIC "-//NISO//DTD ncx 2005-1//EN" "http://www.daisy.org/z3986/2005/ncx-2005-1.dtd">
+<ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" xml:lang="en" version="2005-1">
+<head>
+<meta name="dtb:uid" content="mcF8S8B1i4AG"/>
+<meta name="dtb:depth" content="5"/>
+<meta name="dtb:totalPageCount" content="0"/>
+<meta name="dtb:maxPageNumber" content="0"/>
+</head>
+<docTitle>
+<text>The Jataka Translation</text>
+</docTitle>
+<navMap>
+<navPoint id="navpoint-1" playOrder="1">
+<navLabel>
+<text>Title page</text>
+</navLabel>
+<content src="001.html"/>
+</navPoint>
+<navPoint id="navpoint-2" playOrder="2">
+<navLabel>
+<text>Introduction to the Revised Translation</text>
+</navLabel>
+<content src="003.html"/>
+<navPoint id="navpoint-3" playOrder="3">
+<navLabel>
+<text>History of the Text and Translation</text>
+</navLabel>
+<content src="003.html#ncx16"/>
+</navPoint>
+<navPoint id="navpoint-4" playOrder="4">
+<navLabel>
+<text>Revised Vocabulary</text>
+</navLabel>
+<content src="003.html#ncx25"/>
+</navPoint>
+<navPoint id="navpoint-5" playOrder="5">
+<navLabel>
+<text>Reconstruction of the Stories</text>
+</navLabel>
+<content src="003.html#ncx30"/>
+</navPoint>
+<navPoint id="navpoint-6" playOrder="6">
+<navLabel>
+<text>The Component Parts</text>
+</navLabel>
+<content src="003.html#ncx37"/>
+</navPoint>
+<navPoint id="navpoint-7" playOrder="7">
+<navLabel>
+<text>The Titles and Overviews</text>
+</navLabel>
+<content src="003.html#ncx42"/>
+</navPoint>
+<navPoint id="navpoint-8" playOrder="8">
+<navLabel>
+<text>Annotation and Page Numbers</text>
+</navLabel>
+<content src="003.html#ncx48"/>
+</navPoint>
+</navPoint>
+<navPoint id="navpoint-9" playOrder="9">
+<navLabel>
+<text>Studies</text>
+</navLabel>
+<content src="003.html#ncx55"/>
+<navPoint id="navpoint-10" playOrder="10">
+<navLabel>
+<text>The Number of Jātakas</text>
+</navLabel>
+<content src="003.html#ncx56"/>
+</navPoint>
+<navPoint id="navpoint-11" playOrder="11">
+<navLabel>
+<text>The Sections</text>
+</navLabel>
+<content src="003.html#ncx70"/>
+</navPoint>
+<navPoint id="navpoint-12" playOrder="12">
+<navLabel>
+<text>The Verses</text>
+</navLabel>
+<content src="005.html"/>
+</navPoint>
+<navPoint id="navpoint-13" playOrder="13">
+<navLabel>
+<text>Reuse of the Verses</text>
+</navLabel>
+<content src="005.html#ncx185"/>
+</navPoint>
+<navPoint id="navpoint-14" playOrder="14">
+<navLabel>
+<text>Characters in the Jātakas</text>
+</navLabel>
+<content src="005.html#ncx395"/>
+<navPoint id="navpoint-15" playOrder="15">
+<navLabel>
+<text>The Bodhisatta’s Roles</text>
+</navLabel>
+<content src="005.html#ncx396"/>
+</navPoint>
+<navPoint id="navpoint-16" playOrder="16">
+<navLabel>
+<text>Other People’s Roles</text>
+</navLabel>
+<content src="005.html#ncx418"/>
+</navPoint>
+</navPoint>
+<navPoint id="navpoint-17" playOrder="17">
+<navLabel>
+<text>Jātakas Outside of this Collection</text>
+</navLabel>
+<content src="005.html#ncx428"/>
+</navPoint>
+<navPoint id="navpoint-18" playOrder="18">
+<navLabel>
+<text>Acknowledgements</text>
+</navLabel>
+<content src="007.html"/>
+</navPoint>
+<navPoint id="navpoint-19" playOrder="19">
+<navLabel>
+<text>Select Bibliography</text>
+</navLabel>
+<content src="009.html"/>
+<navPoint id="navpoint-20" playOrder="20">
+<navLabel>
+<text>The Text</text>
+</navLabel>
+<content src="009.html#ncx557"/>
+</navPoint>
+<navPoint id="navpoint-21" playOrder="21">
+<navLabel>
+<text>The Translation</text>
+</navLabel>
+<content src="009.html#ncx565"/>
+</navPoint>
+<navPoint id="navpoint-22" playOrder="22">
+<navLabel>
+<text>Other Works</text>
+</navLabel>
+<content src="009.html#ncx573"/>
+</navPoint>
+</navPoint>
+<navPoint id="navpoint-23" playOrder="23">
+<navLabel>
+<text>Abbreviations</text>
+</navLabel>
+<content src="009.html#ncx602"/>
+</navPoint>
+</navPoint>
+<navPoint id="navpoint-24" playOrder="24">
+<navLabel>
+<text>The Dates of the Jātaka Book</text>
+</navLabel>
+<content src="010.html"/>
+</navPoint>
+<navPoint id="navpoint-25" playOrder="25">
+<navLabel>
+<text>The Nidānakathā</text>
+</navLabel>
+<content src="011.html"/>
+<navPoint id="navpoint-26" playOrder="26">
+<navLabel>
+<text>Nidānakathā Introduction</text>
+</navLabel>
+<content src="012.html"/>
+<navPoint id="navpoint-27" playOrder="27">
+<navLabel>
+<text>I The Distant Epoch</text>
+</navLabel>
+<content src="012.html#ncx728"/>
+<navPoint id="navpoint-28" playOrder="28">
+<navLabel>
+<text>[The Story of Sumedha]</text>
+</navLabel>
+<content src="012.html#ncx729"/>
+<navPoint id="navpoint-29" playOrder="29">
+<navLabel>
+<text>End of the Story of Sumedha</text>
+</navLabel>
+<content src="012.html#ncx1326"/>
+</navPoint>
+</navPoint>
+<navPoint id="navpoint-30" playOrder="30">
+<navLabel>
+<text>[Buddha Dīpaṅkara]</text>
+</navLabel>
+<content src="012.html#ncx1327"/>
+</navPoint>
+<navPoint id="navpoint-31" playOrder="31">
+<navLabel>
+<text>[Buddha Koṇḍañña]</text>
+</navLabel>
+<content src="012.html#ncx1406"/>
+</navPoint>
+<navPoint id="navpoint-32" playOrder="32">
+<navLabel>
+<text>[Buddha Maṅgala]</text>
+</navLabel>
+<content src="012.html#ncx1422"/>
+</navPoint>
+<navPoint id="navpoint-33" playOrder="33">
+<navLabel>
+<text>[Buddha Sumana]</text>
+</navLabel>
+<content src="012.html#ncx1456"/>
+</navPoint>
+<navPoint id="navpoint-34" playOrder="34">
+<navLabel>
+<text>[Buddha Revata]</text>
+</navLabel>
+<content src="012.html#ncx1475"/>
+</navPoint>
+<navPoint id="navpoint-35" playOrder="35">
+<navLabel>
+<text>[Buddha Sobhita]</text>
+</navLabel>
+<content src="012.html#ncx1494"/>
+</navPoint>
+<navPoint id="navpoint-36" playOrder="36">
+<navLabel>
+<text>[Buddha Anomadassī]</text>
+</navLabel>
+<content src="012.html#ncx1513"/>
+</navPoint>
+<navPoint id="navpoint-37" playOrder="37">
+<navLabel>
+<text>[Buddha Paduma]</text>
+</navLabel>
+<content src="012.html#ncx1532"/>
+</navPoint>
+<navPoint id="navpoint-38" playOrder="38">
+<navLabel>
+<text>[Buddha Nārada]</text>
+</navLabel>
+<content src="012.html#ncx1551"/>
+</navPoint>
+<navPoint id="navpoint-39" playOrder="39">
+<navLabel>
+<text>[Buddha Padumuttara]</text>
+</navLabel>
+<content src="012.html#ncx1570"/>
+</navPoint>
+<navPoint id="navpoint-40" playOrder="40">
+<navLabel>
+<text>[Buddha Sumedha]</text>
+</navLabel>
+<content src="012.html#ncx1590"/>
+</navPoint>
+<navPoint id="navpoint-41" playOrder="41">
+<navLabel>
+<text>[Buddha Sujāta]</text>
+</navLabel>
+<content src="012.html#ncx1609"/>
+</navPoint>
+<navPoint id="navpoint-42" playOrder="42">
+<navLabel>
+<text>[Buddha Piyadassī]</text>
+</navLabel>
+<content src="013.html"/>
+</navPoint>
+<navPoint id="navpoint-43" playOrder="43">
+<navLabel>
+<text>[Buddha Atthadassī]</text>
+</navLabel>
+<content src="013.html#ncx1647"/>
+</navPoint>
+<navPoint id="navpoint-44" playOrder="44">
+<navLabel>
+<text>[Buddha Dhammadassī]</text>
+</navLabel>
+<content src="013.html#ncx1667"/>
+</navPoint>
+<navPoint id="navpoint-45" playOrder="45">
+<navLabel>
+<text>[Buddha Siddhattha]</text>
+</navLabel>
+<content src="013.html#ncx1686"/>
+</navPoint>
+<navPoint id="navpoint-46" playOrder="46">
+<navLabel>
+<text>[Buddha Tissa]</text>
+</navLabel>
+<content src="013.html#ncx1705"/>
+</navPoint>
+<navPoint id="navpoint-47" playOrder="47">
+<navLabel>
+<text>[Buddha Phussa]</text>
+</navLabel>
+<content src="013.html#ncx1724"/>
+</navPoint>
+<navPoint id="navpoint-48" playOrder="48">
+<navLabel>
+<text>[Buddha Vipassī]</text>
+</navLabel>
+<content src="013.html#ncx1743"/>
+</navPoint>
+<navPoint id="navpoint-49" playOrder="49">
+<navLabel>
+<text>[Buddha Sikhī]</text>
+</navLabel>
+<content src="013.html#ncx1763"/>
+</navPoint>
+<navPoint id="navpoint-50" playOrder="50">
+<navLabel>
+<text>[Buddha Vessabhū]</text>
+</navLabel>
+<content src="013.html#ncx1783"/>
+</navPoint>
+<navPoint id="navpoint-51" playOrder="51">
+<navLabel>
+<text>[Buddha Kakusandha]</text>
+</navLabel>
+<content src="013.html#ncx1802"/>
+</navPoint>
+<navPoint id="navpoint-52" playOrder="52">
+<navLabel>
+<text>[Buddha Koṇāgamaṇa]</text>
+</navLabel>
+<content src="013.html#ncx1819"/>
+</navPoint>
+<navPoint id="navpoint-53" playOrder="53">
+<navLabel>
+<text>[Buddha Kassapa]</text>
+</navLabel>
+<content src="013.html#ncx1836"/>
+</navPoint>
+<navPoint id="navpoint-54" playOrder="54">
+<navLabel>
+<text>[Lives in which he Fulfilled the Perfections]</text>
+</navLabel>
+<content src="013.html#ncx1898"/>
+</navPoint>
+</navPoint>
+<navPoint id="navpoint-55" playOrder="55">
+<navLabel>
+<text>II The Middle Epoch</text>
+</navLabel>
+<content src="014.html"/>
+<navPoint id="navpoint-56" playOrder="56">
+<navLabel>
+<text>The Proclamation</text>
+</navLabel>
+<content src="014.html#ncx1947"/>
+</navPoint>
+<navPoint id="navpoint-57" playOrder="57">
+<navLabel>
+<text>The Five Points</text>
+</navLabel>
+<content src="014.html#ncx1954"/>
+</navPoint>
+<navPoint id="navpoint-58" playOrder="58">
+<navLabel>
+<text>The Dream of Mahāmāyā</text>
+</navLabel>
+<content src="014.html#ncx1963"/>
+</navPoint>
+<navPoint id="navpoint-59" playOrder="59">
+<navLabel>
+<text>The Thirty-Two Signs</text>
+</navLabel>
+<content src="014.html#ncx1968"/>
+</navPoint>
+<navPoint id="navpoint-60" playOrder="60">
+<navLabel>
+<text>The Birth</text>
+</navLabel>
+<content src="014.html#ncx2002"/>
+</navPoint>
+<navPoint id="navpoint-61" playOrder="61">
+<navLabel>
+<text>The Predictions</text>
+</navLabel>
+<content src="014.html#ncx2018"/>
+</navPoint>
+<navPoint id="navpoint-62" playOrder="62">
+<navLabel>
+<text>The Ploughing Festival</text>
+</navLabel>
+<content src="014.html#ncx2051"/>
+</navPoint>
+<navPoint id="navpoint-63" playOrder="63">
+<navLabel>
+<text>Siddhattha’s Youth</text>
+</navLabel>
+<content src="014.html#ncx2058"/>
+</navPoint>
+<navPoint id="navpoint-64" playOrder="64">
+<navLabel>
+<text>The Four Omens</text>
+</navLabel>
+<content src="014.html#ncx2064"/>
+</navPoint>
+<navPoint id="navpoint-65" playOrder="65">
+<navLabel>
+<text>Kisā Gotamī</text>
+</navLabel>
+<content src="014.html#ncx2079"/>
+</navPoint>
+<navPoint id="navpoint-66" playOrder="66">
+<navLabel>
+<text>The Great Renunciation</text>
+</navLabel>
+<content src="014.html#ncx2087"/>
+</navPoint>
+<navPoint id="navpoint-67" playOrder="67">
+<navLabel>
+<text>Meeting King Bimbisāra</text>
+</navLabel>
+<content src="014.html#ncx2126"/>
+</navPoint>
+<navPoint id="navpoint-68" playOrder="68">
+<navLabel>
+<text>The Great Struggle</text>
+</navLabel>
+<content src="014.html#ncx2134"/>
+</navPoint>
+<navPoint id="navpoint-69" playOrder="69">
+<navLabel>
+<text>The Lady Sujātā</text>
+</navLabel>
+<content src="014.html#ncx2146"/>
+</navPoint>
+<navPoint id="navpoint-70" playOrder="70">
+<navLabel>
+<text>The Bodhi Tree</text>
+</navLabel>
+<content src="014.html#ncx2156"/>
+</navPoint>
+<navPoint id="navpoint-71" playOrder="71">
+<navLabel>
+<text>Overcoming Māra</text>
+</navLabel>
+<content src="014.html#ncx2167"/>
+</navPoint>
+<navPoint id="navpoint-72" playOrder="72">
+<navLabel>
+<text>The Awakening</text>
+</navLabel>
+<content src="014.html#ncx2217"/>
+</navPoint>
+</navPoint>
+<navPoint id="navpoint-73" playOrder="73">
+<navLabel>
+<text>III The Proximate or Last Epoch</text>
+</navLabel>
+<content src="015.html"/>
+<navPoint id="navpoint-74" playOrder="74">
+<navLabel>
+<text>The Seven Weeks</text>
+</navLabel>
+<content src="015.html#ncx2234"/>
+</navPoint>
+<navPoint id="navpoint-75" playOrder="75">
+<navLabel>
+<text>Māra’s Daughters</text>
+</navLabel>
+<content src="015.html#ncx2242"/>
+</navPoint>
+<navPoint id="navpoint-76" playOrder="76">
+<navLabel>
+<text>Tapassu and Bhalluka</text>
+</navLabel>
+<content src="015.html#ncx2268"/>
+</navPoint>
+<navPoint id="navpoint-77" playOrder="77">
+<navLabel>
+<text>Deciding to Teach</text>
+</navLabel>
+<content src="015.html#ncx2272"/>
+</navPoint>
+<navPoint id="navpoint-78" playOrder="78">
+<navLabel>
+<text>The Early Dispensation</text>
+</navLabel>
+<content src="015.html#ncx2281"/>
+</navPoint>
+<navPoint id="navpoint-79" playOrder="79">
+<navLabel>
+<text>The Kassapa Brothers</text>
+</navLabel>
+<content src="015.html#ncx2284"/>
+</navPoint>
+<navPoint id="navpoint-80" playOrder="80">
+<navLabel>
+<text>The Entry into Rājagaha</text>
+</navLabel>
+<content src="015.html#ncx2299"/>
+</navPoint>
+<navPoint id="navpoint-81" playOrder="81">
+<navLabel>
+<text>Sāriputta and Moggallāna</text>
+</navLabel>
+<content src="015.html#ncx2330"/>
+</navPoint>
+<navPoint id="navpoint-82" playOrder="82">
+<navLabel>
+<text>The Return to Kapilavatthu</text>
+</navLabel>
+<content src="015.html#ncx2337"/>
+</navPoint>
+<navPoint id="navpoint-83" playOrder="83">
+<navLabel>
+<text>Meeting with the Sākyas</text>
+</navLabel>
+<content src="015.html#ncx2370"/>
+</navPoint>
+<navPoint id="navpoint-84" playOrder="84">
+<navLabel>
+<text>The Lineage of the Buddhas</text>
+</navLabel>
+<content src="015.html#ncx2379"/>
+</navPoint>
+<navPoint id="navpoint-85" playOrder="85">
+<navLabel>
+<text>Family Members</text>
+</navLabel>
+<content src="015.html#ncx2403"/>
+</navPoint>
+<navPoint id="navpoint-86" playOrder="86">
+<navLabel>
+<text>Anāthapiṇḍika And Jetavana</text>
+</navLabel>
+<content src="015.html#ncx2415"/>
+</navPoint>
+</navPoint>
+</navPoint>
+</navPoint>
+<navPoint id="navpoint-87" playOrder="87">
+<navLabel>
+<text>The Revised Jātaka Translation, Volume I</text>
+</navLabel>
+<content src="016.html"/>
+<navPoint id="navpoint-88" playOrder="88">
+<navLabel>
+<text>Preface</text>
+</navLabel>
+<content src="018.html"/>
+</navPoint>
+<navPoint id="navpoint-89" playOrder="89">
+<navLabel>
+<text>Book I. Ekanipāta  The Section with One Verse</text>
+</navLabel>
+<content src="019.html"/>
+<navPoint id="navpoint-90" playOrder="90">
+<navLabel>
+<text>Ja 1 Apaṇṇakajātaka  The Story about what is Unquestionable (1s)</text>
+</navLabel>
+<content src="019.html#ncx2491"/>
+</navPoint>
+<navPoint id="navpoint-91" playOrder="91">
+<navLabel>
+<text>Ja 2 Vaṇṇūpathajātaka The Story about the Sandy Waste (1s)</text>
+</navLabel>
+<content src="019.html#ncx2564"/>
+</navPoint>
+<navPoint id="navpoint-92" playOrder="92">
+<navLabel>
+<text>Ja 3 Serivāṇijajātaka The Story about the Merchant from Seri (1s)</text>
+</navLabel>
+<content src="019.html#ncx2590"/>
+</navPoint>
+<navPoint id="navpoint-93" playOrder="93">
+<navLabel>
+<text>Ja 4 Cullakaseṭṭhijātaka  The Story about the Little Merchant (1s)</text>
+</navLabel>
+<content src="019.html#ncx2612"/>
+</navPoint>
+<navPoint id="navpoint-94" playOrder="94">
+<navLabel>
+<text>Ja 5 Taṇḍulanālijātaka The Story about the Measure of Rice (1s)</text>
+</navLabel>
+<content src="019.html#ncx2688"/>
+</navPoint>
+<navPoint id="navpoint-95" playOrder="95">
+<navLabel>
+<text>Ja 6 Devadhammajātaka The Story about Righteousness (1s)</text>
+</navLabel>
+<content src="019.html#ncx2715"/>
+</navPoint>
+<navPoint id="navpoint-96" playOrder="96">
+<navLabel>
+<text>Ja 7 Kaṭṭhahārijātaka The Story about the Wood Gatherer (1s)</text>
+</navLabel>
+<content src="020.html"/>
+</navPoint>
+<navPoint id="navpoint-97" playOrder="97">
+<navLabel>
+<text>Ja 8 Gāmanijātaka The Story about (Prince) Gāmani (1s)</text>
+</navLabel>
+<content src="020.html#ncx2774"/>
+</navPoint>
+<navPoint id="navpoint-98" playOrder="98">
+<navLabel>
+<text>Ja 9 Makhādevajātaka  The Story about (King) Makhadeva (1s)</text>
+</navLabel>
+<content src="020.html#ncx2833"/>
+</navPoint>
+<navPoint id="navpoint-99" playOrder="99">
+<navLabel>
+<text>Ja 10 Sukhavihārijātaka The Story about the One who lives Happily (1s)</text>
+</navLabel>
+<content src="020.html#ncx2870"/>
+</navPoint>
+<navPoint id="navpoint-100" playOrder="100">
+<navLabel>
+<text>Ja 11 Lakkhaṇajātaka The Story about (the Deer named) Lakkhaṇa (1s)</text>
+</navLabel>
+<content src="020.html#ncx2893"/>
+</navPoint>
+<navPoint id="navpoint-101" playOrder="101">
+<navLabel>
+<text>Ja 12 Nigrodhamigajātaka  The Story about the Deer (named) Nigrodha (1s)</text>
+</navLabel>
+<content src="020.html#ncx2921"/>
+</navPoint>
+<navPoint id="navpoint-102" playOrder="102">
+<navLabel>
+<text>Ja 13 Kaṇḍinajātaka The Story about the Dart (1s)</text>
+</navLabel>
+<content src="020.html#ncx2983"/>
+</navPoint>
+<navPoint id="navpoint-103" playOrder="103">
+<navLabel>
+<text>Ja 14 Vātamigajātaka The Story about the Wind-Deer (1s)</text>
+</navLabel>
+<content src="020.html#ncx3010"/>
+</navPoint>
+<navPoint id="navpoint-104" playOrder="104">
+<navLabel>
+<text>Ja 15 Kharādiyajātaka The Story about the Deer (named) Kharādiyā (1s)</text>
+</navLabel>
+<content src="020.html#ncx3038"/>
+</navPoint>
+<navPoint id="navpoint-105" playOrder="105">
+<navLabel>
+<text>Ja 16 Tipallatthamigajātaka The Story about the Deer having Three Postures (1s)</text>
+</navLabel>
+<content src="020.html#ncx3054"/>
+</navPoint>
+<navPoint id="navpoint-106" playOrder="106">
+<navLabel>
+<text>Ja 17 Mālutajātaka The Story about the Wind (1s)</text>
+</navLabel>
+<content src="021.html"/>
+</navPoint>
+<navPoint id="navpoint-107" playOrder="107">
+<navLabel>
+<text>Ja 18 Matakabhattajātaka The Story about Feasts for the Dead (1s)</text>
+</navLabel>
+<content src="021.html#ncx3100"/>
+</navPoint>
+<navPoint id="navpoint-108" playOrder="108">
+<navLabel>
+<text>Ja 19 Āyācitabhattajātaka The Story about the Feasts following a Vow (1s)</text>
+</navLabel>
+<content src="021.html#ncx3117"/>
+</navPoint>
+<navPoint id="navpoint-109" playOrder="109">
+<navLabel>
+<text>Ja 20 Naḷapānajātaka The Story about Cane Juice (1s)</text>
+</navLabel>
+<content src="021.html#ncx3130"/>
+</navPoint>
+<navPoint id="navpoint-110" playOrder="110">
+<navLabel>
+<text>Ja 21 Kuruṅgamigajātaka The Story about the Antelope (1s)</text>
+</navLabel>
+<content src="021.html#ncx3153"/>
+</navPoint>
+<navPoint id="navpoint-111" playOrder="111">
+<navLabel>
+<text>Ja 22 Kukkurajātaka The Story about the Dog (1s)</text>
+</navLabel>
+<content src="021.html#ncx3171"/>
+</navPoint>
+<navPoint id="navpoint-112" playOrder="112">
+<navLabel>
+<text>Ja 23 Bhojājānīyajātaka The Story about the Well-Bred (Horse) (1s)</text>
+</navLabel>
+<content src="021.html#ncx3230"/>
+</navPoint>
+<navPoint id="navpoint-113" playOrder="113">
+<navLabel>
+<text>Ja 24 Ājaññajātaka The Story about the (Horse) that was Bred Well (1s)</text>
+</navLabel>
+<content src="021.html#ncx3249"/>
+</navPoint>
+<navPoint id="navpoint-114" playOrder="114">
+<navLabel>
+<text>Ja 25 Titthajātaka The Story about the Ford (1s)</text>
+</navLabel>
+<content src="021.html#ncx3262"/>
+</navPoint>
+<navPoint id="navpoint-115" playOrder="115">
+<navLabel>
+<text>Ja 26 Mahilāmukhajātaka The Story about Mahilāmukha (the Mad Elephant) (1s)</text>
+</navLabel>
+<content src="021.html#ncx3301"/>
+</navPoint>
+<navPoint id="navpoint-116" playOrder="116">
+<navLabel>
+<text>Ja 27 Abhiṇhajātaka The Story about Habituation (1s)</text>
+</navLabel>
+<content src="021.html#ncx3329"/>
+</navPoint>
+<navPoint id="navpoint-117" playOrder="117">
+<navLabel>
+<text>Ja 28 Nandivisālajātaka The Story about (the Bull) Nandivisāla (1s)</text>
+</navLabel>
+<content src="021.html#ncx3349"/>
+</navPoint>
+<navPoint id="navpoint-118" playOrder="118">
+<navLabel>
+<text>Ja 29 Kaṇhajātaka The Story about (the Bull) Blackie (1s)</text>
+</navLabel>
+<content src="021.html#ncx3368"/>
+</navPoint>
+<navPoint id="navpoint-119" playOrder="119">
+<navLabel>
+<text>Ja 30 Muṇikajātaka  The Story about (the Pig) Muṇika (1s)</text>
+</navLabel>
+<content src="021.html#ncx3390"/>
+</navPoint>
+<navPoint id="navpoint-120" playOrder="120">
+<navLabel>
+<text>Ja 31 Kulāvakajātaka The Story about the Nestlings (1s)</text>
+</navLabel>
+<content src="022.html"/>
+<navPoint id="navpoint-121" playOrder="121">
+<navLabel>
+<text>How Sakka gained his Position</text>
+</navLabel>
+<content src="022.html#ncx3431"/>
+</navPoint>
+<navPoint id="navpoint-122" playOrder="122">
+<navLabel>
+<text>The War between the Devas and Asuras</text>
+</navLabel>
+<content src="022.html#ncx3451"/>
+</navPoint>
+<navPoint id="navpoint-123" playOrder="123">
+<navLabel>
+<text>The Rebirth of his Wives</text>
+</navLabel>
+<content src="022.html#ncx3464"/>
+</navPoint>
+</navPoint>
+<navPoint id="navpoint-124" playOrder="124">
+<navLabel>
+<text>Ja 32 Naccajātaka  The Story about the Dance (1s)</text>
+</navLabel>
+<content src="022.html#ncx3475"/>
+</navPoint>
+<navPoint id="navpoint-125" playOrder="125">
+<navLabel>
+<text>Ja 33 Sammodamānajātaka  The Story about being in Agreement (1s)</text>
+</navLabel>
+<content src="022.html#ncx3497"/>
+</navPoint>
+<navPoint id="navpoint-126" playOrder="126">
+<navLabel>
+<text>Ja 34 Macchajātaka The Story about the Fish (1s)</text>
+</navLabel>
+<content src="022.html#ncx3520"/>
+</navPoint>
+<navPoint id="navpoint-127" playOrder="127">
+<navLabel>
+<text>Ja 35 Vaṭṭakajātaka  The Story about the (Young) Quail (1s)</text>
+</navLabel>
+<content src="022.html#ncx3537"/>
+</navPoint>
+<navPoint id="navpoint-128" playOrder="128">
+<navLabel>
+<text>Ja 36 Sakuṇajātaka The Story about the Bird (1s)</text>
+</navLabel>
+<content src="022.html#ncx3572"/>
+</navPoint>
+<navPoint id="navpoint-129" playOrder="129">
+<navLabel>
+<text>Ja 37 Tittirajātaka The Story about the (Elder) Partridge (1s)</text>
+</navLabel>
+<content src="022.html#ncx3588"/>
+</navPoint>
+<navPoint id="navpoint-130" playOrder="130">
+<navLabel>
+<text>Ja 38 Bakajātaka  The Story about the Crane (1s)</text>
+</navLabel>
+<content src="022.html#ncx3614"/>
+</navPoint>
+<navPoint id="navpoint-131" playOrder="131">
+<navLabel>
+<text>Ja 39 Nandajātaka The Story about (the Slave) Nanda (1s)</text>
+</navLabel>
+<content src="022.html#ncx3639"/>
+</navPoint>
+<navPoint id="navpoint-132" playOrder="132">
+<navLabel>
+<text>Ja 40 Khadiraṅgārajātaka The Story about the Embers (1s)</text>
+</navLabel>
+<content src="023.html"/>
+</navPoint>
+<navPoint id="navpoint-133" playOrder="133">
+<navLabel>
+<text>Ja 41 Losakajātaka The Story about (the Unfortunate Monk) Losaka (1s)</text>
+</navLabel>
+<content src="023.html#ncx3717"/>
+</navPoint>
+<navPoint id="navpoint-134" playOrder="134">
+<navLabel>
+<text>Ja 42 Kapotajātaka The Story about the Pigeon (1s)</text>
+</navLabel>
+<content src="023.html#ncx3760"/>
+</navPoint>
+<navPoint id="navpoint-135" playOrder="135">
+<navLabel>
+<text>Ja 43 Veḷukajātaka The Story about (the Viper) Veḷuka (1s)</text>
+</navLabel>
+<content src="023.html#ncx3790"/>
+</navPoint>
+<navPoint id="navpoint-136" playOrder="136">
+<navLabel>
+<text>Ja 44 Makasajātaka The Story about the Mosquito (1s)</text>
+</navLabel>
+<content src="023.html#ncx3808"/>
+</navPoint>
+<navPoint id="navpoint-137" playOrder="137">
+<navLabel>
+<text>Ja 45 Rohiṇījātaka The Story about (the Slave) Rohiṇī (1s)</text>
+</navLabel>
+<content src="023.html#ncx3826"/>
+</navPoint>
+<navPoint id="navpoint-138" playOrder="138">
+<navLabel>
+<text>Ja 46 Ārāmadūsakajātaka  The Story about Spoiling the Park (1s)</text>
+</navLabel>
+<content src="023.html#ncx3842"/>
+</navPoint>
+<navPoint id="navpoint-139" playOrder="139">
+<navLabel>
+<text>Ja 47 Vāruṇijātaka The Story about Spoiling the Drinks (1s)</text>
+</navLabel>
+<content src="023.html#ncx3866"/>
+</navPoint>
+<navPoint id="navpoint-140" playOrder="140">
+<navLabel>
+<text>Ja 48 Vedabbhajātaka  The Story about the Vedabbha (Brahmin) (1s)</text>
+</navLabel>
+<content src="023.html#ncx3882"/>
+</navPoint>
+<navPoint id="navpoint-141" playOrder="141">
+<navLabel>
+<text>Ja 49 Nakkhattajātaka The Story about the Constellations (1s)</text>
+</navLabel>
+<content src="023.html#ncx3908"/>
+</navPoint>
+<navPoint id="navpoint-142" playOrder="142">
+<navLabel>
+<text>Ja 50 Dummedhajātaka The Story about the Unintelligent (1s)</text>
+</navLabel>
+<content src="024.html"/>
+</navPoint>
+<navPoint id="navpoint-143" playOrder="143">
+<navLabel>
+<text>Ja 51 Mahāsīlavajātaka The Story about One with Great Virtue (1s)</text>
+</navLabel>
+<content src="024.html#ncx3952"/>
+</navPoint>
+<navPoint id="navpoint-144" playOrder="144">
+<navLabel>
+<text>Ja 52 Cullajanakajātaka The Short Story about (King) Janaka (1s)</text>
+</navLabel>
+<content src="024.html#ncx3988"/>
+</navPoint>
+<navPoint id="navpoint-145" playOrder="145">
+<navLabel>
+<text>Ja 53 Puṇṇapātijātaka The Story about the Liquor Dish (1s)</text>
+</navLabel>
+<content src="024.html#ncx4002"/>
+</navPoint>
+<navPoint id="navpoint-146" playOrder="146">
+<navLabel>
+<text>Ja 54 Phalajātaka The Story about the Fruit (1s)</text>
+</navLabel>
+<content src="024.html#ncx4020"/>
+</navPoint>
+<navPoint id="navpoint-147" playOrder="147">
+<navLabel>
+<text>Ja 55 Pañcāvudhajātaka The Story about (Prince) Pañcāvudha (1s)</text>
+</navLabel>
+<content src="024.html#ncx4042"/>
+</navPoint>
+<navPoint id="navpoint-148" playOrder="148">
+<navLabel>
+<text>Ja 56 Kañcanakkhandhajātaka The Story about the Block of Gold (1s)</text>
+</navLabel>
+<content src="024.html#ncx4067"/>
+</navPoint>
+<navPoint id="navpoint-149" playOrder="149">
+<navLabel>
+<text>Ja 57 Vānarindajātaka The Story about the Lord of the Monkeys (1s)</text>
+</navLabel>
+<content src="024.html#ncx4087"/>
+</navPoint>
+<navPoint id="navpoint-150" playOrder="150">
+<navLabel>
+<text>Ja 58 Tayodhammajātaka The Story about the Three Things (1s)</text>
+</navLabel>
+<content src="024.html#ncx4108"/>
+</navPoint>
+<navPoint id="navpoint-151" playOrder="151">
+<navLabel>
+<text>Ja 59 Bherivādajātaka The Story about the Drummer (1s)</text>
+</navLabel>
+<content src="024.html#ncx4126"/>
+</navPoint>
+<navPoint id="navpoint-152" playOrder="152">
+<navLabel>
+<text>Ja 60 Saṅkhadhamanajātaka The Story about the Conch Blower (1s)</text>
+</navLabel>
+<content src="024.html#ncx4139"/>
+</navPoint>
+<navPoint id="navpoint-153" playOrder="153">
+<navLabel>
+<text>Ja 61 Asātamantajātaka The Story about the Disagreeable Charms (1s)</text>
+</navLabel>
+<content src="024.html#ncx4151"/>
+</navPoint>
+<navPoint id="navpoint-154" playOrder="154">
+<navLabel>
+<text>Ja 62 Aṇḍabhūtajātaka The Story about being Inexperienced (1s)</text>
+</navLabel>
+<content src="025.html"/>
+</navPoint>
+<navPoint id="navpoint-155" playOrder="155">
+<navLabel>
+<text>Ja 63 Takkajātaka The Story about the Buttermilk Salesman (1s)</text>
+</navLabel>
+<content src="025.html#ncx4227"/>
+</navPoint>
+<navPoint id="navpoint-156" playOrder="156">
+<navLabel>
+<text>Ja 64 Durājānajātaka The Story about what is Difficult to Know (1s)</text>
+</navLabel>
+<content src="025.html#ncx4253"/>
+</navPoint>
+<navPoint id="navpoint-157" playOrder="157">
+<navLabel>
+<text>Ja 65 Anabhiratijātaka The Story about Discontent (1s)</text>
+</navLabel>
+<content src="025.html#ncx4270"/>
+</navPoint>
+<navPoint id="navpoint-158" playOrder="158">
+<navLabel>
+<text>Ja 66 Mudulakkhaṇajātaka The Story about (Queen) Mudulakkhaṇā (1s)</text>
+</navLabel>
+<content src="025.html#ncx4284"/>
+</navPoint>
+<navPoint id="navpoint-159" playOrder="159">
+<navLabel>
+<text>Ja 67 Ucchaṅgajātaka The Story about the Lap (1s)</text>
+</navLabel>
+<content src="025.html#ncx4308"/>
+</navPoint>
+<navPoint id="navpoint-160" playOrder="160">
+<navLabel>
+<text>Ja 68 Sāketajātaka The Story about (the City of) Sāketa (1s)</text>
+</navLabel>
+<content src="025.html#ncx4329"/>
+</navPoint>
+<navPoint id="navpoint-161" playOrder="161">
+<navLabel>
+<text>Ja 69 Visavantajātaka The Story about the Poisonous Snake (1s)</text>
+</navLabel>
+<content src="025.html#ncx4346"/>
+</navPoint>
+<navPoint id="navpoint-162" playOrder="162">
+<navLabel>
+<text>Ja 70 Kuddālajātaka The Story about (the Wise) Kuddāla (1s)</text>
+</navLabel>
+<content src="025.html#ncx4362"/>
+</navPoint>
+<navPoint id="navpoint-163" playOrder="163">
+<navLabel>
+<text>Ja 71 Varaṇajātaka The Story about the Temple Tree (1s)</text>
+</navLabel>
+<content src="025.html#ncx4390"/>
+</navPoint>
+<navPoint id="navpoint-164" playOrder="164">
+<navLabel>
+<text>Ja 72 Sīlavanāgajātaka  The Story about the Virtuous Elephant (1s)</text>
+</navLabel>
+<content src="025.html#ncx4416"/>
+</navPoint>
+<navPoint id="navpoint-165" playOrder="165">
+<navLabel>
+<text>Ja 73 Saccaṅkirajātaka The Story about the Assertion of Truth (1s)</text>
+</navLabel>
+<content src="026.html"/>
+</navPoint>
+<navPoint id="navpoint-166" playOrder="166">
+<navLabel>
+<text>Ja 74 Rukkhadhammajātaka The Story about the Way of Trees (1s)</text>
+</navLabel>
+<content src="026.html#ncx4466"/>
+</navPoint>
+<navPoint id="navpoint-167" playOrder="167">
+<navLabel>
+<text>Ja 75 Macchajātaka The Story about the Fish (1s)</text>
+</navLabel>
+<content src="026.html#ncx4483"/>
+</navPoint>
+<navPoint id="navpoint-168" playOrder="168">
+<navLabel>
+<text>Ja 76 Asaṅkiyajātaka The Story about the Doubtless (1s)</text>
+</navLabel>
+<content src="026.html#ncx4502"/>
+</navPoint>
+<navPoint id="navpoint-169" playOrder="169">
+<navLabel>
+<text>Ja 77 Mahāsupinajātaka  The Story about the Great Dreams (1s)</text>
+</navLabel>
+<content src="026.html#ncx4521"/>
+</navPoint>
+<navPoint id="navpoint-170" playOrder="170">
+<navLabel>
+<text>Ja 78 Illīsajātaka The Story about (the Selfish Wealthy Man) Illīsa (1s)</text>
+</navLabel>
+<content src="027.html"/>
+</navPoint>
+<navPoint id="navpoint-171" playOrder="171">
+<navLabel>
+<text>Ja 79 Kharassarajātaka The Story about the Beating (Drum) (1s)</text>
+</navLabel>
+<content src="027.html#ncx4641"/>
+</navPoint>
+<navPoint id="navpoint-172" playOrder="172">
+<navLabel>
+<text>Ja 80 Bhīmasenajātaka The Story about (the Useless Giant) Bhīmasena (1s)</text>
+</navLabel>
+<content src="027.html#ncx4656"/>
+</navPoint>
+<navPoint id="navpoint-173" playOrder="173">
+<navLabel>
+<text>Ja 81 Surāpānajātaka The Story about Liquor (1s)</text>
+</navLabel>
+<content src="027.html#ncx4681"/>
+</navPoint>
+<navPoint id="navpoint-174" playOrder="174">
+<navLabel>
+<text>Ja 82 Mittavindajātaka The Story about (the Merchant) Mittavindaka (1s)</text>
+</navLabel>
+<content src="027.html#ncx4704"/>
+</navPoint>
+<navPoint id="navpoint-175" playOrder="175">
+<navLabel>
+<text>Ja 83 Kālakaṇṇijātaka The Story about (the Unlucky Man) Wretch (1s)</text>
+</navLabel>
+<content src="027.html#ncx4729"/>
+</navPoint>
+<navPoint id="navpoint-176" playOrder="176">
+<navLabel>
+<text>Ja 84 Atthassadvārajātaka The Story about the Doors to Welfare (1s)</text>
+</navLabel>
+<content src="027.html#ncx4750"/>
+</navPoint>
+<navPoint id="navpoint-177" playOrder="177">
+<navLabel>
+<text>Ja 85 Kimpakkajātaka The Story about the Kimpakka (1s)</text>
+</navLabel>
+<content src="027.html#ncx4764"/>
+</navPoint>
+<navPoint id="navpoint-178" playOrder="178">
+<navLabel>
+<text>Ja 86 Sīlavīmaṁsanajātaka The Story about the Enquiry into Virtue (1s)</text>
+</navLabel>
+<content src="027.html#ncx4778"/>
+</navPoint>
+<navPoint id="navpoint-179" playOrder="179">
+<navLabel>
+<text>Ja 87 Maṅgalajātaka The Story about the Omens (1s)</text>
+</navLabel>
+<content src="027.html#ncx4802"/>
+</navPoint>
+<navPoint id="navpoint-180" playOrder="180">
+<navLabel>
+<text>Ja 88 Sārambhajātaka The Story about (the Ox) Sārambha (1s)</text>
+</navLabel>
+<content src="028.html"/>
+</navPoint>
+<navPoint id="navpoint-181" playOrder="181">
+<navLabel>
+<text>Ja 89 Kuhakajātaka The Story about the Cheat (1s)</text>
+</navLabel>
+<content src="028.html#ncx4845"/>
+</navPoint>
+<navPoint id="navpoint-182" playOrder="182">
+<navLabel>
+<text>Ja 90 Akataññujātaka The Story about Ingratitude (1s)</text>
+</navLabel>
+<content src="028.html#ncx4868"/>
+</navPoint>
+<navPoint id="navpoint-183" playOrder="183">
+<navLabel>
+<text>Ja 91 Littajātaka The Story about what is Smeared (with Posion) (1s)</text>
+</navLabel>
+<content src="028.html#ncx4888"/>
+</navPoint>
+<navPoint id="navpoint-184" playOrder="184">
+<navLabel>
+<text>Ja 92 Mahāsārajātaka The Story about the Rich Man (1s)</text>
+</navLabel>
+<content src="028.html#ncx4905"/>
+</navPoint>
+<navPoint id="navpoint-185" playOrder="185">
+<navLabel>
+<text>Ja 93 Vissāsabhojanajātaka The Story about Using Things on Trust (1s)</text>
+</navLabel>
+<content src="028.html#ncx4942"/>
+</navPoint>
+<navPoint id="navpoint-186" playOrder="186">
+<navLabel>
+<text>Ja 94 Lomahaṁsajātaka The Story about the Bristling Hair (1s)</text>
+</navLabel>
+<content src="028.html#ncx4956"/>
+</navPoint>
+<navPoint id="navpoint-187" playOrder="187">
+<navLabel>
+<text>Ja 95 Mahāsudassanajātaka  The Story about (King) Mahāsudassana (1s)</text>
+</navLabel>
+<content src="028.html#ncx4973"/>
+</navPoint>
+<navPoint id="navpoint-188" playOrder="188">
+<navLabel>
+<text>Ja 96 Telapattajātaka The Story about the bowl of Oil (1s)</text>
+</navLabel>
+<content src="028.html#ncx4994"/>
+</navPoint>
+<navPoint id="navpoint-189" playOrder="189">
+<navLabel>
+<text>Ja 97 Nāmasiddhijātaka The Story about the Lucky Name (1s)</text>
+</navLabel>
+<content src="028.html#ncx5034"/>
+</navPoint>
+<navPoint id="navpoint-190" playOrder="190">
+<navLabel>
+<text>Ja 98 Kūṭavāṇijajātaka The Story about the Cheating Merchant (1s)</text>
+</navLabel>
+<content src="028.html#ncx5052"/>
+</navPoint>
+<navPoint id="navpoint-191" playOrder="191">
+<navLabel>
+<text>Ja 99 Parosahassajātaka The Story about More than a Thousand (Fools) (1s)</text>
+</navLabel>
+<content src="029.html"/>
+</navPoint>
+<navPoint id="navpoint-192" playOrder="192">
+<navLabel>
+<text>Ja 100 Asātarūpajātaka The Story about the Form of the Disagreeable (1s)</text>
+</navLabel>
+<content src="029.html#ncx5111"/>
+</navPoint>
+<navPoint id="navpoint-193" playOrder="193">
+<navLabel>
+<text>Ja 101 Parosatajātaka  The Story about More than a Hundred (Fools) (1s)</text>
+</navLabel>
+<content src="029.html#ncx5132"/>
+</navPoint>
+<navPoint id="navpoint-194" playOrder="194">
+<navLabel>
+<text>Ja 102 Paṇṇikajātaka The Story about the Greengrocer (1s)</text>
+</navLabel>
+<content src="029.html#ncx5171"/>
+</navPoint>
+<navPoint id="navpoint-195" playOrder="195">
+<navLabel>
+<text>Ja 103 Verijātaka The Story about Enemies (1s)</text>
+</navLabel>
+<content src="029.html#ncx5190"/>
+</navPoint>
+<navPoint id="navpoint-196" playOrder="196">
+<navLabel>
+<text>Ja 104 Mittavindajātaka The Story about (the Merchant) Mittavindaka (1s)</text>
+</navLabel>
+<content src="029.html#ncx5201"/>
+</navPoint>
+<navPoint id="navpoint-197" playOrder="197">
+<navLabel>
+<text>Ja 105 Dubbalakaṭṭhajātaka The Story about the Rotten Wood (1s)</text>
+</navLabel>
+<content src="029.html#ncx5226"/>
+</navPoint>
+<navPoint id="navpoint-198" playOrder="198">
+<navLabel>
+<text>Ja 106 Udañcanijātaka The Story about the Bucket (1s)</text>
+</navLabel>
+<content src="029.html#ncx5239"/>
+</navPoint>
+<navPoint id="navpoint-199" playOrder="199">
+<navLabel>
+<text>Ja 107 Sālittakajātaka The Story about the Sling (1s)</text>
+</navLabel>
+<content src="029.html#ncx5273"/>
+</navPoint>
+<navPoint id="navpoint-200" playOrder="200">
+<navLabel>
+<text>Ja 108 Bāhiyajātaka The Story about the Foreigner (1s)</text>
+</navLabel>
+<content src="029.html#ncx5296"/>
+</navPoint>
+<navPoint id="navpoint-201" playOrder="201">
+<navLabel>
+<text>Ja 109 Kuṇḍakapūvajātaka The Story about the Rice-Cake (1s)</text>
+</navLabel>
+<content src="029.html#ncx5312"/>
+</navPoint>
+<navPoint id="navpoint-202" playOrder="202">
+<navLabel>
+<text>Ja 110 Sabbasaṁhārakapañha The Compilation of Questions (1s)</text>
+</navLabel>
+<content src="029.html#ncx5331"/>
+</navPoint>
+<navPoint id="navpoint-203" playOrder="203">
+<navLabel>
+<text>Ja 111 Gadrabhapañha The Question about the Ass (1s)</text>
+</navLabel>
+<content src="030.html"/>
+</navPoint>
+<navPoint id="navpoint-204" playOrder="204">
+<navLabel>
+<text>Ja 112 Amarādevīpañha The Question of Lady Amarā (1s)</text>
+</navLabel>
+<content src="030.html#ncx5370"/>
+</navPoint>
+<navPoint id="navpoint-205" playOrder="205">
+<navLabel>
+<text>Ja 113 Sigālajātaka The Story about the (Deceitful) Jackal (1s)</text>
+</navLabel>
+<content src="030.html#ncx5397"/>
+</navPoint>
+<navPoint id="navpoint-206" playOrder="206">
+<navLabel>
+<text>Ja 114 Mitacintijātaka The Story about the Thoughtful (Fish) (1s)</text>
+</navLabel>
+<content src="030.html#ncx5414"/>
+</navPoint>
+<navPoint id="navpoint-207" playOrder="207">
+<navLabel>
+<text>Ja 115 Anusāsikajātaka The Story about One who gave Warnings (1s)</text>
+</navLabel>
+<content src="030.html#ncx5428"/>
+</navPoint>
+<navPoint id="navpoint-208" playOrder="208">
+<navLabel>
+<text>Ja 116 Dubbacajātaka The Story about the Disobedient One (1s)</text>
+</navLabel>
+<content src="030.html#ncx5442"/>
+</navPoint>
+<navPoint id="navpoint-209" playOrder="209">
+<navLabel>
+<text>Ja 117 Tittirajātaka The Story about the (Noisy) Partridge (1s)</text>
+</navLabel>
+<content src="030.html#ncx5462"/>
+</navPoint>
+<navPoint id="navpoint-210" playOrder="210">
+<navLabel>
+<text>Ja 118 Vaṭṭakajātaka The Story about the (Starving) Quail (1s)</text>
+</navLabel>
+<content src="030.html#ncx5491"/>
+</navPoint>
+<navPoint id="navpoint-211" playOrder="211">
+<navLabel>
+<text>Ja 119 Akālarāvijātaka The Story about (the Cock) Crying at the Wrong Time (1s)</text>
+</navLabel>
+<content src="030.html#ncx5511"/>
+</navPoint>
+<navPoint id="navpoint-212" playOrder="212">
+<navLabel>
+<text>Ja 120 Bandhanamokkhajātaka The Story about Freedom from Bondage (1s)</text>
+</navLabel>
+<content src="030.html#ncx5526"/>
+</navPoint>
+<navPoint id="navpoint-213" playOrder="213">
+<navLabel>
+<text>Ja 121 Kusanāḷijātaka The Story about the Grass (Devatā) (1s)</text>
+</navLabel>
+<content src="030.html#ncx5569"/>
+</navPoint>
+<navPoint id="navpoint-214" playOrder="214">
+<navLabel>
+<text>Ja 122 Dummedhajātaka The Story about the Fool (1s)</text>
+</navLabel>
+<content src="030.html#ncx5595"/>
+</navPoint>
+<navPoint id="navpoint-215" playOrder="215">
+<navLabel>
+<text>Ja 123 Naṅgalīsajātaka The Story about the Plough-Shaft (1s)</text>
+</navLabel>
+<content src="031.html"/>
+</navPoint>
+<navPoint id="navpoint-216" playOrder="216">
+<navLabel>
+<text>Ja 124 Ambajātaka The Story about the Mangoes (1s)</text>
+</navLabel>
+<content src="031.html#ncx5635"/>
+</navPoint>
+<navPoint id="navpoint-217" playOrder="217">
+<navLabel>
+<text>Ja 125 Kaṭāhakajātaka The Story about the (Deceitful Secretary) Kaṭāhaka (1s)</text>
+</navLabel>
+<content src="031.html#ncx5647"/>
+</navPoint>
+<navPoint id="navpoint-218" playOrder="218">
+<navLabel>
+<text>Ja 126 Asilakkhaṇajātaka The Story about the Sword Fortune-Teller (1s)</text>
+</navLabel>
+<content src="031.html#ncx5672"/>
+</navPoint>
+<navPoint id="navpoint-219" playOrder="219">
+<navLabel>
+<text>Ja 127 Kalaṇḍukajātaka The Story about (the Slave) Kalaṇḍuka (1s)</text>
+</navLabel>
+<content src="031.html#ncx5692"/>
+</navPoint>
+<navPoint id="navpoint-220" playOrder="220">
+<navLabel>
+<text>Ja 128 Biḷārajātaka The Story about the Cat (Vow) (1s)</text>
+</navLabel>
+<content src="031.html#ncx5713"/>
+</navPoint>
+<navPoint id="navpoint-221" playOrder="221">
+<navLabel>
+<text>Ja 129 Aggikajātaka The Story about (the Brahmin) Aggika (1s)</text>
+</navLabel>
+<content src="031.html#ncx5728"/>
+</navPoint>
+<navPoint id="navpoint-222" playOrder="222">
+<navLabel>
+<text>Ja 130 Kosiyajātaka The Story about (the Adulteress) Kosiyā (1s)</text>
+</navLabel>
+<content src="031.html#ncx5743"/>
+</navPoint>
+<navPoint id="navpoint-223" playOrder="223">
+<navLabel>
+<text>Ja 131 Asampadānajātaka The Story about the Miser (1s)</text>
+</navLabel>
+<content src="031.html#ncx5764"/>
+</navPoint>
+<navPoint id="navpoint-224" playOrder="224">
+<navLabel>
+<text>Ja 132 Pañcagarujātaka The Story about the Five Teachers (1s)</text>
+</navLabel>
+<content src="031.html#ncx5793"/>
+</navPoint>
+<navPoint id="navpoint-225" playOrder="225">
+<navLabel>
+<text>Ja 133 Ghatāsanajātaka The Story about the Fire (1s)</text>
+</navLabel>
+<content src="031.html#ncx5837"/>
+</navPoint>
+<navPoint id="navpoint-226" playOrder="226">
+<navLabel>
+<text>Ja 134 Jhānasodhanajātaka The Story about the Purification of Meditation (1s)</text>
+</navLabel>
+<content src="031.html#ncx5852"/>
+</navPoint>
+<navPoint id="navpoint-227" playOrder="227">
+<navLabel>
+<text>Ja 135 Candābhajātaka The Story about Moonlight (1s)</text>
+</navLabel>
+<content src="032.html"/>
+</navPoint>
+<navPoint id="navpoint-228" playOrder="228">
+<navLabel>
+<text>Ja 136 Suvaṇṇahaṁsajātaka The Story about the Golden Goose (1s)</text>
+</navLabel>
+<content src="032.html#ncx5924"/>
+</navPoint>
+<navPoint id="navpoint-229" playOrder="229">
+<navLabel>
+<text>Ja 137 Babbujātaka The Story about the Cats (1s)</text>
+</navLabel>
+<content src="032.html#ncx5942"/>
+</navPoint>
+<navPoint id="navpoint-230" playOrder="230">
+<navLabel>
+<text>Ja 138 Godhajātaka The Story about the Iguana (1s)</text>
+</navLabel>
+<content src="032.html#ncx5965"/>
+</navPoint>
+<navPoint id="navpoint-231" playOrder="231">
+<navLabel>
+<text>Ja 139 Ubhatobhaṭṭhajātaka The Story about Falling Both Ways (1s)</text>
+</navLabel>
+<content src="032.html#ncx5984"/>
+</navPoint>
+<navPoint id="navpoint-232" playOrder="232">
+<navLabel>
+<text>Ja 140 Kākajātaka The Story about the Crow (1s)</text>
+</navLabel>
+<content src="032.html#ncx5999"/>
+</navPoint>
+<navPoint id="navpoint-233" playOrder="233">
+<navLabel>
+<text>Ja 141 Godhajātaka The Story about the Iguana (1s)</text>
+</navLabel>
+<content src="032.html#ncx6025"/>
+</navPoint>
+<navPoint id="navpoint-234" playOrder="234">
+<navLabel>
+<text>Ja 142 Sigālajātaka The Story about the (King of the) Jackals (1s)</text>
+</navLabel>
+<content src="032.html#ncx6047"/>
+</navPoint>
+<navPoint id="navpoint-235" playOrder="235">
+<navLabel>
+<text>Ja 143 Virocanajātaka The Story about Shining Forth (1s)</text>
+</navLabel>
+<content src="032.html#ncx6061"/>
+</navPoint>
+<navPoint id="navpoint-236" playOrder="236">
+<navLabel>
+<text>Ja 144 Naṅguṭṭhajātaka The Story about the (Ox) Tail (1s)</text>
+</navLabel>
+<content src="032.html#ncx6078"/>
+</navPoint>
+<navPoint id="navpoint-237" playOrder="237">
+<navLabel>
+<text>Ja 145 Rādhajātaka The Story about (the Parrot) Rādha (1s)</text>
+</navLabel>
+<content src="032.html#ncx6097"/>
+</navPoint>
+<navPoint id="navpoint-238" playOrder="238">
+<navLabel>
+<text>Ja 146 Kākajātaka The Story about the Crows (emptying the Sea) (1s)</text>
+</navLabel>
+<content src="032.html#ncx6122"/>
+</navPoint>
+<navPoint id="navpoint-239" playOrder="239">
+<navLabel>
+<text>Ja 147 Puppharattajātaka The Story about the Red Flower (1s)</text>
+</navLabel>
+<content src="032.html#ncx6144"/>
+</navPoint>
+<navPoint id="navpoint-240" playOrder="240">
+<navLabel>
+<text>Ja 148 Sigālajātaka The Story about the (Greedy) Jackal (1s)</text>
+</navLabel>
+<content src="033.html"/>
+</navPoint>
+<navPoint id="navpoint-241" playOrder="241">
+<navLabel>
+<text>Ja 149 Ekapaṇṇajātaka The Story about One Leaf (1s)</text>
+</navLabel>
+<content src="033.html#ncx6184"/>
+</navPoint>
+<navPoint id="navpoint-242" playOrder="242">
+<navLabel>
+<text>Ja 150 Sañjīvajātaka The Story about (the Brahmin Youth) Sañjīva (1s)</text>
+</navLabel>
+<content src="033.html#ncx6210"/>
+<navPoint id="navpoint-243" playOrder="243">
+<navLabel>
+<text>End of the First Book</text>
+</navLabel>
+<content src="033.html#ncx6230"/>
+</navPoint>
+</navPoint>
+</navPoint>
+</navPoint>
+<navPoint id="navpoint-244" playOrder="244">
+<navLabel>
+<text>The Revised Jātaka Translation, Volume II</text>
+</navLabel>
+<content src="034.html"/>
+<navPoint id="navpoint-245" playOrder="245">
+<navLabel>
+<text>Preface</text>
+</navLabel>
+<content src="035.html"/>
+</navPoint>
+<navPoint id="navpoint-246" playOrder="246">
+<navLabel>
+<text>Book II. Dukanipāta  The Section with Two Verses</text>
+</navLabel>
+<content src="036.html"/>
+<navPoint id="navpoint-247" playOrder="247">
+<navLabel>
+<text>Ja 151 Rājovādajātaka  The Story about the Advice to a King (2s)</text>
+</navLabel>
+<content src="036.html#ncx6259"/>
+</navPoint>
+<navPoint id="navpoint-248" playOrder="248">
+<navLabel>
+<text>Ja 152 Sigālajātaka The Story about the Jackal (who was in Love) (2s)</text>
+</navLabel>
+<content src="036.html#ncx6289"/>
+</navPoint>
+<navPoint id="navpoint-249" playOrder="249">
+<navLabel>
+<text>Ja 153 Sūkarajātaka  The Story about the Boar (2s)</text>
+</navLabel>
+<content src="036.html#ncx6322"/>
+</navPoint>
+<navPoint id="navpoint-250" playOrder="250">
+<navLabel>
+<text>Ja 154 Uragajātaka The Story about the Snake (2s)</text>
+</navLabel>
+<content src="036.html#ncx6344"/>
+</navPoint>
+<navPoint id="navpoint-251" playOrder="251">
+<navLabel>
+<text>Ja 155 Gaggajātaka The Story about (the Bodhisatta’s Father) Gagga (2s)</text>
+</navLabel>
+<content src="036.html#ncx6375"/>
+</navPoint>
+<navPoint id="navpoint-252" playOrder="252">
+<navLabel>
+<text>Ja 156 Alīnacittajātaka The Story about Prince Alīnacitta (2s)</text>
+</navLabel>
+<content src="036.html#ncx6405"/>
+</navPoint>
+<navPoint id="navpoint-253" playOrder="253">
+<navLabel>
+<text>Ja 157 Guṇajātaka The Story about Virtue (2s)</text>
+</navLabel>
+<content src="036.html#ncx6453"/>
+</navPoint>
+<navPoint id="navpoint-254" playOrder="254">
+<navLabel>
+<text>Ja 158 Suhanujātaka The Story about (the Horse) Suhanu (2s)</text>
+</navLabel>
+<content src="036.html#ncx6504"/>
+</navPoint>
+<navPoint id="navpoint-255" playOrder="255">
+<navLabel>
+<text>Ja 159 Morajātaka The Story about the Peacock (2s)</text>
+</navLabel>
+<content src="036.html#ncx6529"/>
+</navPoint>
+<navPoint id="navpoint-256" playOrder="256">
+<navLabel>
+<text>Ja 160 Vinīlakajātaka The Story about the Crossbreed (2s)</text>
+</navLabel>
+<content src="036.html#ncx6580"/>
+</navPoint>
+<navPoint id="navpoint-257" playOrder="257">
+<navLabel>
+<text>Ja 161 Indasamānagottajātaka The Story about (the Seer) Indasamānagotta (2s)</text>
+</navLabel>
+<content src="037.html"/>
+</navPoint>
+<navPoint id="navpoint-258" playOrder="258">
+<navLabel>
+<text>Ja 162 Santhavajātaka The Story about (Good and Bad) Company (2s)</text>
+</navLabel>
+<content src="037.html#ncx6634"/>
+</navPoint>
+<navPoint id="navpoint-259" playOrder="259">
+<navLabel>
+<text>Ja 163 Susīmajātaka The Story about (King) Susīma (2s)</text>
+</navLabel>
+<content src="037.html#ncx6659"/>
+</navPoint>
+<navPoint id="navpoint-260" playOrder="260">
+<navLabel>
+<text>Ja 164 Gijjhajātaka The Story about the Vulture (who supported his Mother) (2s)</text>
+</navLabel>
+<content src="037.html#ncx6697"/>
+</navPoint>
+<navPoint id="navpoint-261" playOrder="261">
+<navLabel>
+<text>Ja 165 Nakulajātaka The Story about the Mongoose (2s)</text>
+</navLabel>
+<content src="037.html#ncx6738"/>
+</navPoint>
+<navPoint id="navpoint-262" playOrder="262">
+<navLabel>
+<text>Ja 166 Upasāḷhajātaka The Story about (the Brahmin) Upasāḷha (2s)</text>
+</navLabel>
+<content src="037.html#ncx6765"/>
+</navPoint>
+<navPoint id="navpoint-263" playOrder="263">
+<navLabel>
+<text>Ja 167 Samiddhijātaka The Story about (the Monk) Samiddhi (2s)</text>
+</navLabel>
+<content src="037.html#ncx6785"/>
+</navPoint>
+<navPoint id="navpoint-264" playOrder="264">
+<navLabel>
+<text>Ja 168 Sakuṇagghijātaka The Story about the Falcon (2s)</text>
+</navLabel>
+<content src="037.html#ncx6805"/>
+</navPoint>
+<navPoint id="navpoint-265" playOrder="265">
+<navLabel>
+<text>Ja 169 Arakajātaka The Story about (the Teacher) Araka (2s)</text>
+</navLabel>
+<content src="037.html#ncx6827"/>
+</navPoint>
+<navPoint id="navpoint-266" playOrder="266">
+<navLabel>
+<text>Ja 170 Kakaṇṭakajātaka The Story about (the Proud) Chameleon (2s)</text>
+</navLabel>
+<content src="037.html#ncx6843"/>
+</navPoint>
+<navPoint id="navpoint-267" playOrder="267">
+<navLabel>
+<text>Ja 171 Kalyāṇadhammajātaka The Story about the Beautiful (2s)</text>
+</navLabel>
+<content src="037.html#ncx6860"/>
+</navPoint>
+<navPoint id="navpoint-268" playOrder="268">
+<navLabel>
+<text>Ja 172 Daddarajātaka The Story about (the Jackal’s) Roar (2s)</text>
+</navLabel>
+<content src="037.html#ncx6886"/>
+</navPoint>
+<navPoint id="navpoint-269" playOrder="269">
+<navLabel>
+<text>Ja 173 Makkaṭajātaka The Story about (the Wild) Monkey (2s)</text>
+</navLabel>
+<content src="037.html#ncx6908"/>
+</navPoint>
+<navPoint id="navpoint-270" playOrder="270">
+<navLabel>
+<text>Ja 174 Dūbhiyamakkaṭajātaka The Story about the Treacherous Monkey (2s)</text>
+</navLabel>
+<content src="037.html#ncx6935"/>
+</navPoint>
+<navPoint id="navpoint-271" playOrder="271">
+<navLabel>
+<text>Ja 175 Ādiccupaṭṭhānajātaka The Story about Worshipping the Sun (2s)</text>
+</navLabel>
+<content src="037.html#ncx6957"/>
+</navPoint>
+<navPoint id="navpoint-272" playOrder="272">
+<navLabel>
+<text>Ja 176 Kalāyamuṭṭhijātaka The Story about the Fistful of Peas (2s)</text>
+</navLabel>
+<content src="037.html#ncx6981"/>
+</navPoint>
+<navPoint id="navpoint-273" playOrder="273">
+<navLabel>
+<text>Ja 177 Tiṇḍukajātaka The Story about the Ebony Tree (2s)</text>
+</navLabel>
+<content src="038.html"/>
+</navPoint>
+<navPoint id="navpoint-274" playOrder="274">
+<navLabel>
+<text>Ja 178 Kacchapajātaka The Story about the Turtle (2s)</text>
+</navLabel>
+<content src="038.html#ncx7034"/>
+</navPoint>
+<navPoint id="navpoint-275" playOrder="275">
+<navLabel>
+<text>Ja 179 Satadhammajātaka The Story about (the Proud Brahmin) Satadhamma (2s)</text>
+</navLabel>
+<content src="038.html#ncx7055"/>
+</navPoint>
+<navPoint id="navpoint-276" playOrder="276">
+<navLabel>
+<text>Ja 180 Duddadajātaka The Story about the Difficulty of (Giving) Gifts (2s)</text>
+</navLabel>
+<content src="038.html#ncx7075"/>
+</navPoint>
+<navPoint id="navpoint-277" playOrder="277">
+<navLabel>
+<text>Ja 181 Asadisajātaka  The Story about (Prince) Asadisa (2s)</text>
+</navLabel>
+<content src="038.html#ncx7091"/>
+</navPoint>
+<navPoint id="navpoint-278" playOrder="278">
+<navLabel>
+<text>Ja 182 Saṅgāmāvacarajātaka The Story about the Entry into Battle (2s)</text>
+</navLabel>
+<content src="038.html#ncx7121"/>
+</navPoint>
+<navPoint id="navpoint-279" playOrder="279">
+<navLabel>
+<text>Ja 183 Vālodakajātaka  The Story about (the Fibrous) Drink (2s)</text>
+</navLabel>
+<content src="038.html#ncx7149"/>
+</navPoint>
+<navPoint id="navpoint-280" playOrder="280">
+<navLabel>
+<text>Ja 184 Giridantajātaka The Story about (the Horse Trainer) Giridanta (2s)</text>
+</navLabel>
+<content src="038.html#ncx7178"/>
+</navPoint>
+<navPoint id="navpoint-281" playOrder="281">
+<navLabel>
+<text>Ja 185 Anabhiratijātaka The Story about Discontent (2s)</text>
+</navLabel>
+<content src="038.html#ncx7206"/>
+</navPoint>
+<navPoint id="navpoint-282" playOrder="282">
+<navLabel>
+<text>Ja 186 Dadhivāhanajātaka  The Story about (King) Dadhivāhana (2s)</text>
+</navLabel>
+<content src="038.html#ncx7230"/>
+</navPoint>
+<navPoint id="navpoint-283" playOrder="283">
+<navLabel>
+<text>Ja 187 Catumaṭṭajātaka The Story about being Polished in Four Ways (2s)</text>
+</navLabel>
+<content src="038.html#ncx7272"/>
+</navPoint>
+<navPoint id="navpoint-284" playOrder="284">
+<navLabel>
+<text>Ja 188 Sīhakoṭṭhukajātaka The Story about the Lion and the Jackal (2s)</text>
+</navLabel>
+<content src="038.html#ncx7290"/>
+</navPoint>
+<navPoint id="navpoint-285" playOrder="285">
+<navLabel>
+<text>Ja 189 Sīhacammajātaka  The Story about the Lion’s Skin (2s)</text>
+</navLabel>
+<content src="038.html#ncx7316"/>
+</navPoint>
+<navPoint id="navpoint-286" playOrder="286">
+<navLabel>
+<text>Ja 190 Sīlānisaṁsajātaka The Story about the Advantages of Virtue (2s)</text>
+</navLabel>
+<content src="039.html"/>
+</navPoint>
+<navPoint id="navpoint-287" playOrder="287">
+<navLabel>
+<text>Ja 191 Ruhakajātaka The Story about (the Family Priest) Ruhaka (2s)</text>
+</navLabel>
+<content src="039.html#ncx7360"/>
+</navPoint>
+<navPoint id="navpoint-288" playOrder="288">
+<navLabel>
+<text>Ja 192 Sirikāḷakaṇṇijātaka  The Story about Good and Bad Luck (2s)</text>
+</navLabel>
+<content src="039.html#ncx7394"/>
+</navPoint>
+<navPoint id="navpoint-289" playOrder="289">
+<navLabel>
+<text>Ja 193 Cullapadumajātaka  The Shorter Story about (King) Paduma (2s)</text>
+</navLabel>
+<content src="039.html#ncx7413"/>
+</navPoint>
+<navPoint id="navpoint-290" playOrder="290">
+<navLabel>
+<text>Ja 194 Maṇicorajātaka The Story about the Jewel Thief (2s)</text>
+</navLabel>
+<content src="039.html#ncx7467"/>
+</navPoint>
+<navPoint id="navpoint-291" playOrder="291">
+<navLabel>
+<text>Ja 195 Pabbatūpattharajātaka The Story about the Valley (2s)</text>
+</navLabel>
+<content src="039.html#ncx7495"/>
+</navPoint>
+<navPoint id="navpoint-292" playOrder="292">
+<navLabel>
+<text>Ja 196 Valāhassajātaka The Story about the Cloud-Horse (2s)</text>
+</navLabel>
+<content src="039.html#ncx7517"/>
+</navPoint>
+<navPoint id="navpoint-293" playOrder="293">
+<navLabel>
+<text>Ja 197 Mittāmittajātaka The Story about Friends and Foes (2s)</text>
+</navLabel>
+<content src="039.html#ncx7540"/>
+</navPoint>
+<navPoint id="navpoint-294" playOrder="294">
+<navLabel>
+<text>Ja 198 Rādhajātaka  The Story about (the Parrot) Rādha (2s)</text>
+</navLabel>
+<content src="039.html#ncx7561"/>
+</navPoint>
+<navPoint id="navpoint-295" playOrder="295">
+<navLabel>
+<text>Ja 199 Gahapatijātaka The Story about the Householder (2s)</text>
+</navLabel>
+<content src="039.html#ncx7586"/>
+</navPoint>
+<navPoint id="navpoint-296" playOrder="296">
+<navLabel>
+<text>Ja 200 Sādhusīlajātaka The Story about Good Precepts (2s)</text>
+</navLabel>
+<content src="039.html#ncx7609"/>
+</navPoint>
+<navPoint id="navpoint-297" playOrder="297">
+<navLabel>
+<text>Ja 201 Bandhanāgārajātaka The Story about the Prison (2s)</text>
+</navLabel>
+<content src="039.html#ncx7627"/>
+</navPoint>
+<navPoint id="navpoint-298" playOrder="298">
+<navLabel>
+<text>Ja 202 Keḷisīlajātaka The Story about Mocking (2s)</text>
+</navLabel>
+<content src="039.html#ncx7655"/>
+</navPoint>
+<navPoint id="navpoint-299" playOrder="299">
+<navLabel>
+<text>Ja 203 Khandhavattajātaka  The Story about the Vow (that Protects) the Constituent Parts (2s)</text>
+</navLabel>
+<content src="039.html#ncx7676"/>
+</navPoint>
+<navPoint id="navpoint-300" playOrder="300">
+<navLabel>
+<text>Ja 204 Vīrakajātaka The Story about (the Hero Crow) Vīrika (2s)</text>
+</navLabel>
+<content src="040.html"/>
+</navPoint>
+<navPoint id="navpoint-301" playOrder="301">
+<navLabel>
+<text>Ja 205 Gaṅgeyyajātaka The Story about the Ganges (Fish) (2s)</text>
+</navLabel>
+<content src="040.html#ncx7739"/>
+</navPoint>
+<navPoint id="navpoint-302" playOrder="302">
+<navLabel>
+<text>Ja 206 Kuruṅgamigajātaka  The Story about the Antelope (2s)</text>
+</navLabel>
+<content src="040.html#ncx7759"/>
+</navPoint>
+<navPoint id="navpoint-303" playOrder="303">
+<navLabel>
+<text>Ja 207 Assakajātaka The Story about (King) Assaka (2s)</text>
+</navLabel>
+<content src="040.html#ncx7783"/>
+</navPoint>
+<navPoint id="navpoint-304" playOrder="304">
+<navLabel>
+<text>Ja 208 Suṁsumārajātaka  The Story about the (Murderous) Crocodile (2s)</text>
+</navLabel>
+<content src="040.html#ncx7814"/>
+</navPoint>
+<navPoint id="navpoint-305" playOrder="305">
+<navLabel>
+<text>Ja 209 Kakkarajātaka  The Story about the Chicken (2s)</text>
+</navLabel>
+<content src="040.html#ncx7847"/>
+</navPoint>
+<navPoint id="navpoint-306" playOrder="306">
+<navLabel>
+<text>Ja 210 Kandagalakajātaka The Story about (the Woodpecker) Kandagalaka (2s)</text>
+</navLabel>
+<content src="040.html#ncx7869"/>
+</navPoint>
+<navPoint id="navpoint-307" playOrder="307">
+<navLabel>
+<text>Ja 211 Somadattajātaka  The Story about (the Clever Son) Somadatta (2s)</text>
+</navLabel>
+<content src="040.html#ncx7890"/>
+</navPoint>
+<navPoint id="navpoint-308" playOrder="308">
+<navLabel>
+<text>Ja 212 Ucchiṭṭhabhattajātaka The Story about the Left-Over Rice (2s)</text>
+</navLabel>
+<content src="040.html#ncx7929"/>
+</navPoint>
+<navPoint id="navpoint-309" playOrder="309">
+<navLabel>
+<text>Ja 213 Bharujātaka The Story about (the King of) Bharu (2s)</text>
+</navLabel>
+<content src="040.html#ncx7948"/>
+</navPoint>
+<navPoint id="navpoint-310" playOrder="310">
+<navLabel>
+<text>Ja 214 Puṇṇanadījātaka The Story about the Full River (2s)</text>
+</navLabel>
+<content src="040.html#ncx7975"/>
+</navPoint>
+<navPoint id="navpoint-311" playOrder="311">
+<navLabel>
+<text>Ja 215 Kacchapajātaka  The Story about the (Talkative) Turtle (2s)</text>
+</navLabel>
+<content src="040.html#ncx7996"/>
+</navPoint>
+<navPoint id="navpoint-312" playOrder="312">
+<navLabel>
+<text>Ja 216 Macchajātaka The Story about the (Lamenting) Fish (2s)</text>
+</navLabel>
+<content src="040.html#ncx8035"/>
+</navPoint>
+<navPoint id="navpoint-313" playOrder="313">
+<navLabel>
+<text>Ja 217 Seggujātaka The Story about (Daughter) Seggu (2s)</text>
+</navLabel>
+<content src="040.html#ncx8054"/>
+</navPoint>
+<navPoint id="navpoint-314" playOrder="314">
+<navLabel>
+<text>Ja 218 Kūṭavāṇijajātaka The Story about the Cheating Merchant (2s)</text>
+</navLabel>
+<content src="040.html#ncx8080"/>
+</navPoint>
+<navPoint id="navpoint-315" playOrder="315">
+<navLabel>
+<text>Ja 219 Garahitajātaka The Story about Blaming (2s)</text>
+</navLabel>
+<content src="040.html#ncx8118"/>
+</navPoint>
+<navPoint id="navpoint-316" playOrder="316">
+<navLabel>
+<text>Ja 220 Dhammaddhajajātaka  The Story about (the Family Priest) Dhammaddhaja (2s)</text>
+</navLabel>
+<content src="041.html"/>
+</navPoint>
+<navPoint id="navpoint-317" playOrder="317">
+<navLabel>
+<text>Ja 221 Kāsāvajātaka The Story about the Renunciant’s Robe (2s)</text>
+</navLabel>
+<content src="041.html#ncx8220"/>
+</navPoint>
+<navPoint id="navpoint-318" playOrder="318">
+<navLabel>
+<text>Ja 222 Cullanandiyajātaka  The Story about (the Monkey) Little Nanda (2s)</text>
+</navLabel>
+<content src="041.html#ncx8241"/>
+</navPoint>
+<navPoint id="navpoint-319" playOrder="319">
+<navLabel>
+<text>Ja 223 Puṭabhattajātaka The Story about the Parcel of Rice (2s)</text>
+</navLabel>
+<content src="041.html#ncx8273"/>
+</navPoint>
+<navPoint id="navpoint-320" playOrder="320">
+<navLabel>
+<text>Ja 224 Kumbhīlajātaka The Story about the Crocodile (2s)</text>
+</navLabel>
+<content src="041.html#ncx8308"/>
+</navPoint>
+<navPoint id="navpoint-321" playOrder="321">
+<navLabel>
+<text>Ja 225 Khantivaṇṇanajātaka The Story in Praise of Patience (2s)</text>
+</navLabel>
+<content src="041.html#ncx8334"/>
+</navPoint>
+<navPoint id="navpoint-322" playOrder="322">
+<navLabel>
+<text>Ja 226 Kosiyajātaka The Story about the (Impatient) Owl (2s)</text>
+</navLabel>
+<content src="041.html#ncx8350"/>
+</navPoint>
+<navPoint id="navpoint-323" playOrder="323">
+<navLabel>
+<text>Ja 227 Gūthapāṇajātaka The Story about the Muckworm (2s)</text>
+</navLabel>
+<content src="041.html#ncx8372"/>
+</navPoint>
+<navPoint id="navpoint-324" playOrder="324">
+<navLabel>
+<text>Ja 228 Kāmanītajātaka The Story about being Guided by Desire (2s)</text>
+</navLabel>
+<content src="041.html#ncx8396"/>
+</navPoint>
+<navPoint id="navpoint-325" playOrder="325">
+<navLabel>
+<text>Ja 229 Palāyijātaka The Story about (the King) who Fled (2s)</text>
+</navLabel>
+<content src="041.html#ncx8440"/>
+</navPoint>
+<navPoint id="navpoint-326" playOrder="326">
+<navLabel>
+<text>Ja 230 Dutiyapalāyijātaka The Second Story about (the King) who Fled (2s)</text>
+</navLabel>
+<content src="041.html#ncx8465"/>
+</navPoint>
+<navPoint id="navpoint-327" playOrder="327">
+<navLabel>
+<text>Ja 231 Upāhanajātaka The Story about the Shoes (2s)</text>
+</navLabel>
+<content src="041.html#ncx8490"/>
+</navPoint>
+<navPoint id="navpoint-328" playOrder="328">
+<navLabel>
+<text>Ja 232 Vīṇāthūṇajātaka The Story about the (Broken) Lute (2s)</text>
+</navLabel>
+<content src="041.html#ncx8516"/>
+</navPoint>
+<navPoint id="navpoint-329" playOrder="329">
+<navLabel>
+<text>Ja 233 Vikaṇṇakajātaka The Story about the Barb (2s)</text>
+</navLabel>
+<content src="041.html#ncx8539"/>
+</navPoint>
+<navPoint id="navpoint-330" playOrder="330">
+<navLabel>
+<text>Ja 234 Asitābhujātaka The Story about (Princess) Asitābhū (2s)</text>
+</navLabel>
+<content src="041.html#ncx8564"/>
+</navPoint>
+<navPoint id="navpoint-331" playOrder="331">
+<navLabel>
+<text>Ja 235 Vacchanakhajātaka The Story about (the Wanderer) Vacchanakha (2s)</text>
+</navLabel>
+<content src="042.html"/>
+</navPoint>
+<navPoint id="navpoint-332" playOrder="332">
+<navLabel>
+<text>Ja 236 Bakajātaka The Story about the (Deceitful) Heron (2s)</text>
+</navLabel>
+<content src="042.html#ncx8608"/>
+</navPoint>
+<navPoint id="navpoint-333" playOrder="333">
+<navLabel>
+<text>Ja 237 Sāketajātaka The Story about (the Brahmin) Sāketa (2s)</text>
+</navLabel>
+<content src="042.html#ncx8624"/>
+</navPoint>
+<navPoint id="navpoint-334" playOrder="334">
+<navLabel>
+<text>Ja 238 Ekapadajātaka The Story about One Word (2s)</text>
+</navLabel>
+<content src="042.html#ncx8646"/>
+</navPoint>
+<navPoint id="navpoint-335" playOrder="335">
+<navLabel>
+<text>Ja 239 Haritamātajātaka The Story about the Green Frog (2s)</text>
+</navLabel>
+<content src="042.html#ncx8665"/>
+</navPoint>
+<navPoint id="navpoint-336" playOrder="336">
+<navLabel>
+<text>Ja 240 Mahāpiṅgalajātaka The Story about (the Unjust King) Mahāpiṅgala (2s)</text>
+</navLabel>
+<content src="042.html#ncx8684"/>
+</navPoint>
+<navPoint id="navpoint-337" playOrder="337">
+<navLabel>
+<text>Ja 241 Sabbadāṭhajātaka The Story about (the Jackal) Sabbadāṭha (2s)</text>
+</navLabel>
+<content src="042.html#ncx8713"/>
+</navPoint>
+<navPoint id="navpoint-338" playOrder="338">
+<navLabel>
+<text>Ja 242 Sunakhajātaka The Story about (the Gnawing) Dog (2s)</text>
+</navLabel>
+<content src="042.html#ncx8745"/>
+</navPoint>
+<navPoint id="navpoint-339" playOrder="339">
+<navLabel>
+<text>Ja 243 Guttilajātaka The Story about (the Heavenly Musician) Guttila (2s)</text>
+</navLabel>
+<content src="042.html#ncx8763"/>
+</navPoint>
+<navPoint id="navpoint-340" playOrder="340">
+<navLabel>
+<text>Ja 244 Vīticchajātaka The Story about the Desireless One (2s)</text>
+</navLabel>
+<content src="042.html#ncx8851"/>
+</navPoint>
+<navPoint id="navpoint-341" playOrder="341">
+<navLabel>
+<text>Ja 245 Mūlapariyāyajātaka The Story about the Root Discourse (2s)</text>
+</navLabel>
+<content src="042.html#ncx8876"/>
+</navPoint>
+<navPoint id="navpoint-342" playOrder="342">
+<navLabel>
+<text>Ja 246 Telovādajātaka The Story concerning the Advice about Oil (2s)</text>
+</navLabel>
+<content src="042.html#ncx8904"/>
+</navPoint>
+<navPoint id="navpoint-343" playOrder="343">
+<navLabel>
+<text>Ja 247 Pādañjalijātaka The Story about (Prince) Pādañjali (2s)</text>
+</navLabel>
+<content src="042.html#ncx8925"/>
+</navPoint>
+<navPoint id="navpoint-344" playOrder="344">
+<navLabel>
+<text>Ja 248 Kiṁsukopamajātaka The Story about the Flame of the Forest (2s)</text>
+</navLabel>
+<content src="042.html#ncx8947"/>
+</navPoint>
+<navPoint id="navpoint-345" playOrder="345">
+<navLabel>
+<text>Ja 249 Sālakajātaka The Story about the Brother-in-Law (2s)</text>
+</navLabel>
+<content src="042.html#ncx8968"/>
+</navPoint>
+<navPoint id="navpoint-346" playOrder="346">
+<navLabel>
+<text>Ja 250 Kapijātaka The Story about the (Disguised) Monkey (2s)</text>
+</navLabel>
+<content src="042.html#ncx8992"/>
+</navPoint>
+</navPoint>
+<navPoint id="navpoint-347" playOrder="347">
+<navLabel>
+<text>Book III. Tikanipāta  The Section with Three Verses</text>
+</navLabel>
+<content src="043.html"/>
+<navPoint id="navpoint-348" playOrder="348">
+<navLabel>
+<text>Ja 251 Saṅkappajātaka The Story about having (Lustful) Thoughts (3s)</text>
+</navLabel>
+<content src="043.html#ncx9019"/>
+</navPoint>
+<navPoint id="navpoint-349" playOrder="349">
+<navLabel>
+<text>Ja 252 Tilamuṭṭhijātaka The Story about the Fistful of Sesame Seeds (3s)</text>
+</navLabel>
+<content src="043.html#ncx9070"/>
+</navPoint>
+<navPoint id="navpoint-350" playOrder="350">
+<navLabel>
+<text>Ja 253 Maṇikaṇṭhajātaka  The Story about (the Nāga King) Maṇikaṇṭha (3s)</text>
+</navLabel>
+<content src="043.html#ncx9113"/>
+</navPoint>
+<navPoint id="navpoint-351" playOrder="351">
+<navLabel>
+<text>Ja 254 Kuṇḍakakucchisindhavajātaka The Story about Rice Powder and the Sindh Horse (3s)</text>
+</navLabel>
+<content src="043.html#ncx9157"/>
+</navPoint>
+<navPoint id="navpoint-352" playOrder="352">
+<navLabel>
+<text>Ja 255 Sukajātaka The Story about the (Greedy) Parrot (3s)</text>
+</navLabel>
+<content src="043.html#ncx9201"/>
+</navPoint>
+<navPoint id="navpoint-353" playOrder="353">
+<navLabel>
+<text>Ja 256 Jarudapānajātaka The Story about the Old Well (3s)</text>
+</navLabel>
+<content src="043.html#ncx9223"/>
+</navPoint>
+<navPoint id="navpoint-354" playOrder="354">
+<navLabel>
+<text>Ja 257 Gāmaṇicaṇḍajātaka  The Story about (the ex-Minister) Gāmaṇicanda (3s)</text>
+</navLabel>
+<content src="043.html#ncx9247"/>
+</navPoint>
+<navPoint id="navpoint-355" playOrder="355">
+<navLabel>
+<text>Ja 258 Mandhātujātaka  The Story about (the Ancient King) Mandhātu (3s)</text>
+</navLabel>
+<content src="043.html#ncx9337"/>
+</navPoint>
+<navPoint id="navpoint-356" playOrder="356">
+<navLabel>
+<text>Ja 259 Tirīṭavacchajātaka The Story about (the Brahmin) Tirīṭavaccha (3s)</text>
+</navLabel>
+<content src="044.html"/>
+</navPoint>
+<navPoint id="navpoint-357" playOrder="357">
+<navLabel>
+<text>Ja 260 Dūtajātaka The Story about (Belly’s) Messenger (3s)</text>
+</navLabel>
+<content src="044.html#ncx9423"/>
+</navPoint>
+<navPoint id="navpoint-358" playOrder="358">
+<navLabel>
+<text>Ja 261 Padumajātaka The Story about (Begging for) Lotuses (3s)</text>
+</navLabel>
+<content src="044.html#ncx9454"/>
+</navPoint>
+<navPoint id="navpoint-359" playOrder="359">
+<navLabel>
+<text>Ja 262 Mudupāṇijātaka The Story about the Soft Hand (3s)</text>
+</navLabel>
+<content src="044.html#ncx9486"/>
+</navPoint>
+<navPoint id="navpoint-360" playOrder="360">
+<navLabel>
+<text>Ja 263 Cullapalobhanajātaka The Short Story about Enticement (3s)</text>
+</navLabel>
+<content src="044.html#ncx9516"/>
+</navPoint>
+<navPoint id="navpoint-361" playOrder="361">
+<navLabel>
+<text>Ja 264 Mahāpanādajātaka  The Story about (the King of Mithilā) Mahāpanāda (3s)</text>
+</navLabel>
+<content src="044.html#ncx9548"/>
+</navPoint>
+<navPoint id="navpoint-362" playOrder="362">
+<navLabel>
+<text>Ja 265 Khurappajātaka The Story about the Arrow (3s)</text>
+</navLabel>
+<content src="044.html#ncx9664"/>
+</navPoint>
+<navPoint id="navpoint-363" playOrder="363">
+<navLabel>
+<text>Ja 266 Vātaggasindhavajātaka The Story about the Thoroughbred Horse Vātagga (3s)</text>
+</navLabel>
+<content src="044.html#ncx9690"/>
+</navPoint>
+<navPoint id="navpoint-364" playOrder="364">
+<navLabel>
+<text>Ja 267 Kakkaṭajātaka  The Story about (the Immense) Crab (3s)</text>
+</navLabel>
+<content src="044.html#ncx9725"/>
+</navPoint>
+<navPoint id="navpoint-365" playOrder="365">
+<navLabel>
+<text>Ja 268 Ārāmadūsajātaka  The Story about Spoiling the Park (3s)</text>
+</navLabel>
+<content src="044.html#ncx9756"/>
+</navPoint>
+<navPoint id="navpoint-366" playOrder="366">
+<navLabel>
+<text>Ja 269 Sujātajātaka The Story about (Visākhā’s Sister) Sujātā (3s)</text>
+</navLabel>
+<content src="045.html"/>
+</navPoint>
+<navPoint id="navpoint-367" playOrder="367">
+<navLabel>
+<text>Ja 270 Ulūkajātaka The Story about (the Sour-Looking) Owl (3s)</text>
+</navLabel>
+<content src="045.html#ncx9861"/>
+</navPoint>
+<navPoint id="navpoint-368" playOrder="368">
+<navLabel>
+<text>Ja 271 Udapānadūsakajātaka The Story about Spoiling the Well (3s)</text>
+</navLabel>
+<content src="047.html"/>
+</navPoint>
+<navPoint id="navpoint-369" playOrder="369">
+<navLabel>
+<text>Ja 272 Vyagghajātaka The Story about the Tiger (3s)</text>
+</navLabel>
+<content src="047.html#ncx9908"/>
+</navPoint>
+<navPoint id="navpoint-370" playOrder="370">
+<navLabel>
+<text>Ja 273 Kacchapajātaka The Story about (the Biting) Turtle (3s)</text>
+</navLabel>
+<content src="047.html#ncx9944"/>
+</navPoint>
+<navPoint id="navpoint-371" playOrder="371">
+<navLabel>
+<text>Ja 274 Lolajātaka  The Story about the Greedy (Crow) (3s)</text>
+</navLabel>
+<content src="047.html#ncx9995"/>
+</navPoint>
+<navPoint id="navpoint-372" playOrder="372">
+<navLabel>
+<text>Ja 275 Rucirajātaka  The Story about the Pretty (Crane) (3s)</text>
+</navLabel>
+<content src="047.html#ncx10030"/>
+</navPoint>
+<navPoint id="navpoint-373" playOrder="373">
+<navLabel>
+<text>Ja 276 Kurudhammajātaka  The Story about the Righteousness of the Kurus (3s)</text>
+</navLabel>
+<content src="047.html#ncx10065"/>
+</navPoint>
+<navPoint id="navpoint-374" playOrder="374">
+<navLabel>
+<text>Ja 277 Romakajātaka The Story about the Feathered One (3s)</text>
+</navLabel>
+<content src="047.html#ncx10167"/>
+</navPoint>
+<navPoint id="navpoint-375" playOrder="375">
+<navLabel>
+<text>Ja 278 Mahisajātaka The Story about (the Virtuous King of) the Buffalos (3s)</text>
+</navLabel>
+<content src="047.html#ncx10199"/>
+</navPoint>
+<navPoint id="navpoint-376" playOrder="376">
+<navLabel>
+<text>Ja 279 Satapattajātaka The Story about the Woodpecker (3s)</text>
+</navLabel>
+<content src="047.html#ncx10225"/>
+</navPoint>
+<navPoint id="navpoint-377" playOrder="377">
+<navLabel>
+<text>Ja 280 Puṭadūsakajātaka The Story about Spoiling the Basket (3s)</text>
+</navLabel>
+<content src="047.html#ncx10256"/>
+</navPoint>
+<navPoint id="navpoint-378" playOrder="378">
+<navLabel>
+<text>Ja 281 Abbhantarajātaka The Story about the Middle (Fruit) (3s)</text>
+</navLabel>
+<content src="048.html"/>
+</navPoint>
+<navPoint id="navpoint-379" playOrder="379">
+<navLabel>
+<text>Ja 282 Seyyajātaka The Story about the Best (3s)</text>
+</navLabel>
+<content src="048.html#ncx10338"/>
+</navPoint>
+<navPoint id="navpoint-380" playOrder="380">
+<navLabel>
+<text>Ja 283 Vaḍḍhakisūkarajātaka The Story about the Carpenter’s Boar (3s)</text>
+</navLabel>
+<content src="048.html#ncx10378"/>
+</navPoint>
+<navPoint id="navpoint-381" playOrder="381">
+<navLabel>
+<text>Ja 284 Sirijātaka The Story about (Good) Luck (3s)</text>
+</navLabel>
+<content src="048.html#ncx10432"/>
+</navPoint>
+<navPoint id="navpoint-382" playOrder="382">
+<navLabel>
+<text>Ja 285 Maṇisūkarajātaka The Story about the Jewel and the Pigs (3s)</text>
+</navLabel>
+<content src="048.html#ncx10507"/>
+</navPoint>
+<navPoint id="navpoint-383" playOrder="383">
+<navLabel>
+<text>Ja 286 Sālūkajātaka  The Story about (the Pig) Sālūka (3s)</text>
+</navLabel>
+<content src="048.html#ncx10540"/>
+</navPoint>
+<navPoint id="navpoint-384" playOrder="384">
+<navLabel>
+<text>Ja 287 Lābhagarahajātaka The Story about the Reproach of Gains (3s)</text>
+</navLabel>
+<content src="048.html#ncx10575"/>
+</navPoint>
+<navPoint id="navpoint-385" playOrder="385">
+<navLabel>
+<text>Ja 288 Macchuddānajātaka The Story about a String of Fish (3s)</text>
+</navLabel>
+<content src="048.html#ncx10595"/>
+</navPoint>
+<navPoint id="navpoint-386" playOrder="386">
+<navLabel>
+<text>Ja 289 Nānacchandajātaka The Story about Various Desires (3s)</text>
+</navLabel>
+<content src="049.html"/>
+</navPoint>
+<navPoint id="navpoint-387" playOrder="387">
+<navLabel>
+<text>Ja 290 Sīlavīmaṁsajātaka The Story about the Enquiry into Virtue (3s)</text>
+</navLabel>
+<content src="049.html#ncx10681"/>
+</navPoint>
+<navPoint id="navpoint-388" playOrder="388">
+<navLabel>
+<text>Ja 291 Bhadraghaṭajātaka The Story about the Lucky Cup (3s)</text>
+</navLabel>
+<content src="049.html#ncx10708"/>
+</navPoint>
+<navPoint id="navpoint-389" playOrder="389">
+<navLabel>
+<text>Ja 292 Supattajātaka The Story about (the Crow) Supatta (3s)</text>
+</navLabel>
+<content src="049.html#ncx10730"/>
+</navPoint>
+<navPoint id="navpoint-390" playOrder="390">
+<navLabel>
+<text>Ja 293 Kāyavicchindajātaka The Story about cutting off the Body (3s)</text>
+</navLabel>
+<content src="049.html#ncx10769"/>
+</navPoint>
+<navPoint id="navpoint-391" playOrder="391">
+<navLabel>
+<text>Ja 294 Jambukhādakajātaka  The Story about eating Jambu Plums (3s)</text>
+</navLabel>
+<content src="049.html#ncx10791"/>
+</navPoint>
+<navPoint id="navpoint-392" playOrder="392">
+<navLabel>
+<text>Ja 295 Antajātaka The Story about those that are Inferior (3s)</text>
+</navLabel>
+<content src="049.html#ncx10818"/>
+</navPoint>
+<navPoint id="navpoint-393" playOrder="393">
+<navLabel>
+<text>Ja 296 Samuddajātaka The Story about the Sea (3s)</text>
+</navLabel>
+<content src="049.html#ncx10844"/>
+</navPoint>
+<navPoint id="navpoint-394" playOrder="394">
+<navLabel>
+<text>Ja 297 Kāmavilāpajātaka The Story about Idle Talk concerning Sensuality (3s)</text>
+</navLabel>
+<content src="049.html#ncx10869"/>
+</navPoint>
+<navPoint id="navpoint-395" playOrder="395">
+<navLabel>
+<text>Ja 298 Udumbarajātaka The Story about the Figs (3s)</text>
+</navLabel>
+<content src="049.html#ncx10900"/>
+</navPoint>
+<navPoint id="navpoint-396" playOrder="396">
+<navLabel>
+<text>Ja 299 Komāyaputtajātaka The Story about (the Brahmin’s Son) Komāyaputta (3s)</text>
+</navLabel>
+<content src="049.html#ncx10923"/>
+</navPoint>
+<navPoint id="navpoint-397" playOrder="397">
+<navLabel>
+<text>Ja 300 Vakajātaka  The Story about the Wolf (3s)</text>
+</navLabel>
+<content src="049.html#ncx10951"/>
+<navPoint id="navpoint-398" playOrder="398">
+<navLabel>
+<text>End of the Third Book</text>
+</navLabel>
+<content src="049.html#ncx10971"/>
+</navPoint>
+</navPoint>
+</navPoint>
+</navPoint>
+<navPoint id="navpoint-399" playOrder="399">
+<navLabel>
+<text>The Revised Jātaka Translation, Volume III</text>
+</navLabel>
+<content src="050.html"/>
+<navPoint id="navpoint-400" playOrder="400">
+<navLabel>
+<text>Preface</text>
+</navLabel>
+<content src="053.html"/>
+</navPoint>
+<navPoint id="navpoint-401" playOrder="401">
+<navLabel>
+<text>Book IV. Catukkanipāta  The Section with Four Verses</text>
+</navLabel>
+<content src="054.html"/>
+<navPoint id="navpoint-402" playOrder="402">
+<navLabel>
+<text>Ja 301 Cullakāliṅgajātaka The Short Story about (the King of) Kāliṅga (4s)</text>
+</navLabel>
+<content src="054.html#ncx11000"/>
+</navPoint>
+<navPoint id="navpoint-403" playOrder="403">
+<navLabel>
+<text>Ja 302 Mahā-assārohajātaka The Story about the Great Horseman (4s)</text>
+</navLabel>
+<content src="054.html#ncx11061"/>
+</navPoint>
+<navPoint id="navpoint-404" playOrder="404">
+<navLabel>
+<text>Ja 303 Ekarājajātaka The Story about (the King) Ekarājā (4s)</text>
+</navLabel>
+<content src="054.html#ncx11120"/>
+</navPoint>
+<navPoint id="navpoint-405" playOrder="405">
+<navLabel>
+<text>Ja 304 Daddarajātaka The Story about (the Nāga) Daddara (4s)</text>
+</navLabel>
+<content src="054.html#ncx11168"/>
+</navPoint>
+<navPoint id="navpoint-406" playOrder="406">
+<navLabel>
+<text>Ja 305 Sīlavīmaṁsanajātaka The Story about the Enquiry into Virtue (4s)</text>
+</navLabel>
+<content src="054.html#ncx11192"/>
+</navPoint>
+<navPoint id="navpoint-407" playOrder="407">
+<navLabel>
+<text>Ja 306 Sujātajātaka The Story about (Queen) Sujātā (4s)</text>
+</navLabel>
+<content src="054.html#ncx11219"/>
+</navPoint>
+<navPoint id="navpoint-408" playOrder="408">
+<navLabel>
+<text>Ja 307 Palāsajātaka The Story about the Flame of the Forest (4s)</text>
+</navLabel>
+<content src="054.html#ncx11247"/>
+</navPoint>
+<navPoint id="navpoint-409" playOrder="409">
+<navLabel>
+<text>Ja 308 Javasakuṇajātaka  The Story about the Quick Bird (and a Lion) (4s)</text>
+</navLabel>
+<content src="054.html#ncx11276"/>
+</navPoint>
+<navPoint id="navpoint-410" playOrder="410">
+<navLabel>
+<text>Ja 309 Chavakajātaka The Story about Inferiority (4s)</text>
+</navLabel>
+<content src="054.html#ncx11308"/>
+</navPoint>
+<navPoint id="navpoint-411" playOrder="411">
+<navLabel>
+<text>Ja 310 Sayhajātaka The Story about (the Minister) Sayha (4s)</text>
+</navLabel>
+<content src="054.html#ncx11340"/>
+</navPoint>
+<navPoint id="navpoint-412" playOrder="412">
+<navLabel>
+<text>Ja 311 Pucimandajātaka The Story about the Margosa Tree (4s)</text>
+</navLabel>
+<content src="054.html#ncx11366"/>
+</navPoint>
+<navPoint id="navpoint-413" playOrder="413">
+<navLabel>
+<text>Ja 312 Kassapamandiyajātaka The Story about Foolish Kassapa (4s)</text>
+</navLabel>
+<content src="054.html#ncx11391"/>
+</navPoint>
+<navPoint id="navpoint-414" playOrder="414">
+<navLabel>
+<text>Ja 313 Khantivādijātaka The Story about the One who Spoke of Forbearance (4s)</text>
+</navLabel>
+<content src="055.html"/>
+</navPoint>
+<navPoint id="navpoint-415" playOrder="415">
+<navLabel>
+<text>Ja 314 Lohakumbhijātaka  The Story about the Iron Pot (4s)</text>
+</navLabel>
+<content src="055.html#ncx11452"/>
+</navPoint>
+<navPoint id="navpoint-416" playOrder="416">
+<navLabel>
+<text>Ja 315 Maṁsajātaka The Story about (the Merchant’s Son) (who received all) the Meat (4s)</text>
+</navLabel>
+<content src="055.html#ncx11480"/>
+</navPoint>
+<navPoint id="navpoint-417" playOrder="417">
+<navLabel>
+<text>Ja 316 Sasajātaka  The Story about the (Wise) Hare (4s)</text>
+</navLabel>
+<content src="055.html#ncx11503"/>
+</navPoint>
+<navPoint id="navpoint-418" playOrder="418">
+<navLabel>
+<text>Ja 317 Matarodanajātaka The Story about Weeping for the Dead (4s)</text>
+</navLabel>
+<content src="055.html#ncx11536"/>
+</navPoint>
+<navPoint id="navpoint-419" playOrder="419">
+<navLabel>
+<text>Ja 318 Kaṇaverajātaka The Story about the Oleandar (4s)</text>
+</navLabel>
+<content src="055.html#ncx11560"/>
+</navPoint>
+<navPoint id="navpoint-420" playOrder="420">
+<navLabel>
+<text>Ja 319 Tittirajātaka The Story about the (Decoy) Partridge (4s)</text>
+</navLabel>
+<content src="055.html#ncx11604"/>
+</navPoint>
+<navPoint id="navpoint-421" playOrder="421">
+<navLabel>
+<text>Ja 320 Succajajātaka The Story about Little Cost (4s)</text>
+</navLabel>
+<content src="055.html#ncx11644"/>
+</navPoint>
+<navPoint id="navpoint-422" playOrder="422">
+<navLabel>
+<text>Ja 321 Kuṭidūsakajātaka The Story about Spoiling the Hut (4s)</text>
+</navLabel>
+<content src="055.html#ncx11678"/>
+</navPoint>
+<navPoint id="navpoint-423" playOrder="423">
+<navLabel>
+<text>Ja 322 Daddabhajātaka  The Story about the Pounding Sound (4s)</text>
+</navLabel>
+<content src="055.html#ncx11715"/>
+</navPoint>
+<navPoint id="navpoint-424" playOrder="424">
+<navLabel>
+<text>Ja 323 Brahmadattajātaka The Story about (King) Brahmadatta  (4s)</text>
+</navLabel>
+<content src="056.html"/>
+</navPoint>
+<navPoint id="navpoint-425" playOrder="425">
+<navLabel>
+<text>Ja 324 Cammasāṭakajātaka The Story about (the Wanderer) Cammasāṭaka (4s)</text>
+</navLabel>
+<content src="056.html#ncx11790"/>
+</navPoint>
+<navPoint id="navpoint-426" playOrder="426">
+<navLabel>
+<text>Ja 325 Godhajātaka The Story about the (King of the) Iguanas (4s)</text>
+</navLabel>
+<content src="056.html#ncx11819"/>
+</navPoint>
+<navPoint id="navpoint-427" playOrder="427">
+<navLabel>
+<text>Ja 326 Kakkārujātaka The Story about the Heavenly Flower (4s)</text>
+</navLabel>
+<content src="056.html#ncx11851"/>
+</navPoint>
+<navPoint id="navpoint-428" playOrder="428">
+<navLabel>
+<text>Ja 327 Kākātijātaka The Story about (Queen) Kākavatī (4s)</text>
+</navLabel>
+<content src="056.html#ncx11887"/>
+</navPoint>
+<navPoint id="navpoint-429" playOrder="429">
+<navLabel>
+<text>Ja 328 Ananusociyajātaka The Story about Not Mourning (4s)</text>
+</navLabel>
+<content src="056.html#ncx11920"/>
+</navPoint>
+<navPoint id="navpoint-430" playOrder="430">
+<navLabel>
+<text>Ja 329 Kālabāhujātaka The Story about (the Black Monkey) Kālabāhu (4s)</text>
+</navLabel>
+<content src="056.html#ncx11961"/>
+</navPoint>
+<navPoint id="navpoint-431" playOrder="431">
+<navLabel>
+<text>Ja 330 Sīlavīmaṁsajātaka The Story about the Enquiry into Virtue (4s)</text>
+</navLabel>
+<content src="056.html#ncx11991"/>
+</navPoint>
+<navPoint id="navpoint-432" playOrder="432">
+<navLabel>
+<text>Ja 331 Kokālikajātaka The Story about (the Monk) Kokālika (4s)</text>
+</navLabel>
+<content src="056.html#ncx12030"/>
+</navPoint>
+<navPoint id="navpoint-433" playOrder="433">
+<navLabel>
+<text>Ja 332 Rathalaṭṭhijātaka The Story about the Goad-Stick (4s)</text>
+</navLabel>
+<content src="056.html#ncx12064"/>
+</navPoint>
+<navPoint id="navpoint-434" playOrder="434">
+<navLabel>
+<text>Ja 333 Godhajātaka The Story about the (Roasted) Iguana (4s)</text>
+</navLabel>
+<content src="056.html#ncx12087"/>
+</navPoint>
+<navPoint id="navpoint-435" playOrder="435">
+<navLabel>
+<text>Ja 334 Rājovādajātaka The Story about Advice to a King (4s)</text>
+</navLabel>
+<content src="056.html#ncx12127"/>
+</navPoint>
+<navPoint id="navpoint-436" playOrder="436">
+<navLabel>
+<text>Ja 335 Jambukajātaka The Story about the Jackal (who played the Lion) (4s)</text>
+</navLabel>
+<content src="056.html#ncx12163"/>
+</navPoint>
+<navPoint id="navpoint-437" playOrder="437">
+<navLabel>
+<text>Ja 336 Brahāchattajātaka The Story about the (Prince of Kosala) Brahāchatta (4s)</text>
+</navLabel>
+<content src="056.html#ncx12194"/>
+</navPoint>
+<navPoint id="navpoint-438" playOrder="438">
+<navLabel>
+<text>Ja 337 Pīṭhajātaka The Story about (Offering) a Seat (4s)</text>
+</navLabel>
+<content src="057.html"/>
+</navPoint>
+<navPoint id="navpoint-439" playOrder="439">
+<navLabel>
+<text>Ja 338 Thusajātaka The Story about the Husks of Rice (4s)</text>
+</navLabel>
+<content src="057.html#ncx12264"/>
+</navPoint>
+<navPoint id="navpoint-440" playOrder="440">
+<navLabel>
+<text>Ja 339 Bāverujātaka The Story about (the Country) Bāveru (4s)</text>
+</navLabel>
+<content src="057.html#ncx12294"/>
+</navPoint>
+<navPoint id="navpoint-441" playOrder="441">
+<navLabel>
+<text>Ja 340 Visayhajātaka The Story about (the Wealthy Man) Visayha (4s)</text>
+</navLabel>
+<content src="057.html#ncx12320"/>
+</navPoint>
+<navPoint id="navpoint-442" playOrder="442">
+<navLabel>
+<text>Ja 341 Kaṇḍarijātaka The Story about (King) Kaṇḍari (4s)</text>
+</navLabel>
+<content src="057.html#ncx12390"/>
+</navPoint>
+<navPoint id="navpoint-443" playOrder="443">
+<navLabel>
+<text>Ja 342 Vānarajātaka The Story about the (Clever) Monkey (4s)</text>
+</navLabel>
+<content src="057.html#ncx12413"/>
+</navPoint>
+<navPoint id="navpoint-444" playOrder="444">
+<navLabel>
+<text>Ja 343 Kuntanijātaka The Story about the Heron (4s)</text>
+</navLabel>
+<content src="057.html#ncx12444"/>
+</navPoint>
+<navPoint id="navpoint-445" playOrder="445">
+<navLabel>
+<text>Ja 344 Ambacorajātaka The Story about the Mango Thief (4s)</text>
+</navLabel>
+<content src="057.html#ncx12474"/>
+</navPoint>
+<navPoint id="navpoint-446" playOrder="446">
+<navLabel>
+<text>Ja 345 Gajakumbhajātaka The Story about the (Lazy) Turtle (4s)</text>
+</navLabel>
+<content src="057.html#ncx12513"/>
+</navPoint>
+<navPoint id="navpoint-447" playOrder="447">
+<navLabel>
+<text>Ja 346 Kesavajātaka The Story about (the Ascetic) Kesava (4s)</text>
+</navLabel>
+<content src="057.html#ncx12542"/>
+</navPoint>
+<navPoint id="navpoint-448" playOrder="448">
+<navLabel>
+<text>Ja 347 Ayakūṭajātaka The Story about the Iron Bolt (4s)</text>
+</navLabel>
+<content src="057.html#ncx12582"/>
+</navPoint>
+<navPoint id="navpoint-449" playOrder="449">
+<navLabel>
+<text>Ja 348 Araññajātaka The Story about the Wilderness (4s)</text>
+</navLabel>
+<content src="057.html#ncx12614"/>
+</navPoint>
+<navPoint id="navpoint-450" playOrder="450">
+<navLabel>
+<text>Ja 349 Sandhibhedajātaka  The Story about Broken Connections (4s)</text>
+</navLabel>
+<content src="058.html"/>
+</navPoint>
+<navPoint id="navpoint-451" playOrder="451">
+<navLabel>
+<text>Ja 350 Devatāpañhajātaka The Story about the Deva’s (Four) Questions (4s)</text>
+</navLabel>
+<content src="058.html#ncx12685"/>
+</navPoint>
+</navPoint>
+<navPoint id="navpoint-452" playOrder="452">
+<navLabel>
+<text>Book V. Pañcanipāta  The Section with Five Verses</text>
+</navLabel>
+<content src="059.html"/>
+<navPoint id="navpoint-453" playOrder="453">
+<navLabel>
+<text>Ja 351 Maṇikuṇḍalajātaka The Story about Jewelled Earrings (4s)</text>
+</navLabel>
+<content src="059.html#ncx12707"/>
+</navPoint>
+<navPoint id="navpoint-454" playOrder="454">
+<navLabel>
+<text>Ja 352 Sujātajātaka The Story about (the Householder’s Son) Sujāta (5s)</text>
+</navLabel>
+<content src="059.html#ncx12746"/>
+</navPoint>
+<navPoint id="navpoint-455" playOrder="455">
+<navLabel>
+<text>Ja 353 Dhonasākhajātaka The Story about the Extended Bough (5s)</text>
+</navLabel>
+<content src="059.html#ncx12777"/>
+</navPoint>
+<navPoint id="navpoint-456" playOrder="456">
+<navLabel>
+<text>Ja 354 Uragajātaka The Story about the (Angry) Snake (5s)</text>
+</navLabel>
+<content src="059.html#ncx12816"/>
+</navPoint>
+<navPoint id="navpoint-457" playOrder="457">
+<navLabel>
+<text>Ja 355 Ghatajātaka The Story about (King) Ghata (5s)</text>
+</navLabel>
+<content src="059.html#ncx12875"/>
+</navPoint>
+<navPoint id="navpoint-458" playOrder="458">
+<navLabel>
+<text>Ja 356 Kāraṇḍiyajātaka The Story about (the Brahmin Student) Koraṇḍiya (5s)</text>
+</navLabel>
+<content src="059.html#ncx12911"/>
+</navPoint>
+<navPoint id="navpoint-459" playOrder="459">
+<navLabel>
+<text>Ja 357 Laṭukikajātaka  The Story about the Quail (who Killed an Elephant) (5s)</text>
+</navLabel>
+<content src="059.html#ncx12947"/>
+</navPoint>
+<navPoint id="navpoint-460" playOrder="460">
+<navLabel>
+<text>Ja 358 Culladhammapālajātaka The Short Story about (Prince) Dhammapāla (5s)</text>
+</navLabel>
+<content src="059.html#ncx12989"/>
+</navPoint>
+<navPoint id="navpoint-461" playOrder="461">
+<navLabel>
+<text>Ja 359 Suvaṇṇamigajātaka  The Story about the Golden Deer (5s)</text>
+</navLabel>
+<content src="059.html#ncx13033"/>
+</navPoint>
+<navPoint id="navpoint-462" playOrder="462">
+<navLabel>
+<text>Ja 360 Sussondijātaka The Story about (Queen) Sussondī (5s)</text>
+</navLabel>
+<content src="059.html#ncx13073"/>
+</navPoint>
+<navPoint id="navpoint-463" playOrder="463">
+<navLabel>
+<text>Ja 361 Vaṇṇārohajātaka  The Story about (the Lion) Posssessed of Beauty (5s)</text>
+</navLabel>
+<content src="059.html#ncx13108"/>
+</navPoint>
+<navPoint id="navpoint-464" playOrder="464">
+<navLabel>
+<text>Ja 362 Sīlavīmaṁsajātaka  The Story about the Enquiry into Virtue (5s)</text>
+</navLabel>
+<content src="059.html#ncx13146"/>
+</navPoint>
+<navPoint id="navpoint-465" playOrder="465">
+<navLabel>
+<text>Ja 363 Hirijātaka The Story about Shame (5s)</text>
+</navLabel>
+<content src="059.html#ncx13175"/>
+</navPoint>
+<navPoint id="navpoint-466" playOrder="466">
+<navLabel>
+<text>Ja 364 Khajjopanakajātaka The Story about the Firefly (5s)</text>
+</navLabel>
+<content src="059.html#ncx13214"/>
+</navPoint>
+<navPoint id="navpoint-467" playOrder="467">
+<navLabel>
+<text>Ja 365 Ahiguṇḍikajātaka The Story about the Snake Catcher (5s)</text>
+</navLabel>
+<content src="060.html"/>
+</navPoint>
+<navPoint id="navpoint-468" playOrder="468">
+<navLabel>
+<text>Ja 366 Gumbiyajātaka The Story about (the Yakkha) Gumbiya (5s)</text>
+</navLabel>
+<content src="060.html#ncx13270"/>
+</navPoint>
+<navPoint id="navpoint-469" playOrder="469">
+<navLabel>
+<text>Ja 367 Sāliyajātaka The Story about the Mynah Bird (5s)</text>
+</navLabel>
+<content src="060.html#ncx13295"/>
+</navPoint>
+<navPoint id="navpoint-470" playOrder="470">
+<navLabel>
+<text>Ja 368 Tacasārajātaka The Story about the Bamboo Fetters (5s)</text>
+</navLabel>
+<content src="060.html#ncx13331"/>
+</navPoint>
+<navPoint id="navpoint-471" playOrder="471">
+<navLabel>
+<text>Ja 369 Mittavindajātaka  The Story about (the Merchant) Mittavindaka (5s)</text>
+</navLabel>
+<content src="060.html#ncx13374"/>
+</navPoint>
+<navPoint id="navpoint-472" playOrder="472">
+<navLabel>
+<text>Ja 370 Palāsajātaka The Story about the Flame of the Forest (5s)</text>
+</navLabel>
+<content src="060.html#ncx13422"/>
+</navPoint>
+<navPoint id="navpoint-473" playOrder="473">
+<navLabel>
+<text>Ja 371 Dīghitikosalajātaka The Story about (King) Dīghiti of Kosala (5s)</text>
+</navLabel>
+<content src="060.html#ncx13463"/>
+</navPoint>
+<navPoint id="navpoint-474" playOrder="474">
+<navLabel>
+<text>Ja 372 Migapotakajātaka The Story about the Young Deer (who Died) (5s)</text>
+</navLabel>
+<content src="060.html#ncx13509"/>
+</navPoint>
+<navPoint id="navpoint-475" playOrder="475">
+<navLabel>
+<text>Ja 373 Mūsikajātaka The Story about the (Biting) Mouse (5s)</text>
+</navLabel>
+<content src="060.html#ncx13541"/>
+</navPoint>
+<navPoint id="navpoint-476" playOrder="476">
+<navLabel>
+<text>Ja 374 Culladhanuggahajātaka  The Story about the Little Archer (5s)</text>
+</navLabel>
+<content src="060.html#ncx13582"/>
+</navPoint>
+<navPoint id="navpoint-477" playOrder="477">
+<navLabel>
+<text>Ja 375 Kapotajātaka The Story about the Pigeon (5s)</text>
+</navLabel>
+<content src="060.html#ncx13640"/>
+</navPoint>
+</navPoint>
+<navPoint id="navpoint-478" playOrder="478">
+<navLabel>
+<text>Book VI. Chanipāta  The Section with Six Verses</text>
+</navLabel>
+<content src="061.html"/>
+<navPoint id="navpoint-479" playOrder="479">
+<navLabel>
+<text>Ja 376 Avāriyajātaka The Story about (the Ferryman) Avāriya (6s)</text>
+</navLabel>
+<content src="061.html#ncx13682"/>
+</navPoint>
+<navPoint id="navpoint-480" playOrder="480">
+<navLabel>
+<text>Ja 377 Setaketujātaka (6s) The Story about (the False Ascetic) Setaketu</text>
+</navLabel>
+<content src="061.html#ncx13718"/>
+</navPoint>
+<navPoint id="navpoint-481" playOrder="481">
+<navLabel>
+<text>Ja 378 Darīmukhajātaka The Story about (the Paccekabuddha) Darīmukha (6s)</text>
+</navLabel>
+<content src="061.html#ncx13763"/>
+</navPoint>
+<navPoint id="navpoint-482" playOrder="482">
+<navLabel>
+<text>Ja 379 Nerujātaka The Story about (Mount) Neru (6s)</text>
+</navLabel>
+<content src="061.html#ncx13825"/>
+</navPoint>
+<navPoint id="navpoint-483" playOrder="483">
+<navLabel>
+<text>Ja 380 Āsaṅkajātaka The Story about (the Lotus-Born Maiden) Āsaṅkā (6s)</text>
+</navLabel>
+<content src="061.html#ncx13851"/>
+</navPoint>
+<navPoint id="navpoint-484" playOrder="484">
+<navLabel>
+<text>Ja 381 Migālopajātaka The Story about (the Vulture) Migālopa (6s)</text>
+</navLabel>
+<content src="061.html#ncx13898"/>
+</navPoint>
+<navPoint id="navpoint-485" playOrder="485">
+<navLabel>
+<text>Ja 382 Sirikālakaṇṇijātaka The Story about Good and Bad Luck (6s)</text>
+</navLabel>
+<content src="061.html#ncx13926"/>
+</navPoint>
+<navPoint id="navpoint-486" playOrder="486">
+<navLabel>
+<text>Ja 383 Kukkuṭajātaka The Story about the (Undeceived) Chicken (6s)</text>
+</navLabel>
+<content src="061.html#ncx14011"/>
+</navPoint>
+<navPoint id="navpoint-487" playOrder="487">
+<navLabel>
+<text>Ja 384 Dhammaddhajakātakaṁ The Story about the One Posing as Righteous (6s)</text>
+</navLabel>
+<content src="061.html#ncx14039"/>
+</navPoint>
+<navPoint id="navpoint-488" playOrder="488">
+<navLabel>
+<text>Ja 385 Nandiyamigajātaka The Story about Deer Nandiya (6s)</text>
+</navLabel>
+<content src="061.html#ncx14075"/>
+</navPoint>
+<navPoint id="navpoint-489" playOrder="489">
+<navLabel>
+<text>Ja 386 Kharaputtajātaka  The Story about the (Stupid) Donkeys (6s)</text>
+</navLabel>
+<content src="061.html#ncx14113"/>
+</navPoint>
+<navPoint id="navpoint-490" playOrder="490">
+<navLabel>
+<text>Ja 387 Sūcijātaka The Story about the Needle (6s)</text>
+</navLabel>
+<content src="061.html#ncx14146"/>
+</navPoint>
+<navPoint id="navpoint-491" playOrder="491">
+<navLabel>
+<text>Ja 388 Tuṇḍilajātaka The Story about (the Brothers) Tuṇḍila (6s)</text>
+</navLabel>
+<content src="062.html"/>
+</navPoint>
+<navPoint id="navpoint-492" playOrder="492">
+<navLabel>
+<text>Ja 389 Suvaṇṇakakkaṭajātaka The Story about the Golden Crab (6s)</text>
+</navLabel>
+<content src="062.html#ncx14235"/>
+</navPoint>
+<navPoint id="navpoint-493" playOrder="493">
+<navLabel>
+<text>Ja 390 Mayhakajātaka The Story about the Mayhaka (Bird) (6s)</text>
+</navLabel>
+<content src="062.html#ncx14315"/>
+</navPoint>
+<navPoint id="navpoint-494" playOrder="494">
+<navLabel>
+<text>Ja 391 Dhajaviheṭhajātaka The Story about the Sign of Oppression (6s)</text>
+</navLabel>
+<content src="062.html#ncx14354"/>
+</navPoint>
+<navPoint id="navpoint-495" playOrder="495">
+<navLabel>
+<text>Ja 392 Bhisapupphajātaka The Story about the Lotus Flower (6s)</text>
+</navLabel>
+<content src="062.html#ncx14407"/>
+</navPoint>
+<navPoint id="navpoint-496" playOrder="496">
+<navLabel>
+<text>Ja 393 Vighāsajātaka The Story about the (One who Eats) Remnants (6s)</text>
+</navLabel>
+<content src="062.html#ncx14437"/>
+</navPoint>
+<navPoint id="navpoint-497" playOrder="497">
+<navLabel>
+<text>Ja 394 Vaṭṭakajātaka The Story about the (Fat) Quail (6s)</text>
+</navLabel>
+<content src="062.html#ncx14466"/>
+</navPoint>
+<navPoint id="navpoint-498" playOrder="498">
+<navLabel>
+<text>Ja 395 Kākajātaka The Story about the Crow (6s)</text>
+</navLabel>
+<content src="062.html#ncx14491"/>
+</navPoint>
+</navPoint>
+<navPoint id="navpoint-499" playOrder="499">
+<navLabel>
+<text>Book VII. Sattanipāta  The Section with Seven Verses</text>
+</navLabel>
+<content src="063.html"/>
+<navPoint id="navpoint-500" playOrder="500">
+<navLabel>
+<text>Ja 396 Kukkujātaka The Story about (One and a Half) Cubit (Peak) (7s)</text>
+</navLabel>
+<content src="063.html#ncx14541"/>
+</navPoint>
+<navPoint id="navpoint-501" playOrder="501">
+<navLabel>
+<text>Ja 397 Manojajātaka The Story about (the Lion) Manoja (7s)</text>
+</navLabel>
+<content src="063.html#ncx14592"/>
+</navPoint>
+<navPoint id="navpoint-502" playOrder="502">
+<navLabel>
+<text>Ja 398 Sutanojātaka The Story about (the Poor Man) Sutana (7s)</text>
+</navLabel>
+<content src="063.html#ncx14638"/>
+</navPoint>
+<navPoint id="navpoint-503" playOrder="503">
+<navLabel>
+<text>Ja 399 Gijjhajātaka The Story about the Vulture (who Supported his Mother) (7s)</text>
+</navLabel>
+<content src="063.html#ncx14691"/>
+</navPoint>
+<navPoint id="navpoint-504" playOrder="504">
+<navLabel>
+<text>Ja 400 Dabbhapupphajātaka The Story about (the Jackal) Dabbhapuppha (7s)</text>
+</navLabel>
+<content src="063.html#ncx14738"/>
+</navPoint>
+<navPoint id="navpoint-505" playOrder="505">
+<navLabel>
+<text>Ja 401 Dasaṇṇakajātaka The Story about (the Sword of) Dasaṇṇaka (7s)</text>
+</navLabel>
+<content src="063.html#ncx14783"/>
+</navPoint>
+<navPoint id="navpoint-506" playOrder="506">
+<navLabel>
+<text>Ja 402 Sattubhastajātaka The Story about the Sack of Flour (7s)</text>
+</navLabel>
+<content src="063.html#ncx14825"/>
+</navPoint>
+<navPoint id="navpoint-507" playOrder="507">
+<navLabel>
+<text>Ja 403 Aṭṭhisenajātaka The Story about (the Brahmin) Aṭṭhisena (7s)</text>
+</navLabel>
+<content src="063.html#ncx14896"/>
+</navPoint>
+<navPoint id="navpoint-508" playOrder="508">
+<navLabel>
+<text>Ja 404 Kapijātaka The Story about (the Disobedient) Monkey (7s)</text>
+</navLabel>
+<content src="064.html"/>
+</navPoint>
+<navPoint id="navpoint-509" playOrder="509">
+<navLabel>
+<text>Ja 405 Bakabrahmajātaka The Story about (Brahmā) Baka (7s)</text>
+</navLabel>
+<content src="064.html#ncx14974"/>
+</navPoint>
+<navPoint id="navpoint-510" playOrder="510">
+<navLabel>
+<text>Ja 406 Gandhārajātaka The Story about (the King of) Gandhāra (7s)</text>
+</navLabel>
+<content src="064.html#ncx15027"/>
+</navPoint>
+<navPoint id="navpoint-511" playOrder="511">
+<navLabel>
+<text>Ja 407 Mahākapijātaka  The Story about the Great Monkey (7s)</text>
+</navLabel>
+<content src="064.html#ncx15062"/>
+</navPoint>
+<navPoint id="navpoint-512" playOrder="512">
+<navLabel>
+<text>Ja 408 Kumbhakārajātaka The Story about the Potter (7s)</text>
+</navLabel>
+<content src="064.html#ncx15134"/>
+</navPoint>
+<navPoint id="navpoint-513" playOrder="513">
+<navLabel>
+<text>Ja 409 Daḷhadhammajātaka The Story about (King) Daḷhadhamma (7s)</text>
+</navLabel>
+<content src="064.html#ncx15195"/>
+</navPoint>
+<navPoint id="navpoint-514" playOrder="514">
+<navLabel>
+<text>Ja 410 Somadattajātaka The Story about (the Young Elephant) Somadatta (7s)</text>
+</navLabel>
+<content src="064.html#ncx15229"/>
+</navPoint>
+<navPoint id="navpoint-515" playOrder="515">
+<navLabel>
+<text>Ja 411 Susīmajātaka The Story about (King) Susīma (7s)</text>
+</navLabel>
+<content src="064.html#ncx15269"/>
+</navPoint>
+<navPoint id="navpoint-516" playOrder="516">
+<navLabel>
+<text>Ja 412 Koṭisimbalijātaka The Story about the Cotton Tree (7s)</text>
+</navLabel>
+<content src="065.html"/>
+</navPoint>
+<navPoint id="navpoint-517" playOrder="517">
+<navLabel>
+<text>Ja 413 Dhūmakārijātaka The Story about (the Goatherder) Dhūmakāri (7s)</text>
+</navLabel>
+<content src="065.html#ncx15354"/>
+</navPoint>
+<navPoint id="navpoint-518" playOrder="518">
+<navLabel>
+<text>Ja 414 Jāgarajātaka The Story about being Wakeful (7s)</text>
+</navLabel>
+<content src="065.html#ncx15388"/>
+</navPoint>
+<navPoint id="navpoint-519" playOrder="519">
+<navLabel>
+<text>Ja 415 Kummāsapiṇḍajātaka  The Story about the Portion of Gruel (7s)</text>
+</navLabel>
+<content src="065.html#ncx15419"/>
+</navPoint>
+<navPoint id="navpoint-520" playOrder="520">
+<navLabel>
+<text>Ja 416 Parantapajātaka The Story about (the Attendant) Parantapa (7s)</text>
+</navLabel>
+<content src="065.html#ncx15493"/>
+</navPoint>
+</navPoint>
+<navPoint id="navpoint-521" playOrder="521">
+<navLabel>
+<text>Book VIII. Aṭṭhanipāta  The Section with Eight Verses</text>
+</navLabel>
+<content src="066.html"/>
+<navPoint id="navpoint-522" playOrder="522">
+<navLabel>
+<text>Ja 417 Kaccānijātaka The Story about (Mother) Kaccānī (8s)</text>
+</navLabel>
+<content src="066.html#ncx15532"/>
+</navPoint>
+<navPoint id="navpoint-523" playOrder="523">
+<navLabel>
+<text>Ja 418 Aṭṭhasaddajātaka The Story about Eight Sounds (8s)</text>
+</navLabel>
+<content src="066.html#ncx15593"/>
+</navPoint>
+<navPoint id="navpoint-524" playOrder="524">
+<navLabel>
+<text>Ja 419 Sulasājātaka The Story about (the Courtesan) Sulasā (8s)</text>
+</navLabel>
+<content src="066.html#ncx15642"/>
+</navPoint>
+<navPoint id="navpoint-525" playOrder="525">
+<navLabel>
+<text>Ja 420 Sumaṅgalajātaka The Story about (the Park Keeper) Sumaṅgala (8s)</text>
+</navLabel>
+<content src="066.html#ncx15685"/>
+</navPoint>
+<navPoint id="navpoint-526" playOrder="526">
+<navLabel>
+<text>Ja 421 Gaṅgamālajātaka The Story about (the Barber) Gaṅgamāla (8s)</text>
+</navLabel>
+<content src="066.html#ncx15741"/>
+</navPoint>
+<navPoint id="navpoint-527" playOrder="527">
+<navLabel>
+<text>Ja 422 Cetiyajātaka The Story about (the King of) Cetiya (8s)</text>
+</navLabel>
+<content src="066.html#ncx15801"/>
+</navPoint>
+<navPoint id="navpoint-528" playOrder="528">
+<navLabel>
+<text>Ja 423 Indriyajātaka The Story about the Senses (8s)</text>
+</navLabel>
+<content src="066.html#ncx15869"/>
+</navPoint>
+<navPoint id="navpoint-529" playOrder="529">
+<navLabel>
+<text>Ja 424 Ādittajātaka The Story about Burning (8s)</text>
+</navLabel>
+<content src="067.html"/>
+</navPoint>
+<navPoint id="navpoint-530" playOrder="530">
+<navLabel>
+<text>Ja 425 Aṭṭhānajātaka The Story about the Impossible (8s)</text>
+</navLabel>
+<content src="067.html#ncx15990"/>
+</navPoint>
+<navPoint id="navpoint-531" playOrder="531">
+<navLabel>
+<text>Ja 426 Dīpijātaka The Story about the Panther (8s)</text>
+</navLabel>
+<content src="067.html#ncx16036"/>
+</navPoint>
+</navPoint>
+<navPoint id="navpoint-532" playOrder="532">
+<navLabel>
+<text>Book IX. Navanipāta  The Section with Nine Verses</text>
+</navLabel>
+<content src="068.html"/>
+<navPoint id="navpoint-533" playOrder="533">
+<navLabel>
+<text>Ja 427 Gijjhajātaka The Story about (the Disobedient) Vulture (9s)</text>
+</navLabel>
+<content src="068.html#ncx16072"/>
+</navPoint>
+<navPoint id="navpoint-534" playOrder="534">
+<navLabel>
+<text>Ja 428 Kosambījātaka The Story at Kosambī (9s)</text>
+</navLabel>
+<content src="068.html#ncx16119"/>
+</navPoint>
+<navPoint id="navpoint-535" playOrder="535">
+<navLabel>
+<text>Ja 429 Mahāsukajātaka The Long Story about the Parrot (King) (9s)</text>
+</navLabel>
+<content src="068.html#ncx16184"/>
+</navPoint>
+<navPoint id="navpoint-536" playOrder="536">
+<navLabel>
+<text>Ja 430 Cullasukajātaka The Short Story about the Parrot (King) (9s)</text>
+</navLabel>
+<content src="068.html#ncx16242"/>
+</navPoint>
+<navPoint id="navpoint-537" playOrder="537">
+<navLabel>
+<text>Ja 431 Hāritajātaka The Story about (the Ascetic) Hārita (9s)</text>
+</navLabel>
+<content src="068.html#ncx16286"/>
+</navPoint>
+<navPoint id="navpoint-538" playOrder="538">
+<navLabel>
+<text>Ja 432 Padakusalamāṇavajātaka The Story about the Young Brahmin skilled in Steps (9s)</text>
+</navLabel>
+<content src="068.html#ncx16334"/>
+</navPoint>
+<navPoint id="navpoint-539" playOrder="539">
+<navLabel>
+<text>Ja 433 Lomasakassapajātaka The Story about (the Ascetic) Lomasakassapa (9s)</text>
+</navLabel>
+<content src="068.html#ncx16409"/>
+</navPoint>
+<navPoint id="navpoint-540" playOrder="540">
+<navLabel>
+<text>Ja 434 Cakkavākajātaka The Story about the Ruddy Geese</text>
+</navLabel>
+<content src="068.html#ncx16455"/>
+</navPoint>
+<navPoint id="navpoint-541" playOrder="541">
+<navLabel>
+<text>Ja 435 Haliddirāgajātaka The Story about being Dyed with Passion (9s)</text>
+</navLabel>
+<content src="068.html#ncx16519"/>
+</navPoint>
+<navPoint id="navpoint-542" playOrder="542">
+<navLabel>
+<text>Ja 436 Samuggajātaka The Story about the Casket (9s)</text>
+</navLabel>
+<content src="069.html"/>
+</navPoint>
+<navPoint id="navpoint-543" playOrder="543">
+<navLabel>
+<text>Ja 437 Pūtimaṁsajātaka The Story about (the Jackal) Pūtimaṁsa (9s)</text>
+</navLabel>
+<content src="069.html#ncx16630"/>
+</navPoint>
+<navPoint id="navpoint-544" playOrder="544">
+<navLabel>
+<text>Ja 438 Tittirajātaka The Story about the (Wise) Partridge (9s)</text>
+</navLabel>
+<content src="069.html#ncx16686"/>
+</navPoint>
+</navPoint>
+</navPoint>
+<navPoint id="navpoint-545" playOrder="545">
+<navLabel>
+<text>The Revised Jātaka Translation, Volume IV</text>
+</navLabel>
+<content src="070.html"/>
+<navPoint id="navpoint-546" playOrder="546">
+<navLabel>
+<text>Book X. Dasanipāta  The Section with Ten Verses</text>
+</navLabel>
+<content src="071.html"/>
+<navPoint id="navpoint-547" playOrder="547">
+<navLabel>
+<text>Ja 439 Catudvārajātaka  The Story about the Four Doors</text>
+</navLabel>
+<content src="071.html#ncx16764"/>
+</navPoint>
+<navPoint id="navpoint-548" playOrder="548">
+<navLabel>
+<text>Ja 440 Kaṇhajātaka The Story about (the Wise Ascetic) Kaṇha (10s)</text>
+</navLabel>
+<content src="071.html#ncx16821"/>
+</navPoint>
+<navPoint id="navpoint-549" playOrder="549">
+<navLabel>
+<text>Ja 441 Catuposathikajātaka The Story about the Four Fast Days (10s)</text>
+</navLabel>
+<content src="071.html#ncx16878"/>
+</navPoint>
+<navPoint id="navpoint-550" playOrder="550">
+<navLabel>
+<text>Ja 442 Saṅkhajātaka The Story about (the Brahmin) Saṅkha (10s)</text>
+</navLabel>
+<content src="071.html#ncx16922"/>
+</navPoint>
+<navPoint id="navpoint-551" playOrder="551">
+<navLabel>
+<text>Ja 443 Cullabodhijātaka The Story about Little Wisdom (10s)</text>
+</navLabel>
+<content src="071.html#ncx16991"/>
+</navPoint>
+<navPoint id="navpoint-552" playOrder="552">
+<navLabel>
+<text>Ja 444 Kaṇhadīpāyanajātaka  The Story about (the Ascetic) Kaṇhadīpāyana (10s)</text>
+</navLabel>
+<content src="071.html#ncx17050"/>
+</navPoint>
+<navPoint id="navpoint-553" playOrder="553">
+<navLabel>
+<text>Ja 445 Nigrodhajātaka The Story about Nigrodha (the Orphan) (10s)</text>
+</navLabel>
+<content src="071.html#ncx17145"/>
+</navPoint>
+<navPoint id="navpoint-554" playOrder="554">
+<navLabel>
+<text>Ja 446 Takkaḷajātaka  The Story about the Bulbous Plant (10s)</text>
+</navLabel>
+<content src="072.html"/>
+</navPoint>
+<navPoint id="navpoint-555" playOrder="555">
+<navLabel>
+<text>Ja 447 Mahādhammapālajātaka  The Long Story about (the Youth) Dhammapāla (10s)</text>
+</navLabel>
+<content src="072.html#ncx17277"/>
+</navPoint>
+<navPoint id="navpoint-556" playOrder="556">
+<navLabel>
+<text>Ja 448 Kukkuṭajātaka The Story about the (Undeceived) Chicken (10s)</text>
+</navLabel>
+<content src="072.html#ncx17352"/>
+</navPoint>
+<navPoint id="navpoint-557" playOrder="557">
+<navLabel>
+<text>Ja 449 Maṭṭakuṇḍalijātaka The Story about Polished Earrings (10s)</text>
+</navLabel>
+<content src="072.html#ncx17397"/>
+</navPoint>
+<navPoint id="navpoint-558" playOrder="558">
+<navLabel>
+<text>Ja 450 Biḷārikosiyajātaka The Story about (the Wealthy Man) Biḷārikosiya (10s)</text>
+</navLabel>
+<content src="072.html#ncx17453"/>
+</navPoint>
+<navPoint id="navpoint-559" playOrder="559">
+<navLabel>
+<text>Ja 451 Cakkavākajātaka The Story about the Ruddy Geese (10s)</text>
+</navLabel>
+<content src="072.html#ncx17519"/>
+</navPoint>
+<navPoint id="navpoint-560" playOrder="560">
+<navLabel>
+<text>Ja 452 Bhūripañhajātaka The Story about the Profound Question (10s)</text>
+</navLabel>
+<content src="072.html#ncx17560"/>
+</navPoint>
+<navPoint id="navpoint-561" playOrder="561">
+<navLabel>
+<text>Ja 453 Mahāmaṅgalajātaka The Story about the Great Omens (10s)</text>
+</navLabel>
+<content src="072.html#ncx17599"/>
+</navPoint>
+<navPoint id="navpoint-562" playOrder="562">
+<navLabel>
+<text>Ja 454 Ghatajātaka  The Story about (the Wise) Ghata (10s)</text>
+</navLabel>
+<content src="073.html"/>
+</navPoint>
+</navPoint>
+<navPoint id="navpoint-563" playOrder="563">
+<navLabel>
+<text>Book XI. Ekādasanipāta  The Section with Eleven Verses</text>
+</navLabel>
+<content src="074.html"/>
+<navPoint id="navpoint-564" playOrder="564">
+<navLabel>
+<text>Ja 455 Mātiposakajātaka The Story about (the Elephant) who Supported his Mother (11s)</text>
+</navLabel>
+<content src="074.html#ncx17756"/>
+</navPoint>
+<navPoint id="navpoint-565" playOrder="565">
+<navLabel>
+<text>Ja 456 Juṇhajātaka  The Story about (King) Juṇha</text>
+</navLabel>
+<content src="074.html#ncx17833"/>
+</navPoint>
+<navPoint id="navpoint-566" playOrder="566">
+<navLabel>
+<text>Ja 457 Dhammajātaka The Story about (the Devaputta named) Dhamma (11s)</text>
+</navLabel>
+<content src="074.html#ncx17914"/>
+</navPoint>
+<navPoint id="navpoint-567" playOrder="567">
+<navLabel>
+<text>Ja 458 Udayajātaka The Story about (King) Udaya (11s)</text>
+</navLabel>
+<content src="074.html#ncx17988"/>
+</navPoint>
+<navPoint id="navpoint-568" playOrder="568">
+<navLabel>
+<text>Ja 459 Pānīyajātaka The Story about (Stealing) Water</text>
+</navLabel>
+<content src="074.html#ncx18102"/>
+</navPoint>
+<navPoint id="navpoint-569" playOrder="569">
+<navLabel>
+<text>Ja 460 Yuvañjayajātaka The Story about (Prince) Yuvañjaya (11s)</text>
+</navLabel>
+<content src="074.html#ncx18169"/>
+</navPoint>
+<navPoint id="navpoint-570" playOrder="570">
+<navLabel>
+<text>Ja 461 Dasarathajātaka  The Story about (Rāma’s Father, King) Dasaratha (11s)</text>
+</navLabel>
+<content src="074.html#ncx18218"/>
+</navPoint>
+<navPoint id="navpoint-571" playOrder="571">
+<navLabel>
+<text>Ja 462 Saṁvarajātaka The Story about (the Great King) Saṁvara</text>
+</navLabel>
+<content src="075.html"/>
+</navPoint>
+<navPoint id="navpoint-572" playOrder="572">
+<navLabel>
+<text>Ja 463 Suppārakajātaka The Story about (the Wise Mariner) Suppāraka (11s)</text>
+</navLabel>
+<content src="075.html#ncx18348"/>
+</navPoint>
+</navPoint>
+<navPoint id="navpoint-573" playOrder="573">
+<navLabel>
+<text>Book XII. Dvādasanipāta  The Section with Twelve Verses (464-473)</text>
+</navLabel>
+<content src="076.html"/>
+<navPoint id="navpoint-574" playOrder="574">
+<navLabel>
+<text>Ja 464 Cullakuṇālajātaka The Short Story about the Indian Cuckoo (12s)</text>
+</navLabel>
+<content src="076.html#ncx18411"/>
+</navPoint>
+<navPoint id="navpoint-575" playOrder="575">
+<navLabel>
+<text>Ja 465 Bhaddasālajātaka The Story about (the King of the Gods) Bhaddasāla</text>
+</navLabel>
+<content src="076.html#ncx18478"/>
+</navPoint>
+<navPoint id="navpoint-576" playOrder="576">
+<navLabel>
+<text>Ja 466 Samuddavāṇijajātaka The Story about the Merchant (who Traveled) the Ocean (12s)</text>
+</navLabel>
+<content src="076.html#ncx18561"/>
+</navPoint>
+<navPoint id="navpoint-577" playOrder="577">
+<navLabel>
+<text>Ja 467 Kāmajātaka The Story about Desire</text>
+</navLabel>
+<content src="076.html#ncx18652"/>
+</navPoint>
+<navPoint id="navpoint-578" playOrder="578">
+<navLabel>
+<text>Ja 468 Janasandhajātaka The Story about (King) Janasandha (12s)</text>
+</navLabel>
+<content src="076.html#ncx18716"/>
+</navPoint>
+<navPoint id="navpoint-579" playOrder="579">
+<navLabel>
+<text>Ja 469 Mahākaṇhajātaka The Story about the Great Black (Hound)</text>
+</navLabel>
+<content src="076.html#ncx18763"/>
+</navPoint>
+<navPoint id="navpoint-580" playOrder="580">
+<navLabel>
+<text>Ja 470 Kosiyajātaka The Story about (the Miser) Kosiya (12s)</text>
+</navLabel>
+<content src="077.html"/>
+</navPoint>
+<navPoint id="navpoint-581" playOrder="581">
+<navLabel>
+<text>Ja 471 Meṇḍakajātaka The Story about (the Question about) the Goat (12s)</text>
+</navLabel>
+<content src="077.html#ncx18881"/>
+</navPoint>
+<navPoint id="navpoint-582" playOrder="582">
+<navLabel>
+<text>Ja 472 Mahāpadumajātaka The Story about (Prince) Mahāpaduma</text>
+</navLabel>
+<content src="077.html#ncx18921"/>
+</navPoint>
+<navPoint id="navpoint-583" playOrder="583">
+<navLabel>
+<text>Ja 473 Mittāmittajātaka The Story about Friends and Foes (12s)</text>
+</navLabel>
+<content src="077.html#ncx19004"/>
+</navPoint>
+</navPoint>
+<navPoint id="navpoint-584" playOrder="584">
+<navLabel>
+<text>Book XIII. Terasanipāta  The Section with Thirteen Verses (474-483)</text>
+</navLabel>
+<content src="077.html#ncx19050"/>
+<navPoint id="navpoint-585" playOrder="585">
+<navLabel>
+<text>Ja 474 Ambajātaka The Story about the Mango (13s)</text>
+</navLabel>
+<content src="077.html#ncx19051"/>
+</navPoint>
+<navPoint id="navpoint-586" playOrder="586">
+<navLabel>
+<text>Ja 475 Phandanajātaka The Story about the Phandana Tree (13s)</text>
+</navLabel>
+<content src="077.html#ncx19131"/>
+</navPoint>
+<navPoint id="navpoint-587" playOrder="587">
+<navLabel>
+<text>Ja 476 Javanahaṁsajātaka The Story about the Swift Goose (13s)</text>
+</navLabel>
+<content src="078.html"/>
+</navPoint>
+<navPoint id="navpoint-588" playOrder="588">
+<navLabel>
+<text>Ja 477 Cullanāradajātaka The Short Story about Nārada</text>
+</navLabel>
+<content src="078.html#ncx19260"/>
+</navPoint>
+<navPoint id="navpoint-589" playOrder="589">
+<navLabel>
+<text>Ja 478 Dūtajātaka The Story about the Messenger (13s)</text>
+</navLabel>
+<content src="078.html#ncx19329"/>
+</navPoint>
+<navPoint id="navpoint-590" playOrder="590">
+<navLabel>
+<text>Ja 479 Kāliṅgabodhijātaka The Story about (King) Kāliṅga and the Bodhi Tree</text>
+</navLabel>
+<content src="078.html#ncx19388"/>
+</navPoint>
+<navPoint id="navpoint-591" playOrder="591">
+<navLabel>
+<text>Ja 480 Akittijātaka The Story about the (Wise) Akitti (13s)</text>
+</navLabel>
+<content src="078.html#ncx19473"/>
+</navPoint>
+<navPoint id="navpoint-592" playOrder="592">
+<navLabel>
+<text>Ja 481 Takkāriyajātaka  The Story about (the Wise Young Brahmin) Takkāriya</text>
+</navLabel>
+<content src="078.html#ncx19561"/>
+</navPoint>
+<navPoint id="navpoint-593" playOrder="593">
+<navLabel>
+<text>Ja 482 Rurujātaka The Story about (the King of) the Ruru Deer (13s)</text>
+</navLabel>
+<content src="079.html"/>
+</navPoint>
+<navPoint id="navpoint-594" playOrder="594">
+<navLabel>
+<text>Ja 483 Sarabhamigajātaka  The Story about the Sarabha Deer (13s)</text>
+</navLabel>
+<content src="079.html#ncx19743"/>
+</navPoint>
+</navPoint>
+<navPoint id="navpoint-595" playOrder="595">
+<navLabel>
+<text>Book XIV. Pakiṇṇakanipāta  The Section with a Miscellaneous Amount of Verses (484-496)</text>
+</navLabel>
+<content src="080.html"/>
+<navPoint id="navpoint-596" playOrder="596">
+<navLabel>
+<text>Ja 484 Sālikedārajātaka The Story about the Rice Field (Pak)</text>
+</navLabel>
+<content src="080.html#ncx19859"/>
+</navPoint>
+<navPoint id="navpoint-597" playOrder="597">
+<navLabel>
+<text>Ja 485 Candakinnarajātaka The Story about the Kinnara Canda (Pak)</text>
+</navLabel>
+<content src="080.html#ncx19947"/>
+</navPoint>
+<navPoint id="navpoint-598" playOrder="598">
+<navLabel>
+<text>Ja 486 Mahā-ukkusajātaka The Long Story about the Hawk (Pak)</text>
+</navLabel>
+<content src="080.html#ncx20043"/>
+</navPoint>
+<navPoint id="navpoint-599" playOrder="599">
+<navLabel>
+<text>Ja 487 Uddālakajātaka  The Story about (the Brahmin) Uddālaka (Pak)</text>
+</navLabel>
+<content src="080.html#ncx20141"/>
+</navPoint>
+<navPoint id="navpoint-600" playOrder="600">
+<navLabel>
+<text>Ja 488 Bhisajātaka The Story about the Lotus Stalks (Pak)</text>
+</navLabel>
+<content src="080.html#ncx20224"/>
+</navPoint>
+<navPoint id="navpoint-601" playOrder="601">
+<navLabel>
+<text>Ja 489 Surucijātaka The Story about Suruci (King of Mithilā)</text>
+</navLabel>
+<content src="081.html"/>
+</navPoint>
+<navPoint id="navpoint-602" playOrder="602">
+<navLabel>
+<text>Ja 490 Pañcūposathajātaka The Story about the Five (who Kept the) Feast Days (Pak)</text>
+</navLabel>
+<content src="081.html#ncx20485"/>
+</navPoint>
+<navPoint id="navpoint-603" playOrder="603">
+<navLabel>
+<text>Ja 491 Mahāmorajātaka  The Long Story about the Peacock (Pak)</text>
+</navLabel>
+<content src="081.html#ncx20585"/>
+</navPoint>
+<navPoint id="navpoint-604" playOrder="604">
+<navLabel>
+<text>Ja 492 Tacchasūkarajātaka The Story about the Carpenter’s Boar (Pak)</text>
+</navLabel>
+<content src="081.html#ncx20715"/>
+</navPoint>
+<navPoint id="navpoint-605" playOrder="605">
+<navLabel>
+<text>Ja 493 Mahāvāṇijajātaka The Long Story about the Merchants (Pak)</text>
+</navLabel>
+<content src="081.html#ncx20803"/>
+</navPoint>
+<navPoint id="navpoint-606" playOrder="606">
+<navLabel>
+<text>Ja 494 Sādhīnajātaka The Story about (King) Sādhina (Pak)</text>
+</navLabel>
+<content src="081.html#ncx20886"/>
+</navPoint>
+<navPoint id="navpoint-607" playOrder="607">
+<navLabel>
+<text>Ja 495 Dasabrāhmaṇajātaka  The Story about the Ten (Types of) Brahmins (Pak)</text>
+</navLabel>
+<content src="082.html"/>
+</navPoint>
+<navPoint id="navpoint-608" playOrder="608">
+<navLabel>
+<text>Ja 496 Bhikkhāparamparajātaka The Story about the Succession of the Almsfood (Pak)</text>
+</navLabel>
+<content src="082.html#ncx21141"/>
+</navPoint>
+</navPoint>
+<navPoint id="navpoint-609" playOrder="609">
+<navLabel>
+<text>Book XV. Vīsatinipāta  The Section with Twenty Verses (497-510)</text>
+</navLabel>
+<content src="083.html"/>
+<navPoint id="navpoint-610" playOrder="610">
+<navLabel>
+<text>Ja 497 Mātaṅgajātaka The Story about (the Wise Outcaste) Mātaṅga</text>
+</navLabel>
+<content src="083.html#ncx21217"/>
+</navPoint>
+<navPoint id="navpoint-611" playOrder="611">
+<navLabel>
+<text>Ja 498 Cittasambhūtajātaka The Story about (the Outcastes) Citta and Sambhūta (20s)</text>
+</navLabel>
+<content src="083.html#ncx21358"/>
+</navPoint>
+<navPoint id="navpoint-612" playOrder="612">
+<navLabel>
+<text>Ja 499 Sivijātaka  The Story about (King) Sivi (20s)</text>
+</navLabel>
+<content src="083.html#ncx21503"/>
+</navPoint>
+<navPoint id="navpoint-613" playOrder="613">
+<navLabel>
+<text>Ja 500 Sirimandajātaka The Story about Poor and Rich (20s)</text>
+</navLabel>
+<content src="083.html#ncx21655"/>
+</navPoint>
+<navPoint id="navpoint-614" playOrder="614">
+<navLabel>
+<text>Ja 501 Rohantamigajātaka The Story about (the King of the Deer) Rohanta (20s)</text>
+</navLabel>
+<content src="084.html"/>
+</navPoint>
+<navPoint id="navpoint-615" playOrder="615">
+<navLabel>
+<text>Ja 502 Haṁsajātaka The (Short) Story about the (Golden) Goose (20s)</text>
+</navLabel>
+<content src="084.html#ncx21861"/>
+</navPoint>
+<navPoint id="navpoint-616" playOrder="616">
+<navLabel>
+<text>Ja 503 Sattigumbajātaka The Story about (the Thieving Parrot) Sattigumba (20s)</text>
+</navLabel>
+<content src="084.html#ncx21979"/>
+</navPoint>
+<navPoint id="navpoint-617" playOrder="617">
+<navLabel>
+<text>Ja 504 Bhallāṭiyajātaka The Story about (King) Bhallātiya (20s)</text>
+</navLabel>
+<content src="084.html#ncx22082"/>
+</navPoint>
+<navPoint id="navpoint-618" playOrder="618">
+<navLabel>
+<text>Ja 505 Somanassajātaka The Story about (Prince) Somanassa (20s)</text>
+</navLabel>
+<content src="084.html#ncx22220"/>
+</navPoint>
+<navPoint id="navpoint-619" playOrder="619">
+<navLabel>
+<text>Ja 506 Campeyyajātaka The Story about (the Nāga King) Campeyya (20s)</text>
+</navLabel>
+<content src="085.html"/>
+</navPoint>
+<navPoint id="navpoint-620" playOrder="620">
+<navLabel>
+<text>Ja 507 Mahāpalobhanajātaka The Long Story about Enticement (20s)</text>
+</navLabel>
+<content src="085.html#ncx22609"/>
+</navPoint>
+<navPoint id="navpoint-621" playOrder="621">
+<navLabel>
+<text>Ja 508 Pañcapaṇḍitajātaka The Story about the Five Wise Men (20s)</text>
+</navLabel>
+<content src="085.html#ncx22715"/>
+</navPoint>
+<navPoint id="navpoint-622" playOrder="622">
+<navLabel>
+<text>Ja 509 Hatthipālajātaka The Story about (the Brahmin’s Son) Hatthipāla (20s)</text>
+</navLabel>
+<content src="085.html#ncx22783"/>
+</navPoint>
+<navPoint id="navpoint-623" playOrder="623">
+<navLabel>
+<text>Ja 510 Ayogharajātaka The Story about (the Wise) Ayoghara (20s)</text>
+</navLabel>
+<content src="086.html"/>
+</navPoint>
+</navPoint>
+</navPoint>
+<navPoint id="navpoint-624" playOrder="624">
+<navLabel>
+<text>The Revised Jātaka Translation, Volume V</text>
+</navLabel>
+<content src="087.html"/>
+<navPoint id="navpoint-625" playOrder="625">
+<navLabel>
+<text>Preface</text>
+</navLabel>
+<content src="089.html"/>
+</navPoint>
+<navPoint id="navpoint-626" playOrder="626">
+<navLabel>
+<text>Book XVI. Tiṁsanipāta  The Section with Thirty Verses (511-520)</text>
+</navLabel>
+<content src="090.html"/>
+<navPoint id="navpoint-627" playOrder="627">
+<navLabel>
+<text>Ja 511 Kiṁchandajātaka The Story about What is (Your) Intention (30s)</text>
+</navLabel>
+<content src="090.html#ncx23095"/>
+</navPoint>
+<navPoint id="navpoint-628" playOrder="628">
+<navLabel>
+<text>Ja 512 Kumbhajātaka The Story about the Pot (of Liquor) (30s)</text>
+</navLabel>
+<content src="090.html#ncx23211"/>
+</navPoint>
+<navPoint id="navpoint-629" playOrder="629">
+<navLabel>
+<text>Ja 513 Jayaddisajātaka The Story about (Prince) Jayaddisa (30s)</text>
+</navLabel>
+<content src="090.html#ncx23430"/>
+</navPoint>
+<navPoint id="navpoint-630" playOrder="630">
+<navLabel>
+<text>Ja 514 Chaddantajatakaṁ  The Story about (Lake) Chaddanta (30s)</text>
+</navLabel>
+<content src="091.html"/>
+</navPoint>
+<navPoint id="navpoint-631" playOrder="631">
+<navLabel>
+<text>Ja 515 Sambhavajātaka The Story about (the Wise) Sambhava (30s)</text>
+</navLabel>
+<content src="091.html#ncx23889"/>
+</navPoint>
+<navPoint id="navpoint-632" playOrder="632">
+<navLabel>
+<text>Ja 516 Mahākapijātaka The Long Story about the Monkey (King) (30s)</text>
+</navLabel>
+<content src="091.html#ncx24096"/>
+</navPoint>
+<navPoint id="navpoint-633" playOrder="633">
+<navLabel>
+<text>Ja 517 Dakarakkhasajātaka The Story about the Water Rakkhasa (30s)</text>
+</navLabel>
+<content src="091.html#ncx24305"/>
+</navPoint>
+<navPoint id="navpoint-634" playOrder="634">
+<navLabel>
+<text>Ja 518 Paṇḍarajātaka The Story about (the King of the Nāgas) Paṇḍara (30s)</text>
+</navLabel>
+<content src="092.html"/>
+</navPoint>
+<navPoint id="navpoint-635" playOrder="635">
+<navLabel>
+<text>Ja 519 Sambulajātaka The Story about (Queen) Sambulā (30s)</text>
+</navLabel>
+<content src="092.html#ncx24576"/>
+</navPoint>
+<navPoint id="navpoint-636" playOrder="636">
+<navLabel>
+<text>Ja 520 Gaṇḍatindujātaka The Story about the Fragrant Ebony Tree (30s)</text>
+</navLabel>
+<content src="092.html#ncx24735"/>
+</navPoint>
+</navPoint>
+<navPoint id="navpoint-637" playOrder="637">
+<navLabel>
+<text>Book XVII. Cattālīsanipāto  The Section with Forty Verses (521-525)</text>
+</navLabel>
+<content src="093.html"/>
+<navPoint id="navpoint-638" playOrder="638">
+<navLabel>
+<text>Ja 521 Tesakuṇajātaka The Story about the Three Birds (40s)</text>
+</navLabel>
+<content src="093.html#ncx24882"/>
+<navPoint id="navpoint-639" playOrder="639">
+<navLabel>
+<text>The Story of Vessantara’s Question</text>
+</navLabel>
+<content src="093.html#ncx24900"/>
+</navPoint>
+<navPoint id="navpoint-640" playOrder="640">
+<navLabel>
+<text>The Story of Kuṇḍalinī’s Question</text>
+</navLabel>
+<content src="093.html#ncx24942"/>
+</navPoint>
+<navPoint id="navpoint-641" playOrder="641">
+<navLabel>
+<text>The Story of Jambuka’s Question</text>
+</navLabel>
+<content src="093.html#ncx24981"/>
+</navPoint>
+</navPoint>
+<navPoint id="navpoint-642" playOrder="642">
+<navLabel>
+<text>Ja 522 Sarabhaṅgajātaka The Story about (the Teacher) Sarabhaṅga (40s)</text>
+</navLabel>
+<content src="093.html#ncx25054"/>
+</navPoint>
+<navPoint id="navpoint-643" playOrder="643">
+<navLabel>
+<text>Ja 523 Alambusajātaka The Story about (the Accharā) Alambusā (40s)</text>
+</navLabel>
+<content src="093.html#ncx25333"/>
+</navPoint>
+<navPoint id="navpoint-644" playOrder="644">
+<navLabel>
+<text>Ja 524 Saṅkhapālajātaka The Story about (the King of the Nāgas) Saṅkhapāla (40s)</text>
+</navLabel>
+<content src="094.html"/>
+</navPoint>
+<navPoint id="navpoint-645" playOrder="645">
+<navLabel>
+<text>Ja 525 Cullasutasomajātaka The Short Story about (King) Sutasoma (40s)</text>
+</navLabel>
+<content src="094.html#ncx25798"/>
+</navPoint>
+</navPoint>
+<navPoint id="navpoint-646" playOrder="646">
+<navLabel>
+<text>Book XVIII. Paṇṇāsanipāta  The Section with Fifty Verses (526-528)</text>
+</navLabel>
+<content src="095.html"/>
+<navPoint id="navpoint-647" playOrder="647">
+<navLabel>
+<text>Ja 526 Naḷinikājātaka The Story about (Princess) Naḷinikā (50s)</text>
+</navLabel>
+<content src="095.html#ncx26026"/>
+</navPoint>
+<navPoint id="navpoint-648" playOrder="648">
+<navLabel>
+<text>Ja 527 Ummadantījātaka  The Story about (the Wealthy Man’s Daughter) Ummadantī (50s)</text>
+</navLabel>
+<content src="095.html#ncx26331"/>
+</navPoint>
+<navPoint id="navpoint-649" playOrder="649">
+<navLabel>
+<text>Ja 528 Mahābodhijātaka The Story about (the Wanderer) Mahābodhi (50s)</text>
+</navLabel>
+<content src="095.html#ncx26650"/>
+</navPoint>
+</navPoint>
+<navPoint id="navpoint-650" playOrder="650">
+<navLabel>
+<text>Book XIX. Saṭṭhinipāta  The Section with Sixty Verses (529-530)</text>
+</navLabel>
+<content src="096.html"/>
+<navPoint id="navpoint-651" playOrder="651">
+<navLabel>
+<text>Ja 529 Sonakajātaka The Story about (Prince) Sonaka (50s)</text>
+</navLabel>
+<content src="096.html#ncx26877"/>
+</navPoint>
+<navPoint id="navpoint-652" playOrder="652">
+<navLabel>
+<text>Ja 530 Saṅkiccajātaka The Story about (the Wise) Saṅkicca</text>
+</navLabel>
+<content src="096.html#ncx27109"/>
+</navPoint>
+</navPoint>
+<navPoint id="navpoint-653" playOrder="653">
+<navLabel>
+<text>Book XX. Sattatinipāta  The Section with Seventy Verses (531-532)</text>
+</navLabel>
+<content src="097.html"/>
+<navPoint id="navpoint-654" playOrder="654">
+<navLabel>
+<text>Ja 531 Kusajātaka  The Story about (King) Kusa (70s)</text>
+</navLabel>
+<content src="097.html#ncx27344"/>
+</navPoint>
+<navPoint id="navpoint-655" playOrder="655">
+<navLabel>
+<text>Ja 532 Sonanandajātaka  The Story about (the Wise Ascetics) Sona and Nanda (70s)</text>
+</navLabel>
+<content src="098.html"/>
+</navPoint>
+</navPoint>
+<navPoint id="navpoint-656" playOrder="656">
+<navLabel>
+<text>Book XXI. Asītinipāta  The Section with Eighty Verses (533-537)</text>
+</navLabel>
+<content src="099.html"/>
+<navPoint id="navpoint-657" playOrder="657">
+<navLabel>
+<text>Ja 533 Cullahaṁsajātaka  The Short Story about the (Golden) Goose</text>
+</navLabel>
+<content src="099.html#ncx28050"/>
+</navPoint>
+<navPoint id="navpoint-658" playOrder="658">
+<navLabel>
+<text>Ja 534 Mahāhaṁsajātaka  The Long Story about the (Golden) Goose (80s)</text>
+</navLabel>
+<content src="100.html"/>
+</navPoint>
+<navPoint id="navpoint-659" playOrder="659">
+<navLabel>
+<text>Ja 535 Sudhābhojanajātaka  The Story about the Food of the Gods (80s)</text>
+</navLabel>
+<content src="101.html"/>
+</navPoint>
+<navPoint id="navpoint-660" playOrder="660">
+<navLabel>
+<text>Ja 536 Kuṇālajātaka  The Story about (the King of the Cuckoos) Kuṇāla</text>
+</navLabel>
+<content src="101.html#ncx29216"/>
+<navPoint id="navpoint-661" playOrder="661">
+<navLabel>
+<text>The Kuṇāla Bird</text>
+</navLabel>
+<content src="102.html"/>
+</navPoint>
+<navPoint id="navpoint-662" playOrder="662">
+<navLabel>
+<text>Summary</text>
+</navLabel>
+<content src="102.html#ncx29472"/>
+</navPoint>
+<navPoint id="navpoint-663" playOrder="663">
+<navLabel>
+<text>Princess Kaṇhā</text>
+</navLabel>
+<content src="102.html#ncx29500"/>
+</navPoint>
+<navPoint id="navpoint-664" playOrder="664">
+<navLabel>
+<text>The Nun Saccatapāvī</text>
+</navLabel>
+<content src="102.html#ncx29509"/>
+</navPoint>
+<navPoint id="navpoint-665" playOrder="665">
+<navLabel>
+<text>Queen Kākātī</text>
+</navLabel>
+<content src="102.html#ncx29515"/>
+</navPoint>
+<navPoint id="navpoint-666" playOrder="666">
+<navLabel>
+<text>Princess Kuraṅgavī</text>
+</navLabel>
+<content src="102.html#ncx29540"/>
+</navPoint>
+<navPoint id="navpoint-667" playOrder="667">
+<navLabel>
+<text>Queen Kosaladevī</text>
+</navLabel>
+<content src="102.html#ncx29549"/>
+</navPoint>
+<navPoint id="navpoint-668" playOrder="668">
+<navLabel>
+<text>Four Injurious Things</text>
+</navLabel>
+<content src="102.html#ncx29553"/>
+</navPoint>
+<navPoint id="navpoint-669" playOrder="669">
+<navLabel>
+<text>Six Injurious Things</text>
+</navLabel>
+<content src="102.html#ncx29562"/>
+</navPoint>
+<navPoint id="navpoint-670" playOrder="670">
+<navLabel>
+<text>Eight Grounds for Despising</text>
+</navLabel>
+<content src="102.html#ncx29564"/>
+</navPoint>
+<navPoint id="navpoint-671" playOrder="671">
+<navLabel>
+<text>Nine Grounds for Blame</text>
+</navLabel>
+<content src="102.html#ncx29569"/>
+</navPoint>
+<navPoint id="navpoint-672" playOrder="672">
+<navLabel>
+<text>Forty Seductive Ways</text>
+</navLabel>
+<content src="102.html#ncx29576"/>
+</navPoint>
+<navPoint id="navpoint-673" playOrder="673">
+<navLabel>
+<text>Twenty-Five Ways of Wickedness</text>
+</navLabel>
+<content src="102.html#ncx29578"/>
+</navPoint>
+<navPoint id="navpoint-674" playOrder="674">
+<navLabel>
+<text>Queen Kinnarā</text>
+</navLabel>
+<content src="102.html#ncx29627"/>
+</navPoint>
+<navPoint id="navpoint-675" playOrder="675">
+<navLabel>
+<text>Ugly Pañcapāpā</text>
+</navLabel>
+<content src="102.html#ncx29641"/>
+</navPoint>
+<navPoint id="navpoint-676" playOrder="676">
+<navLabel>
+<text>Queen Piṅgiyānī</text>
+</navLabel>
+<content src="102.html#ncx29658"/>
+</navPoint>
+<navPoint id="navpoint-677" playOrder="677">
+<navLabel>
+<text>Summary Verses</text>
+</navLabel>
+<content src="102.html#ncx29664"/>
+</navPoint>
+<navPoint id="navpoint-678" playOrder="678">
+<navLabel>
+<text>King of the Vultures Ānanda</text>
+</navLabel>
+<content src="102.html#ncx29718"/>
+</navPoint>
+<navPoint id="navpoint-679" playOrder="679">
+<navLabel>
+<text>The Ascetic Nārada</text>
+</navLabel>
+<content src="102.html#ncx29776"/>
+</navPoint>
+<navPoint id="navpoint-680" playOrder="680">
+<navLabel>
+<text>The Kuṇāla Bird</text>
+</navLabel>
+<content src="102.html#ncx29818"/>
+</navPoint>
+</navPoint>
+<navPoint id="navpoint-681" playOrder="681">
+<navLabel>
+<text>Ja 537 Mahāsutasomajātaka The Long Story about (King) Sutasoma (80s)</text>
+</navLabel>
+<content src="103.html"/>
+<navPoint id="navpoint-682" playOrder="682">
+<navLabel>
+<text>The Fish Ānanda</text>
+</navLabel>
+<content src="103.html#ncx29974"/>
+</navPoint>
+<navPoint id="navpoint-683" playOrder="683">
+<navLabel>
+<text>The Landowner Sujāta, 1</text>
+</navLabel>
+<content src="103.html#ncx29990"/>
+</navPoint>
+<navPoint id="navpoint-684" playOrder="684">
+<navLabel>
+<text>The Son of a Brahmin</text>
+</navLabel>
+<content src="103.html#ncx29999"/>
+</navPoint>
+<navPoint id="navpoint-685" playOrder="685">
+<navLabel>
+<text>The Landowner Sujāta, 2</text>
+</navLabel>
+<content src="103.html#ncx30018"/>
+</navPoint>
+<navPoint id="navpoint-686" playOrder="686">
+<navLabel>
+<text>The Golden Geese</text>
+</navLabel>
+<content src="103.html#ncx30031"/>
+</navPoint>
+<navPoint id="navpoint-687" playOrder="687">
+<navLabel>
+<text>The Exile</text>
+</navLabel>
+<content src="103.html#ncx30040"/>
+</navPoint>
+<navPoint id="navpoint-688" playOrder="688">
+<navLabel>
+<text>The Caravan Leader</text>
+</navLabel>
+<content src="103.html#ncx30044"/>
+</navPoint>
+<navPoint id="navpoint-689" playOrder="689">
+<navLabel>
+<text>Sutasoma</text>
+</navLabel>
+<content src="103.html#ncx30051"/>
+</navPoint>
+<navPoint id="navpoint-690" playOrder="690">
+<navLabel>
+<text>The Brahmin Nanda</text>
+</navLabel>
+<content src="103.html#ncx30070"/>
+</navPoint>
+<navPoint id="navpoint-691" playOrder="691">
+<navLabel>
+<text>The Dialogue</text>
+</navLabel>
+<content src="103.html#ncx30085"/>
+</navPoint>
+<navPoint id="navpoint-692" playOrder="692">
+<navLabel>
+<text>The Four Verses</text>
+</navLabel>
+<content src="103.html#ncx30143"/>
+</navPoint>
+<navPoint id="navpoint-693" playOrder="693">
+<navLabel>
+<text>The Return</text>
+</navLabel>
+<content src="103.html#ncx30210"/>
+</navPoint>
+<navPoint id="navpoint-694" playOrder="694">
+<navLabel>
+<text>The Boons</text>
+</navLabel>
+<content src="103.html#ncx30326"/>
+</navPoint>
+<navPoint id="navpoint-695" playOrder="695">
+<navLabel>
+<text>Releasing the Kings</text>
+</navLabel>
+<content src="104.html"/>
+</navPoint>
+<navPoint id="navpoint-696" playOrder="696">
+<navLabel>
+<text>The Return</text>
+</navLabel>
+<content src="104.html#ncx30533"/>
+</navPoint>
+</navPoint>
+</navPoint>
+</navPoint>
+<navPoint id="navpoint-697" playOrder="697">
+<navLabel>
+<text>The Revised Jātaka Translation, Volume VI</text>
+</navLabel>
+<content src="105.html"/>
+<navPoint id="navpoint-698" playOrder="698">
+<navLabel>
+<text>Preface</text>
+</navLabel>
+<content src="106.html"/>
+</navPoint>
+<navPoint id="navpoint-699" playOrder="699">
+<navLabel>
+<text>Book XXII. Mahānipāta  The Great Section (538-547)</text>
+</navLabel>
+<content src="107.html"/>
+<navPoint id="navpoint-700" playOrder="700">
+<navLabel>
+<text>Ja 538 Mūgapakkhajātaka The Story about (the Wise) Mūgapakkha (Mahānipāta)</text>
+</navLabel>
+<content src="107.html#ncx30579"/>
+<navPoint id="navpoint-701" playOrder="701">
+<navLabel>
+<text>The Birth</text>
+</navLabel>
+<content src="107.html#ncx30591"/>
+</navPoint>
+<navPoint id="navpoint-702" playOrder="702">
+<navLabel>
+<text>His Youth</text>
+</navLabel>
+<content src="107.html#ncx30607"/>
+</navPoint>
+<navPoint id="navpoint-703" playOrder="703">
+<navLabel>
+<text>The Renunciation</text>
+</navLabel>
+<content src="107.html#ncx30632"/>
+</navPoint>
+<navPoint id="navpoint-704" playOrder="704">
+<navLabel>
+<text>The Meeting</text>
+</navLabel>
+<content src="107.html#ncx30776"/>
+</navPoint>
+<navPoint id="navpoint-705" playOrder="705">
+<navLabel>
+<text>The Conversion</text>
+</navLabel>
+<content src="107.html#ncx30903"/>
+</navPoint>
+</navPoint>
+<navPoint id="navpoint-706" playOrder="706">
+<navLabel>
+<text>Ja 539 Mahājanakajātaka The Story about (King) Mahājanaka (Mahānipāta)</text>
+</navLabel>
+<content src="108.html"/>
+<navPoint id="navpoint-707" playOrder="707">
+<navLabel>
+<text>Polajanaka kills his Brother</text>
+</navLabel>
+<content src="108.html#ncx31011"/>
+</navPoint>
+<navPoint id="navpoint-708" playOrder="708">
+<navLabel>
+<text>Birth of Mahājanaka</text>
+</navLabel>
+<content src="108.html#ncx31014"/>
+</navPoint>
+<navPoint id="navpoint-709" playOrder="709">
+<navLabel>
+<text>The Plan to regain the Kingdom</text>
+</navLabel>
+<content src="108.html#ncx31020"/>
+</navPoint>
+<navPoint id="navpoint-710" playOrder="710">
+<navLabel>
+<text>Help from a Devadhītā</text>
+</navLabel>
+<content src="108.html#ncx31026"/>
+</navPoint>
+<navPoint id="navpoint-711" playOrder="711">
+<navLabel>
+<text>In Mithilā</text>
+</navLabel>
+<content src="108.html#ncx31058"/>
+</navPoint>
+<navPoint id="navpoint-712" playOrder="712">
+<navLabel>
+<text>The Tests</text>
+</navLabel>
+<content src="108.html#ncx31075"/>
+</navPoint>
+<navPoint id="navpoint-713" playOrder="713">
+<navLabel>
+<text>King Mahājanaka</text>
+</navLabel>
+<content src="108.html#ncx31083"/>
+</navPoint>
+<navPoint id="navpoint-714" playOrder="714">
+<navLabel>
+<text>Becoming an Ascetic</text>
+</navLabel>
+<content src="108.html#ncx31105"/>
+</navPoint>
+</navPoint>
+<navPoint id="navpoint-715" playOrder="715">
+<navLabel>
+<text>Ja 540 Sāmajātaka The Story about (the Wise) Sāma (Mahānipāta)</text>
+</navLabel>
+<content src="109.html"/>
+</navPoint>
+<navPoint id="navpoint-716" playOrder="716">
+<navLabel>
+<text>Ja 541 Nimijātaka  The Story about (King) Nimi (Mahānipāta)</text>
+</navLabel>
+<content src="110.html"/>
+</navPoint>
+<navPoint id="navpoint-717" playOrder="717">
+<navLabel>
+<text>Ja 542 Khaṇḍahālajātaka The Story about (the Family Priest) Khaṇḍahāla (Mahānipāta)</text>
+</navLabel>
+<content src="111.html"/>
+</navPoint>
+<navPoint id="navpoint-718" playOrder="718">
+<navLabel>
+<text>Ja 543 Bhūridattajātaka The Story about (Prince) Bhūridatta (Mahānipāta)</text>
+</navLabel>
+<content src="112.html"/>
+<navPoint id="navpoint-719" playOrder="719">
+<navLabel>
+<text>The City</text>
+</navLabel>
+<content src="112.html#ncx32635"/>
+</navPoint>
+<navPoint id="navpoint-720" playOrder="720">
+<navLabel>
+<text>The Fast-Day</text>
+</navLabel>
+<content src="112.html#ncx32688"/>
+</navPoint>
+<navPoint id="navpoint-721" playOrder="721">
+<navLabel>
+<text>Entering the Forest</text>
+</navLabel>
+<content src="112.html#ncx32693"/>
+</navPoint>
+<navPoint id="navpoint-722" playOrder="722">
+<navLabel>
+<text>Virtue</text>
+</navLabel>
+<content src="112.html#ncx32776"/>
+</navPoint>
+<navPoint id="navpoint-723" playOrder="723">
+<navLabel>
+<text>Sport</text>
+</navLabel>
+<content src="112.html#ncx32861"/>
+</navPoint>
+<navPoint id="navpoint-724" playOrder="724">
+<navLabel>
+<text>Entering the City</text>
+</navLabel>
+<content src="112.html#ncx32868"/>
+</navPoint>
+<navPoint id="navpoint-725" playOrder="725">
+<navLabel>
+<text>The Search for the Great Being</text>
+</navLabel>
+<content src="112.html#ncx33010"/>
+</navPoint>
+<navPoint id="navpoint-726" playOrder="726">
+<navLabel>
+<text>Wrong Speech</text>
+</navLabel>
+<content src="113.html"/>
+</navPoint>
+</navPoint>
+<navPoint id="navpoint-727" playOrder="727">
+<navLabel>
+<text>Ja 544 Mahānāradakassapajātaka The Long Story about Nāradakassapa (Mahānipāta)</text>
+</navLabel>
+<content src="114.html"/>
+</navPoint>
+<navPoint id="navpoint-728" playOrder="728">
+<navLabel>
+<text>Ja 545 Vidhurapaṇḍitajātaka The Story about (the Wise) Vidhura (Mahānipāta)</text>
+</navLabel>
+<content src="115.html"/>
+<navPoint id="navpoint-729" playOrder="729">
+<navLabel>
+<text>The Section about the Fourfold Fast</text>
+</navLabel>
+<content src="115.html#ncx33732"/>
+</navPoint>
+<navPoint id="navpoint-730" playOrder="730">
+<navLabel>
+<text>The Longing during Pregnancy</text>
+</navLabel>
+<content src="115.html#ncx33765"/>
+</navPoint>
+<navPoint id="navpoint-731" playOrder="731">
+<navLabel>
+<text>The Jewel</text>
+</navLabel>
+<content src="115.html#ncx33863"/>
+</navPoint>
+<navPoint id="navpoint-732" playOrder="732">
+<navLabel>
+<text>Questions about the Household Life</text>
+</navLabel>
+<content src="115.html#ncx33930"/>
+</navPoint>
+<navPoint id="navpoint-733" playOrder="733">
+<navLabel>
+<text>The Signs</text>
+</navLabel>
+<content src="115.html#ncx33983"/>
+</navPoint>
+<navPoint id="navpoint-734" playOrder="734">
+<navLabel>
+<text>The King’s Court</text>
+</navLabel>
+<content src="115.html#ncx34014"/>
+</navPoint>
+<navPoint id="navpoint-735" playOrder="735">
+<navLabel>
+<text>The Inner Repetition</text>
+</navLabel>
+<content src="115.html#ncx34104"/>
+</navPoint>
+<navPoint id="navpoint-736" playOrder="736">
+<navLabel>
+<text>The Duties of a Good Man</text>
+</navLabel>
+<content src="115.html#ncx34156"/>
+</navPoint>
+<navPoint id="navpoint-737" playOrder="737">
+<navLabel>
+<text>Black Rock</text>
+</navLabel>
+<content src="115.html#ncx34210"/>
+</navPoint>
+<navPoint id="navpoint-738" playOrder="738">
+<navLabel>
+<text>The Return</text>
+</navLabel>
+<content src="116.html"/>
+</navPoint>
+</navPoint>
+<navPoint id="navpoint-739" playOrder="739">
+<navLabel>
+<text>Ja 546 Mahā-ummaggajātaka  The Story about the Great Tunnel (Mahānipāta)</text>
+</navLabel>
+<content src="117.html"/>
+<navPoint id="navpoint-740" playOrder="740">
+<navLabel>
+<text>Mahosadha’s Birth</text>
+</navLabel>
+<content src="117.html#ncx34374"/>
+</navPoint>
+<navPoint id="navpoint-741" playOrder="741">
+<navLabel>
+<text>The Nineteen Problems</text>
+</navLabel>
+<content src="117.html#ncx34387"/>
+</navPoint>
+<navPoint id="navpoint-742" playOrder="742">
+<navLabel>
+<text>The Chameleon Question</text>
+</navLabel>
+<content src="117.html#ncx34443"/>
+</navPoint>
+<navPoint id="navpoint-743" playOrder="743">
+<navLabel>
+<text>The Question of Good and Bad Luck</text>
+</navLabel>
+<content src="117.html#ncx34449"/>
+</navPoint>
+<navPoint id="navpoint-744" playOrder="744">
+<navLabel>
+<text>The Question about the Goat</text>
+</navLabel>
+<content src="117.html#ncx34458"/>
+</navPoint>
+<navPoint id="navpoint-745" playOrder="745">
+<navLabel>
+<text>The Question of Poor and Rich</text>
+</navLabel>
+<content src="117.html#ncx34491"/>
+</navPoint>
+<navPoint id="navpoint-746" playOrder="746">
+<navLabel>
+<text>The Question of Lady Amarā</text>
+</navLabel>
+<content src="117.html#ncx34537"/>
+</navPoint>
+<navPoint id="navpoint-747" playOrder="747">
+<navLabel>
+<text>The Firefly Question</text>
+</navLabel>
+<content src="118.html"/>
+</navPoint>
+<navPoint id="navpoint-748" playOrder="748">
+<navLabel>
+<text>The Story about the Profound Question</text>
+</navLabel>
+<content src="118.html#ncx34568"/>
+</navPoint>
+<navPoint id="navpoint-749" playOrder="749">
+<navLabel>
+<text>The Story about the Deva’s (Four) Questions</text>
+</navLabel>
+<content src="118.html#ncx34595"/>
+</navPoint>
+<navPoint id="navpoint-750" playOrder="750">
+<navLabel>
+<text>The Question of the Five Wise Men</text>
+</navLabel>
+<content src="118.html#ncx34608"/>
+</navPoint>
+<navPoint id="navpoint-751" playOrder="751">
+<navLabel>
+<text>The Battle of the Two Wise Men</text>
+</navLabel>
+<content src="119.html"/>
+</navPoint>
+<navPoint id="navpoint-752" playOrder="752">
+<navLabel>
+<text>The Tunnel</text>
+</navLabel>
+<content src="120.html"/>
+</navPoint>
+<navPoint id="navpoint-753" playOrder="753">
+<navLabel>
+<text>The Question of the Water Rakkhasa</text>
+</navLabel>
+<content src="120.html#ncx35089"/>
+</navPoint>
+</navPoint>
+<navPoint id="navpoint-754" playOrder="754">
+<navLabel>
+<text>Ja 547 Vessantarajātaka The Story about (the Great King) Vessantara (Mahānipāta)</text>
+</navLabel>
+<content src="121.html"/>
+<navPoint id="navpoint-755" playOrder="755">
+<navLabel>
+<text>The Ten Boons</text>
+</navLabel>
+<content src="121.html#ncx35192"/>
+</navPoint>
+<navPoint id="navpoint-756" playOrder="756">
+<navLabel>
+<text>The Himālayas</text>
+</navLabel>
+<content src="121.html#ncx35244"/>
+</navPoint>
+<navPoint id="navpoint-757" playOrder="757">
+<navLabel>
+<text>Generosity</text>
+</navLabel>
+<content src="121.html#ncx35521"/>
+</navPoint>
+<navPoint id="navpoint-758" playOrder="758">
+<navLabel>
+<text>Entering the Forest</text>
+</navLabel>
+<content src="121.html#ncx35899"/>
+</navPoint>
+<navPoint id="navpoint-759" playOrder="759">
+<navLabel>
+<text>Jūjaka</text>
+</navLabel>
+<content src="121.html#ncx36048"/>
+</navPoint>
+<navPoint id="navpoint-760" playOrder="760">
+<navLabel>
+<text>The Small Wood</text>
+</navLabel>
+<content src="121.html#ncx36229"/>
+</navPoint>
+<navPoint id="navpoint-761" playOrder="761">
+<navLabel>
+<text>The Great Wood</text>
+</navLabel>
+<content src="122.html"/>
+</navPoint>
+<navPoint id="navpoint-762" playOrder="762">
+<navLabel>
+<text>The Children</text>
+</navLabel>
+<content src="122.html#ncx36488"/>
+</navPoint>
+<navPoint id="navpoint-763" playOrder="763">
+<navLabel>
+<text>Maddī</text>
+</navLabel>
+<content src="122.html#ncx36761"/>
+</navPoint>
+<navPoint id="navpoint-764" playOrder="764">
+<navLabel>
+<text>Sakka</text>
+</navLabel>
+<content src="122.html#ncx36990"/>
+</navPoint>
+<navPoint id="navpoint-765" playOrder="765">
+<navLabel>
+<text>The Great King</text>
+</navLabel>
+<content src="122.html#ncx37109"/>
+</navPoint>
+<navPoint id="navpoint-766" playOrder="766">
+<navLabel>
+<text>The Acts of the Six Nobles</text>
+</navLabel>
+<content src="122.html#ncx37291"/>
+</navPoint>
+<navPoint id="navpoint-767" playOrder="767">
+<navLabel>
+<text>The City</text>
+</navLabel>
+<content src="122.html#ncx37390"/>
+</navPoint>
+</navPoint>
+</navPoint>
+</navPoint>
+</navMap>
+</ncx>
