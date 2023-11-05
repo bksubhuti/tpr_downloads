@@ -48,8 +48,8 @@
         "size": "22.0 MB"
     },
     {
-        "name": "PEU June 18, 2023 release 200,000 records",
-        "release_date": "15.6.2023",
+        "name": "PEU November, 2023 release 200,000 records (71% edited)",
+        "release_date": "5.11.2023",
         "type": "dictionary",
         "url": "https://github.com/bksubhuti/tpr_downloads/raw/master/release_zips/dictionaries/peu1.zip",
         "filename": "peu1.sql",
