@@ -63,3 +63,29 @@ Niruttidīpanīpāṭha => annya_sadda_10
 grep "mula_ma_01" tipitaka_data_dump.sql > mulapannasapali-reverse-engineered-book-import.sql
 grep "annya_sadda_10" tipitaka_data_dump.sql > niruttidipanipatha-reverse-engineered-book-import.sql
 ```
+
+I used this command to find each table related to a specific book:
+```
+grep -oE "INSERT INTO [a-zA-Z0-9_]+" mulapannasapali/mulapannasapali-reverse-engineered-book-import.sql | uniq
+grep -oE "INSERT INTO [a-zA-Z0-9_]+" niruttidipanipatha/niruttidipanipatha-reverse-engineered-book-import.sql | uniq
+```
+
+tables related to mulapannasapali book:
+```
+pali_attha_tika_match
+tran_books
+tocs
+paragraphs
+paragraph_mapping
+books
+suttas
+pages
+```
+
+tables related to niruttidipanipatha book:
+```
+tocs
+paragraphs
+books
+pages
+```
