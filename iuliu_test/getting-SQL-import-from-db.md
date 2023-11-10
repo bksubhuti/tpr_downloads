@@ -30,4 +30,13 @@ sqlite3 tipitaka_pali.db <<EOF
 EOF
 ```
 
-Then I picked a book which I wanted to compare the XML to the SQL, for example Mūlapaṇṇāsapāḷi, and found it's book ID : `mula_ma_01`. Then I found each SQL `INSERT` statement with that book ID and copied them to a new SQL file `majjhimanikaya-mulapannasapali-reconstructred-import.sql`.
+Then, for each book I wanted to compare, I searched the book title in the `tipitaka_data_dump.sql` file to find the book ID, and then copied every every INSERT line containing that ID to a separate file using grip. Now I had the reconstucted SQL import for each book I wanted to compare:
+
+Book Title => Book ID in the DB
+Mūlapaṇṇāsapāḷi => mula_ma_01
+Niruttidīpanīpāṭha => annya_sadda_10
+
+```
+grep "mula_ma_01" tipitaka_data_dump.sql > mulapannasapali-reconstructed-book-import.sql
+grep "annya_sadda_10" tipitaka_data_dump.sql > niruttidipanipatha-reconstructed-book-import.sql
+```
