@@ -1,5 +1,5 @@
 # Getting SQL Import from DB
-For reverse engineering how the VRI Tipitaka XML maps to the SQLLite DB schema, it is necessary to compare the current SQL data to the XML.
+For reverse engineering how the VRI Tipitaka XML maps to the SQLite DB schema, it is necessary to compare the current SQL data to the XML.
 
 To do so I first dumped the DB schema:
 ```
@@ -37,6 +37,6 @@ Mūlapaṇṇāsapāḷi => mula_ma_01
 Niruttidīpanīpāṭha => annya_sadda_10
 
 ```
-grep "mula_ma_01" tipitaka_data_dump.sql > mulapannasapali-reconstructed-book-import.sql
-grep "annya_sadda_10" tipitaka_data_dump.sql > niruttidipanipatha-reconstructed-book-import.sql
+grep "mula_ma_01" tipitaka_data_dump.sql > mulapannasapali-reverse-engineered-book-import.sql
+grep "annya_sadda_10" tipitaka_data_dump.sql > niruttidipanipatha-reverse-engineered-book-import.sql
 ```

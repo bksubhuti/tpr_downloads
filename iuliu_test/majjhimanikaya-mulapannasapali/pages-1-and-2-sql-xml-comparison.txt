@@ -1,4 +1,4 @@
-# Page 1 SQL
+# Page 1 Content from SQL
 
 <p class="nikaya">majjhimanikāyo</p>
 <a name="mn1"></a><p class="book">mūlapaṇṇāsapāḷi</p>
@@ -9,7 +9,7 @@
 <p class="bodytext"><a name="para2"></a><a name="para2_mn1"></a><span class="paranum">2</span>. idha, bhikkhave, assutavā puthujjano ariyānaṃ adassāvī ariyadhammassa akovido <a name="V1.0002"></a> ariyadhamme avinīto, sappurisānaṃ adassāvī sappurisadhammassa akovido sappurisadhamme avinīto – pathaviṃ <span class="note">[paṭhaviṃ (sī. syā. kaṃ. pī.)]</span> pathavito sañjānāti, pathaviṃ pathavito saññatvā pathaviṃ maññati, pathaviyā maññati, pathavito maññati, pathaviṃ meti maññati<a name="T1.0002"></a>, pathaviṃ abhinandati. taṃ kissa hetu? ‘apariññātaṃ tassā’ti vadāmi.</p>
 <p class="bodytext">āpaṃ āpato sañjānāti, āpaṃ āpato saññatvā āpaṃ maññati, āpasmiṃ maññati, āpato maññati, āpaṃ meti maññati, āpaṃ abhinandati. taṃ kissa hetu? ‘apariññātaṃ tassā’ti vadāmi.</p>
 
-# Page 2 SQL
+# Page 2 Content from SQL
 
 <p class="bodytext">tejaṃ <a name="M1.0002"></a> tejato sañjānāti, tejaṃ tejato saññatvā tejaṃ maññati, tejasmiṃ maññati, tejato maññati, tejaṃ meti maññati, tejaṃ abhinandati. taṃ kissa hetu? ‘apariññātaṃ tassā’ti vadāmi.</p>
 <p class="bodytext">vāyaṃ vāyato sañjānāti, vāyaṃ vāyato saññatvā vāyaṃ maññati, vāyasmiṃ maññati, vāyato maññati, vāyaṃ meti maññati, vāyaṃ abhinandati. taṃ kissa hetu? ‘apariññātaṃ tassā’ti <a name="P1.0002"></a> vadāmi.</p>
@@ -20,7 +20,7 @@
 <p class="bodytext">ābhassare ābhassarato sañjānāti, ābhassare ābhassarato saññatvā ābhassare maññati, ābhassaresu maññati, ābhassarato maññati, ābhassare meti maññati, ābhassare abhinandati. taṃ kissa hetu? ‘apariññātaṃ tassā’ti vadāmi.</p>
 <p class="bodytext">subhakiṇhe subhakiṇhato sañjānāti, subhakiṇhe subhakiṇhato saññatvā subhakiṇhe maññati, subhakiṇhesu maññati, subhakiṇhato maññati, subhakiṇhe meti maññati, subhakiṇhe abhinandati. taṃ kissa hetu? ‘apariññātaṃ tassā’ti vadāmi.</p>
 
-# Page 1 VRI XML
+# Page 1 from VRI XML
 
 <p rend="centre"> Namo tassa bhagavato arahato sammāsambuddhassa</p>
 <p rend="nikaya">Majjhimanikāyo</p>
@@ -33,7 +33,7 @@
 <p rend="bodytext" n="2"><hi rend="paranum">2</hi><hi rend="dot">.</hi> ‘‘Idha, bhikkhave, assutavā puthujjano ariyānaṃ adassāvī ariyadhammassa akovido <pb ed="V" n="1.0002" /> ariyadhamme avinīto, sappurisānaṃ adassāvī sappurisadhammassa akovido sappurisadhamme avinīto – pathaviṃ <note>paṭhaviṃ (sī. syā. kaṃ. pī.)</note> pathavito sañjānāti; pathaviṃ pathavito saññatvā pathaviṃ maññati, pathaviyā maññati, pathavito maññati, pathaviṃ meti maññati<pb ed="T" n="1.0002" />, pathaviṃ abhinandati. Taṃ kissa hetu? ‘Apariññātaṃ tassā’ti vadāmi.</p>
 <p rend="bodytext">‘‘Āpaṃ āpato sañjānāti; āpaṃ āpato saññatvā āpaṃ maññati, āpasmiṃ maññati, āpato maññati, āpaṃ meti maññati, āpaṃ abhinandati. Taṃ kissa hetu? ‘Apariññātaṃ tassā’ti vadāmi.</p>
 
-# Page 2 VRI XML
+# Page 2 from VRI XML
 
 <p rend="bodytext">‘‘Tejaṃ <pb ed="M" n="1.0002" /> tejato sañjānāti; tejaṃ tejato saññatvā tejaṃ maññati, tejasmiṃ maññati, tejato maññati, tejaṃ meti maññati, tejaṃ abhinandati. Taṃ kissa hetu? ‘Apariññātaṃ tassā’ti vadāmi.</p>
 <p rend="bodytext">‘‘Vāyaṃ vāyato sañjānāti; vāyaṃ vāyato saññatvā vāyaṃ maññati, vāyasmiṃ maññati, vāyato maññati, vāyaṃ meti maññati, vāyaṃ abhinandati. Taṃ kissa hetu? ‘Apariññātaṃ tassā’ti <pb ed="P" n="1.0002" /> vadāmi.</p>
