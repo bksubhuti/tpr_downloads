@@ -6,7 +6,12 @@ To do so I first dumped the DB schema:
 sqlite3 tipitaka_pali.db ".schema" > tipitaka_schema_dump.sql
 ```
 
-Then I found which tables are concerned for our analysis:
+I list every table on one line:
+```
+sqlite3 tipitaka_pali.db "SELECT name FROM sqlite_master WHERE type='table';"
+```
+
+These tables seem most relevant for our book import analysis:
 ```
 category
 books
@@ -16,16 +21,34 @@ paragraphs
 paragraph_mapping
 ```
 
-Then I dumped the current DB data into an SQL file:
+However I will dump the data for every table, that way I can see every relationship to an imported book I may need to reproduce:
 ```
 sqlite3 tipitaka_pali.db <<EOF
 .output tipitaka_data_dump.sql
+.dump recent
+.dump pali_attha_tika_match
+.dump tran_books
 .dump category
-.dump books
 .dump tocs
-.dump pages
 .dump paragraphs
 .dump paragraph_mapping
+.dump dpd_word_split
+.dump dpr_stem
+.dump dpd_inflections_to_headwords
+.dump search_history
+.dump quote_of_day
+.dump dictionary_history
+.dump dictionary
+.dump dictionary_books
+.dump dpd
+.dump books
+.dump suttas
+.dump dpd_grammar
+.dump pages
+.dump sqlite_sequence
+.dump about
+.dump bookmark
+.dump words
 .exit
 EOF
 ```
