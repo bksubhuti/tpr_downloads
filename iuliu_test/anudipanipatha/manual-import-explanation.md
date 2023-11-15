@@ -6,6 +6,8 @@ books
 pages
 ```
 
+## books table
+
 I'll start with the single books INSERT.
 
 The annya books have these existing imports:
@@ -59,3 +61,85 @@ The last page in the XML record is:
 <pb ed="M" n="0.0324">
 ```
 So the lastpage and pagecount fields are 324.
+
+## tocs table
+
+I ran this command to find the unique rend attribute values:
+```
+rg -o 'rend="[a-zA-Z]*"' iuliu_test/anudipanipatha/e0401n.nrf.xml | sort | uniq
+```
+
+Unique values:
+```
+rend="bodytext"
+rend="bold"
+rend="book"
+rend="centre"
+rend="chapter"
+rend="dot"
+rend="gathalast"
+rend="indent"
+rend="paranum"
+rend="subhead"
+```
+
+The relevant values for the toc table are:
+```
+chapter
+subhead
+```
+
+So I searched for those:
+```
+rg 'rend="(chapter|subhead)"' iuliu_test/anudipanipatha/e0401n.nrf.xml
+```
+
+Giving me this list:
+```
+17:<p rend="chapter">1. Cittasaṅgahaanudīpanā</p>
+585:<p rend="chapter">2. Cetasikasaṅgahaanudīpanā</p>
+829:<p rend="chapter">3. Pakiṇṇakasaṅgahaanudīpanā</p>
+865:<p rend="chapter">4. Vīthisaṅgahaanudīpanā</p>
+961:<p rend="chapter">5. Vīthimuttasaṅgahaanudīpanā</p>
+1141:<p rend="chapter">6. Rūpasaṅgahaanudīpanā</p>
+1289:<p rend="chapter">7. Samuccayasaṅgahaanudīpanā</p>
+1425:<p rend="chapter">8. Paccayasaṅgahaanudīpanā</p>
+1557:<p rend="chapter">9. Kammaṭṭhānasaṅgahaanudīpanā</p>
+1705:<p rend="subhead">Nigamagāthāsu.</p>
+1713:<p rend="subhead">Dīpaniyā nigamagāthāsu.</p>
+```
+
+the `tocs` table has the columns:
+```
+CREATE TABLE "tocs" (
+	"book_id"	TEXT,
+	"name"	TEXT,
+	"type"	TEXT,
+	"page_number"	INTEGER,
+  simple TEXT
+);
+```
+
+Examples from mulapannasapali:
+```
+INSERT INTO tocs VALUES('mula_ma_01','1. mūlapariyāyavaggo','chapter',1,'1. mulapariyayavaggo');
+INSERT INTO tocs VALUES('mula_ma_01','dassanā pahātabbāsavā','subhead',9,'dassana pahatabbasava');
+```
+
+For anudīpanīpāṭha, the SQL should be like this:
+```
+INSERT INTO tocs VALUES('annya_sadda_18','1. cittasaṅgahaanudīpanā','chapter',1,'1. cittasangahaanudipana');
+INSERT INTO tocs VALUES('annya_sadda_18','nigamagāthāsu.','subhead',322,'nigamagathasu.');
+```
+
+`chapter` rend value maps to `chapter` type column
+`subhead` rend value maps to `subhead` type column
+
+the `page_number` column value maps to the nearest previous Myammar edition page.
+
+For example from mulapannasapali, this subhead is page 9 and the `<pb ed="M" n="1.0009" />` is before the `p` subhead tag:
+```
+INSERT INTO tocs VALUES('mula_ma_01','dassanā pahātabbāsavā','subhead',9,'dassana pahatabbasava');
+```
+
+So for our the case of anudīpanīpāṭha, '1. cittasaṅgahaanudīpanā' starts at page 1 (and is before the first pb tag) and 'nigamagāthāsu' is page 322, since the nearest previous pb tag is `<pb ed="M" n="0.0322" />`.

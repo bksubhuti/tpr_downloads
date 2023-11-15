@@ -40,3 +40,50 @@ The `<note></note>` tag indicates alternative readings:
 ```
 <note>paṭhaviṃ (sī. syā. kaṃ. pī.)</note>
 ```
+
+## rend attribute
+
+I want to know each unique `rend` attribute value in the VRI XML files. Since the XML files are encoded in UTF-16, the `grep` util has trouble searching them. So I installed [`ripgrep`](https://github.com/BurntSushi/ripgrep) which handles searching UTF-16 text unlike `grep`.
+
+I can find the unique rend values in a single XML file like this:
+```
+rg -o 'rend="[a-zA-Z]*"' iuliu_test/anudipanipatha/e0401n.nrf.xml | sort | uniq
+```
+
+I found the unique rend value in all XML files with this bash script:
+```
+#!/bin/bash
+
+# Directory containing XML files
+directory="./tipitaka-xml/romn"
+
+# Function to search for rend attributes in a file
+search_file() {
+    file=$1
+    rg -o 'rend="[a-zA-Z]*"' "$file"
+}
+
+export -f search_file
+
+# Find all XML files, run search in parallel, and sort and deduplicate the results
+find "$directory" -name '*.xml' | parallel -k search_file | sort | uniq > attributes.txt
+```
+
+The unique `rend` values in all the VRI XML are:
+```
+bodytext
+bold
+book
+centre
+chapter
+dot
+gathalast
+hangnum
+indent
+nikaya
+paranum
+subhead
+subsubhead
+title
+unindented
+```
