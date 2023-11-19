@@ -46,11 +46,13 @@ The `<note></note>` tag indicates alternative readings:
 I want to know each unique `rend` attribute value in the VRI XML files. Since the XML files are encoded in UTF-16, the `grep` util has trouble searching them. So I installed [`ripgrep`](https://github.com/BurntSushi/ripgrep) which handles searching UTF-16 text unlike `grep`.
 
 I can find the unique rend values in a single XML file like this:
+
 ```
 rg -o 'rend="[a-zA-Z]*"' iuliu_test/anudipanipatha/e0401n.nrf.xml | sort | uniq
 ```
 
 I found the unique rend value in all XML files with this bash script:
+
 ```
 #!/bin/bash
 
@@ -70,6 +72,7 @@ find "$directory" -name '*.xml' | parallel -k search_file | sort | uniq > attrib
 ```
 
 The unique `rend` values in all the VRI XML are:
+
 ```
 bodytext
 bold
@@ -86,4 +89,15 @@ subhead
 subsubhead
 title
 unindented
+```
+
+## Converting VRI XML to HTML
+
+To use the tipitaka-latn.xsl file to convert your XML file (e0401n.nrf.xml) into HTML, you will need to perform an XSLT transformation. XSLT (eXtensible Stylesheet Language Transformations) is a language for transforming XML documents into other XML documents or other formats such as HTML.
+
+We'll use the `xsltproc` command-line tool XSLT processor:
+```
+xsltproc tipitaka-latn.xsl ./anudipanipatha/e0401n.nrf.xml > ./anudipanipatha/e0401n.nrf.html
+xsltproc tipitaka-latn.xsl ./mulapannasapali/s0201m.mul.xml > ./mulapannasapali/s0201m.mul.html
+xsltproc tipitaka-latn.xsl ./niruttidipanipatha/e0201n.nrf.xml > ./niruttidipanipatha/e0201n.nrf.html
 ```

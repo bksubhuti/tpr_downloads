@@ -23,6 +23,7 @@ CREATE TABLE "books" (
 ```
 
 The annya books have these existing imports:
+
 ```
 INSERT INTO books VALUES('annya_vi_01','annya','annya_vi','dvemātikā kaṅkhāvitaraṇī',1,357,357);
 INSERT INTO books VALUES('annya_vi_02','annya','annya_vi','vinayasaṅgahaaṭṭhakathā',1,468,468);
@@ -252,7 +253,7 @@ For anudipatha, most pages don't have paragraphs:
 <hi rend="paranum">4</hi>
 ```
 
-So I assume I only need import the existing paragraphs to the pages and pages without paragraphs don't have any:
+In the case of a page not having paragraphs, an entry isn't added to the pargraphs table:
 
 ```
 INSERT INTO paragraphs VALUES('annya_sadda_18',1,4);
@@ -261,4 +262,53 @@ INSERT INTO paragraphs VALUES('annya_sadda_18',3,8);
 INSERT INTO paragraphs VALUES('annya_sadda_18',4,10);
 ```
 
+For example, page 156 exists in niruttidipanipatha but nothing is imported it:
+
+```
+INSERT INTO paragraphs VALUES('annya_sadda_10',288,155);
+INSERT INTO paragraphs VALUES('annya_sadda_10',289,163);
+```
+
 ## pages table
+
+```
+CREATE TABLE "pages" (
+	"id"	INTEGER NOT NULL,
+	"bookid"	TEXT,
+	"page"	INTEGER,
+	"content"	TEXT,
+	"paranum"	TEXT,
+	PRIMARY KEY("id" AUTOINCREMENT)
+);
+```
+
+SQL import examples from niruttidipanipatha:
+
+```
+INSERT INTO pages VALUES(54408,'annya_sadda_10',1,replace(replace('<p class="book">niruttidīpanīpāṭha</p>\r\n','\r',char(13)),'\n',char(10)),'-1-2-3-4-');
+INSERT INTO pages VALUES(54562,'annya_sadda_10',155,replace(replace('<p class="subhead">upasaggapadarāsi\r\n','\r',char(13)),'\n',char(10)),'-288-');
+INSERT INTO pages VALUES(54563,'annya_sadda_10',156,replace(replace('<p class="bodytext">samantā\r\n','\r',char(13)),'\n',char(10)),'');
+```
+
+### id column
+
+Doesn't need to be provided as id will autoincrement
+
+### book id column
+
+Same as books table row id
+
+### page
+
+Myanmar edition page number.
+
+### paranum
+
+There are three cases:
+
+- Page without paragraphs gets empty string value: `''`
+- Page with one paragraph gets a string value like this: `'-288-'`
+- Page with two or more paragraphs: `'-1-2-3-4-'`
+
+### content
+
