@@ -1,4 +1,5 @@
 Given the tables related to similar annya book niruttidipanipatha, the relevant tables for this import are only:
+
 ```
 tocs
 paragraphs
@@ -11,6 +12,7 @@ pages
 I'll start with the single books INSERT.
 
 The annya books have these existing imports:
+
 ```
 INSERT INTO books VALUES('annya_vi_01','annya','annya_vi','dvemātikā kaṅkhāvitaraṇī',1,357,357);
 INSERT INTO books VALUES('annya_vi_02','annya','annya_vi','vinayasaṅgahaaṭṭhakathā',1,468,468);
@@ -52,24 +54,29 @@ They map to the existing annya categories in TPR: "vinaya", "abhidhamma" and "by
 I assume Anudīpanīpāṭha is similar in content to Niruttidīpanīpāṭha, so it would go in the "annya_sadda" (byākaraṇādi) category.
 
 The order in which the "annya_sadda" books are inserted match with their numbering and the order they are displaed in TPR. For the sake of not messing with the current order and ID numbering, I would append Anudīpanīpāṭha to the end of the list:
+
 ```
 INSERT INTO books VALUES('annya_sadda_18','annya','annya_sadda','anudīpanīpāṭha',1,324,324);
 ```
 
 The last page in the XML record is:
+
 ```
 <pb ed="M" n="0.0324">
 ```
+
 So the lastpage and pagecount fields are 324.
 
 ## tocs table
 
 I ran this command to find the unique rend attribute values:
+
 ```
 rg -o 'rend="[a-zA-Z]*"' iuliu_test/anudipanipatha/e0401n.nrf.xml | sort | uniq
 ```
 
 Unique values:
+
 ```
 rend="bodytext"
 rend="bold"
@@ -84,17 +91,20 @@ rend="subhead"
 ```
 
 The relevant values for the toc table are:
+
 ```
 chapter
 subhead
 ```
 
 So I searched for those:
+
 ```
 rg 'rend="(chapter|subhead)"' iuliu_test/anudipanipatha/e0401n.nrf.xml
 ```
 
 Giving me this list:
+
 ```
 17:<p rend="chapter">1. Cittasaṅgahaanudīpanā</p>
 585:<p rend="chapter">2. Cetasikasaṅgahaanudīpanā</p>
@@ -110,6 +120,7 @@ Giving me this list:
 ```
 
 the `tocs` table has the columns:
+
 ```
 CREATE TABLE "tocs" (
 	"book_id"	TEXT,
@@ -121,25 +132,123 @@ CREATE TABLE "tocs" (
 ```
 
 Examples from mulapannasapali:
+
 ```
 INSERT INTO tocs VALUES('mula_ma_01','1. mūlapariyāyavaggo','chapter',1,'1. mulapariyayavaggo');
 INSERT INTO tocs VALUES('mula_ma_01','dassanā pahātabbāsavā','subhead',9,'dassana pahatabbasava');
 ```
 
 For anudīpanīpāṭha, the SQL should be like this:
+
 ```
-INSERT INTO tocs VALUES('annya_sadda_18','1. cittasaṅgahaanudīpanā','chapter',1,'1. cittasangahaanudipana');
-INSERT INTO tocs VALUES('annya_sadda_18','nigamagāthāsu.','subhead',322,'nigamagathasu.');
+INSERT INTO tocs VALUES('annya_sadda_18', '1. cittasaṅgahaanudīpanā', 'chapter', 1, NULL);
+INSERT INTO tocs VALUES('annya_sadda_18', 'nigamagāthāsu.', 'subhead', 322, NULL);
 ```
+
+### `book_id`
+
+the same `book_id` as from the books table
+
+### `type` column
 
 `chapter` rend value maps to `chapter` type column
 `subhead` rend value maps to `subhead` type column
 
+### `page_number` column
+
 the `page_number` column value maps to the nearest previous Myammar edition page.
 
 For example from mulapannasapali, this subhead is page 9 and the `<pb ed="M" n="1.0009" />` is before the `p` subhead tag:
+
 ```
 INSERT INTO tocs VALUES('mula_ma_01','dassanā pahātabbāsavā','subhead',9,'dassana pahatabbasava');
 ```
 
 So for our the case of anudīpanīpāṭha, '1. cittasaṅgahaanudīpanā' starts at page 1 (and is before the first pb tag) and 'nigamagāthāsu' is page 322, since the nearest previous pb tag is `<pb ed="M" n="0.0322" />`.
+
+### `simple` column
+
+this column is no longer necessary, so I can enter `NULL` values here.
+
+## paragraphs table
+
+The table schema:
+
+```
+CREATE TABLE "paragraphs" (
+  "book_id" TEXT,
+  "paragraph_number" INTEGER,
+  "page_number" INTEGER
+);
+```
+
+Example SQL import from niruttidipanipatha:
+
+```
+INSERT INTO paragraphs VALUES('annya_sadda_10',1,1);
+INSERT INTO paragraphs VALUES('annya_sadda_10',2,1);
+INSERT INTO paragraphs VALUES('annya_sadda_10',3,1);
+INSERT INTO paragraphs VALUES('annya_sadda_10',4,1);
+INSERT INTO paragraphs VALUES('annya_sadda_10',1,2);
+INSERT INTO paragraphs VALUES('annya_sadda_10',2,2);
+INSERT INTO paragraphs VALUES('annya_sadda_10',3,2);
+INSERT INTO paragraphs VALUES('annya_sadda_10',4,2);
+INSERT INTO paragraphs VALUES('annya_sadda_10',5,3);
+INSERT INTO paragraphs VALUES('annya_sadda_10',6,3);
+INSERT INTO paragraphs VALUES('annya_sadda_10',7,3);
+INSERT INTO paragraphs VALUES('annya_sadda_10',8,4);
+INSERT INTO paragraphs VALUES('annya_sadda_10',9,6);
+INSERT INTO paragraphs VALUES('annya_sadda_10',10,6);
+```
+
+niruttidipanipatha VRI XML having removed everything except `hi` and `pb` tags:
+
+```
+<hi rend="paranum">1</hi>
+<pb ed="M" n="0.0001" />
+<hi rend="paranum">2</hi>
+<hi rend="paranum">3</hi>
+<hi rend="paranum">4</hi>
+<pb ed="M" n="0.0002" />
+<hi rend="paranum">1</hi>
+<hi rend="paranum">2</hi>
+<hi rend="paranum">3</hi>
+<hi rend="paranum">4</hi>
+<pb ed="M" n="0.0003" />
+<hi rend="paranum">5</hi>
+<hi rend="paranum">6</hi>
+<hi rend="paranum">7</hi>
+<pb ed="M" n="0.0004" />
+```
+
+So the paragraphs table maps the paragraph to the nearest previous page.
+
+For anudipatha, most pages don't have paragraphs:
+
+```
+<pb ed="M" n="0.0001" />
+<pb ed="M" n="0.0002" />
+<pb ed="M" n="0.0003" />
+<pb ed="M" n="0.0004" />
+<hi rend="paranum">1</hi>
+<pb ed="M" n="0.0005" />
+<pb ed="M" n="0.0006" />
+<pb ed="M" n="0.0007" />
+<hi rend="paranum">2</hi>
+<pb ed="M" n="0.0008" />
+<hi rend="paranum">3</hi>
+<pb ed="M" n="0.0009" />
+<pb ed="M" n="0.0010" />
+<hi rend="paranum">4</hi>
+```
+
+So I assume I only need import the existing paragraphs to the pages and pages without paragraphs don't have any:
+
+```
+INSERT INTO paragraphs VALUES('annya_sadda_18',1,4);
+INSERT INTO paragraphs VALUES('annya_sadda_18',2,7);
+INSERT INTO paragraphs VALUES('annya_sadda_18',3,8);
+INSERT INTO paragraphs VALUES('annya_sadda_18',4,10);
+```
+
+## pages table
