@@ -9,10 +9,20 @@ pages
 
 ## books table
 
-I'll start with the single books INSERT.
+```
+CREATE TABLE "books" (
+	"id"	TEXT,
+	"basket"	TEXT,
+	"category"	NUMERIC,
+	"name"	TEXT,
+	"firstpage"	INTEGER,
+	"lastpage"	INTEGER,
+	"pagecount"	INTEGER,
+	PRIMARY KEY("id")
+);
+```
 
 The annya books have these existing imports:
-
 ```
 INSERT INTO books VALUES('annya_vi_01','annya','annya_vi','dvemātikā kaṅkhāvitaraṇī',1,357,357);
 INSERT INTO books VALUES('annya_vi_02','annya','annya_vi','vinayasaṅgahaaṭṭhakathā',1,468,468);
@@ -49,7 +59,7 @@ INSERT INTO books VALUES('annya_sadda_16','annya','annya_sadda','kaccāyanasāra
 INSERT INTO books VALUES('annya_sadda_17','annya','annya_sadda','saddatthabhedacintā',1,82,82);
 ```
 
-They map to the existing annya categories in TPR: "vinaya", "abhidhamma" and "byākaraṇādi".
+They map to the existing annya categories visible in TPR under annya tab: "vinaya", "abhidhamma" and "byākaraṇādi".
 
 I assume Anudīpanīpāṭha is similar in content to Niruttidīpanīpāṭha, so it would go in the "annya_sadda" (byākaraṇādi) category.
 
