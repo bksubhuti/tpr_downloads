@@ -8,6 +8,14 @@
         "size": "5.9 MB"
     },
     {
+        "name": "Pali English Dhammapada: Edited and Translated by Ānandajoti Bhikkhu",
+        "release_date": "11.12.2023",
+        "type": "books index",
+        "url": "https://github.com/bksubhuti/tpr_downloads/raw/master/release_zips/dhp_bh_anandajoti.zip",
+        "filename": "dhp_bh_anandajoti.sql",
+        "size": "69.3 KB"
+    },
+    {
         "name": "iit Chanting Book",
         "release_date": "18.6.2023",
         "type": "books",
