@@ -1,13 +1,12 @@
-name: convert_vri_html_to_tpr_sql
+name: convert_vri
 description: takes a VRI HTML file and produces an SQL file to import that Tipitaka book to TPR
 version: 1.0.0
 
 environment:
   sdk: ^3.1.3
 
-# Add regular dependencies here.
 dependencies:
-  # path: ^1.8.0
+  html: ^0.15.0
 
 dev_dependencies:
   lints: ^2.0.0
