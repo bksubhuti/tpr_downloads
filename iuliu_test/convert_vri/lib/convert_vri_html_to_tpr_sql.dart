@@ -12,8 +12,7 @@ List<String> cut_vri_html_into_myanmar_edition_pages(String vriHtml) {
     if (isNewPage && !isFirstPage) {
       return [...pages, [element.outerHtml]];
     } else {
-      var lastPage = pages.last;
-      lastPage.add(element.outerHtml);
+      pages.last.add(element.outerHtml);
       return pages;
     }
   });
