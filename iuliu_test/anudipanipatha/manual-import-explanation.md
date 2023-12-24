@@ -1,9 +1,9 @@
 Given the tables related to similar annya book niruttidipanipatha, the relevant tables for this import are only:
 
 ```
+books
 tocs
 paragraphs
-books
 pages
 ```
 
@@ -153,7 +153,31 @@ For anudīpanīpāṭha, the SQL should be like this:
 
 ```
 INSERT INTO tocs VALUES('annya_sadda_18', '1. cittasaṅgahaanudīpanā', 'chapter', 1, NULL);
-INSERT INTO tocs VALUES('annya_sadda_18', 'nigamagāthāsu.', 'subhead', 322, NULL);
+INSERT INTO tocs VALUES('annya_sadda_18', '2. cetasikasaṅgahaanudīpanā', 'chapter', 78, NULL);
+INSERT INTO tocs VALUES('annya_sadda_18', '3. pakiṇṇakasaṅgahaanudīpanā', 'chapter', 107, NULL);
+INSERT INTO tocs VALUES('annya_sadda_18', '4. vīthisaṅgahaanudīpanā', 'chapter', 120, NULL);
+INSERT INTO tocs VALUES('annya_sadda_18', '5. vīthimuttasaṅgahaanudīpanā', 'chapter', 143, NULL);
+INSERT INTO tocs VALUES('annya_sadda_18', '6. rūpasaṅgahaanudīpanā', 'chapter', 189, NULL);
+INSERT INTO tocs VALUES('annya_sadda_18', '7. samuccayasaṅgahaanudīpanā', 'chapter', 229, NULL);
+INSERT INTO tocs VALUES('annya_sadda_18', '8. paccayasaṅgahaanudīpanā', 'chapter', 246, NULL);
+INSERT INTO tocs VALUES('annya_sadda_18', '9. kammaṭṭhānasaṅgahaanudīpanā', 'chapter', 275, NULL);
+INSERT INTO tocs VALUES('annya_sadda_18', 'nigamagāthāsu.', 'subhead', 321, NULL);
+INSERT INTO tocs VALUES('annya_sadda_18', 'dīpaniyā nigamagāthāsu.', 'subhead', 323, NULL);
+```
+
+I got the chapters with their respective page number using this command:
+```
+rg -o '(<p rend="(chapter|subhead)">[^<]*</p>|<pb ed="M" n="[^"]*" />)' iuliu_test/anudipanipatha/e0401n.nrf.xml
+```
+
+```
+...
+1697:<pb ed="M" n="0.0321" />
+1705:<p rend="subhead">Nigamagāthāsu.</p>
+1709:<pb ed="M" n="0.0322" />
+1709:<pb ed="M" n="0.0323" />
+1713:<p rend="subhead">Dīpaniyā nigamagāthāsu.</p>
+1717:<pb ed="M" n="0.0324" />
 ```
 
 ### `book_id`
@@ -175,7 +199,7 @@ For example from mulapannasapali, this subhead is page 9 and the `<pb ed="M" n="
 INSERT INTO tocs VALUES('mula_ma_01','dassanā pahātabbāsavā','subhead',9,'dassana pahatabbasava');
 ```
 
-So for our the case of anudīpanīpāṭha, '1. cittasaṅgahaanudīpanā' starts at page 1 (and is before the first pb tag) and 'nigamagāthāsu' is page 322, since the nearest previous pb tag is `<pb ed="M" n="0.0322" />`.
+So for our the case of anudīpanīpāṭha, '1. cittasaṅgahaanudīpanā' starts at page 1 (and is before the first pb tag) and 'nigamagāthāsu' is page 321, since the nearest previous pb tag is `<pb ed="M" n="0.0321" />`.
 
 ### `simple` column
 
@@ -253,7 +277,7 @@ For anudipatha, most pages don't have paragraphs:
 <hi rend="paranum">4</hi>
 ```
 
-In the case of a page not having paragraphs, an entry isn't added to the pargraphs table:
+In the case of a page not having paragraphs, an entry isn't added to the paragraphs table:
 
 ```
 INSERT INTO paragraphs VALUES('annya_sadda_18',1,4);
