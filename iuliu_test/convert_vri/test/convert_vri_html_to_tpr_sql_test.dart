@@ -16,4 +16,8 @@ void main() {
       { 'number': 3, 'content': readFile("page3.html") }
     ]);
   });
+
+  test('extract_paragraphs_by_page', () {
+    expect(extract_paragraphs_by_page(readFile('paragraphs.txt')), [ { 'number': 4, 'paragraphs': [1] }, { 'number': 98, 'paragraphs': [99, 100, 101]}, { 'number': 324, 'paragraphs': [1, 2]}]);
+  });
 }
