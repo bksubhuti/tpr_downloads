@@ -10,11 +10,10 @@ String readFile(String filePathRelativeToTestFile) {
 
 void main() {
   test('cut_vri_html_into_myanmar_edition_pages', () {
-    
     expect(cut_vri_html_into_myanmar_edition_pages(readFile('e0401n.nrf.html')), [
-      readFile("page1.html"),
-      readFile("page2.html"),
-      readFile("page3.html")
+      { 'number': 1, 'content': readFile("page1.html") },
+      { 'number': 2, 'content': readFile("page2.html") },
+      { 'number': 3, 'content': readFile("page3.html") }
     ]);
   });
 }

@@ -1,23 +1,29 @@
 import 'package:html/parser.dart' as parser;
 import 'package:html/dom.dart';
 
-List<String> cut_vri_html_into_myanmar_edition_pages(String vriHtml) {
+List<Map<String, dynamic>> cut_vri_html_into_myanmar_edition_pages(String vriHtml) {
   var document = parser.parse(vriHtml);
   var elements = document.body!.nodes.whereType<Element>();
 
-  var pages = elements.fold<List<List<String>>>([[]], (pages, element) {
+  var pages = elements.fold<List<Map<String, dynamic>>>([{ 'number': 1, 'content': <String>[] }], (pages, element) {
     var isFirstPage = containsFirstPage(element);
     var isNewPage = containsNewPage(element);
 
     if (isNewPage && !isFirstPage) {
-      return [...pages, [element.outerHtml]];
+      var pageNumber = extractPageNumber(element);
+      return [...pages, { 'number': pageNumber, 'content': [element.outerHtml] }];
     } else {
-      pages.last.add(element.outerHtml);
+      pages.last['content'].add(element.outerHtml);
       return pages;
     }
   });
 
-  return pages.map((page) => page.join('\n')).toList();
+  return pages.map((page) {
+    return {
+      'number': page['number'],
+      'content': (page['content'] as List<String>).join('\n')
+    };
+  }).toList();
 }
 
 bool containsFirstPage(Element element) {
@@ -26,4 +32,12 @@ bool containsFirstPage(Element element) {
 
 bool containsNewPage(Element element) {
   return element.querySelectorAll('a').any((a) => a.attributes['name']?.startsWith('M') ?? false);
+}
+
+int extractPageNumber(Element element) {
+  var myanmarPageAnchorTag = element.querySelectorAll('a[name^="M"]');
+  var nameAttr = myanmarPageAnchorTag.first.attributes['name'];
+  var numberPart = nameAttr?.substring(3) ?? '0';
+  var pageNumber = int.tryParse(numberPart) ?? 0;
+  return pageNumber;
 }
