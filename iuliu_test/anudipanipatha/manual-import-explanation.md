@@ -7,6 +7,12 @@ paragraphs
 pages
 ```
 
+Manual SQL import file status:
+books table COMPLETE
+tocs table COMPLETE
+paragraphs INCOMPLETE
+pages INCOMPLETE
+
 ## books table
 
 ```
@@ -237,7 +243,6 @@ INSERT INTO paragraphs VALUES('annya_sadda_10',10,6);
 ```
 
 niruttidipanipatha VRI XML having removed everything except `hi` and `pb` tags:
-
 ```
 <hi rend="paranum">1</hi>
 <pb ed="M" n="0.0001" />
@@ -258,8 +263,7 @@ niruttidipanipatha VRI XML having removed everything except `hi` and `pb` tags:
 
 So the paragraphs table maps the paragraph to the nearest previous page.
 
-For anudipatha, most pages don't have paragraphs:
-
+For anudipanipatha, most pages don't have paragraphs:
 ```
 <pb ed="M" n="0.0001" />
 <pb ed="M" n="0.0002" />
@@ -291,6 +295,48 @@ For example, page 156 exists in niruttidipanipatha but nothing is imported it:
 ```
 INSERT INTO paragraphs VALUES('annya_sadda_10',288,155);
 INSERT INTO paragraphs VALUES('annya_sadda_10',289,163);
+```
+
+To get pages with paragraphs:
+```
+rg -o '(<hi rend="paranum">[^<]*</hi>|<pb ed="M" n="[^"]*" />)' iuliu_test/anudipanipatha/e0401n.nrf.xml
+```
+
+```
+1689:<pb ed="M" n="0.0315" />
+1689:<pb ed="M" n="0.0316" />
+1689:<pb ed="M" n="0.0317" />
+1689:<pb ed="M" n="0.0318" />
+1689:<pb ed="M" n="0.0319" />
+1693:<pb ed="M" n="0.0320" />
+1697:<pb ed="M" n="0.0321" />
+1709:<hi rend="paranum">262</hi>
+1709:<pb ed="M" n="0.0322" />
+1709:<pb ed="M" n="0.0323" />
+1717:<pb ed="M" n="0.0324" />
+1725:<hi rend="paranum">1</hi>
+1733:<hi rend="paranum">2</hi>
+```
+
+Or:
+```
+rg -o '(<span class="paranum">[^<]*</span>|<a name="M[^"]*"></a>)' iuliu_test/anudipanipatha/e0401n.nrf.html
+```
+
+```
+1693:<a name="M0.0315"></a>
+1693:<a name="M0.0316"></a>
+1693:<a name="M0.0317"></a>
+1693:<a name="M0.0318"></a>
+1693:<a name="M0.0319"></a>
+1697:<a name="M0.0320"></a>
+1701:<a name="M0.0321"></a>
+1713:<span class="paranum">262</span>
+1713:<a name="M0.0322"></a>
+1713:<a name="M0.0323"></a>
+1721:<a name="M0.0324"></a>
+1729:<span class="paranum">1</span>
+1737:<span class="paranum">2</span>
 ```
 
 ## pages table
