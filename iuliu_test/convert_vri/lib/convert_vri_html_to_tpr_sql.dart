@@ -1,17 +1,26 @@
 import 'package:html/parser.dart' as parser;
 import 'package:html/dom.dart';
 
-List<Map<String, dynamic>> cut_vri_html_into_myanmar_edition_pages(String vriHtml) {
+List<Map<String, dynamic>> cut_vri_html_into_myanmar_edition_pages(
+    String vriHtml) {
   var document = parser.parse(vriHtml);
   var elements = document.body!.nodes.whereType<Element>();
 
-  var pages = elements.fold<List<Map<String, dynamic>>>([{ 'number': 1, 'content': <String>[] }], (pages, element) {
+  var pages = elements.fold<List<Map<String, dynamic>>>([
+    {'number': 1, 'content': <String>[]}
+  ], (pages, element) {
     var isFirstPage = containsFirstPage(element);
     var isNewPage = containsNewPage(element);
 
     if (isNewPage && !isFirstPage) {
       var pageNumber = extractPageNumberFromLine(element);
-      return [...pages, { 'number': pageNumber, 'content': [element.outerHtml] }];
+      return [
+        ...pages,
+        {
+          'number': pageNumber,
+          'content': [element.outerHtml]
+        }
+      ];
     } else {
       pages.last['content'].add(element.outerHtml);
       return pages;
@@ -27,11 +36,15 @@ List<Map<String, dynamic>> cut_vri_html_into_myanmar_edition_pages(String vriHtm
 }
 
 bool containsFirstPage(Element element) {
-  return element.querySelectorAll('a').any((a) => a.attributes['name'] == "M0.0001");
+  return element
+      .querySelectorAll('a')
+      .any((a) => a.attributes['name'] == "M0.0001");
 }
 
 bool containsNewPage(Element element) {
-  return element.querySelectorAll('a').any((a) => a.attributes['name']?.startsWith('M') ?? false);
+  return element
+      .querySelectorAll('a')
+      .any((a) => a.attributes['name']?.startsWith('M') ?? false);
 }
 
 int extractPageNumberFromLine(Element element) {
@@ -49,16 +62,21 @@ int extractPageNumber(Element element) {
   return pageNumber;
 }
 
-List<Map<String, dynamic>> extract_paragraphs_by_page(String pagesAndParagraphs) {
+List<Map<String, dynamic>> extract_paragraphs_by_page(
+    String pagesAndParagraphs) {
   var document = parser.parse(pagesAndParagraphs);
   var elements = document.body!.nodes.whereType<Element>();
 
-  var paragraphsByPage = elements.fold<List<Map<String, dynamic>>>([], (pages, element) {
+  var paragraphsByPage =
+      elements.fold<List<Map<String, dynamic>>>([], (pages, element) {
     var isAnchor = element.localName == 'a';
 
     if (isAnchor) {
       var pageNumber = extractPageNumber(element);
-      return [...pages, { 'number': pageNumber, 'paragraphs': <int>[] }];
+      return [
+        ...pages,
+        {'number': pageNumber, 'paragraphs': <int>[]}
+      ];
     }
 
     var paragraphNumbers = extractParagraphNumbers(element);
@@ -68,7 +86,9 @@ List<Map<String, dynamic>> extract_paragraphs_by_page(String pagesAndParagraphs)
     return pages;
   });
 
-  return paragraphsByPage.where((page) => page['paragraphs'].isNotEmpty).toList();
+  return paragraphsByPage
+      .where((page) => page['paragraphs'].isNotEmpty)
+      .toList();
 }
 
 List<int> extractParagraphNumbers(Element element) {
@@ -76,7 +96,8 @@ List<int> extractParagraphNumbers(Element element) {
   return numbers.map(int.parse).toList();
 }
 
-List<String> create_sql_statements_from_paragraphs_by_page(List<dynamic> pages) {
+List<String> create_sql_statements_from_paragraphs_by_page(
+    List<dynamic> pages) {
   List<String> statements = [];
 
   for (var page in pages) {
@@ -84,7 +105,8 @@ List<String> create_sql_statements_from_paragraphs_by_page(List<dynamic> pages) 
     List<int> paragraphs = List<int>.from(page['paragraphs']);
 
     for (var paragraph in paragraphs) {
-      String statement = "INSERT INTO paragraphs VALUES('annya_sadda_18',$paragraph,$pageNumber);";
+      String statement =
+          "INSERT INTO paragraphs VALUES('annya_sadda_18',$paragraph,$pageNumber);";
       statements.add(statement);
     }
   }
@@ -93,11 +115,8 @@ List<String> create_sql_statements_from_paragraphs_by_page(List<dynamic> pages) 
 }
 
 List<Map<String, dynamic>> join_pages_collections(
-    List<Map<String, dynamic>> pages,
-    List<Map<String, dynamic>> paragraphs) {
-  var paragraphsMap = {
-    for (var p in paragraphs) p['number']: p['paragraphs']
-  };
+    List<Map<String, dynamic>> pages, List<Map<String, dynamic>> paragraphs) {
+  var paragraphsMap = {for (var p in paragraphs) p['number']: p['paragraphs']};
 
   return pages.map((page) {
     var pageNumber = page['number'];
@@ -108,13 +127,15 @@ List<Map<String, dynamic>> join_pages_collections(
   }).toList();
 }
 
-List<String> create_page_sql_import_statements(List<Map<String, dynamic>> pages) {
+List<String> create_page_sql_import_statements(
+    List<Map<String, dynamic>> pages) {
   return pages.map((page) {
     var number = page['number'];
     var content = page['content'].replaceAll('\n', '');
     var paragraphs = page['paragraphs'];
 
-    var paragraphsStr = paragraphs.isNotEmpty ? '-${paragraphs.join('-')}-' : '';
+    var paragraphsStr =
+        paragraphs.isNotEmpty ? '-${paragraphs.join('-')}-' : '';
 
     return "INSERT INTO pages (bookid, page, content, paranum) VALUES('annya_sadda_18',$number,'$content','$paragraphsStr');";
   }).toList();
