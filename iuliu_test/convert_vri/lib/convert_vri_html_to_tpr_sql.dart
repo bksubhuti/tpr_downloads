@@ -1,7 +1,7 @@
 import 'package:html/parser.dart' as parser;
 import 'package:html/dom.dart';
 
-List<Map<String, dynamic>> cut_vri_html_into_myanmar_edition_pages(
+List<Map<String, dynamic>> cutVriHtmlIntoMyanmarEditionPages(
     String vriHtml) {
   var document = parser.parse(vriHtml);
   var elements = document.body!.nodes.whereType<Element>();
@@ -62,7 +62,7 @@ int extractPageNumber(Element element) {
   return pageNumber;
 }
 
-List<Map<String, dynamic>> extract_paragraphs_by_page(
+List<Map<String, dynamic>> extractParagraphsByPage(
     String pagesAndParagraphs) {
   var document = parser.parse(pagesAndParagraphs);
   var elements = document.body!.nodes.whereType<Element>();
@@ -96,7 +96,7 @@ List<int> extractParagraphNumbers(Element element) {
   return numbers.map(int.parse).toList();
 }
 
-List<String> create_sql_statements_from_paragraphs_by_page(
+List<String> createParagraphsSQLImportStatements(
     List<dynamic> pages) {
   List<String> statements = [];
 
@@ -114,7 +114,7 @@ List<String> create_sql_statements_from_paragraphs_by_page(
   return statements;
 }
 
-List<Map<String, dynamic>> join_pages_collections(
+List<Map<String, dynamic>> joinPagesCollections(
     List<Map<String, dynamic>> pages, List<Map<String, dynamic>> paragraphs) {
   var paragraphsMap = {for (var p in paragraphs) p['number']: p['paragraphs']};
 
@@ -127,7 +127,7 @@ List<Map<String, dynamic>> join_pages_collections(
   }).toList();
 }
 
-List<String> create_page_sql_import_statements(
+List<String> createPageSQLImportStatements(
     List<Map<String, dynamic>> pages) {
   return pages.map((page) {
     var number = page['number'];

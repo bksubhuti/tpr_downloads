@@ -9,17 +9,17 @@ String readFile(String filePathRelativeToTestFile) {
 }
 
 void main() {
-  test('cut_vri_html_into_myanmar_edition_pages', () {
+  test('cutVriHtmlIntoMyanmarEditionPages', () {
     expect(
-        cut_vri_html_into_myanmar_edition_pages(readFile('e0401n.nrf.html')), [
+        cutVriHtmlIntoMyanmarEditionPages(readFile('e0401n.nrf.html')), [
       {'number': 1, 'content': readFile("page1.html")},
       {'number': 2, 'content': readFile("page2.html")},
       {'number': 3, 'content': readFile("page3.html")}
     ]);
   });
 
-  test('extract_paragraphs_by_page', () {
-    expect(extract_paragraphs_by_page(readFile('paragraphs.txt')), [
+  test('extractParagraphsByPage', () {
+    expect(extractParagraphsByPage(readFile('paragraphs.txt')), [
       {
         'number': 4,
         'paragraphs': [1]
@@ -35,9 +35,9 @@ void main() {
     ]);
   });
 
-  test('create_sql_statements_from_paragraphs_by_page', () {
+  test('createParagraphsSQLImportStatements', () {
     expect(
-        create_sql_statements_from_paragraphs_by_page([
+        createParagraphsSQLImportStatements([
           {
             'number': 4,
             'paragraphs': [1]
@@ -55,9 +55,9 @@ void main() {
         ]);
   });
 
-  test('join_pages_collections', () {
+  test('joinPagesCollections', () {
     expect(
-        join_pages_collections([
+        joinPagesCollections([
           {'number': 1, 'content': 'x'},
           {'number': 2, 'content': 'x'},
           {'number': 3, 'content': 'x'},
@@ -86,9 +86,9 @@ void main() {
         ]);
   });
 
-  test('create_page_sql_import_statements', () {
+  test('createPageSQLImportStatements', () {
     expect(
-        create_page_sql_import_statements([
+        createPageSQLImportStatements([
           {
             'number': 1,
             'content': 'x\nx',
