@@ -29,4 +29,19 @@ void main() {
       "INSERT INTO paragraphs VALUES('annya_sadda_18',101,98);",
     ]);
   });
+
+  test('join_pages_collections', () {
+    expect(join_pages_collections([
+      { 'number': 1, 'content': 'x' },
+      { 'number': 2, 'content': 'x' },
+      { 'number': 3, 'content': 'x' },
+    ], [
+      { 'number': 1, 'paragraphs': [1] },
+      { 'number': 3, 'paragraphs': [1, 2] },
+    ]), [
+      { 'number': 1, 'content': 'x', 'paragraphs': [1] },
+      { 'number': 2, 'content': 'x', 'paragraphs': [] },
+      { 'number': 3, 'content': 'x', 'paragraphs': [1, 2] },
+    ]);
+  });
 }

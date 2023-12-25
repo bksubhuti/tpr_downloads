@@ -91,3 +91,19 @@ List<String> create_sql_statements_from_paragraphs_by_page(List<dynamic> pages) 
 
   return statements;
 }
+
+List<Map<String, dynamic>> join_pages_collections(
+    List<Map<String, dynamic>> pages,
+    List<Map<String, dynamic>> paragraphs) {
+  var paragraphsMap = {
+    for (var p in paragraphs) p['number']: p['paragraphs']
+  };
+
+  return pages.map((page) {
+    var pageNumber = page['number'];
+    var mergedPage = Map<String, dynamic>.from(page);
+
+    mergedPage['paragraphs'] = paragraphsMap[pageNumber] ?? [];
+    return mergedPage;
+  }).toList();
+}
