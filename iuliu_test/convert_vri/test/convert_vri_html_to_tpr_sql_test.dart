@@ -20,4 +20,13 @@ void main() {
   test('extract_paragraphs_by_page', () {
     expect(extract_paragraphs_by_page(readFile('paragraphs.txt')), [ { 'number': 4, 'paragraphs': [1] }, { 'number': 98, 'paragraphs': [99, 100, 101]}, { 'number': 324, 'paragraphs': [1, 2]}]);
   });
+
+  test('create_sql_statements_from_paragraphs_by_page', () {
+    expect(create_sql_statements_from_paragraphs_by_page([ { 'number': 4, 'paragraphs': [1] }, { 'number': 98, 'paragraphs': [99, 100, 101]}]), [
+      "INSERT INTO paragraphs VALUES('annya_sadda_18',1,4);",
+      "INSERT INTO paragraphs VALUES('annya_sadda_18',99,98);",
+      "INSERT INTO paragraphs VALUES('annya_sadda_18',100,98);",
+      "INSERT INTO paragraphs VALUES('annya_sadda_18',101,98);",
+    ]);
+  });
 }

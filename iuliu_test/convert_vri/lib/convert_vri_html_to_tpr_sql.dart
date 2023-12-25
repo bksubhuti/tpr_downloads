@@ -75,3 +75,19 @@ List<int> extractParagraphNumbers(Element element) {
   var numbers = element.text.split('-');
   return numbers.map(int.parse).toList();
 }
+
+List<String> create_sql_statements_from_paragraphs_by_page(List<dynamic> pages) {
+  List<String> statements = [];
+
+  for (var page in pages) {
+    int pageNumber = page['number'];
+    List<int> paragraphs = List<int>.from(page['paragraphs']);
+
+    for (var paragraph in paragraphs) {
+      String statement = "INSERT INTO paragraphs VALUES('annya_sadda_18',$paragraph,$pageNumber);";
+      statements.add(statement);
+    }
+  }
+
+  return statements;
+}

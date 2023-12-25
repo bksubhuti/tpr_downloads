@@ -1,15 +1,3 @@
-INSERT INTO books VALUES('annya_sadda_18','annya','annya_sadda','anudīpanīpāṭha',1,324,324);
-INSERT INTO tocs VALUES('annya_sadda_18', '1. cittasaṅgahaanudīpanā', 'chapter', 1, NULL);
-INSERT INTO tocs VALUES('annya_sadda_18', '2. cetasikasaṅgahaanudīpanā', 'chapter', 78, NULL);
-INSERT INTO tocs VALUES('annya_sadda_18', '3. pakiṇṇakasaṅgahaanudīpanā', 'chapter', 107, NULL);
-INSERT INTO tocs VALUES('annya_sadda_18', '4. vīthisaṅgahaanudīpanā', 'chapter', 120, NULL);
-INSERT INTO tocs VALUES('annya_sadda_18', '5. vīthimuttasaṅgahaanudīpanā', 'chapter', 143, NULL);
-INSERT INTO tocs VALUES('annya_sadda_18', '6. rūpasaṅgahaanudīpanā', 'chapter', 189, NULL);
-INSERT INTO tocs VALUES('annya_sadda_18', '7. samuccayasaṅgahaanudīpanā', 'chapter', 229, NULL);
-INSERT INTO tocs VALUES('annya_sadda_18', '8. paccayasaṅgahaanudīpanā', 'chapter', 246, NULL);
-INSERT INTO tocs VALUES('annya_sadda_18', '9. kammaṭṭhānasaṅgahaanudīpanā', 'chapter', 275, NULL);
-INSERT INTO tocs VALUES('annya_sadda_18', 'nigamagāthāsu.', 'subhead', 321, NULL);
-INSERT INTO tocs VALUES('annya_sadda_18', 'dīpaniyā nigamagāthāsu.', 'subhead', 323, NULL);
 INSERT INTO paragraphs VALUES('annya_sadda_18',1,4);
 INSERT INTO paragraphs VALUES('annya_sadda_18',2,7);
 INSERT INTO paragraphs VALUES('annya_sadda_18',3,8);
