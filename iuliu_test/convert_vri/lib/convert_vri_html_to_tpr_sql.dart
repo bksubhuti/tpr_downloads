@@ -107,3 +107,15 @@ List<Map<String, dynamic>> join_pages_collections(
     return mergedPage;
   }).toList();
 }
+
+List<String> create_page_sql_import_statements(List<Map<String, dynamic>> pages) {
+  return pages.map((page) {
+    var number = page['number'];
+    var content = page['content'].replaceAll('\n', '');
+    var paragraphs = page['paragraphs'];
+
+    var paragraphsStr = paragraphs.isNotEmpty ? '-${paragraphs.join('-')}-' : '';
+
+    return "INSERT INTO pages VALUES('annya_sadda_18',$number,'$content','$paragraphsStr');";
+  }).toList();
+}
