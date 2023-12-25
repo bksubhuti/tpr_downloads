@@ -51,9 +51,9 @@ void main() {
       { 'number': 2, 'content': 'x', 'paragraphs': [] },
       { 'number': 3, 'content': 'x', 'paragraphs': [1, 2] }
     ]), [
-      "INSERT INTO pages VALUES('annya_sadda_18',1,'xx','-1-');",
-      "INSERT INTO pages VALUES('annya_sadda_18',2,'x','');",
-      "INSERT INTO pages VALUES('annya_sadda_18',3,'x','-1-2-');",
+      "INSERT INTO pages (bookid, page, content, paranum) VALUES('annya_sadda_18',1,'xx','-1-');",
+      "INSERT INTO pages (bookid, page, content, paranum) VALUES('annya_sadda_18',2,'x','');",
+      "INSERT INTO pages (bookid, page, content, paranum) VALUES('annya_sadda_18',3,'x','-1-2-');",
     ]);
   });
 }

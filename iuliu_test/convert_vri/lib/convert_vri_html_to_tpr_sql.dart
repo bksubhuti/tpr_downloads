@@ -116,6 +116,6 @@ List<String> create_page_sql_import_statements(List<Map<String, dynamic>> pages)
 
     var paragraphsStr = paragraphs.isNotEmpty ? '-${paragraphs.join('-')}-' : '';
 
-    return "INSERT INTO pages VALUES('annya_sadda_18',$number,'$content','$paragraphsStr');";
+    return "INSERT INTO pages (bookid, page, content, paranum) VALUES('annya_sadda_18',$number,'$content','$paragraphsStr');";
   }).toList();
 }
