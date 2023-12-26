@@ -10,18 +10,40 @@ String readFile(String filePathRelativeToTestFile) {
 
 void main() {
   test('extractMyanmarEditionPagesFromVriHtml', () {
-    expect(extractMyanmarEditionPagesFromVriHtml(readFile('e0401n.nrf.html')), [
-      {'number': 1, 'content': readFile("page1.html")},
-      {'number': 2, 'content': readFile("page2.html")},
-      {'number': 3, 'content': readFile("page3.html")}
-    ]);
+    expect(
+        extractMyanmarEditionPagesFromVriHtml(
+            readFile('e0401n-partial.nrf.html')),
+        [
+          {'number': 1, 'content': readFile("page1.html")},
+          {'number': 2, 'content': readFile("page2.html")},
+          {'number': 3, 'content': readFile("page3.html")}
+        ]);
 
     // Given: a text where a new page immediately follows a chapter and subhead heading
     // Should: include the chapter and subhead heading in new page not previous page
-    expect(extractMyanmarEditionPagesFromVriHtml(readFile('e0201n.nrf.html')), [
+    expect(extractMyanmarEditionPagesFromVriHtml(readFile('e0201n-partial.nrf.html')), [
       {'number': 1, 'content': readFile("page1-mulapannasapali.html")},
       {'number': 2, 'content': readFile("page2-mulapannasapali.html")},
     ]);
+
+    var originalList =
+        extractMyanmarEditionPagesFromVriHtml(readFile('e0401n.nrf.html'));
+
+    var modifiedList = originalList.map((page) {
+      var newPage = Map.from(page);
+      newPage.remove('content');
+      return newPage;
+    }).toList();
+
+    List<Map<String, int>> numberList = [];
+
+    for (int i = 1; i <= 324; i++) {
+      numberList.add({'number': i});
+    }
+
+    // Given: a full book
+    // Expect: every page in the book
+    expect(modifiedList, numberList);
   });
 
   test('extractParagraphsByPage', () {
