@@ -2,7 +2,7 @@ import 'package:convert_vri/convert_vri_html_to_tpr_sql.dart';
 import 'dart:io';
 
 void main(List<String> arguments) {
-  var pagesWithContent = cutVriHtmlIntoMyanmarEditionPages(
+  var pagesWithContent = extractMyanmarEditionPagesFromVriHtml(
       readFile('../../anudipanipatha/e0401n.nrf.html'));
   var paragraphsByPage = extractParagraphsByPage(
       readFile('../../anudipanipatha/paragraphs.txt'));

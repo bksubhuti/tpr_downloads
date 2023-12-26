@@ -1,7 +1,7 @@
 import 'package:html/parser.dart' as parser;
 import 'package:html/dom.dart';
 
-List<Map<String, dynamic>> cutVriHtmlIntoMyanmarEditionPages(
+List<Map<String, dynamic>> extractMyanmarEditionPagesFromVriHtml(
     String vriHtml) {
   var document = parser.parse(vriHtml);
   var elements = document.body!.nodes.whereType<Element>();
@@ -13,12 +13,25 @@ List<Map<String, dynamic>> cutVriHtmlIntoMyanmarEditionPages(
     var isNewPage = containsNewPage(element);
 
     if (isNewPage && !isFirstPage) {
+      var lastPageContent = pages.last['content'] as List<String>;
+
+      var headingsToMove = <String>[];
+      for (var contentElement in lastPageContent.reversed) {
+        if (contentElement.contains('class="chapter"') || contentElement.contains('class="subhead"')) {
+          headingsToMove.insert(0, contentElement);
+        } else {
+          break;
+        }
+      }
+
+      lastPageContent.removeWhere((element) => headingsToMove.contains(element));
       var pageNumber = extractPageNumberFromLine(element);
+
       return [
         ...pages,
         {
           'number': pageNumber,
-          'content': [element.outerHtml]
+          'content': [...headingsToMove, element.outerHtml]
         }
       ];
     } else {
@@ -45,6 +58,10 @@ bool containsNewPage(Element element) {
   return element
       .querySelectorAll('a')
       .any((a) => a.attributes['name']?.startsWith('M') ?? false);
+}
+
+bool containsChapterHeading(Element element) {
+  return element.classes.contains('chapter');
 }
 
 int extractPageNumberFromLine(Element element) {
