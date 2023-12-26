@@ -14,19 +14,10 @@ List<Map<String, dynamic>> extractMyanmarEditionPagesFromVriHtml(
 
     if (isNewPage && !isFirstPage) {
       var lastPageContent = pages.last['content'] as List<String>;
-
-      var headingsToMove = <String>[];
-      for (var contentElement in lastPageContent.reversed) {
-        if (contentElement.contains('class="chapter"') || contentElement.contains('class="subhead"')) {
-          headingsToMove.insert(0, contentElement);
-        } else {
-          break;
-        }
-      }
-
+      var headingsToMove = extractHeadingsToMove(lastPageContent);
       lastPageContent.removeWhere((element) => headingsToMove.contains(element));
-      var pageNumber = extractPageNumberFromLine(element);
 
+      var pageNumber = extractPageNumberFromLine(element);
       return [
         ...pages,
         {
@@ -60,8 +51,16 @@ bool containsNewPage(Element element) {
       .any((a) => a.attributes['name']?.startsWith('M') ?? false);
 }
 
-bool containsChapterHeading(Element element) {
-  return element.classes.contains('chapter');
+List<String> extractHeadingsToMove(List<String> lastPageContent) {
+  var headingsToMove = <String>[];
+  for (var contentElement in lastPageContent.reversed) {
+    if (contentElement.contains('class="chapter"') || contentElement.contains('class="subhead"')) {
+      headingsToMove.insert(0, contentElement);
+    } else {
+      break;
+    }
+  }
+  return headingsToMove;
 }
 
 int extractPageNumberFromLine(Element element) {
