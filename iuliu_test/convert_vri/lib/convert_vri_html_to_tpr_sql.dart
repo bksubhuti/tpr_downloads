@@ -15,7 +15,8 @@ List<Map<String, dynamic>> extractMyanmarEditionPagesFromVriHtml(
     if (isNewPage && !isFirstPage) {
       var lastPageContent = pages.last['content'] as List<String>;
       var headingsToMove = extractHeadingsToMove(lastPageContent);
-      lastPageContent.removeWhere((element) => headingsToMove.contains(element));
+      lastPageContent
+          .removeWhere((element) => headingsToMove.contains(element));
 
       var pageNumber = extractPageNumberFromLine(element);
       return [
@@ -54,7 +55,8 @@ bool containsNewPage(Element element) {
 List<String> extractHeadingsToMove(List<String> lastPageContent) {
   var headingsToMove = <String>[];
   for (var contentElement in lastPageContent.reversed) {
-    if (contentElement.contains('class="chapter"') || contentElement.contains('class="subhead"')) {
+    if (contentElement.contains('class="chapter"') ||
+        contentElement.contains('class="subhead"')) {
       headingsToMove.insert(0, contentElement);
     } else {
       break;
@@ -78,8 +80,7 @@ int extractPageNumber(Element element) {
   return pageNumber;
 }
 
-List<Map<String, dynamic>> extractParagraphsByPage(
-    String pagesAndParagraphs) {
+List<Map<String, dynamic>> extractParagraphsByPage(String pagesAndParagraphs) {
   var document = parser.parse(pagesAndParagraphs);
   var elements = document.body!.nodes.whereType<Element>();
 
@@ -112,8 +113,7 @@ List<int> extractParagraphNumbers(Element element) {
   return numbers.map(int.parse).toList();
 }
 
-List<String> createParagraphsSQLImportStatements(
-    List<dynamic> pages) {
+List<String> createParagraphsSQLImportStatements(List<dynamic> pages) {
   List<String> statements = [];
 
   for (var page in pages) {
@@ -143,8 +143,7 @@ List<Map<String, dynamic>> joinPagesCollections(
   }).toList();
 }
 
-List<String> createPageSQLImportStatements(
-    List<Map<String, dynamic>> pages) {
+List<String> createPageSQLImportStatements(List<Map<String, dynamic>> pages) {
   return pages.map((page) {
     var number = page['number'];
     var content = page['content'].replaceAll('\n', '');
