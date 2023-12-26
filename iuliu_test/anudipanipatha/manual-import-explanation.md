@@ -7,12 +7,6 @@ paragraphs
 pages
 ```
 
-Manual SQL import file status:
-books table COMPLETE
-tocs table COMPLETE
-paragraphs INCOMPLETE
-pages INCOMPLETE
-
 ## books table
 
 ```
