@@ -48,12 +48,12 @@
         "size": "34 KB"
     },
     {
-        "name": "DPD November 2023 release",
-        "release_date": "27.11.2023",
+        "name": "DPD December 2023 release",
+        "release_date": "27.12.2023",
         "type": "dictionary",
         "url": "https://github.com/bksubhuti/tpr_downloads/raw/master/release_zips/dpd.zip",
         "filename": "dpd.sql",
-        "size": "22.8 MB"
+        "size": "23.3 MB"
     },
     {
         "name": "PEU November, 2023 release 200,000 records (71% edited)",
