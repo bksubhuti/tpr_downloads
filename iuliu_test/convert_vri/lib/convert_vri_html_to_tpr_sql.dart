@@ -11,8 +11,11 @@ List<Map<String, dynamic>> extractMyanmarEditionPagesFromVriHtml(
   ], (pages, element) {
     var isFirstPage = containsFirstPage(element);
     var isNewPage = containsNewPage(element);
+    var isMultipleNewPage = containsMultipleNewPages(element);
 
-    if (isNewPage && !isFirstPage) {
+    if (isMultipleNewPage) {
+      return [];
+    } else if (isNewPage && !isFirstPage) {
       return [...pages, createNewPage(pages.last, element)];
     } else {
       pages.last['content'].add(element.outerHtml);
@@ -38,6 +41,41 @@ bool containsNewPage(Element element) {
   return element
       .querySelectorAll('a')
       .any((a) => a.attributes['name']?.startsWith('M') ?? false);
+}
+
+bool containsMultipleNewPages(Element element) {
+  var newPageMarkers = element.querySelectorAll('a').where(
+        (a) => a.attributes['name']?.startsWith('M') ?? false,
+      );
+
+  return newPageMarkers.length > 1;
+}
+
+List<String> splitParagraphWithMultiplePages(Element paragraph) {
+  var pageMarkers = paragraph.querySelectorAll('a[name]');
+  var pageMarkersWithoutFirst = pageMarkers.sublist(1);
+  var wordRegex = RegExp(r'[^\s]+(?=\s*$)');
+
+  int previousPageEnd = 0;
+  List<String> pages = pageMarkersWithoutFirst.fold<List<String>>([], (List<String> pages, Element marker) {
+    int markerIndex = paragraph.innerHtml.indexOf(marker.outerHtml);
+    String upToMarker = paragraph.innerHtml.substring(previousPageEnd, markerIndex);
+  
+    RegExpMatch? match = wordRegex.firstMatch(upToMarker);
+    if (match != null) {
+      int lastWordIndex = previousPageEnd + match.start;
+      var previousPage = paragraph.innerHtml.substring(previousPageEnd, lastWordIndex);
+      previousPageEnd = lastWordIndex;
+      return [...pages, previousPage];
+    }
+    return pages;
+  });
+
+  if (previousPageEnd < paragraph.innerHtml.length) {
+    pages.add(paragraph.innerHtml.substring(previousPageEnd));
+  }
+
+  return pages;
 }
 
 Map<String, dynamic> createNewPage(
