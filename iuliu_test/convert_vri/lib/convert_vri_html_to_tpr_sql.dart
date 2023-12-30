@@ -13,19 +13,7 @@ List<Map<String, dynamic>> extractMyanmarEditionPagesFromVriHtml(
     var isNewPage = containsNewPage(element);
 
     if (isNewPage && !isFirstPage) {
-      var lastPageContent = pages.last['content'] as List<String>;
-      var headingsToMove = extractHeadingsToMove(lastPageContent);
-      lastPageContent
-          .removeWhere((element) => headingsToMove.contains(element));
-
-      var pageNumber = extractPageNumberFromLine(element);
-      return [
-        ...pages,
-        {
-          'number': pageNumber,
-          'content': [...headingsToMove, element.outerHtml]
-        }
-      ];
+      return [...pages, createNewPage(pages.last, element)];
     } else {
       pages.last['content'].add(element.outerHtml);
       return pages;
@@ -52,6 +40,19 @@ bool containsNewPage(Element element) {
       .any((a) => a.attributes['name']?.startsWith('M') ?? false);
 }
 
+Map<String, dynamic> createNewPage(
+    Map<String, dynamic> lastPage, Element element) {
+  var lastPageContent = lastPage['content'] as List<String>;
+  var headingsToMove = extractHeadingsToMove(lastPageContent);
+  lastPageContent.removeWhere((element) => headingsToMove.contains(element));
+  var pageNumber = extractPageNumberFromLine(element);
+
+  return {
+    'number': pageNumber,
+    'content': [...headingsToMove, element.outerHtml]
+  };
+}
+
 List<String> extractHeadingsToMove(List<String> lastPageContent) {
   var headingsToMove = <String>[];
   for (var contentElement in lastPageContent.reversed) {
@@ -68,13 +69,6 @@ List<String> extractHeadingsToMove(List<String> lastPageContent) {
 int extractPageNumberFromLine(Element element) {
   var myanmarPageAnchorTag = element.querySelectorAll('a[name^="M"]');
   var nameAttr = myanmarPageAnchorTag.first.attributes['name'];
-  var numberPart = nameAttr?.substring(3) ?? '0';
-  var pageNumber = int.tryParse(numberPart) ?? 0;
-  return pageNumber;
-}
-
-int extractPageNumber(Element element) {
-  var nameAttr = element.attributes['name'];
   var numberPart = nameAttr?.substring(3) ?? '0';
   var pageNumber = int.tryParse(numberPart) ?? 0;
   return pageNumber;
@@ -106,6 +100,13 @@ List<Map<String, dynamic>> extractParagraphsByPage(String pagesAndParagraphs) {
   return paragraphsByPage
       .where((page) => page['paragraphs'].isNotEmpty)
       .toList();
+}
+
+int extractPageNumber(Element element) {
+  var nameAttr = element.attributes['name'];
+  var numberPart = nameAttr?.substring(3) ?? '0';
+  var pageNumber = int.tryParse(numberPart) ?? 0;
+  return pageNumber;
 }
 
 List<int> extractParagraphNumbers(Element element) {
