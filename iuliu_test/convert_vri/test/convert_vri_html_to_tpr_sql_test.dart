@@ -61,24 +61,24 @@ void main() {
           }
         ]);
 
-    // var originalList =
-    //     extractMyanmarEditionPagesFromVriHtml(readFile('e0401n.nrf.html'));
+    var originalList =
+        extractMyanmarEditionPagesFromVriHtml(readFile('e0401n.nrf.html'));
 
-    // var modifiedList = originalList.map((page) {
-    //   var newPage = Map.from(page);
-    //   newPage.remove('content');
-    //   return newPage;
-    // }).toList();
+    var modifiedList = originalList.map((page) {
+      var newPage = Map.from(page);
+      newPage.remove('content');
+      return newPage;
+    }).toList();
 
-    // List<Map<String, int>> numberList = [];
+    List<Map<String, int>> numberList = [];
 
-    // for (int i = 1; i <= 324; i++) {
-    //   numberList.add({'number': i});
-    // }
+    for (int i = 1; i <= 324; i++) {
+      numberList.add({'number': i});
+    }
 
-    // // Given: a full book
-    // // Expect: every page in the book
-    // expect(modifiedList, numberList);
+    // Given: a full book
+    // Expect: every page in the book
+    expect(modifiedList, numberList);
   });
 
   test('extractParagraphsByPage', () {
@@ -173,15 +173,15 @@ void main() {
 
   test('splitParagraphWithMultiplePages', () {
     String paragraphHtml =
-        '<p class="unindented"> <span class="bld">Ettha mano</span><a name="M0.0136"></a>bhavissanti. Tato <a name="M0.0137"></a> tesaṃ tuṇhībhūtānaṃ saccakanigaṇṭhādayo ca paribbājakā <a name="M0.0138"></a> vādena na sampāpuṇiṃsu </p>';
+        '<p class="unindented"> <span class="bld">Ettha mano</span><a name="M0.0136"></a>bhavissanti. Tato <a name="M0.0137"></a> tesaṃ tuṇhībhūtānaṃ <a name="para3"></a> saccakanigaṇṭhādayo ca paribbājakā <a name="M0.0138"></a> vādena na sampāpuṇiṃsu </p>';
    Document doc = parser.parse(paragraphHtml);
     Element paragraph = doc.querySelector('p')!;
     List<String> result = splitParagraphWithMultiplePages(paragraph);
 
-    expect(result.length, 3);
     expect(result[0], ' <span class="bld">Ettha mano</span><a name="M0.0136"></a>bhavissanti. ');
-    expect(result[1], 'Tato <a name="M0.0137"></a> tesaṃ tuṇhībhūtānaṃ saccakanigaṇṭhādayo ca ');
+    expect(result[1], 'Tato <a name="M0.0137"></a> tesaṃ tuṇhībhūtānaṃ <a name="para3"></a> saccakanigaṇṭhādayo ca ');
     expect(
         result[2], 'paribbājakā <a name="M0.0138"></a> vādena na sampāpuṇiṃsu ');
+    expect(result.length, 3);
   });
 }

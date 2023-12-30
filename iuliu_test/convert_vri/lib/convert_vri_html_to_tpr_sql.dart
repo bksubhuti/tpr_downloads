@@ -55,7 +55,7 @@ bool containsMultipleNewPages(Element element) {
 }
 
 List<String> splitParagraphWithMultiplePages(Element paragraph) {
-  var pageMarkers = paragraph.querySelectorAll('a[name]');
+  var pageMarkers = paragraph.querySelectorAll('a[name^="M"]');
   var pageMarkersWithoutFirst = pageMarkers.sublist(1);
   var wordRegex = RegExp(r'[^\s]+(?=\s*$)');
 
