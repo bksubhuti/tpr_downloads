@@ -14,9 +14,12 @@ List<Map<String, dynamic>> extractMyanmarEditionPagesFromVriHtml(
     var isMultipleNewPage = containsMultipleNewPages(element);
 
     if (isMultipleNewPage) {
-      return [];
+      var paragraphStrings = splitParagraphWithMultiplePages(element);
+      var paragraphs = mapParagraphStringsToParagraphElements(paragraphStrings, element);
+      var paragraphsAfterFirst = paragraphs.sublist(1);
+      return [...pages, createNewPageWithHeaders(pages.last, paragraphs[0]), ...paragraphsAfterFirst.map((paragraph) => createNewPage(paragraph))];
     } else if (isNewPage && !isFirstPage) {
-      return [...pages, createNewPage(pages.last, element)];
+      return [...pages, createNewPageWithHeaders(pages.last, element)];
     } else {
       pages.last['content'].add(element.outerHtml);
       return pages;
@@ -78,7 +81,19 @@ List<String> splitParagraphWithMultiplePages(Element paragraph) {
   return pages;
 }
 
-Map<String, dynamic> createNewPage(
+List<Element> mapParagraphStringsToParagraphElements(List<String> paragraphStrings, Element originalElement) {
+  String? originalTag = originalElement.localName;
+  Map<String, String> originalAttributes = Map<String, String>.from(originalElement.attributes);
+
+  return paragraphStrings.map((paragraphString) {
+    Element newElement = Element.tag(originalTag);
+    newElement.attributes.addAll(originalAttributes);
+    newElement.innerHtml = paragraphString;
+    return newElement;
+  }).toList();
+}
+
+Map<String, dynamic> createNewPageWithHeaders(
     Map<String, dynamic> lastPage, Element element) {
   var lastPageContent = lastPage['content'] as List<String>;
   var headingsToMove = extractHeadingsToMove(lastPageContent);
@@ -88,6 +103,15 @@ Map<String, dynamic> createNewPage(
   return {
     'number': pageNumber,
     'content': [...headingsToMove, element.outerHtml]
+  };
+}
+
+Map<String, dynamic> createNewPage(Element element) {
+  var pageNumber = extractPageNumberFromLine(element);
+
+  return {
+    'number': pageNumber,
+    'content': [element.outerHtml]
   };
 }
 
