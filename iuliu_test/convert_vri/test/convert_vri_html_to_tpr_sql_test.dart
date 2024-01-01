@@ -16,9 +16,9 @@ void main() {
         extractMyanmarEditionPagesFromVriHtml(
             readFile('e0401n-partial.nrf.html')),
         [
-          {'number': 1, 'content': readFile("page1.html")},
-          {'number': 2, 'content': readFile("page2.html")},
-          {'number': 3, 'content': readFile("page3.html")}
+          {'number': 1, 'content': readFile("e0401n-page1.html")},
+          {'number': 2, 'content': readFile("e0401n-page2.html")},
+          {'number': 3, 'content': readFile("e0401n-page3.html")}
         ]);
 
     // Given: a text where a new page immediately follows a chapter and subhead heading
@@ -27,8 +27,8 @@ void main() {
         extractMyanmarEditionPagesFromVriHtml(
             readFile('e0201n-partial.nrf.html')),
         [
-          {'number': 1, 'content': readFile("page1-niruttidipanipatha.html")},
-          {'number': 2, 'content': readFile("page2-niruttidipanipatha.html")},
+          {'number': 1, 'content': readFile("e0201n-page1.html")},
+          {'number': 2, 'content': readFile("e0201n-page2.html")},
         ]);
 
     // Given: a text where there are three new pages on the same line
