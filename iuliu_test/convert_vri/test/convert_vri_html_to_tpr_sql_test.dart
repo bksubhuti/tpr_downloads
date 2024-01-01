@@ -27,8 +27,8 @@ void main() {
         extractMyanmarEditionPagesFromVriHtml(
             readFile('e0201n-partial.nrf.html')),
         [
-          {'number': 1, 'content': readFile("page1-mulapannasapali.html")},
-          {'number': 2, 'content': readFile("page2-mulapannasapali.html")},
+          {'number': 1, 'content': readFile("page1-niruttidipanipatha.html")},
+          {'number': 2, 'content': readFile("page2-niruttidipanipatha.html")},
         ]);
 
     // Given: a text where there are three new pages on the same line
