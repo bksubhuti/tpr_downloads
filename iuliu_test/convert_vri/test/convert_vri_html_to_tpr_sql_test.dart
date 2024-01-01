@@ -77,7 +77,7 @@ void main() {
     }
 
     // Given: a full book
-    // Should: every page in the book
+    // Should: have a page for every page in the book
     expect(modifiedList, numberList);
   });
 
