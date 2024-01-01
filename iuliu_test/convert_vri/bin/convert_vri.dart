@@ -23,8 +23,10 @@ INSERT INTO tocs VALUES('annya_sadda_18', '9. kammaṭṭhānasaṅgahaanudīpan
 INSERT INTO tocs VALUES('annya_sadda_18', 'nigamagāthāsu.', 'subhead', 322, NULL);
 INSERT INTO tocs VALUES('annya_sadda_18', 'dīpaniyā nigamagāthāsu.', 'subhead', 324, NULL);""";
   var paragraphsTableImport =
-      createParagraphsSQLImportStatements('annya_sadda_18', paragraphsByPage).join('\n');
-  var pagesTableImport = createPageSQLImportStatements('annya_sadda_18', pages).join('\n');
+      createParagraphsSQLImportStatements('annya_sadda_18', paragraphsByPage)
+          .join('\n');
+  var pagesTableImport =
+      createPageSQLImportStatements('annya_sadda_18', pages).join('\n');
   var anudipanipathaImport = [
     booksTableImport,
     tocsTableImport,
@@ -40,10 +42,13 @@ INSERT INTO tocs VALUES('annya_sadda_18', 'dīpaniyā nigamagāthāsu.', 'subhea
       extractParagraphsByPage(readFile('../../mulapannasapali/paragraphs.txt'));
   var pagesMN1 = joinPagesCollections(pagesWithContentMN1, paragraphsByPageMN1);
   var paragraphsTableImportMN1 =
-      createParagraphsSQLImportStatements('mula_ma_81', paragraphsByPageMN1).join('\n');
-  var pagesTableImportMN1 = createPageSQLImportStatements('mula_ma_81', pagesMN1).join('\n');
+      createParagraphsSQLImportStatements('mula_ma_81', paragraphsByPageMN1)
+          .join('\n');
+  var pagesTableImportMN1 =
+      createPageSQLImportStatements('mula_ma_81', pagesMN1).join('\n');
 
-  var booksTableImportMN1 = "INSERT INTO books VALUES('mula_ma_81','mula','ma','mūlapaṇṇāsapāḷi',1,415,415);";
+  var booksTableImportMN1 =
+      "INSERT INTO books VALUES('mula_ma_81','mula','ma','mūlapaṇṇāsapāḷi',1,415,415);";
   var tocsTableImportMN1 = """
 INSERT INTO paragraphs VALUES('mula_ma_81',1,1);
 INSERT INTO paragraphs VALUES('mula_ma_81',2,1);
@@ -559,7 +564,7 @@ INSERT INTO paragraphs VALUES('mula_ma_81',511,412);
 INSERT INTO paragraphs VALUES('mula_ma_81',512,412);
 INSERT INTO paragraphs VALUES('mula_ma_81',513,413);""";
 
-    var mulapannasapaliImport = [
+  var mulapannasapaliImport = [
     booksTableImportMN1,
     tocsTableImportMN1,
     paragraphsTableImportMN1,

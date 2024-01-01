@@ -32,7 +32,7 @@ void main() {
         ]);
 
     // Given: a text where there are three new pages on the same line
-    // Expect: split the first new page on the line to it's own paragraph, split the second then page to it's own paragraph, start a new page for the third one
+    // Should: split the first new page on the line to it's own paragraph, split the second then page to it's own paragraph, start a new page for the third one
     expect(
         extractMyanmarEditionPagesFromVriHtml(
             readFile('e0803n-multiple-pages-same-line-case.html')),
@@ -77,7 +77,7 @@ void main() {
     }
 
     // Given: a full book
-    // Expect: every page in the book
+    // Should: every page in the book
     expect(modifiedList, numberList);
   });
 
@@ -94,6 +94,17 @@ void main() {
       {
         'number': 324,
         'paragraphs': [1, 2]
+      }
+    ]);
+
+    // Given: paragraph before the first page
+    // Should: assign the paragraph to the first page
+    expect(extractParagraphsByPage("""
+<span class="paranum">1</span>
+<a name="M0.0001"></a>"""), [
+      {
+        'number': 1,
+        'paragraphs': [1]
       }
     ]);
   });
@@ -174,14 +185,16 @@ void main() {
   test('splitParagraphWithMultiplePages', () {
     String paragraphHtml =
         '<p class="unindented"> <span class="bld">Ettha mano</span><a name="M0.0136"></a>bhavissanti. Tato <a name="M0.0137"></a> tesaṃ tuṇhībhūtānaṃ <a name="para3"></a> saccakanigaṇṭhādayo ca paribbājakā <a name="M0.0138"></a> vādena na sampāpuṇiṃsu </p>';
-   Document doc = parser.parse(paragraphHtml);
+    Document doc = parser.parse(paragraphHtml);
     Element paragraph = doc.querySelector('p')!;
     List<String> result = splitParagraphWithMultiplePages(paragraph);
 
-    expect(result[0], ' <span class="bld">Ettha mano</span><a name="M0.0136"></a>bhavissanti. ');
-    expect(result[1], 'Tato <a name="M0.0137"></a> tesaṃ tuṇhībhūtānaṃ <a name="para3"></a> saccakanigaṇṭhādayo ca ');
-    expect(
-        result[2], 'paribbājakā <a name="M0.0138"></a> vādena na sampāpuṇiṃsu ');
+    expect(result[0],
+        ' <span class="bld">Ettha mano</span><a name="M0.0136"></a>bhavissanti. ');
+    expect(result[1],
+        'Tato <a name="M0.0137"></a> tesaṃ tuṇhībhūtānaṃ <a name="para3"></a> saccakanigaṇṭhādayo ca ');
+    expect(result[2],
+        'paribbājakā <a name="M0.0138"></a> vādena na sampāpuṇiṃsu ');
     expect(result.length, 3);
   });
 }

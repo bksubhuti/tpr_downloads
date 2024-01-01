@@ -15,9 +15,14 @@ List<Map<String, dynamic>> extractMyanmarEditionPagesFromVriHtml(
 
     if (isMultipleNewPage) {
       var paragraphStrings = splitParagraphWithMultiplePages(element);
-      var paragraphs = mapParagraphStringsToParagraphElements(paragraphStrings, element);
+      var paragraphs =
+          mapParagraphStringsToParagraphElements(paragraphStrings, element);
       var paragraphsAfterFirst = paragraphs.sublist(1);
-      return [...pages, createNewPageWithHeaders(pages.last, paragraphs[0]), ...paragraphsAfterFirst.map((paragraph) => createNewPage(paragraph))];
+      return [
+        ...pages,
+        createNewPageWithHeaders(pages.last, paragraphs[0]),
+        ...paragraphsAfterFirst.map((paragraph) => createNewPage(paragraph))
+      ];
     } else if (isNewPage && !isFirstPage) {
       return [...pages, createNewPageWithHeaders(pages.last, element)];
     } else {
@@ -60,14 +65,17 @@ List<String> splitParagraphWithMultiplePages(Element paragraph) {
   var wordRegex = RegExp(r'[^\s]+(?=\s*$)');
 
   int previousPageEnd = 0;
-  List<String> pages = pageMarkersWithoutFirst.fold<List<String>>([], (List<String> pages, Element marker) {
+  List<String> pages = pageMarkersWithoutFirst.fold<List<String>>([],
+      (List<String> pages, Element marker) {
     int markerIndex = paragraph.innerHtml.indexOf(marker.outerHtml);
-    String upToMarker = paragraph.innerHtml.substring(previousPageEnd, markerIndex);
-  
+    String upToMarker =
+        paragraph.innerHtml.substring(previousPageEnd, markerIndex);
+
     RegExpMatch? match = wordRegex.firstMatch(upToMarker);
     if (match != null) {
       int lastWordIndex = previousPageEnd + match.start;
-      var previousPage = paragraph.innerHtml.substring(previousPageEnd, lastWordIndex);
+      var previousPage =
+          paragraph.innerHtml.substring(previousPageEnd, lastWordIndex);
       previousPageEnd = lastWordIndex;
       return [...pages, previousPage];
     }
@@ -81,9 +89,11 @@ List<String> splitParagraphWithMultiplePages(Element paragraph) {
   return pages;
 }
 
-List<Element> mapParagraphStringsToParagraphElements(List<String> paragraphStrings, Element originalElement) {
+List<Element> mapParagraphStringsToParagraphElements(
+    List<String> paragraphStrings, Element originalElement) {
   String? originalTag = originalElement.localName;
-  Map<String, String> originalAttributes = Map<String, String>.from(originalElement.attributes);
+  Map<String, String> originalAttributes =
+      Map<String, String>.from(originalElement.attributes);
 
   return paragraphStrings.map((paragraphString) {
     Element newElement = Element.tag(originalTag);
@@ -152,6 +162,10 @@ List<Map<String, dynamic>> extractParagraphsByPage(String pagesAndParagraphs) {
       ];
     }
 
+    if (pages.length == 0) {
+      pages.add({'number': 1, 'paragraphs': <int>[]});
+    }
+
     var paragraphNumbers = extractParagraphNumbers(element);
     for (var number in paragraphNumbers) {
       pages.last['paragraphs'].add(number);
@@ -176,7 +190,8 @@ List<int> extractParagraphNumbers(Element element) {
   return numbers.map(int.parse).toList();
 }
 
-List<String> createParagraphsSQLImportStatements(String bookId, List<dynamic> pages) {
+List<String> createParagraphsSQLImportStatements(
+    String bookId, List<dynamic> pages) {
   List<String> statements = [];
 
   for (var page in pages) {
@@ -206,7 +221,8 @@ List<Map<String, dynamic>> joinPagesCollections(
   }).toList();
 }
 
-List<String> createPageSQLImportStatements(String bookId, List<Map<String, dynamic>> pages) {
+List<String> createPageSQLImportStatements(
+    String bookId, List<Map<String, dynamic>> pages) {
   return pages.map((page) {
     var number = page['number'];
     var content = page['content'].replaceAll('\n', '');
