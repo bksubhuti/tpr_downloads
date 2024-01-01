@@ -176,7 +176,7 @@ List<int> extractParagraphNumbers(Element element) {
   return numbers.map(int.parse).toList();
 }
 
-List<String> createParagraphsSQLImportStatements(List<dynamic> pages) {
+List<String> createParagraphsSQLImportStatements(String bookId, List<dynamic> pages) {
   List<String> statements = [];
 
   for (var page in pages) {
@@ -185,7 +185,7 @@ List<String> createParagraphsSQLImportStatements(List<dynamic> pages) {
 
     for (var paragraph in paragraphs) {
       String statement =
-          "INSERT INTO paragraphs VALUES('annya_sadda_18',$paragraph,$pageNumber);";
+          "INSERT INTO paragraphs VALUES('$bookId',$paragraph,$pageNumber);";
       statements.add(statement);
     }
   }
@@ -206,7 +206,7 @@ List<Map<String, dynamic>> joinPagesCollections(
   }).toList();
 }
 
-List<String> createPageSQLImportStatements(List<Map<String, dynamic>> pages) {
+List<String> createPageSQLImportStatements(String bookId, List<Map<String, dynamic>> pages) {
   return pages.map((page) {
     var number = page['number'];
     var content = page['content'].replaceAll('\n', '');
@@ -215,6 +215,6 @@ List<String> createPageSQLImportStatements(List<Map<String, dynamic>> pages) {
     var paragraphsStr =
         paragraphs.isNotEmpty ? '-${paragraphs.join('-')}-' : '';
 
-    return "INSERT INTO pages (bookid, page, content, paranum) VALUES('annya_sadda_18',$number,'$content','$paragraphsStr');";
+    return "INSERT INTO pages (bookid, page, content, paranum) VALUES('$bookId',$number,'$content','$paragraphsStr');";
   }).toList();
 }

@@ -100,7 +100,7 @@ void main() {
 
   test('createParagraphsSQLImportStatements', () {
     expect(
-        createParagraphsSQLImportStatements([
+        createParagraphsSQLImportStatements('annya_sadda_18', [
           {
             'number': 4,
             'paragraphs': [1]
@@ -151,7 +151,7 @@ void main() {
 
   test('createPageSQLImportStatements', () {
     expect(
-        createPageSQLImportStatements([
+        createPageSQLImportStatements('annya_sadda_18', [
           {
             'number': 1,
             'content': 'x\nx',
