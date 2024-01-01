@@ -80,6 +80,16 @@ So the lastpage and pagecount fields are 324.
 
 ## tocs table
 
+```
+CREATE TABLE "tocs" (
+	"book_id"	TEXT,
+	"name"	TEXT,
+	"type"	TEXT,
+	"page_number"	INTEGER,
+  simple TEXT
+);
+```
+
 I ran this command to find the unique rend attribute values:
 
 ```
@@ -128,18 +138,6 @@ Giving me this list:
 1557:<p rend="chapter">9. Kammaṭṭhānasaṅgahaanudīpanā</p>
 1705:<p rend="subhead">Nigamagāthāsu.</p>
 1713:<p rend="subhead">Dīpaniyā nigamagāthāsu.</p>
-```
-
-the `tocs` table has the columns:
-
-```
-CREATE TABLE "tocs" (
-	"book_id"	TEXT,
-	"name"	TEXT,
-	"type"	TEXT,
-	"page_number"	INTEGER,
-  simple TEXT
-);
 ```
 
 Examples from mulapannasapali:
