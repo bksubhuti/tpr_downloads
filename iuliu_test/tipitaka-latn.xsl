@@ -89,7 +89,19 @@
 </p>
 </xsl:template>
 
+<xsl:template match='head[@rend="book"]'>
+<p class="book">
+<xsl:apply-templates/>
+</p>
+</xsl:template>
+
 <xsl:template match='p[@rend="chapter"]'>
+<p class="chapter">
+<xsl:apply-templates/>
+</p>
+</xsl:template>
+
+<xsl:template match='head[@rend="chapter"]'>
 <p class="chapter">
 <xsl:apply-templates/>
 </p>
