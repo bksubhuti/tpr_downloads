@@ -12,6 +12,8 @@ String readFile(String filePathRelativeToTestFile) {
 
 void main() {
   test('extractMyanmarEditionPagesFromVriHtml', () {
+    // Given: a text with a text before the first page, a page where the marker is not at the beginning of the p element, and a page where the marker is after the first word of the p element
+    // Should: split the second page on the word before the marker and the third page before the p element
     expect(
         extractMyanmarEditionPagesFromVriHtml(
             readFile('e0401n-partial.nrf.html')),
