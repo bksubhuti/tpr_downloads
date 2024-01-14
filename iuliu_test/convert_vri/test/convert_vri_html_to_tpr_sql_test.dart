@@ -12,16 +12,46 @@ String readFile(String filePathRelativeToTestFile) {
 
 void main() {
   test('extractMyanmarEditionPagesFromVriHtml', () {
-    // Given: a text with a text before the first page, a page where the marker is not at the beginning of the p element, and a page where the marker is after the first word of the p element
-    // Should: split the second page on the word before the marker and the third page before the p element
-    expect(
-        extractMyanmarEditionPagesFromVriHtml(
-            readFile('e0401n-partial.nrf.html')),
-        [
-          {'number': 1, 'content': readFile("e0401n-page1.html")},
-          {'number': 2, 'content': readFile("e0401n-page2.html")},
-          {'number': 3, 'content': readFile("e0401n-page3.html")}
-        ]);
+    // Given: a text with paragraphs before the first page marker              "<a name="M0.0001"></a>"",
+    ///       a page where the marker is not at the beginning of the p element "asadi sassavā<a name="M0.0002"></a>",
+    //        a page where the marker is after the first word of the p element "Evaṃ <a name="M0.0003"></a>"
+    // Should: add the text before first page marker to first page,
+    //         split the second page on the word before the marker,
+    //         split the third page before the p element
+    expect(extractMyanmarEditionPagesFromVriHtml("""
+<p class="chapter">placeholder</p>
+<p class="gatha1">Anantaññāṇaṃ <a name="M0.0001"></a> jinaṃ;</p>
+<p class="gathalast">placeholder</p>
+<p class="bodytext">placeholder</p>
+<p class="bodytext">asadi sassavā<a name="M0.0002"></a>. sanadhammovuccati.</p>
+<p class="bodytext">placeholder</p>
+<p class="bodytext">placeholder</p>
+<p class="bodytext">Evaṃ <a name="M0.0003"></a> karonto.</p>
+<p class="bodytext">placeholder</p>"""), [
+      {
+        'number': 1,
+        'content': """
+<p class="chapter">placeholder</p>
+<p class="gatha1">Anantaññāṇaṃ <a name="M0.0001"></a> jinaṃ;</p>
+<p class="gathalast">placeholder</p>
+<p class="bodytext">placeholder</p>
+<p class="bodytext">asadi </p>"""
+      },
+      {
+        'number': 2,
+        'content': """
+<p class="bodytext">sassavā<a name="M0.0002"></a>. anadhammovuccati.</p>
+<p class="bodytext">placeholder</p>
+<p class="bodytext">placeholder</p>"""
+      },
+      {
+        'number': 3,
+        'content': """
+<p class="bodytext">Evaṃ <a name="M0.0003"></a> karonto.</p>
+<p class="bodytext">placeholder</p>
+"""
+      }
+    ]);
 
     // Given: a text where a new page immediately follows a chapter and subhead heading
     // Should: include the chapter and subhead heading in new page not previous page
