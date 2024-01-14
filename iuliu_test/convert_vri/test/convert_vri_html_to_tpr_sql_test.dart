@@ -93,24 +93,26 @@ void main() {
           }
         ]);
 
-    var originalList =
-        extractMyanmarEditionPagesFromVriHtml(readFile('e0401n.nrf.html'));
+    {
+      var originalList =
+          extractMyanmarEditionPagesFromVriHtml(readFile('e0401n.nrf.html'));
 
-    var modifiedList = originalList.map((page) {
-      var newPage = Map.from(page);
-      newPage.remove('content');
-      return newPage;
-    }).toList();
+      var modifiedList = originalList.map((page) {
+        var newPage = Map.from(page);
+        newPage.remove('content');
+        return newPage;
+      }).toList();
 
-    List<Map<String, int>> numberList = [];
+      List<Map<String, int>> numberList = [];
 
-    for (int i = 1; i <= 324; i++) {
-      numberList.add({'number': i});
+      for (int i = 1; i <= 324; i++) {
+        numberList.add({'number': i});
+      }
+
+      // Given: a full book
+      // Should: have a page for every page in the book
+      expect(modifiedList, numberList);
     }
-
-    // Given: a full book
-    // Should: have a page for every page in the book
-    expect(modifiedList, numberList);
   });
 
   test('extractParagraphsByPage', () {
