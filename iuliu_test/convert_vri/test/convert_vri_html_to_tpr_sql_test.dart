@@ -40,7 +40,7 @@ void main() {
       {
         'number': 2,
         'content': """
-<p class="bodytext">sassavā<a name="M0.0002"></a>. anadhammovuccati.</p>
+<p class="bodytext">sassavā<a name="M0.0002"></a>. sanadhammovuccati.</p>
 <p class="bodytext">placeholder</p>
 <p class="bodytext">placeholder</p>"""
       },
@@ -48,8 +48,7 @@ void main() {
         'number': 3,
         'content': """
 <p class="bodytext">Evaṃ <a name="M0.0003"></a> karonto.</p>
-<p class="bodytext">placeholder</p>
-"""
+<p class="bodytext">placeholder</p>"""
       }
     ]);
 
@@ -113,7 +112,7 @@ void main() {
       // Should: have a page for every page in the book
       expect(pagesWithoutContentList, pagesNumberList);
     }
-  }, skip: true);
+  });
 
   test('extractParagraphsByPage', () {
     expect(extractParagraphsByPage(readFile('paragraphs.txt')), [

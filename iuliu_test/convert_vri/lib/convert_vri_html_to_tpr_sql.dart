@@ -28,7 +28,9 @@ List<Map<String, dynamic>> extractMyanmarEditionPagesFromVriHtml(
     } else if (isNewPage && !isFirstPage && isNewPageMarkerAtStart) {
       return [...pages, createNewPageWithHeaders(pages.last, element)];
     } else if (isNewPage && !isFirstPage && !isNewPageMarkerAtStart) {
-      return [...pages, createNewPage(element)];
+      var [lastPageParagraph, newPageParagraph] = splitParagraphOnWordPrecedingMarker(element);
+      pages.last['content'].add(lastPageParagraph);
+      return [...pages, createNewPageFromText(newPageParagraph)];
     } else {
       pages.last['content'].add(element.outerHtml);
       return pages;
@@ -157,6 +159,17 @@ Map<String, dynamic> createNewPage(Element element) {
   return {
     'number': pageNumber,
     'content': [element.outerHtml]
+  };
+}
+
+Map<String, dynamic> createNewPageFromText(String paragraphHtml) {
+  Document doc = parser.parse(paragraphHtml);
+  Element paragraph = doc.querySelector('p')!;
+  var pageNumber = extractPageNumberFromLine(paragraph);
+
+  return {
+    'number': pageNumber,
+    'content': [paragraph.outerHtml]
   };
 }
 
