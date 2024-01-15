@@ -270,17 +270,30 @@ void main() {
     }
     {
       String paragraphHtml =
-          '<p class="bodytext">Kathaṃ bhagavā adutiyaṭṭhena eko? Evaṃ pabbajito samāno eko araññavanapatthāni pantāni senāsanāni paṭisevati appasaddāni appanigghosāni <a name="T0.0291"></a><a name="M0.0211"></a>';
+          '<p class="bodytext">Kathaṃ bhagavā adutiyaṭṭhena eko? Evaṃ pabbajito samāno eko araññavanapatthāni pantāni senāsanāni paṭisevati appasaddāni appanigghosāni <a name="T0.0291"></a><a name="M0.0211"></a></p>';
       Document doc = parser.parse(paragraphHtml);
       Element paragraph = doc.querySelector('p')!;
       expect(calculateIsNewPageMarkerAtStartOfParagraph(paragraph), false);
     }
     {
       String paragraphHtml =
-          '<p class="bodytext">Kathaṃ bhagavā<a name="M0.0211"></a>';
+          '<p class="bodytext">Kathaṃ bhagavā<a name="M0.0211"></a></p>';
       Document doc = parser.parse(paragraphHtml);
       Element paragraph = doc.querySelector('p')!;
       expect(calculateIsNewPageMarkerAtStartOfParagraph(paragraph), false);
+    }
+  });
+
+  test('splitParagraphOnWordPrecedingMarker', () {
+    {
+      String paragraphHtml =
+          '<p class="bodytext">Kathaṃ bhagavā <a name="M0.0211"></a></p>';
+      Document doc = parser.parse(paragraphHtml);
+      Element paragraph = doc.querySelector('p')!;
+      expect(splitParagraphOnWordPrecedingMarker(paragraph), [
+        '<p class="bodytext">Kathaṃ </p>',
+        '<p class="bodytext">bhagavā <a name="M0.0211"></a></p>'
+      ]);
     }
   });
 }

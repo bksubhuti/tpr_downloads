@@ -12,6 +12,8 @@ List<Map<String, dynamic>> extractMyanmarEditionPagesFromVriHtml(
     var isFirstPage = containsFirstPage(element);
     var isNewPage = containsNewPage(element);
     var isMultipleNewPage = containsMultipleNewPages(element);
+    var isNewPageMarkerAtStart =
+        calculateIsNewPageMarkerAtStartOfParagraph(element);
 
     if (isMultipleNewPage) {
       var paragraphStrings = splitParagraphWithMultiplePages(element);
@@ -23,8 +25,10 @@ List<Map<String, dynamic>> extractMyanmarEditionPagesFromVriHtml(
         createNewPageWithHeaders(pages.last, paragraphs[0]),
         ...paragraphsAfterFirst.map((paragraph) => createNewPage(paragraph))
       ];
-    } else if (isNewPage && !isFirstPage) {
+    } else if (isNewPage && !isFirstPage && isNewPageMarkerAtStart) {
       return [...pages, createNewPageWithHeaders(pages.last, element)];
+    } else if (isNewPage && !isFirstPage && !isNewPageMarkerAtStart) {
+      return [...pages, createNewPage(element)];
     } else {
       pages.last['content'].add(element.outerHtml);
       return pages;
@@ -63,11 +67,31 @@ bool calculateIsNewPageMarkerAtStartOfParagraph(Element element) {
   var match = RegExp(r'<a name="M[^"]*"></a>').firstMatch(element.innerHtml);
   if (match == null) return false;
 
-  var textUpToMarker = parser.parseFragment(element.innerHtml.substring(0, match.end)).text;
+  var textUpToMarker =
+      parser.parseFragment(element.innerHtml.substring(0, match.end)).text;
   if (textUpToMarker == null) return false;
 
-  var words = textUpToMarker!.trim().split(RegExp(r'\s+')).where((word) => !RegExp(r'^\d+\.$').hasMatch(word)).toList();
+  var words = textUpToMarker!
+      .trim()
+      .split(RegExp(r'\s+'))
+      .where((word) => !RegExp(r'^\d+\.$').hasMatch(word))
+      .toList();
   return words.length == 1;
+}
+
+List<String> splitParagraphOnWordPrecedingMarker(Element paragraph) {
+  var match = RegExp(r'[^\s]+\s*<a name="M[^"]*"></a>')
+      .firstMatch(paragraph.innerHtml);
+  if (match == null) return [paragraph.outerHtml];
+
+  int precedingWordStartIndex = match.start;
+  String part1 = paragraph.innerHtml.substring(0, precedingWordStartIndex);
+  String part2 = paragraph.innerHtml.substring(precedingWordStartIndex);
+
+  String pTagStart = '<p class="${paragraph.className}">';
+  String pTagEnd = '</p>';
+
+  return ['$pTagStart$part1$pTagEnd', '$pTagStart$part2$pTagEnd'];
 }
 
 List<String> splitParagraphWithMultiplePages(Element paragraph) {
