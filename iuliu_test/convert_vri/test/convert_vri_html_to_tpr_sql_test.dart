@@ -52,14 +52,59 @@ void main() {
       }
     ]);
 
-    // Given: a text where a new page immediately follows a chapter and subhead heading
+    // Given: a text (e201n) where a new page immediately follows a chapter and subhead heading
     // Should: include the chapter and subhead heading in new page not previous page
     expect(
-        extractMyanmarEditionPagesFromVriHtml(
-            readFile('e0201n-partial.nrf.html')),
+        extractMyanmarEditionPagesFromVriHtml("""
+<p class="centered">Namo tassa bhagavato arahato sammāsambuddhassa</p>
+<p class="book">Niruttidīpanīpāṭha</p>
+<p class="subsubhead">Ganthārambha</p>
+<p class="hangnum"><a name="para1"></a><span class="paranum">1</span>.</p>
+<p class="gatha1">Caturāsītisahassa<a name="M0.0001"></a>, dhammakkhandhāpabhaṅkarā;</p>
+<p class="gathalast">Lokamhi yassa jotanti, nantavaṇṇapabhassarā.</p>
+<p class="hangnum"><a name="para2"></a><span class="paranum">2</span>.</p>
+<p class="gatha1">Anantavaṇṇaṃ sambuddhaṃ, vande niruttipāraguṃ;</p>
+<p class="gathalast">Saddhammañcassa saṅghañca, visuddhavaṇṇabhājanaṃ.</p>
+<p class="hangnum"><a name="para3"></a><span class="paranum">3</span>.</p>
+<p class="gatha1">Moggallāno mahāñāṇī, niruttāraññakesarī;</p>
+<p class="gathalast">Nadi byākaraṇaṃnādaṃ, sogatāraññabyāpanaṃ.</p>
+<p class="hangnum"><a name="para4"></a><span class="paranum">4</span>.</p>
+<p class="gatha1">Tassatthaṃ dīpayissāmi, nānārāsiṃvibhājayaṃ;</p>
+<p class="gathalast">Ogāyha saddasatthāni, navaṅgaṃ satthusāsananti.</p>
+<p class="chapter">1. Sandhikaṇḍa</p>
+<p class="subhead">Saññārāsi</p>
+<p class="subhead">Garusaññārāsi</p>
+<p class="bodytext">Vaṇṇo<a name="M0.0002"></a>, saro, savaṇṇo, dīgho, rasso, byañjano, vaggo, niggahītaṃ.</p>
+<p class="bodytext"><a name="para1"></a><span class="paranum">1</span>. <span class="bld">Aādayo titālīsaṃ</span><span class="note">[titālīsa (bahūsu)]</span> <span class="bld">vaṇṇā</span><span class="note">[ka. 2; rū. 2; nī. 1, 2]</span>.</p>"""),
         [
-          {'number': 1, 'content': readFile("e0201n-page1.html")},
-          {'number': 2, 'content': readFile("e0201n-page2.html")},
+          {
+            'number': 1,
+            'content': """
+<p class="centered">Namo tassa bhagavato arahato sammāsambuddhassa</p>
+<p class="book">Niruttidīpanīpāṭha</p>
+<p class="subsubhead">Ganthārambha</p>
+<p class="hangnum"><a name="para1"></a><span class="paranum">1</span>.</p>
+<p class="gatha1">Caturāsītisahassa<a name="M0.0001"></a>, dhammakkhandhāpabhaṅkarā;</p>
+<p class="gathalast">Lokamhi yassa jotanti, nantavaṇṇapabhassarā.</p>
+<p class="hangnum"><a name="para2"></a><span class="paranum">2</span>.</p>
+<p class="gatha1">Anantavaṇṇaṃ sambuddhaṃ, vande niruttipāraguṃ;</p>
+<p class="gathalast">Saddhammañcassa saṅghañca, visuddhavaṇṇabhājanaṃ.</p>
+<p class="hangnum"><a name="para3"></a><span class="paranum">3</span>.</p>
+<p class="gatha1">Moggallāno mahāñāṇī, niruttāraññakesarī;</p>
+<p class="gathalast">Nadi byākaraṇaṃnādaṃ, sogatāraññabyāpanaṃ.</p>
+<p class="hangnum"><a name="para4"></a><span class="paranum">4</span>.</p>
+<p class="gatha1">Tassatthaṃ dīpayissāmi, nānārāsiṃvibhājayaṃ;</p>
+<p class="gathalast">Ogāyha saddasatthāni, navaṅgaṃ satthusāsananti.</p>"""
+          },
+          {
+            'number': 2,
+            'content': """
+<p class="chapter">1. Sandhikaṇḍa</p>
+<p class="subhead">Saññārāsi</p>
+<p class="subhead">Garusaññārāsi</p>
+<p class="bodytext">Vaṇṇo<a name="M0.0002"></a>, saro, savaṇṇo, dīgho, rasso, byañjano, vaggo, niggahītaṃ.</p>
+<p class="bodytext"><a name="para1"></a><span class="paranum">1</span>. <span class="bld">Aādayo titālīsaṃ</span><span class="note">[titālīsa (bahūsu)]</span> <span class="bld">vaṇṇā</span><span class="note">[ka. 2; rū. 2; nī. 1, 2]</span>.</p>"""
+          },
         ]);
 
     // Given: a text where there are three new pages on the same line

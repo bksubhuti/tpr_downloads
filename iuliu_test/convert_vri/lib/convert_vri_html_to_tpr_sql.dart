@@ -28,7 +28,8 @@ List<Map<String, dynamic>> extractMyanmarEditionPagesFromVriHtml(
     } else if (isNewPage && !isFirstPage && isNewPageMarkerAtStart) {
       return [...pages, createNewPageWithHeaders(pages.last, element)];
     } else if (isNewPage && !isFirstPage && !isNewPageMarkerAtStart) {
-      var [lastPageParagraph, newPageParagraph] = splitParagraphOnWordPrecedingMarker(element);
+      var [lastPageParagraph, newPageParagraph] =
+          splitParagraphOnWordPrecedingMarker(element);
       pages.last['content'].add(lastPageParagraph);
       return [...pages, createNewPageFromText(newPageParagraph)];
     } else {
@@ -82,8 +83,8 @@ bool calculateIsNewPageMarkerAtStartOfParagraph(Element element) {
 }
 
 List<String> splitParagraphOnWordPrecedingMarker(Element paragraph) {
-  var match = RegExp(r'[^\s]+\s*<a name="M[^"]*"></a>')
-      .firstMatch(paragraph.innerHtml);
+  var match =
+      RegExp(r'[^\s]+\s*<a name="M[^"]*"></a>').firstMatch(paragraph.innerHtml);
   if (match == null) return [paragraph.outerHtml];
 
   int precedingWordStartIndex = match.start;
