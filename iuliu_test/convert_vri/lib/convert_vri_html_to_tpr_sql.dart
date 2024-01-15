@@ -15,6 +15,11 @@ List<Map<String, dynamic>> extractMyanmarEditionPagesFromVriHtml(
     var isNewPageMarkerAtStart =
         calculateIsNewPageMarkerAtStartOfParagraph(element);
 
+    if (isFirstPage || !isNewPage) {
+      pages.last['content'].add(element.outerHtml);
+      return pages;
+    }
+
     if (isMultipleNewPage) {
       var paragraphStrings = splitParagraphWithMultiplePages(element);
       var paragraphs =
@@ -25,15 +30,14 @@ List<Map<String, dynamic>> extractMyanmarEditionPagesFromVriHtml(
         createNewPageWithHeaders(pages.last, paragraphs[0]),
         ...paragraphsAfterFirst.map((paragraph) => createNewPage(paragraph))
       ];
-    } else if (isNewPage && !isFirstPage && isNewPageMarkerAtStart) {
+    } else if (isNewPage && isNewPageMarkerAtStart) {
       return [...pages, createNewPageWithHeaders(pages.last, element)];
-    } else if (isNewPage && !isFirstPage && !isNewPageMarkerAtStart) {
+    } else if (isNewPage && !isNewPageMarkerAtStart) {
       var [lastPageParagraph, newPageParagraph] =
           splitParagraphOnWordPrecedingMarker(element);
       pages.last['content'].add(lastPageParagraph);
       return [...pages, createNewPageFromText(newPageParagraph)];
     } else {
-      pages.last['content'].add(element.outerHtml);
       return pages;
     }
   });
