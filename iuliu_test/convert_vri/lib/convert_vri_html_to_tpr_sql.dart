@@ -59,6 +59,17 @@ bool containsMultipleNewPages(Element element) {
   return newPageMarkers.length > 1;
 }
 
+bool calculateIsNewPageMarkerAtStartOfParagraph(Element element) {
+  var match = RegExp(r'<a name="M[^"]*"></a>').firstMatch(element.innerHtml);
+  if (match == null) return false;
+
+  var textUpToMarker = parser.parseFragment(element.innerHtml.substring(0, match.end)).text;
+  if (textUpToMarker == null) return false;
+
+  var words = textUpToMarker!.trim().split(RegExp(r'\s+')).where((word) => !RegExp(r'^\d+\.$').hasMatch(word)).toList();
+  return words.length == 1;
+}
+
 List<String> splitParagraphWithMultiplePages(Element paragraph) {
   var pageMarkers = paragraph.querySelectorAll('a[name^="M"]');
   var pageMarkersWithoutFirst = pageMarkers.sublist(1);
