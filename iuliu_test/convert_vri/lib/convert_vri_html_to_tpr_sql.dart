@@ -15,7 +15,7 @@ List<Map<String, dynamic>> extractMyanmarEditionPagesFromVriHtml(
     var isNewPageMarkerAtStart =
         calculateIsNewPageMarkerAtStartOfParagraph(element);
 
-    if (isFirstPage || !isNewPage) {
+    if (!isNewPage || isFirstPage) {
       pages.last['content'].add(element.outerHtml);
       return pages;
     }
