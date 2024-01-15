@@ -178,7 +178,9 @@ List<String> extractHeadingsToMove(List<String> lastPageContent) {
   var headingsToMove = <String>[];
   for (var contentElement in lastPageContent.reversed) {
     if (contentElement.contains('class="chapter"') ||
-        contentElement.contains('class="subhead"')) {
+        contentElement.contains('class="subhead"') ||
+         contentElement.contains('class="subsubhead"') ||
+         contentElement.contains('class="title"')) {
       headingsToMove.insert(0, contentElement);
     } else {
       break;

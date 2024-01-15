@@ -62,6 +62,8 @@ void main() {
 <p class="chapter">1. Sandhikaṇḍa</p>
 <p class="subhead">Saññārāsi</p>
 <p class="subhead">Garusaññārāsi</p>
+<p class="subsubhead">Garusaññārāsi</p>
+<p class="title">Garusaññārāsi</p>
 <p class="bodytext">Vaṇṇo<a name="M0.0002"></a>, saro, savaṇṇo, dīgho, rasso, byañjano, vaggo, niggahītaṃ.</p>
 <p class="bodytext">placeholder</p>"""),
         [
@@ -78,6 +80,8 @@ void main() {
 <p class="chapter">1. Sandhikaṇḍa</p>
 <p class="subhead">Saññārāsi</p>
 <p class="subhead">Garusaññārāsi</p>
+<p class="subsubhead">Garusaññārāsi</p>
+<p class="title">Garusaññārāsi</p>
 <p class="bodytext">Vaṇṇo<a name="M0.0002"></a>, saro, savaṇṇo, dīgho, rasso, byañjano, vaggo, niggahītaṃ.</p>
 <p class="bodytext">placeholder</p>"""
           },
