@@ -54,8 +54,7 @@ void main() {
 
     // Given: a text (e201n) where a new page immediately follows a chapter and subhead heading
     // Should: include the chapter and subhead heading in new page not previous page
-    expect(
-        extractMyanmarEditionPagesFromVriHtml("""
+    expect(extractMyanmarEditionPagesFromVriHtml("""
 <p class="hangnum">placeholder</p>
 <p class="gatha1">Caturāsītisahassa<a name="M0.0001"></a>, dhammakkhandhāpabhaṅkarā;</p>
 <p class="gathalast">placeholder</p>
@@ -65,18 +64,17 @@ void main() {
 <p class="subsubhead">Garusaññārāsi</p>
 <p class="title">Garusaññārāsi</p>
 <p class="bodytext">Vaṇṇo<a name="M0.0002"></a>, saro, savaṇṇo, dīgho, rasso, byañjano, vaggo, niggahītaṃ.</p>
-<p class="bodytext">placeholder</p>"""),
-        [
-          {
-            'number': 1,
-            'content': """
+<p class="bodytext">placeholder</p>"""), [
+      {
+        'number': 1,
+        'content': """
 <p class="hangnum">placeholder</p>
 <p class="gatha1">Caturāsītisahassa<a name="M0.0001"></a>, dhammakkhandhāpabhaṅkarā;</p>
 <p class="gathalast">placeholder</p>"""
-          },
-          {
-            'number': 2,
-            'content': """
+      },
+      {
+        'number': 2,
+        'content': """
 <p class="chapter">1. Sandhikaṇḍa</p>
 <p class="subhead">Saññārāsi</p>
 <p class="subhead">Garusaññārāsi</p>
@@ -84,8 +82,8 @@ void main() {
 <p class="title">Garusaññārāsi</p>
 <p class="bodytext">Vaṇṇo<a name="M0.0002"></a>, saro, savaṇṇo, dīgho, rasso, byañjano, vaggo, niggahītaṃ.</p>
 <p class="bodytext">placeholder</p>"""
-          },
-        ]);
+      },
+    ]);
 
     // Given: a text where there are three new pages on the same line
     // Should: split the first new page on the line to it's own paragraph, split the second then page to it's own paragraph, start a new page for the third one
@@ -114,6 +112,19 @@ void main() {
             'number': 139,
             'content':
                 '<p class="bodytext">Ayaṃ <a name="M0.0139"></a> pana <span class="bld">purisa</span>naye ekadesena paviṭṭhassa <span class="bld">mano</span>gaṇapakkhikassa āyukoṭṭhāsavācakassa <span class="bld">vaya</span>saddassa nāmikapadamālā – vayo, vayā. Vayaṃ, vayo, vaye. Vayasā, vayena, vayehi, vayebhīti <span class="bld">mana</span>nayena ñeyyo. Tassa ceto paṭissosi, araññe luddagocaro. Cetā haniṃsu vedabbaṃ.</p>'
+          }
+        ]);
+
+    // Given: a Myanmar page number that starts with M1
+    // Should: detect first page and add it to first record instead of creating a duplicate
+    expect(
+        extractMyanmarEditionPagesFromVriHtml(
+            '<p class="gatha1">Anantaññāṇaṃ <a name="M1.0001"></a> jinaṃ;</p>'),
+        [
+          {
+            'number': 1,
+            'content':
+                '<p class="gatha1">Anantaññāṇaṃ <a name="M1.0001"></a> jinaṃ;</p>'
           }
         ]);
 

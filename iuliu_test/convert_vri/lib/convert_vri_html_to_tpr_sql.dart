@@ -47,9 +47,11 @@ List<Map<String, dynamic>> extractMyanmarEditionPagesFromVriHtml(
 }
 
 bool containsFirstPage(Element element) {
+  RegExp namePattern = RegExp(r'M\d+\.0001');
+
   return element
       .querySelectorAll('a')
-      .any((a) => a.attributes['name'] == "M0.0001");
+      .any((a) => namePattern.hasMatch(a.attributes['name'] ?? ""));
 }
 
 bool containsNewPage(Element element) {
@@ -179,8 +181,8 @@ List<String> extractHeadingsToMove(List<String> lastPageContent) {
   for (var contentElement in lastPageContent.reversed) {
     if (contentElement.contains('class="chapter"') ||
         contentElement.contains('class="subhead"') ||
-         contentElement.contains('class="subsubhead"') ||
-         contentElement.contains('class="title"')) {
+        contentElement.contains('class="subsubhead"') ||
+        contentElement.contains('class="title"')) {
       headingsToMove.insert(0, contentElement);
     } else {
       break;
