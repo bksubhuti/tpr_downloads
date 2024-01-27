@@ -49,7 +49,7 @@ List<Map<String, dynamic>> addNewPage(
   var isMultipleNewPage = containsMultipleNewPages(element);
 
   if (isNewPageMarkerAtStart && !isMultipleNewPage) {
-    return [...pages, createNewPageWithHeaders(pages.last, element)];
+    return addNewPageWithHeaders(pages, element);
   } else {
     var [lastPageParagraph, ...newPageParagraphs] =
         splitParagraphOnWordPrecedingMarker(element.outerHtml);
@@ -65,8 +65,7 @@ List<Map<String, dynamic>> addNewPage(
       ];
     } else {
       return [
-        ...pages,
-        createNewPageWithHeaders(pages.last, element),
+        ...addNewPageWithHeaders(pages, element),
         ...newPageParagraphs
             .map((newPageParagraph) => createNewPageFromText(newPageParagraph))
             .toList()
@@ -188,17 +187,26 @@ List<Element> mapParagraphStringsToParagraphElements(
   }).toList();
 }
 
-Map<String, dynamic> createNewPageWithHeaders(
-    Map<String, dynamic> lastPage, Element element) {
+List<Map<String, dynamic>> addNewPageWithHeaders(
+    List<Map<String, dynamic>> pages, Element element) {
+  var clonedPages = List<Map<String, dynamic>>.from(pages);
+
+  var lastPage = clonedPages.isNotEmpty ? clonedPages.last : {'content': []};
+
   var lastPageContent = lastPage['content'] as List<String>;
   var headingsToMove = extractHeadingsToMove(lastPageContent);
   lastPageContent.removeWhere((element) => headingsToMove.contains(element));
+
   var pageNumber = extractPageNumberFromLine(element);
 
-  return {
+  var newPage = {
     'number': pageNumber,
     'content': [...headingsToMove, element.outerHtml]
   };
+
+  clonedPages.add(newPage);
+
+  return clonedPages;
 }
 
 Map<String, dynamic> createNewPage(Element element) {
