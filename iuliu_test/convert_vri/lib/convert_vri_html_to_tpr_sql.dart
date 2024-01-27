@@ -117,10 +117,11 @@ List<String> splitParagraphOnWordPrecedingMarker(String paragraphHtml,
   var precedingHtml =
       paragraph.innerHtml.substring(0, newPageMarkerMatch.start);
   var precedingHtmlDoc = parser.parse(precedingHtml);
-  var wordMatch = RegExp(r'[^\s]+\s*$').firstMatch(precedingHtmlDoc.body!.text);
+  var wordMatch =
+      RegExp(r'[^\s]+(?=\s*$)').firstMatch(precedingHtmlDoc.body!.text);
   var word = wordMatch!.group(0)!;
 
-  var wordMatches = RegExp(word).allMatches(paragraph.innerHtml);
+  var wordMatches = RegExp(RegExp.escape(word)).allMatches(paragraph.innerHtml);
   var wordIndex = wordMatches
       .where((match) => match.start < newPageMarkerMatch.start)
       .map((match) => match.start)
