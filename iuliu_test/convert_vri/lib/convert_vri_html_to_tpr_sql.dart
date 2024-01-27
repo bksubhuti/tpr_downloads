@@ -46,19 +46,32 @@ List<Map<String, dynamic>> addNewPage(
     List<Map<String, dynamic>> pages, Element element) {
   var isNewPageMarkerAtStart =
       calculateIsNewPageMarkerAtStartOfParagraph(element);
+  var isMultipleNewPage = containsMultipleNewPages(element);
 
-  if (isNewPageMarkerAtStart) {
+  if (isNewPageMarkerAtStart && !isMultipleNewPage) {
     return [...pages, createNewPageWithHeaders(pages.last, element)];
   } else {
     var [lastPageParagraph, ...newPageParagraphs] =
         splitParagraphOnWordPrecedingMarker(element.outerHtml);
 
-    return [
-      ...addNewParagraphToLastPage(pages, lastPageParagraph),
-      ...newPageParagraphs
-          .map((newPageParagraph) => createNewPageFromText(newPageParagraph))
-          .toList()
-    ];
+    Document doc = parser.parse(lastPageParagraph);
+    Element paragraph = doc.querySelector('p')!;
+    if (paragraph.querySelectorAll('a[name^="M"]').firstOrNull == null) {
+      return [
+        ...addNewParagraphToLastPage(pages, lastPageParagraph),
+        ...newPageParagraphs
+            .map((newPageParagraph) => createNewPageFromText(newPageParagraph))
+            .toList()
+      ];
+    } else {
+      return [
+        ...pages,
+        createNewPageWithHeaders(pages.last, element),
+        ...newPageParagraphs
+            .map((newPageParagraph) => createNewPageFromText(newPageParagraph))
+            .toList()
+      ];
+    }
   }
 }
 
