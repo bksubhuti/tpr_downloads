@@ -19,12 +19,7 @@ List<Map<String, dynamic>> extractMyanmarEditionPagesFromVriHtml(
     return addNewPages(pages, element);
   });
 
-  return pages.map((page) {
-    return {
-      'number': page['number'],
-      'content': (page['content'] as List<String>).join('\n')
-    };
-  }).toList();
+  return pages;
 }
 
 List<Map<String, dynamic>> addNewParagraphToLastPage(
@@ -328,7 +323,7 @@ List<String> createPageSQLImportStatements(
     String bookId, List<Map<String, dynamic>> pages) {
   return pages.map((page) {
     var number = page['number'];
-    var content = page['content'].replaceAll('\n', '');
+    var content = page['content'].join('').replaceAll('\n', '');
     var paragraphs = page['paragraphs'];
 
     var paragraphsStr =

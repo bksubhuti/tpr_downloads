@@ -30,25 +30,28 @@ void main() {
 <p class="bodytext">placeholder</p>"""), [
       {
         'number': 1,
-        'content': """
-<p class="chapter">placeholder</p>
-<p class="gatha1">Anantaññāṇaṃ <a name="M0.0001"></a> jinaṃ;</p>
-<p class="gathalast">placeholder</p>
-<p class="bodytext">placeholder</p>
-<p class="bodytext">asadi </p>"""
+        'content': [
+          '<p class="chapter">placeholder</p>',
+          '<p class="gatha1">Anantaññāṇaṃ <a name="M0.0001"></a> jinaṃ;</p>',
+          '<p class="gathalast">placeholder</p>',
+          '<p class="bodytext">placeholder</p>',
+          '<p class="bodytext">asadi </p>'
+        ]
       },
       {
         'number': 2,
-        'content': """
-<p class="bodytext">sassavā<a name="M0.0002"></a>. sanadhammovuccati.</p>
-<p class="bodytext">placeholder</p>
-<p class="bodytext">placeholder</p>"""
+        'content': [
+          '<p class="bodytext">sassavā<a name="M0.0002"></a>. sanadhammovuccati.</p>',
+          '<p class="bodytext">placeholder</p>',
+          '<p class="bodytext">placeholder</p>',
+        ]
       },
       {
         'number': 3,
-        'content': """
-<p class="bodytext">Evaṃ <a name="M0.0003"></a> karonto.</p>
-<p class="bodytext">placeholder</p>"""
+        'content': [
+          '<p class="bodytext">Evaṃ <a name="M0.0003"></a> karonto.</p>',
+          '<p class="bodytext">placeholder</p>'
+        ]
       }
     ]);
 
@@ -67,21 +70,23 @@ void main() {
 <p class="bodytext">placeholder</p>"""), [
       {
         'number': 1,
-        'content': """
-<p class="hangnum">placeholder</p>
-<p class="gatha1">Caturāsītisahassa<a name="M0.0001"></a>, dhammakkhandhāpabhaṅkarā;</p>
-<p class="gathalast">placeholder</p>"""
+        'content': [
+          '<p class="hangnum">placeholder</p>',
+          '<p class="gatha1">Caturāsītisahassa<a name="M0.0001"></a>, dhammakkhandhāpabhaṅkarā;</p>',
+          '<p class="gathalast">placeholder</p>'
+        ]
       },
       {
         'number': 2,
-        'content': """
-<p class="chapter">1. Sandhikaṇḍa</p>
-<p class="subhead">Saññārāsi</p>
-<p class="subhead">Garusaññārāsi</p>
-<p class="subsubhead">Garusaññārāsi</p>
-<p class="title">Garusaññārāsi</p>
-<p class="bodytext">Vaṇṇo<a name="M0.0002"></a>, saro, savaṇṇo, dīgho, rasso, byañjano, vaggo, niggahītaṃ.</p>
-<p class="bodytext">placeholder</p>"""
+        'content': [
+          '<p class="chapter">1. Sandhikaṇḍa</p>',
+          '<p class="subhead">Saññārāsi</p>',
+          '<p class="subhead">Garusaññārāsi</p>',
+          '<p class="subsubhead">Garusaññārāsi</p>',
+          '<p class="title">Garusaññārāsi</p>',
+          '<p class="bodytext">Vaṇṇo<a name="M0.0002"></a>, saro, savaṇṇo, dīgho, rasso, byañjano, vaggo, niggahītaṃ.</p>',
+          '<p class="bodytext">placeholder</p>'
+        ]
       },
     ]);
 
@@ -94,18 +99,21 @@ void main() {
         [
           {
             'number': 1,
-            'content':
-                '<p class="bodytext"><span class="bld">Paññāyete pidhiyyare</span>ti. <span class="bld">Paññā</span>ti yā paññā pajānanā…pe… amoho dhammavicayo sammādiṭṭhi. Paññāyete pidhiyyareti – paññāyete sotā pidhīyanti pacchijjanti na savanti na āsavanti na sandanti nappavattanti. ‘‘Sabbe saṅkhārā aniccā’’ti jānato passato paññāyete sotā pidhīyanti pacchijjanti na <a name="T0.0018"></a> savanti <a name="V0.0027"></a> na āsavanti na sandanti nappavattanti. ‘‘Sabbe saṅkhārā dukkhā’’ti jānato passato paññāyete sotā pidhīyanti pacchijjanti na savanti na āsavanti na sandanti nappavattanti. ‘‘Sabbe saṅkhārā anattā’’ti jānato passato paññāyete sotā pidhīyanti pacchijjanti na savanti na āsavanti na sandanti nappavattanti. ‘‘Avijjāpaccayā saṅkhārā’’ti jānato passato paññāyete sotā pidhīyanti </p>'
+            'content': [
+              '<p class="bodytext"><span class="bld">Paññāyete pidhiyyare</span>ti. <span class="bld">Paññā</span>ti yā paññā pajānanā…pe… amoho dhammavicayo sammādiṭṭhi. Paññāyete pidhiyyareti – paññāyete sotā pidhīyanti pacchijjanti na savanti na āsavanti na sandanti nappavattanti. ‘‘Sabbe saṅkhārā aniccā’’ti jānato passato paññāyete sotā pidhīyanti pacchijjanti na <a name="T0.0018"></a> savanti <a name="V0.0027"></a> na āsavanti na sandanti nappavattanti. ‘‘Sabbe saṅkhārā dukkhā’’ti jānato passato paññāyete sotā pidhīyanti pacchijjanti na savanti na āsavanti na sandanti nappavattanti. ‘‘Sabbe saṅkhārā anattā’’ti jānato passato paññāyete sotā pidhīyanti pacchijjanti na savanti na āsavanti na sandanti nappavattanti. ‘‘Avijjāpaccayā saṅkhārā’’ti jānato passato paññāyete sotā pidhīyanti </p>'
+            ]
           },
           {
             'number': 31,
-            'content':
-                '<p class="bodytext">pacchijjanti <a name="M0.0031"></a> na savanti na āsavanti na sandanti nappavattanti. ‘‘Saṅkhārapaccayā viññāṇa’’nti…pe… ‘‘viññāṇapaccayā nāmarūpa’’nti… ‘‘nāmarūpapaccayā saḷāyatana’’nti… ‘‘saḷāyatanapaccayā phasso’’ti… ‘‘phassapaccayā vedanā’’ti… ‘‘vedanāpaccayā taṇhā’’ti… ‘‘taṇhāpaccayā upādāna’’nti… ‘‘upādānapaccayā bhavo’’ti… ‘‘bhavapaccayā jātī’’ti… ‘‘jātipaccayā jarāmaraṇa’’nti jānato passato paññāyete sotā pidhīyanti pacchijjanti na savanti na āsavanti na sandanti nappavattanti. ‘‘Avijjānirodhā saṅkhāranirodho’’ti… ‘‘saṅkhāranirodhā viññāṇanirodho’’ti… ‘‘viññāṇanirodhā nāmarūpanirodho’’ti… ‘‘nāmarūpanirodhā saḷāyatananirodho’’ti… ‘‘saḷāyatananirodhā phassanirodho’’ti… ‘‘phassanirodhā vedanānirodho’’ti… ‘‘vedanānirodhā taṇhānirodho’’ti… ‘‘taṇhānirodhā upādānanirodho’’ti… ‘‘upādānanirodhā bhavanirodho’’ti… ‘‘bhavanirodhā jātinirodho’’ti… ‘‘jātinirodhā jarāmaraṇanirodho’’ti jānato passato paññāyete sotā pidhīyanti pacchijjanti na savanti na āsavanti na sandanti nappavattanti. ‘‘Idaṃ dukkha’’nti…pe… ‘‘ayaṃ dukkhasamudayo’’ti… ‘‘ayaṃ dukkhanirodho’’ti… ‘‘ayaṃ dukkhanirodhagāminī paṭipadā’’ti jānato passato paññāyete sotā pidhīyanti pacchijjanti na savanti na āsavanti <a name="T0.0019"></a> na sandanti nappavattanti. ‘‘Ime dhammā āsavā’’ti…pe… ‘‘ayaṃ āsavasamudayo’’ti… ‘‘ayaṃ āsavanirodho’’ti… ‘‘ayaṃ āsavanirodhagāminī paṭipadā’’ti jānato passato paññāyete sotā pidhīyanti pacchijjanti na savanti na āsavanti na sandanti nappavattanti. ‘‘Ime dhammā abhiññeyyā’’ti…pe… ‘‘ime dhammā pariññeyyā’’ti… ‘‘ime dhammā pahātabbā’’ti… ‘‘ime dhammā bhāvetabbā’’ti… ‘‘ime dhammā sacchikātabbā’’ti jānato passato paññāyete sotā pidhīyanti pacchijjanti na savanti na āsavanti na sandanti nappavattanti. Channaṃ phassāyatanānaṃ samudayañca atthaṅgamañca assādañca ādīnavañca nissaraṇañca jānato passato paññāyete sotā pidhīyanti pacchijjanti na savanti na āsavanti na sandanti nappavattanti. Pañcannaṃ upādānakkhandhānaṃ samudayañca atthaṅgamañca assādañca ādīnavañca nissaraṇañca jānato passato… catunnaṃ mahābhūtānaṃ samudayañca atthaṅgamañca assādañca ādīnavañca nissaraṇañca jānato passato… yaṃ kiñci samudayadhammaṃ sabbaṃ taṃ nirodhadhammanti jānato passato paññāyete sotā pidhīyanti pacchijjanti na <a name="V0.0028"></a> savanti na </p>'
+            'content': [
+              '<p class="bodytext">pacchijjanti <a name="M0.0031"></a> na savanti na āsavanti na sandanti nappavattanti. ‘‘Saṅkhārapaccayā viññāṇa’’nti…pe… ‘‘viññāṇapaccayā nāmarūpa’’nti… ‘‘nāmarūpapaccayā saḷāyatana’’nti… ‘‘saḷāyatanapaccayā phasso’’ti… ‘‘phassapaccayā vedanā’’ti… ‘‘vedanāpaccayā taṇhā’’ti… ‘‘taṇhāpaccayā upādāna’’nti… ‘‘upādānapaccayā bhavo’’ti… ‘‘bhavapaccayā jātī’’ti… ‘‘jātipaccayā jarāmaraṇa’’nti jānato passato paññāyete sotā pidhīyanti pacchijjanti na savanti na āsavanti na sandanti nappavattanti. ‘‘Avijjānirodhā saṅkhāranirodho’’ti… ‘‘saṅkhāranirodhā viññāṇanirodho’’ti… ‘‘viññāṇanirodhā nāmarūpanirodho’’ti… ‘‘nāmarūpanirodhā saḷāyatananirodho’’ti… ‘‘saḷāyatananirodhā phassanirodho’’ti… ‘‘phassanirodhā vedanānirodho’’ti… ‘‘vedanānirodhā taṇhānirodho’’ti… ‘‘taṇhānirodhā upādānanirodho’’ti… ‘‘upādānanirodhā bhavanirodho’’ti… ‘‘bhavanirodhā jātinirodho’’ti… ‘‘jātinirodhā jarāmaraṇanirodho’’ti jānato passato paññāyete sotā pidhīyanti pacchijjanti na savanti na āsavanti na sandanti nappavattanti. ‘‘Idaṃ dukkha’’nti…pe… ‘‘ayaṃ dukkhasamudayo’’ti… ‘‘ayaṃ dukkhanirodho’’ti… ‘‘ayaṃ dukkhanirodhagāminī paṭipadā’’ti jānato passato paññāyete sotā pidhīyanti pacchijjanti na savanti na āsavanti <a name="T0.0019"></a> na sandanti nappavattanti. ‘‘Ime dhammā āsavā’’ti…pe… ‘‘ayaṃ āsavasamudayo’’ti… ‘‘ayaṃ āsavanirodho’’ti… ‘‘ayaṃ āsavanirodhagāminī paṭipadā’’ti jānato passato paññāyete sotā pidhīyanti pacchijjanti na savanti na āsavanti na sandanti nappavattanti. ‘‘Ime dhammā abhiññeyyā’’ti…pe… ‘‘ime dhammā pariññeyyā’’ti… ‘‘ime dhammā pahātabbā’’ti… ‘‘ime dhammā bhāvetabbā’’ti… ‘‘ime dhammā sacchikātabbā’’ti jānato passato paññāyete sotā pidhīyanti pacchijjanti na savanti na āsavanti na sandanti nappavattanti. Channaṃ phassāyatanānaṃ samudayañca atthaṅgamañca assādañca ādīnavañca nissaraṇañca jānato passato paññāyete sotā pidhīyanti pacchijjanti na savanti na āsavanti na sandanti nappavattanti. Pañcannaṃ upādānakkhandhānaṃ samudayañca atthaṅgamañca assādañca ādīnavañca nissaraṇañca jānato passato… catunnaṃ mahābhūtānaṃ samudayañca atthaṅgamañca assādañca ādīnavañca nissaraṇañca jānato passato… yaṃ kiñci samudayadhammaṃ sabbaṃ taṃ nirodhadhammanti jānato passato paññāyete sotā pidhīyanti pacchijjanti na <a name="V0.0028"></a> savanti na </p>'
+            ]
           },
           {
             'number': 32,
-            'content':
-                '<p class="bodytext">āsavanti <a name="M0.0032"></a> na sandanti <a name="T0.0020"></a> nappavattantīti – paññāyete pidhiyyare. Tenāha bhagavā –</p>'
+            'content': [
+              '<p class="bodytext">āsavanti <a name="M0.0032"></a> na sandanti <a name="T0.0020"></a> nappavattantīti – paññāyete pidhiyyare. Tenāha bhagavā –</p>'
+            ]
           },
         ]);
 
@@ -117,8 +125,9 @@ void main() {
         [
           {
             'number': 1,
-            'content':
-                '<p class="gatha1">Anantaññāṇaṃ <a name="M1.0001"></a> jinaṃ;</p>'
+            'content': [
+              '<p class="gatha1">Anantaññāṇaṃ <a name="M1.0001"></a> jinaṃ;</p>'
+            ]
           }
         ]);
 
@@ -195,9 +204,18 @@ void main() {
   test('joinPagesCollections', () {
     expect(
         joinPagesCollections([
-          {'number': 1, 'content': 'x'},
-          {'number': 2, 'content': 'x'},
-          {'number': 3, 'content': 'x'},
+          {
+            'number': 1,
+            'content': ['x']
+          },
+          {
+            'number': 2,
+            'content': ['x']
+          },
+          {
+            'number': 3,
+            'content': ['x']
+          },
         ], [
           {
             'number': 1,
@@ -211,13 +229,17 @@ void main() {
         [
           {
             'number': 1,
-            'content': 'x',
+            'content': ['x'],
             'paragraphs': [1]
           },
-          {'number': 2, 'content': 'x', 'paragraphs': []},
+          {
+            'number': 2,
+            'content': ['x'],
+            'paragraphs': []
+          },
           {
             'number': 3,
-            'content': 'x',
+            'content': ['x'],
             'paragraphs': [1, 2]
           },
         ]);
@@ -228,13 +250,17 @@ void main() {
         createPageSQLImportStatements('annya_sadda_18', [
           {
             'number': 1,
-            'content': 'x\nx',
+            'content': ['x\nx'],
             'paragraphs': [1]
           },
-          {'number': 2, 'content': 'x', 'paragraphs': []},
+          {
+            'number': 2,
+            'content': ['x'],
+            'paragraphs': []
+          },
           {
             'number': 3,
-            'content': 'x',
+            'content': ['x'],
             'paragraphs': [1, 2]
           }
         ]),
