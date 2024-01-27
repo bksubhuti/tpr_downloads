@@ -12,8 +12,6 @@ List<Map<String, dynamic>> extractMyanmarEditionPagesFromVriHtml(
     var isFirstPage = containsFirstPage(element);
     var isNewPage = containsNewPage(element);
     var isMultipleNewPage = containsMultipleNewPages(element);
-    var isNewPageMarkerAtStart =
-        calculateIsNewPageMarkerAtStartOfParagraph(element);
 
     if (!isNewPage || isFirstPage) {
       pages.last['content'].add(element.outerHtml);
@@ -30,13 +28,8 @@ List<Map<String, dynamic>> extractMyanmarEditionPagesFromVriHtml(
         createNewPageWithHeaders(pages.last, paragraphs[0]),
         ...paragraphsAfterFirst.map((paragraph) => createNewPage(paragraph))
       ];
-    } else if (isNewPage && isNewPageMarkerAtStart) {
-      return [...pages, createNewPageWithHeaders(pages.last, element)];
-    } else if (isNewPage && !isNewPageMarkerAtStart) {
-      var [lastPageParagraph, newPageParagraph] =
-          splitParagraphOnWordPrecedingMarker(element);
-      pages.last['content'].add(lastPageParagraph);
-      return [...pages, createNewPageFromText(newPageParagraph)];
+    } else if (isNewPage) {
+      return addNewPage(pages, element);
     } else {
       return pages;
     }
@@ -48,6 +41,21 @@ List<Map<String, dynamic>> extractMyanmarEditionPagesFromVriHtml(
       'content': (page['content'] as List<String>).join('\n')
     };
   }).toList();
+}
+
+List<Map<String, dynamic>> addNewPage(
+    List<Map<String, dynamic>> pages, Element element) {
+  var isNewPageMarkerAtStart =
+      calculateIsNewPageMarkerAtStartOfParagraph(element);
+
+  if (isNewPageMarkerAtStart) {
+    return [...pages, createNewPageWithHeaders(pages.last, element)];
+  } else {
+    var [lastPageParagraph, newPageParagraph] =
+        splitParagraphOnWordPrecedingMarker(element);
+    pages.last['content'].add(lastPageParagraph);
+    return [...pages, createNewPageFromText(newPageParagraph)];
+  }
 }
 
 bool containsFirstPage(Element element) {
