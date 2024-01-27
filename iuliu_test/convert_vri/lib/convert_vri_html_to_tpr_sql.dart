@@ -16,7 +16,7 @@ List<Map<String, dynamic>> extractMyanmarEditionPagesFromVriHtml(
       return addNewParagraphToLastPage(pages, element.outerHtml);
     }
 
-    return addNewPage(pages, element);
+    return addNewPages(pages, element);
   });
 
   return pages.map((page) {
@@ -42,7 +42,7 @@ List<Map<String, dynamic>> addNewParagraphToLastPage(
   ];
 }
 
-List<Map<String, dynamic>> addNewPage(
+List<Map<String, dynamic>> addNewPages(
     List<Map<String, dynamic>> pages, Element element) {
   var isNewPageMarkerAtStart =
       calculateIsNewPageMarkerAtStartOfParagraph(element);
