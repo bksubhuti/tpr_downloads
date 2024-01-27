@@ -271,22 +271,6 @@ void main() {
         ]);
   });
 
-  test('splitParagraphWithMultiplePages', () {
-    String paragraphHtml =
-        '<p class="unindented"> <span class="bld">Ettha mano</span><a name="M0.0136"></a>bhavissanti. Tato <a name="M0.0137"></a> tesaṃ tuṇhībhūtānaṃ <a name="para3"></a> saccakanigaṇṭhādayo ca paribbājakā <a name="M0.0138"></a> vādena na sampāpuṇiṃsu </p>';
-    Document doc = parser.parse(paragraphHtml);
-    Element paragraph = doc.querySelector('p')!;
-    List<String> result = splitParagraphWithMultiplePages(paragraph);
-
-    expect(result[0],
-        ' <span class="bld">Ettha mano</span><a name="M0.0136"></a>bhavissanti. ');
-    expect(result[1],
-        'Tato <a name="M0.0137"></a> tesaṃ tuṇhībhūtānaṃ <a name="para3"></a> saccakanigaṇṭhādayo ca ');
-    expect(result[2],
-        'paribbājakā <a name="M0.0138"></a> vādena na sampāpuṇiṃsu ');
-    expect(result.length, 3);
-  });
-
   test('calculateIsNewPageMarkerAtStartOfParagraph', () {
     {
       String paragraphHtml =

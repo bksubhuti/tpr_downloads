@@ -54,7 +54,7 @@ List<Map<String, dynamic>> addNewPages(
           ? addNewPageWithHeaders(pages, element)
           : addNewParagraphToLastPage(pages, lastPageParagraph)),
       ...newPageParagraphs
-          .map((newPageParagraph) => createNewPageFromText(newPageParagraph))
+          .map((newPageParagraph) => createNewPage(newPageParagraph))
           .toList()
     ];
   }
@@ -135,50 +135,6 @@ List<String> splitParagraphOnWordPrecedingMarker(String paragraphHtml) {
   ];
 }
 
-List<String> splitParagraphWithMultiplePages(Element paragraph) {
-  var pageMarkers = paragraph.querySelectorAll('a[name^="M"]');
-  var pageMarkersWithoutFirst = pageMarkers.sublist(1);
-  var wordRegex = RegExp(r'[^\s]+(?=\s*$)');
-
-  int previousPageEnd = 0;
-  List<String> pages = pageMarkersWithoutFirst.fold<List<String>>([],
-      (List<String> pages, Element marker) {
-    int markerIndex = paragraph.innerHtml.indexOf(marker.outerHtml);
-    String upToMarker =
-        paragraph.innerHtml.substring(previousPageEnd, markerIndex);
-
-    RegExpMatch? match = wordRegex.firstMatch(upToMarker);
-    if (match != null) {
-      int lastWordIndex = previousPageEnd + match.start;
-      var previousPage =
-          paragraph.innerHtml.substring(previousPageEnd, lastWordIndex);
-      previousPageEnd = lastWordIndex;
-      return [...pages, previousPage];
-    }
-    return pages;
-  });
-
-  if (previousPageEnd < paragraph.innerHtml.length) {
-    pages.add(paragraph.innerHtml.substring(previousPageEnd));
-  }
-
-  return pages;
-}
-
-List<Element> mapParagraphStringsToParagraphElements(
-    List<String> paragraphStrings, Element originalElement) {
-  String? originalTag = originalElement.localName;
-  Map<String, String> originalAttributes =
-      Map<String, String>.from(originalElement.attributes);
-
-  return paragraphStrings.map((paragraphString) {
-    Element newElement = Element.tag(originalTag);
-    newElement.attributes.addAll(originalAttributes);
-    newElement.innerHtml = paragraphString;
-    return newElement;
-  }).toList();
-}
-
 List<Map<String, dynamic>> addNewPageWithHeaders(
     List<Map<String, dynamic>> pages, Element element) {
   var clonedPages = List<Map<String, dynamic>>.from(pages);
@@ -201,16 +157,7 @@ List<Map<String, dynamic>> addNewPageWithHeaders(
   return clonedPages;
 }
 
-Map<String, dynamic> createNewPage(Element element) {
-  var pageNumber = extractPageNumberFromLine(element);
-
-  return {
-    'number': pageNumber,
-    'content': [element.outerHtml]
-  };
-}
-
-Map<String, dynamic> createNewPageFromText(String paragraphHtml) {
+Map<String, dynamic> createNewPage(String paragraphHtml) {
   Document doc = parser.parse(paragraphHtml);
   Element paragraph = doc.querySelector('p')!;
   var pageNumber = extractPageNumberFromLine(paragraph);
