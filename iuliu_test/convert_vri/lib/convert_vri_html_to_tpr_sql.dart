@@ -14,8 +14,7 @@ List<Map<String, dynamic>> extractMyanmarEditionPagesFromVriHtml(
     var isMultipleNewPage = containsMultipleNewPages(element);
 
     if (!isNewPage || isFirstPage) {
-      pages.last['content'].add(element.outerHtml);
-      return pages;
+      return addNewParagraphToLastPage(pages, element.outerHtml);
     }
 
     if (isMultipleNewPage) {
@@ -43,6 +42,21 @@ List<Map<String, dynamic>> extractMyanmarEditionPagesFromVriHtml(
   }).toList();
 }
 
+List<Map<String, dynamic>> addNewParagraphToLastPage(
+    List<Map<String, dynamic>> pages, String paragraph) {
+  final Map<String, dynamic> updatedLastPage =
+      Map<String, dynamic>.from(pages.last)
+        ..update(
+          'content',
+          (content) => List<String>.from(content)..add(paragraph),
+        );
+
+  return [
+    ...pages.sublist(0, pages.length - 1),
+    updatedLastPage,
+  ];
+}
+
 List<Map<String, dynamic>> addNewPage(
     List<Map<String, dynamic>> pages, Element element) {
   var isNewPageMarkerAtStart =
@@ -53,7 +67,7 @@ List<Map<String, dynamic>> addNewPage(
   } else {
     var [lastPageParagraph, newPageParagraph] =
         splitParagraphOnWordPrecedingMarker(element);
-    pages.last['content'].add(lastPageParagraph);
+    pages = addNewParagraphToLastPage(pages, lastPageParagraph);
     return [...pages, createNewPageFromText(newPageParagraph)];
   }
 }
