@@ -390,13 +390,23 @@ void main() {
           ]);
     }
     // {
-    //   // Given: word preceding myanmar page marker partially wrapped in span
+    //   // Given: word preceding myanmar page marker partially wrapped in span with an `-` separataor
     //   // Should: grab whole word with the span
     //   expect(
     //       splitParagraphOnWordPrecedingMarker(
     //           '<p class="bodytext"><span class="bld">Ādi</span>-saddena <a name="M0.0089"></a> placeholder</p>'),
     //       [
     //         '<p class="bodytext"><span class="bld">Ādi</span>-saddena <a name="M0.0089"></a> placeholder</p>'
+    //       ]);
+    // }
+    // {
+    //   // Given: word preceding myanmar page marker partially wrapped in span with an `’’` separator
+    //   // Should: grab whole word with the span
+    //   expect(
+    //       splitParagraphOnWordPrecedingMarker(
+    //           '<p class="bodytext">placeholder <span class="bld">‘‘Tenevā’’</span>tiādinā <a name="M0.0089"></a> placeholder</p>'),
+    //       [
+    //         '<p class="bodytext">placeholder <span class="bld">‘‘Tenevā’’</span>tiādinā <a name="M0.0089"></a> placeholder</p>'
     //       ]);
     // }
     // {

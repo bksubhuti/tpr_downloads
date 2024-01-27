@@ -127,21 +127,6 @@ List<String> splitParagraphOnWordPrecedingMarker(String paragraphHtml,
       .map((match) => match.start)
       .fold(-1, (prev, element) => element);
 
-  // var matches =
-  //     RegExp(r'[^\s]+\s*<a name="M[^"]*"></a>').allMatches(paragraph.innerHtml);
-
-  // if (matches.isEmpty || (matches.first.start == 0 && matches.length == 1)) {
-  //   return [paragraph.outerHtml];
-  // }
-
-  // RegExpMatch match;
-  // if (matches.first.start != 0) {
-  //   match = matches.first;
-  // } else {
-  //   match = matches.elementAt(1);
-  // }
-
-  // int precedingWordStartIndex = match.start;
   var pTagStart = '<p class="${paragraph.className}">';
   var pTagEnd = '</p>';
   var part1 = paragraph.innerHtml.substring(0, wordIndex);
