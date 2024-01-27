@@ -66,7 +66,7 @@ List<Map<String, dynamic>> addNewPage(
     return [...pages, createNewPageWithHeaders(pages.last, element)];
   } else {
     var [lastPageParagraph, newPageParagraph] =
-        splitParagraphOnWordPrecedingMarker(element);
+        splitParagraphOnWordPrecedingMarker(element.outerHtml);
     pages = addNewParagraphToLastPage(pages, lastPageParagraph);
     return [...pages, createNewPageFromText(newPageParagraph)];
   }
@@ -110,7 +110,10 @@ bool calculateIsNewPageMarkerAtStartOfParagraph(Element element) {
   return words.length == 1;
 }
 
-List<String> splitParagraphOnWordPrecedingMarker(Element paragraph) {
+List<String> splitParagraphOnWordPrecedingMarker(String paragraphHtml) {
+  Document doc = parser.parse(paragraphHtml);
+  Element paragraph = doc.querySelector('p')!;
+
   var match =
       RegExp(r'[^\s]+\s*<a name="M[^"]*"></a>').firstMatch(paragraph.innerHtml);
   if (match == null) return [paragraph.outerHtml];

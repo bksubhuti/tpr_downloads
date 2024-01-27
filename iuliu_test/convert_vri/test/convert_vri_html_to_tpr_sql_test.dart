@@ -321,11 +321,7 @@ void main() {
 
   test('splitParagraphOnWordPrecedingMarker', () {
     {
-      String paragraphHtml =
-          '<p class="bodytext">Kathaṃ bhagavā <a name="M0.0211"></a></p>';
-      Document doc = parser.parse(paragraphHtml);
-      Element paragraph = doc.querySelector('p')!;
-      expect(splitParagraphOnWordPrecedingMarker(paragraph), [
+      expect(splitParagraphOnWordPrecedingMarker('<p class="bodytext">Kathaṃ bhagavā <a name="M0.0211"></a></p>'), [
         '<p class="bodytext">Kathaṃ </p>',
         '<p class="bodytext">bhagavā <a name="M0.0211"></a></p>'
       ]);
