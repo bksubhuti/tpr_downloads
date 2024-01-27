@@ -101,7 +101,7 @@ bool calculateIsNewPageMarkerAtStartOfParagraph(Element element) {
       parser.parseFragment(element.innerHtml.substring(0, match.end)).text;
   if (textUpToMarker == null) return false;
 
-  var words = textUpToMarker!
+  var words = textUpToMarker
       .trim()
       .split(RegExp(r'\s+'))
       .where((word) => !RegExp(r'^\d+\.$').hasMatch(word))
