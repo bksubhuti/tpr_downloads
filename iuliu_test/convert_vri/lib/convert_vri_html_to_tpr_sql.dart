@@ -54,21 +54,14 @@ List<Map<String, dynamic>> addNewPage(
     var [lastPageParagraph, ...newPageParagraphs] =
         splitParagraphOnWordPrecedingMarker(element.outerHtml);
 
-    if (paragraphIsNewPage(lastPageParagraph)) {
-      return [
-        ...addNewPageWithHeaders(pages, element),
-        ...newPageParagraphs
-            .map((newPageParagraph) => createNewPageFromText(newPageParagraph))
-            .toList()
-      ];
-    } else {
-      return [
-        ...addNewParagraphToLastPage(pages, lastPageParagraph),
-        ...newPageParagraphs
-            .map((newPageParagraph) => createNewPageFromText(newPageParagraph))
-            .toList()
-      ];
-    }
+    return [
+      ...(paragraphIsNewPage(lastPageParagraph)
+          ? addNewPageWithHeaders(pages, element)
+          : addNewParagraphToLastPage(pages, lastPageParagraph)),
+      ...newPageParagraphs
+          .map((newPageParagraph) => createNewPageFromText(newPageParagraph))
+          .toList()
+    ];
   }
 }
 
