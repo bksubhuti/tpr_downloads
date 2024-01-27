@@ -116,7 +116,7 @@ List<String> splitParagraphOnWordPrecedingMarker(String paragraphHtml) {
 
   var match =
       RegExp(r'[^\s]+\s*<a name="M[^"]*"></a>').firstMatch(paragraph.innerHtml);
-  if (match == null) return [paragraph.outerHtml];
+  if (match == null || match.start == 0) return [paragraph.outerHtml];
 
   int precedingWordStartIndex = match.start;
   String part1 = paragraph.innerHtml.substring(0, precedingWordStartIndex);
@@ -125,7 +125,10 @@ List<String> splitParagraphOnWordPrecedingMarker(String paragraphHtml) {
   String pTagStart = '<p class="${paragraph.className}">';
   String pTagEnd = '</p>';
 
-  return ['$pTagStart$part1$pTagEnd', '$pTagStart$part2$pTagEnd'];
+  return [
+    '$pTagStart$part1$pTagEnd',
+    ...splitParagraphOnWordPrecedingMarker('$pTagStart$part2$pTagEnd')
+  ];
 }
 
 List<String> splitParagraphWithMultiplePages(Element paragraph) {
