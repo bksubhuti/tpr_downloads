@@ -9,29 +9,14 @@ List<Map<String, dynamic>> extractMyanmarEditionPagesFromVriHtml(
   var pages = elements.fold<List<Map<String, dynamic>>>([
     {'number': 1, 'content': <String>[]}
   ], (pages, element) {
-    var isFirstPage = containsFirstPage(element);
     var isNewPage = containsNewPage(element);
-    var isMultipleNewPage = containsMultipleNewPages(element);
+    var isFirstPage = containsFirstPage(element);
 
     if (!isNewPage || isFirstPage) {
       return addNewParagraphToLastPage(pages, element.outerHtml);
     }
 
-    if (isMultipleNewPage) {
-      var paragraphStrings = splitParagraphWithMultiplePages(element);
-      var paragraphs =
-          mapParagraphStringsToParagraphElements(paragraphStrings, element);
-      var paragraphsAfterFirst = paragraphs.sublist(1);
-      return [
-        ...pages,
-        createNewPageWithHeaders(pages.last, paragraphs[0]),
-        ...paragraphsAfterFirst.map((paragraph) => createNewPage(paragraph))
-      ];
-    } else if (isNewPage) {
-      return addNewPage(pages, element);
-    } else {
-      return pages;
-    }
+    return addNewPage(pages, element);
   });
 
   return pages.map((page) {
@@ -65,10 +50,15 @@ List<Map<String, dynamic>> addNewPage(
   if (isNewPageMarkerAtStart) {
     return [...pages, createNewPageWithHeaders(pages.last, element)];
   } else {
-    var [lastPageParagraph, newPageParagraph] =
+    var [lastPageParagraph, ...newPageParagraphs] =
         splitParagraphOnWordPrecedingMarker(element.outerHtml);
-    pages = addNewParagraphToLastPage(pages, lastPageParagraph);
-    return [...pages, createNewPageFromText(newPageParagraph)];
+
+    return [
+      ...addNewParagraphToLastPage(pages, lastPageParagraph),
+      ...newPageParagraphs
+          .map((newPageParagraph) => createNewPageFromText(newPageParagraph))
+          .toList()
+    ];
   }
 }
 
@@ -114,9 +104,19 @@ List<String> splitParagraphOnWordPrecedingMarker(String paragraphHtml) {
   Document doc = parser.parse(paragraphHtml);
   Element paragraph = doc.querySelector('p')!;
 
-  var match =
-      RegExp(r'[^\s]+\s*<a name="M[^"]*"></a>').firstMatch(paragraph.innerHtml);
-  if (match == null || match.start == 0) return [paragraph.outerHtml];
+  var matches =
+      RegExp(r'[^\s]+\s*<a name="M[^"]*"></a>').allMatches(paragraph.innerHtml);
+
+  if (matches.isEmpty || (matches.first.start == 0 && matches.length == 1)) {
+    return [paragraph.outerHtml];
+  }
+
+  RegExpMatch match;
+  if (matches.first.start != 0) {
+    match = matches.first;
+  } else {
+    match = matches.elementAt(1);
+  }
 
   int precedingWordStartIndex = match.start;
   String part1 = paragraph.innerHtml.substring(0, precedingWordStartIndex);
