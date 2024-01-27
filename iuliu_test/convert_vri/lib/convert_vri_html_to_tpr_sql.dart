@@ -54,18 +54,16 @@ List<Map<String, dynamic>> addNewPage(
     var [lastPageParagraph, ...newPageParagraphs] =
         splitParagraphOnWordPrecedingMarker(element.outerHtml);
 
-    Document doc = parser.parse(lastPageParagraph);
-    Element paragraph = doc.querySelector('p')!;
-    if (paragraph.querySelectorAll('a[name^="M"]').firstOrNull == null) {
+    if (paragraphIsNewPage(lastPageParagraph)) {
       return [
-        ...addNewParagraphToLastPage(pages, lastPageParagraph),
+        ...addNewPageWithHeaders(pages, element),
         ...newPageParagraphs
             .map((newPageParagraph) => createNewPageFromText(newPageParagraph))
             .toList()
       ];
     } else {
       return [
-        ...addNewPageWithHeaders(pages, element),
+        ...addNewParagraphToLastPage(pages, lastPageParagraph),
         ...newPageParagraphs
             .map((newPageParagraph) => createNewPageFromText(newPageParagraph))
             .toList()
@@ -86,6 +84,12 @@ bool containsNewPage(Element element) {
   return element
       .querySelectorAll('a')
       .any((a) => a.attributes['name']?.startsWith('M') ?? false);
+}
+
+bool paragraphIsNewPage(String paragraphHtml) {
+  Document doc = parser.parse(paragraphHtml);
+  Element paragraph = doc.querySelector('p')!;
+  return containsNewPage(paragraph);
 }
 
 bool containsMultipleNewPages(Element element) {
