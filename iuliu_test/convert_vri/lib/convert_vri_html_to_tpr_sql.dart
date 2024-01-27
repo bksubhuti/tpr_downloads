@@ -24,12 +24,11 @@ List<Map<String, dynamic>> extractMyanmarEditionPagesFromVriHtml(
 
 List<Map<String, dynamic>> addNewParagraphToLastPage(
     List<Map<String, dynamic>> pages, String paragraph) {
-  final Map<String, dynamic> updatedLastPage =
-      Map<String, dynamic>.from(pages.last)
-        ..update(
-          'content',
-          (content) => List<String>.from(content)..add(paragraph),
-        );
+  var updatedLastPage = Map<String, dynamic>.from(pages.last)
+    ..update(
+      'content',
+      (content) => List<String>.from(content)..add(paragraph),
+    );
 
   return [
     ...pages.sublist(0, pages.length - 1),
