@@ -103,35 +103,56 @@ bool calculateIsNewPageMarkerAtStartOfParagraph(Element element) {
   return words.length == 1;
 }
 
-List<String> splitParagraphOnWordPrecedingMarker(String paragraphHtml) {
-  Document doc = parser.parse(paragraphHtml);
-  Element paragraph = doc.querySelector('p')!;
+List<String> splitParagraphOnWordPrecedingMarker(String paragraphHtml,
+    [bool didSplit = false]) {
+  var doc = parser.parse(paragraphHtml);
+  var paragraph = doc.querySelector('p')!;
 
   var matches =
-      RegExp(r'[^\s]+\s*<a name="M[^"]*"></a>').allMatches(paragraph.innerHtml);
+      RegExp(r'<a name="M[^"]*"></a>').allMatches(paragraph.innerHtml);
+  var newPageMarkerMatch =
+      didSplit ? matches.elementAtOrNull(1) : matches.elementAtOrNull(0);
+  if (newPageMarkerMatch == null) return [paragraph.outerHtml];
 
-  if (matches.isEmpty || (matches.first.start == 0 && matches.length == 1)) {
-    return [paragraph.outerHtml];
-  }
+  var precedingHtml =
+      paragraph.innerHtml.substring(0, newPageMarkerMatch.start);
+  var precedingHtmlDoc = parser.parse(precedingHtml);
+  var wordMatch = RegExp(r'[^\s]+\s*$').firstMatch(precedingHtmlDoc.body!.text);
+  var word = wordMatch!.group(0)!;
 
-  RegExpMatch match;
-  if (matches.first.start != 0) {
-    match = matches.first;
-  } else {
-    match = matches.elementAt(1);
-  }
+  var wordMatches = RegExp(word).allMatches(paragraph.innerHtml);
+  var wordIndex = wordMatches
+      .where((match) => match.start < newPageMarkerMatch.start)
+      .map((match) => match.start)
+      .fold(-1, (prev, element) => element);
 
-  int precedingWordStartIndex = match.start;
-  String part1 = paragraph.innerHtml.substring(0, precedingWordStartIndex);
-  String part2 = paragraph.innerHtml.substring(precedingWordStartIndex);
+  // var matches =
+  //     RegExp(r'[^\s]+\s*<a name="M[^"]*"></a>').allMatches(paragraph.innerHtml);
 
-  String pTagStart = '<p class="${paragraph.className}">';
-  String pTagEnd = '</p>';
+  // if (matches.isEmpty || (matches.first.start == 0 && matches.length == 1)) {
+  //   return [paragraph.outerHtml];
+  // }
 
-  return [
-    '$pTagStart$part1$pTagEnd',
-    ...splitParagraphOnWordPrecedingMarker('$pTagStart$part2$pTagEnd')
-  ];
+  // RegExpMatch match;
+  // if (matches.first.start != 0) {
+  //   match = matches.first;
+  // } else {
+  //   match = matches.elementAt(1);
+  // }
+
+  // int precedingWordStartIndex = match.start;
+  var pTagStart = '<p class="${paragraph.className}">';
+  var pTagEnd = '</p>';
+  var part1 = paragraph.innerHtml.substring(0, wordIndex);
+  var part2 = paragraph.innerHtml.substring(wordIndex);
+
+  return part1.isNotEmpty
+      ? [
+          '$pTagStart$part1$pTagEnd',
+          ...splitParagraphOnWordPrecedingMarker(
+              '$pTagStart$part2$pTagEnd', true)
+        ]
+      : splitParagraphOnWordPrecedingMarker('$pTagStart$part2$pTagEnd', true);
 }
 
 List<Map<String, dynamic>> addNewPageWithHeaders(

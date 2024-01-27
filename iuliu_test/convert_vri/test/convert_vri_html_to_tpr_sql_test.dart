@@ -352,21 +352,71 @@ void main() {
       // Should: split at the start
       expect(
           splitParagraphOnWordPrecedingMarker(
-              '<p class="bodytext">Ganthappakāroca <a name="M0.0006"></a> pakāravantehi dhammehi sahevasijjhati, vinā nasijjhatīti adhippāyena ‘‘soabhidhammatthapadenā’’ti vuttaṃ. Kāmañca so tehi sahevasijjhati, vinānasijjhati. Abhidhammatthapadaṃ pana saṅgahaṇakiriyāpakāraṃna vadatīti vuttaṃ ‘‘taṃ nasundara’’nti. Duvidhaṃ nāmaṃ anvatthanāmaṃ ruḷināmanti. Tattha, atthānugataṃ nāmaṃ anvatthanāmaṃ, yathā sukhitassajanassa sukhotināmaṃ. Attharahitaṃ āropitaṃ nāmaṃ ruḷināmaṃ, yathā dukkhitassajanassa sukhoti nāmaṃ. Idha pana anvatthanā mantidassetuṃ ‘‘atthānugatā’’tiādi vuttaṃ. Tattha ‘‘atthānugatā’’ti sakatthānugatā. Saddappavattinimittānugatāti vuttaṃ hoti. ‘‘Ganthasamaññā’’ti ganthasammuti. Ganthassanāmanti vuttaṃ hoti. Saṅgahaganthonāma pāḷiyaṃtattha tattha vippakiṇṇedhamme ekattha sabhāgarāsikaraṇavasena pavatto gantho. Taṃ uggaṇhanto appakena ganthenabahukedhammesukhenajānāti. ‘‘Taduggahaparipucchādivasenā’’ti tassauggahoca paripucchācāti dvando. Ādisaddena dhāraṇādīni saṅgaṇhāti. Tattha pāṭhassavācuggatakaraṇaṃ uggahonāma. Uggahi tassapāṭhassa atthaggahaṇaṃ paripucchānāma. ‘‘Anāyāsato’’ti niddukkhena. ‘‘Laddhabbaṃphalānuphala’’nti sambandho. Sarūpato avabujjhanaṃ sarūpāvabodho. Ādisaddena lakkhaṇāvabodho rasāva bodhotiādiṃ saṅgaṇhāti. Anupādāparinibbānaṃ anto pariyosānaṃ yassāti anupādāparinibbānantaṃ. Tattha ‘‘anupādāparinibbāna’’nti taṇhādiṭṭhīhi khandhesu anupādāyaparinibbānaṃ. Anupādisesa parinibbānanti vuttaṃ hoti. ‘‘Phalānuphala’’nti phalañceva anuphalañca. Tattha ‘‘phala’’nti mūlapphalaṃ. ‘‘Anuphala’’nti paramparapphalaṃ. Payojetīti ‘‘payojanaṃ’’. Payojetīti niyojeti. Kiṃ niyojeti. Phalatthikaṃjanaṃ. Kattha niyojeti. Phalanibbattakekamme. Kimatthāya niyojeti. Tassakammassa karaṇatthāyāti. Phalānubhavanatthāya tatthatattha phalānubhavanakiccesu payujjīyatīti payojananti pivadanti. ‘‘Sāmatthiyato’’ti vacanasāmatthiyato. Kiṃ vacanasāmatthiyanti. Kāraṇavacanaṃ phalaṃpidīpeti. Phalavacanaṃ kāraṇaṃpidīpeti. Yathātaṃ asukasmiṃ raṭṭhe sammādevo vuṭṭhoti vutte taṃ raṭṭhaṃsu <a name="M0.0007"></a> bhikkhanti viññāyati. Asukaraṭṭhaṃ subhikkhantivutte tasmiṃ raṭṭhe sammādevo vuṭṭhoti viññāyatīti. Payojanaṃ pana abhidhammattha saddena dassetabbaṃ natthi, saṅgahavacanasāmatthiyeneva siddhaṃ hotīti adhippāyena ‘‘saṅgahasaddenā’’ti vuttaṃ. Sāmatthiyadassane pana suṭṭhu paripuṇṇavacanaṃ icchitabbaṃ hoti. Itarathā aniṭṭhatthappasaṅgopi siyāti imamatthaṃ dassetuṃ ‘‘taṃ na sundara’’nti vatvā ‘‘nahī’’tiādinā hetuvākyena tadatthaṃ sādheti.</p>'),
+              '<p class="bodytext">Ganthappakāroca <a name="M0.0006"></a> pakāravantehi dhammehi sahevasijjhati, Phalavacanaṃ kāraṇaṃpidīpeti. Yathātaṃ asukasmiṃ raṭṭhe sammādevo vuṭṭhoti vutte taṃ raṭṭhaṃsu <a name="M0.0007"></a> bhikkhanti viññāyati. Asukaraṭṭhaṃ subhikkhantivutte tasmiṃ raṭṭhe sammādevo vuṭṭhoti viññāyatīti. Payojanaṃ pana abhidhammattha saddena dassetabbaṃ natthi, saṅgahavacanasāmatthiyeneva siddhaṃ hotīti adhippāyena ‘‘saṅgahasaddenā’’ti vuttaṃ. Sāmatthiyadassane pana suṭṭhu paripuṇṇavacanaṃ icchitabbaṃ hoti. Itarathā aniṭṭhatthappasaṅgopi siyāti imamatthaṃ dassetuṃ ‘‘taṃ na sundara’’nti vatvā ‘‘nahī’’tiādinā hetuvākyena tadatthaṃ sādheti.</p>'),
           [
-            '<p class="bodytext">Ganthappakāroca <a name="M0.0006"></a> pakāravantehi dhammehi sahevasijjhati, vinā nasijjhatīti adhippāyena ‘‘soabhidhammatthapadenā’’ti vuttaṃ. Kāmañca so tehi sahevasijjhati, vinānasijjhati. Abhidhammatthapadaṃ pana saṅgahaṇakiriyāpakāraṃna vadatīti vuttaṃ ‘‘taṃ nasundara’’nti. Duvidhaṃ nāmaṃ anvatthanāmaṃ ruḷināmanti. Tattha, atthānugataṃ nāmaṃ anvatthanāmaṃ, yathā sukhitassajanassa sukhotināmaṃ. Attharahitaṃ āropitaṃ nāmaṃ ruḷināmaṃ, yathā dukkhitassajanassa sukhoti nāmaṃ. Idha pana anvatthanā mantidassetuṃ ‘‘atthānugatā’’tiādi vuttaṃ. Tattha ‘‘atthānugatā’’ti sakatthānugatā. Saddappavattinimittānugatāti vuttaṃ hoti. ‘‘Ganthasamaññā’’ti ganthasammuti. Ganthassanāmanti vuttaṃ hoti. Saṅgahaganthonāma pāḷiyaṃtattha tattha vippakiṇṇedhamme ekattha sabhāgarāsikaraṇavasena pavatto gantho. Taṃ uggaṇhanto appakena ganthenabahukedhammesukhenajānāti. ‘‘Taduggahaparipucchādivasenā’’ti tassauggahoca paripucchācāti dvando. Ādisaddena dhāraṇādīni saṅgaṇhāti. Tattha pāṭhassavācuggatakaraṇaṃ uggahonāma. Uggahi tassapāṭhassa atthaggahaṇaṃ paripucchānāma. ‘‘Anāyāsato’’ti niddukkhena. ‘‘Laddhabbaṃphalānuphala’’nti sambandho. Sarūpato avabujjhanaṃ sarūpāvabodho. Ādisaddena lakkhaṇāvabodho rasāva bodhotiādiṃ saṅgaṇhāti. Anupādāparinibbānaṃ anto pariyosānaṃ yassāti anupādāparinibbānantaṃ. Tattha ‘‘anupādāparinibbāna’’nti taṇhādiṭṭhīhi khandhesu anupādāyaparinibbānaṃ. Anupādisesa parinibbānanti vuttaṃ hoti. ‘‘Phalānuphala’’nti phalañceva anuphalañca. Tattha ‘‘phala’’nti mūlapphalaṃ. ‘‘Anuphala’’nti paramparapphalaṃ. Payojetīti ‘‘payojanaṃ’’. Payojetīti niyojeti. Kiṃ niyojeti. Phalatthikaṃjanaṃ. Kattha niyojeti. Phalanibbattakekamme. Kimatthāya niyojeti. Tassakammassa karaṇatthāyāti. Phalānubhavanatthāya tatthatattha phalānubhavanakiccesu payujjīyatīti payojananti pivadanti. ‘‘Sāmatthiyato’’ti vacanasāmatthiyato. Kiṃ vacanasāmatthiyanti. Kāraṇavacanaṃ phalaṃpidīpeti. Phalavacanaṃ kāraṇaṃpidīpeti. Yathātaṃ asukasmiṃ raṭṭhe sammādevo vuṭṭhoti vutte taṃ </p>',
+            '<p class="bodytext">Ganthappakāroca <a name="M0.0006"></a> pakāravantehi dhammehi sahevasijjhati, Phalavacanaṃ kāraṇaṃpidīpeti. Yathātaṃ asukasmiṃ raṭṭhe sammādevo vuṭṭhoti vutte taṃ </p>',
             '<p class="bodytext">raṭṭhaṃsu <a name="M0.0007"></a> bhikkhanti viññāyati. Asukaraṭṭhaṃ subhikkhantivutte tasmiṃ raṭṭhe sammādevo vuṭṭhoti viññāyatīti. Payojanaṃ pana abhidhammattha saddena dassetabbaṃ natthi, saṅgahavacanasāmatthiyeneva siddhaṃ hotīti adhippāyena ‘‘saṅgahasaddenā’’ti vuttaṃ. Sāmatthiyadassane pana suṭṭhu paripuṇṇavacanaṃ icchitabbaṃ hoti. Itarathā aniṭṭhatthappasaṅgopi siyāti imamatthaṃ dassetuṃ ‘‘taṃ na sundara’’nti vatvā ‘‘nahī’’tiādinā hetuvākyena tadatthaṃ sādheti.</p>'
           ]);
     }
     {
-      // Given: paragraph anchor tags
-      // Should: ignore them
+      // Given: multiple word preceding marker match
+      // Should: matches word closest to marker
       expect(
           splitParagraphOnWordPrecedingMarker(
-              '<p class="bodytext"><a name="para468"></a><span class="paranum">468</span>. Evaṃ <a name="T1.0556"></a><a name="V1.0387"></a> me sutaṃ – ekaṃ samayaṃ bhagavā sāvatthiyaṃ viharati jetavane anāthapiṇḍikassa ārāme. Tatra kho bhagavā bhikkhū āmantesi – ‘‘bhikkhavo’’ti. ‘‘Bhadante’’ti te bhikkhū bhagavato paccassosuṃ. Bhagavā etadavoca – ‘‘cattārimāni, bhikkhave, dhammasamādānāni. Katamāni cattāri? Atthi, bhikkhave, dhammasamādānaṃ paccuppannasukhaṃ āyatiṃ dukkhavipākaṃ; atthi, bhikkhave<a name="M1.0380"></a>, dhammasamādānaṃ paccuppannadukkhañceva āyatiñca dukkhavipākaṃ; atthi, bhikkhave, dhammasamādānaṃ paccuppannadukkhaṃ āyatiṃ sukhavipākaṃ; atthi, bhikkhave, dhammasamādānaṃ paccuppannasukhañceva āyatiñca sukhavipākaṃ’’.</p>'),
+              '<p class="bodytext">ekam bhikkhave, dhammasamādānaṃ paccuppannasukhaṃ āyatiṃ dukkhavipākaṃ; atthi, bhikkhave<a name="M1.0380"></a>, dhammasamādānaṃ paccuppannadukkhañceva</p>'),
           [
-            '<p class="bodytext"><a name="para468"></a><span class="paranum">468</span>. Evaṃ <a name="T1.0556"></a><a name="V1.0387"></a> me sutaṃ – ekaṃ samayaṃ bhagavā sāvatthiyaṃ viharati jetavane anāthapiṇḍikassa ārāme. Tatra kho bhagavā bhikkhū āmantesi – ‘‘bhikkhavo’’ti. ‘‘Bhadante’’ti te bhikkhū bhagavato paccassosuṃ. Bhagavā etadavoca – ‘‘cattārimāni, bhikkhave, dhammasamādānāni. Katamāni cattāri? Atthi, bhikkhave, dhammasamādānaṃ paccuppannasukhaṃ āyatiṃ dukkhavipākaṃ; atthi, </p>',
-            '<p class="bodytext">bhikkhave<a name="M1.0380"></a>, dhammasamādānaṃ paccuppannadukkhañceva āyatiñca dukkhavipākaṃ; atthi, bhikkhave, dhammasamādānaṃ paccuppannadukkhaṃ āyatiṃ sukhavipākaṃ; atthi, bhikkhave, dhammasamādānaṃ paccuppannasukhañceva āyatiñca sukhavipākaṃ’’.</p>',
+            '<p class="bodytext">ekam bhikkhave, dhammasamādānaṃ paccuppannasukhaṃ āyatiṃ dukkhavipākaṃ; atthi, </p>',
+            '<p class="bodytext">bhikkhave<a name="M1.0380"></a>, dhammasamādānaṃ paccuppannadukkhañceva</p>',
+          ]);
+    }
+    {
+      // Given: myanmar page marker preceded by another page marker
+      // Should: ignore the marker and include it in new page
+      expect(
+          splitParagraphOnWordPrecedingMarker(
+              '<p class="bodytext">Ekuttarikanaye <a name="V0.0505"></a><a name="M0.0552"></a> placeholder</p>'),
+          [
+            '<p class="bodytext">Ekuttarikanaye <a name="V0.0505"></a><a name="M0.0552"></a> placeholder</p>'
+          ]);
+    }
+    {
+      // Given: myanmar page marker preceded by multiple other page markers
+      // Should: ignore the markers and include them in new page
+      expect(
+          splitParagraphOnWordPrecedingMarker(
+              '<p class="bodytext">Anuvijjake <a name="T0.0396"></a><a name="P5.0160"></a><a name="M0.0281"></a><a name="V0.0304"></a> codako</p>'),
+          [
+            '<p class="bodytext">Anuvijjake <a name="T0.0396"></a><a name="P5.0160"></a><a name="M0.0281"></a><a name="V0.0304"></a> codako</p>'
+          ]);
+    }
+    // {
+    //   // Given: word preceding myanmar page marker partially wrapped in span
+    //   // Should: grab whole word with the span
+    //   expect(
+    //       splitParagraphOnWordPrecedingMarker(
+    //           '<p class="bodytext"><span class="bld">Ādi</span>-saddena <a name="M0.0089"></a> placeholder</p>'),
+    //       [
+    //         '<p class="bodytext"><span class="bld">Ādi</span>-saddena <a name="M0.0089"></a> placeholder</p>'
+    //       ]);
+    // }
+    // {
+    //   // Given: word preceding myanmar page marker fully wrapped in span
+    //   // Should: grab whole word with the span
+    //   expect(
+    //       splitParagraphOnWordPrecedingMarker(
+    //           '<p class="bodytext"><span class="bld">Pīḷanasaṅkhatasantāpavipariṇāmaṭṭhena</span> <a name="M0.0042"></a> placeholder</p>'),
+    //       [
+    //         '<p class="bodytext"><span class="bld">Pīḷanasaṅkhatasantāpavipariṇāmaṭṭhena</span> <a name="M0.0042"></a> placeholder</p>'
+    //       ]);
+    // }
+    {
+      // Given: word preceding myanmar page marker with quotes
+      // Should: grab whole word
+      expect(
+          splitParagraphOnWordPrecedingMarker(
+              '<p class="bodytext">upādāyā’’ti <a name="M0.0042"></a> placeholder</p>'),
+          [
+            '<p class="bodytext">upādāyā’’ti <a name="M0.0042"></a> placeholder</p>'
           ]);
     }
   });
