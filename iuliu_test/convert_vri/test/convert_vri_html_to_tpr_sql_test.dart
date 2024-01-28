@@ -389,36 +389,37 @@ void main() {
             '<p class="bodytext">Anuvijjake <a name="T0.0396"></a><a name="P5.0160"></a><a name="M0.0281"></a><a name="V0.0304"></a> codako</p>'
           ]);
     }
-    // {
-    //   // Given: word preceding myanmar page marker partially wrapped in span with an `-` separataor
-    //   // Should: grab whole word with the span
-    //   expect(
-    //       splitParagraphOnWordPrecedingMarker(
-    //           '<p class="bodytext"><span class="bld">Ādi</span>-saddena <a name="M0.0089"></a> placeholder</p>'),
-    //       [
-    //         '<p class="bodytext"><span class="bld">Ādi</span>-saddena <a name="M0.0089"></a> placeholder</p>'
-    //       ]);
-    // }
-    // {
-    //   // Given: word preceding myanmar page marker partially wrapped in span with an `’’` separator
-    //   // Should: grab whole word with the span
-    //   expect(
-    //       splitParagraphOnWordPrecedingMarker(
-    //           '<p class="bodytext">placeholder <span class="bld">‘‘Tenevā’’</span>tiādinā <a name="M0.0089"></a> placeholder</p>'),
-    //       [
-    //         '<p class="bodytext">placeholder <span class="bld">‘‘Tenevā’’</span>tiādinā <a name="M0.0089"></a> placeholder</p>'
-    //       ]);
-    // }
-    // {
-    //   // Given: word preceding myanmar page marker fully wrapped in span
-    //   // Should: grab whole word with the span
-    //   expect(
-    //       splitParagraphOnWordPrecedingMarker(
-    //           '<p class="bodytext"><span class="bld">Pīḷanasaṅkhatasantāpavipariṇāmaṭṭhena</span> <a name="M0.0042"></a> placeholder</p>'),
-    //       [
-    //         '<p class="bodytext"><span class="bld">Pīḷanasaṅkhatasantāpavipariṇāmaṭṭhena</span> <a name="M0.0042"></a> placeholder</p>'
-    //       ]);
-    // }
+    {
+      // Given: word preceding myanmar page marker partially wrapped in span with an `-` separataor
+      // Should: grab whole word with the span
+      expect(
+          splitParagraphOnWordPrecedingMarker(
+              '<p class="bodytext"><span class="bld">Ādi</span>-saddena <a name="M0.0089"></a> placeholder</p>'),
+          [
+            '<p class="bodytext"><span class="bld">Ādi</span>-saddena <a name="M0.0089"></a> placeholder</p>'
+          ]);
+    }
+    {
+      // Given: word preceding myanmar page marker partially wrapped in span with an `’’` separator
+      // Should: grab whole word with the span
+      expect(
+          splitParagraphOnWordPrecedingMarker(
+              '<p class="bodytext">placeholder <span class="bld">‘‘Tenevā’’</span>tiādinā <a name="M0.0089"></a> placeholder</p>'),
+          [
+            '<p class="bodytext">placeholder </p>',
+            '<p class="bodytext"><span class="bld">‘‘Tenevā’’</span>tiādinā <a name="M0.0089"></a> placeholder</p>'
+          ]);
+    }
+    {
+      // Given: word preceding myanmar page marker fully wrapped in span
+      // Should: grab whole word with the span
+      expect(
+          splitParagraphOnWordPrecedingMarker(
+              '<p class="bodytext"><span class="bld">Pīḷanasaṅkhatasantāpavipariṇāmaṭṭhena</span> <a name="M0.0042"></a> placeholder</p>'),
+          [
+            '<p class="bodytext"><span class="bld">Pīḷanasaṅkhatasantāpavipariṇāmaṭṭhena</span> <a name="M0.0042"></a> placeholder</p>'
+          ]);
+    }
     {
       // Given: word preceding myanmar page marker with quotes
       // Should: grab whole word
@@ -429,39 +430,58 @@ void main() {
             '<p class="bodytext">upādāyā’’ti <a name="M0.0042"></a> placeholder</p>'
           ]);
     }
+    {
+      // Given: preceding word immediately following param number
+      // Should: include param number
+      expect(
+          splitParagraphOnWordPrecedingMarker(
+              '<p class="bodytext"><a name="para321"></a><span class="paranum">321</span>. Āpattikarā <a name="T0.0294"></a><a name="P5.0115"></a><a name="M0.0211"></a><a name="V0.0235"></a> dhammā <a name="M0.0042"></a> placeholder</p>'),
+          [
+            '<p class="bodytext"><a name="para321"></a><span class="paranum">321</span>. Āpattikarā <a name="T0.0294"></a><a name="P5.0115"></a><a name="M0.0211"></a><a name="V0.0235"></a> </p>',
+            '<p class="bodytext">dhammā <a name="M0.0042"></a> placeholder</p>'
+          ]);
+    }
   });
 
   test('matchFirstPrecedingWord', () {
     {
-      expect(matchFirstPrecedingWord('anekabhāvo veditabbo'), 'veditabbo');
-      expect(matchFirstPrecedingWord('vādaṃ nissāya '), 'nissāya');
+      expect(matchFirstPrecedingWord('anekabhāvo veditabbo')?.group(1),
+          'veditabbo');
+      expect(matchFirstPrecedingWord('vādaṃ nissāya ')?.group(1), 'nissāya');
       expect(
           matchFirstPrecedingWord(
-              'placeholder Ekuttarikanaye <a name="V0.0505"></a>'),
+                  'placeholder Ekuttarikanaye <a name="V0.0505"></a>')
+              ?.group(1),
           'Ekuttarikanaye');
       expect(
           matchFirstPrecedingWord(
-              'placeholder Anuvijjake <a name="T0.0396"></a><a name="P5.0160"></a>'),
+                  'placeholder Anuvijjake <a name="T0.0396"></a><a name="P5.0160"></a>')
+              ?.group(1),
           'Anuvijjake');
       expect(
           matchFirstPrecedingWord(
-              'placeholder <span class="bld">Ādi</span>-saddena '),
+                  'placeholder <span class="bld">Ādi</span>-saddena ')
+              ?.group(1),
           '<span class="bld">Ādi</span>-saddena');
       expect(
           matchFirstPrecedingWord(
-              'placeholder <span class="bld">‘‘Tenevā’’</span>tiādinā '),
+                  'placeholder <span class="bld">‘‘Tenevā’’</span>tiādinā ')
+              ?.group(1),
           '<span class="bld">‘‘Tenevā’’</span>tiādinā');
       expect(
           matchFirstPrecedingWord(
-              'placeholder <span class="bld">Pīḷanasaṅkhatasantāpavipariṇāmaṭṭhena</span> '),
+                  'placeholder <span class="bld">Pīḷanasaṅkhatasantāpavipariṇāmaṭṭhena</span> ')
+              ?.group(1),
           '<span class="bld">Pīḷanasaṅkhatasantāpavipariṇāmaṭṭhena</span>');
       expect(
           matchFirstPrecedingWord(
-              '<a name="para325"></a><span class="paranum">325</span>. Pañca '),
+                  '<a name="para325"></a><span class="paranum">325</span>. Pañca ')
+              ?.group(1),
           '<a name="para325"></a><span class="paranum">325</span>. Pañca');
       expect(
           matchFirstPrecedingWord(
-              '<a name="para321"></a><span class="paranum">321</span>. Āpattikarā <a name="T0.0294"></a><a name="P5.0115"></a>'),
+                  '<a name="para321"></a><span class="paranum">321</span>. Āpattikarā <a name="T0.0294"></a><a name="P5.0115"></a>')
+              ?.group(1),
           '<a name="para321"></a><span class="paranum">321</span>. Āpattikarā');
     }
   });

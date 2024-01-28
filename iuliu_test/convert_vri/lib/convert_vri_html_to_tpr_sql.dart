@@ -116,16 +116,8 @@ List<String> splitParagraphOnWordPrecedingMarker(String paragraphHtml,
 
   var precedingHtml =
       paragraph.innerHtml.substring(0, newPageMarkerMatch.start);
-  var precedingHtmlDoc = parser.parse(precedingHtml);
-  var wordMatch =
-      RegExp(r'[^\s]+(?=\s*$)').firstMatch(precedingHtmlDoc.body!.text);
-  var word = wordMatch!.group(0)!;
-
-  var wordMatches = RegExp(RegExp.escape(word)).allMatches(paragraph.innerHtml);
-  var wordIndex = wordMatches
-      .where((match) => match.start < newPageMarkerMatch.start)
-      .map((match) => match.start)
-      .fold(-1, (prev, element) => element);
+  var wordIndex = matchFirstPrecedingWord(precedingHtml)?.start;
+  if (wordIndex == null) return [paragraph.outerHtml];
 
   var pTagStart = '<p class="${paragraph.className}">';
   var pTagEnd = '</p>';
@@ -286,7 +278,7 @@ List<String> createPageSQLImportStatements(
   }).toList();
 }
 
-String matchFirstPrecedingWord(String string) {
+RegExpMatch? matchFirstPrecedingWord(String string) {
   var maybeSpace = '\\s*';
   var maybeAnchor = '$maybeSpace(<a name=".+?"></a>){0,}$maybeSpace\$';
   var maybeParagraphNumber =
@@ -300,22 +292,5 @@ String matchFirstPrecedingWord(String string) {
   var match = RegExp('($maybeParagraphNumber$contiguousString)$maybeAnchor')
       .firstMatch(string);
 
-  return matchWithSpan?.group(1) ?? match?.group(1) ?? '';
-}
-
-int matchFirstPrecedingWordWithIndex(String string) {
-  var maybeSpace = '\\s*';
-  var maybeAnchor = '$maybeSpace(<a name=".+?"></a>){0,}$maybeSpace\$';
-  var maybeParagraphNumber =
-      '(<a name="para\\d+"></a><span class="paranum">\\d+</span>. )?';
-  var contiguousString = '[^\\s]+';
-
-  var matchWithSpan = RegExp(
-          '($maybeParagraphNumber<span class="bld">$contiguousString)$maybeAnchor')
-      .firstMatch(string);
-
-  var match = RegExp('($maybeParagraphNumber$contiguousString)$maybeAnchor')
-      .firstMatch(string);
-
-  return matchWithSpan?.start ?? match?.start ?? -1;
+  return matchWithSpan ?? match;
 }
