@@ -6,20 +6,18 @@ List<Map<String, dynamic>> extractMyanmarEditionPagesFromVriHtml(
   var document = parser.parse(vriHtml);
   var elements = document.body!.nodes.whereType<Element>();
 
-  var pages = elements.fold<List<Map<String, dynamic>>>([
+  return elements.fold([
     {'number': 1, 'content': <String>[]}
   ], (pages, element) {
-    var isNewPage = containsNewPage(element);
-    var isFirstPage = containsFirstPage(element);
-
-    if (!isNewPage || isFirstPage) {
-      return addNewParagraphToLastPage(pages, element.outerHtml);
-    }
-
-    return addNewPages(pages, element);
+    if (isNewPage(element)) return addNewPages(pages, element);
+    return addNewParagraphToLastPage(pages, element.outerHtml);
   });
+}
 
-  return pages;
+bool isNewPage(Element element) {
+  return element
+      .querySelectorAll('a')
+      .any((a) => a.attributes['name']?.startsWith('M') ?? false);
 }
 
 List<Map<String, dynamic>> addNewParagraphToLastPage(
@@ -42,7 +40,8 @@ List<Map<String, dynamic>> addNewPages(
       splitParagraphOnWordPrecedingMarker(element.outerHtml);
 
   return [
-    ...(isParagraphNewPage(lastPageParagraph)
+    ...(isParagraphNewPage(lastPageParagraph) &&
+            !isParagraphFirstPage(lastPageParagraph)
         ? addNewPageWithHeaders(pages, element)
         : addNewParagraphToLastPage(pages, lastPageParagraph)),
     ...newPageParagraphs
@@ -51,24 +50,18 @@ List<Map<String, dynamic>> addNewPages(
   ];
 }
 
-bool containsFirstPage(Element element) {
-  RegExp namePattern = RegExp(r'M\d+\.0001');
-
-  return element
+bool isParagraphFirstPage(String paragraphHtml) {
+  Document doc = parser.parse(paragraphHtml);
+  Element paragraph = doc.querySelector('p')!;
+  return paragraph
       .querySelectorAll('a')
-      .any((a) => namePattern.hasMatch(a.attributes['name'] ?? ""));
-}
-
-bool containsNewPage(Element element) {
-  return element
-      .querySelectorAll('a')
-      .any((a) => a.attributes['name']?.startsWith('M') ?? false);
+      .any((a) => RegExp(r'M\d+\.0001').hasMatch(a.attributes['name'] ?? ""));
 }
 
 bool isParagraphNewPage(String paragraphHtml) {
   Document doc = parser.parse(paragraphHtml);
   Element paragraph = doc.querySelector('p')!;
-  return containsNewPage(paragraph);
+  return isNewPage(paragraph);
 }
 
 List<String> splitParagraphOnWordPrecedingMarker(String paragraphHtml,

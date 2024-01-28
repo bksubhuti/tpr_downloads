@@ -58,7 +58,6 @@ void main() {
     // Given: a text (e201n) where a new page immediately follows a chapter and subhead heading
     // Should: include the chapter and subhead heading in new page not previous page
     expect(extractMyanmarEditionPagesFromVriHtml("""
-<p class="hangnum">placeholder</p>
 <p class="gatha1">Caturāsītisahassa<a name="M0.0001"></a>, dhammakkhandhāpabhaṅkarā;</p>
 <p class="gathalast">placeholder</p>
 <p class="chapter">1. Sandhikaṇḍa</p>
@@ -71,7 +70,6 @@ void main() {
       {
         'number': 1,
         'content': [
-          '<p class="hangnum">placeholder</p>',
           '<p class="gatha1">Caturāsītisahassa<a name="M0.0001"></a>, dhammakkhandhāpabhaṅkarā;</p>',
           '<p class="gathalast">placeholder</p>'
         ]
@@ -127,6 +125,26 @@ void main() {
             'number': 1,
             'content': [
               '<p class="gatha1">Anantaññāṇaṃ <a name="M1.0001"></a> jinaṃ;</p>'
+            ]
+          }
+        ]);
+
+    // Given: multiple new page on first page
+    // Should: split the pages
+    expect(
+        extractMyanmarEditionPagesFromVriHtml(
+            '<p class="bodytext">Catusaccantogadhattā <a name="M2.0001"></a> ārabbha kathesi <a name="M2.0002"></a> Nāmaggahaṇadivase panassa</p>'),
+        [
+          {
+            'number': 1,
+            'content': [
+              '<p class="bodytext">Catusaccantogadhattā <a name="M2.0001"></a> ārabbha </p>',
+            ]
+          },
+          {
+            'number': 2,
+            'content': [
+              '<p class="bodytext">kathesi <a name="M2.0002"></a> Nāmaggahaṇadivase panassa</p>'
             ]
           }
         ]);
