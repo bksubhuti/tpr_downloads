@@ -38,25 +38,17 @@ List<Map<String, dynamic>> addNewParagraphToLastPage(
 
 List<Map<String, dynamic>> addNewPages(
     List<Map<String, dynamic>> pages, Element element) {
-  var isNewPageMarkerAtStart =
-      calculateIsNewPageMarkerAtStartOfParagraph(element);
-  var isMultipleNewPage = containsMultipleNewPages(element);
+  var [lastPageParagraph, ...newPageParagraphs] =
+      splitParagraphOnWordPrecedingMarker(element.outerHtml);
 
-  if (isNewPageMarkerAtStart && !isMultipleNewPage) {
-    return addNewPageWithHeaders(pages, element);
-  } else {
-    var [lastPageParagraph, ...newPageParagraphs] =
-        splitParagraphOnWordPrecedingMarker(element.outerHtml);
-
-    return [
-      ...(paragraphIsNewPage(lastPageParagraph)
-          ? addNewPageWithHeaders(pages, element)
-          : addNewParagraphToLastPage(pages, lastPageParagraph)),
-      ...newPageParagraphs
-          .map((newPageParagraph) => createNewPage(newPageParagraph))
-          .toList()
-    ];
-  }
+  return [
+    ...(isParagraphNewPage(lastPageParagraph)
+        ? addNewPageWithHeaders(pages, element)
+        : addNewParagraphToLastPage(pages, lastPageParagraph)),
+    ...newPageParagraphs
+        .map((newPageParagraph) => createNewPage(newPageParagraph))
+        .toList()
+  ];
 }
 
 bool containsFirstPage(Element element) {
@@ -73,34 +65,10 @@ bool containsNewPage(Element element) {
       .any((a) => a.attributes['name']?.startsWith('M') ?? false);
 }
 
-bool paragraphIsNewPage(String paragraphHtml) {
+bool isParagraphNewPage(String paragraphHtml) {
   Document doc = parser.parse(paragraphHtml);
   Element paragraph = doc.querySelector('p')!;
   return containsNewPage(paragraph);
-}
-
-bool containsMultipleNewPages(Element element) {
-  var newPageMarkers = element.querySelectorAll('a').where(
-        (a) => a.attributes['name']?.startsWith('M') ?? false,
-      );
-
-  return newPageMarkers.length > 1;
-}
-
-bool calculateIsNewPageMarkerAtStartOfParagraph(Element element) {
-  var match = RegExp(r'<a name="M[^"]*"></a>').firstMatch(element.innerHtml);
-  if (match == null) return false;
-
-  var textUpToMarker =
-      parser.parseFragment(element.innerHtml.substring(0, match.end)).text;
-  if (textUpToMarker == null) return false;
-
-  var words = textUpToMarker
-      .trim()
-      .split(RegExp(r'\s+'))
-      .where((word) => !RegExp(r'^\d+\.$').hasMatch(word))
-      .toList();
-  return words.length == 1;
 }
 
 List<String> splitParagraphOnWordPrecedingMarker(String paragraphHtml,

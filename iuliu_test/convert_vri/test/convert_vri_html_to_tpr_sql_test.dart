@@ -271,58 +271,6 @@ void main() {
         ]);
   });
 
-  test('calculateIsNewPageMarkerAtStartOfParagraph', () {
-    {
-      String paragraphHtml =
-          '<p class="bodytext"><span class="bld">Paṅke</span> <a name="M0.0221"></a> ...more stuff</p>';
-      Document doc = parser.parse(paragraphHtml);
-      Element paragraph = doc.querySelector('p')!;
-      expect(calculateIsNewPageMarkerAtStartOfParagraph(paragraph), true);
-    }
-    {
-      String paragraphHtml =
-          '<p class="bodytext"><a name="para1"></a><span class="paranum">1</span>. <span class="bld">Te</span> <a name="M0.0004"></a></p>';
-      Document doc = parser.parse(paragraphHtml);
-      Element paragraph = doc.querySelector('p')!;
-      expect(calculateIsNewPageMarkerAtStartOfParagraph(paragraph), true);
-    }
-    {
-      String paragraphHtml =
-          '<p class="bodytext"><span class="bld">Ādi</span>-saddena <a name="M0.0089"></a></p>';
-      Document doc = parser.parse(paragraphHtml);
-      Element paragraph = doc.querySelector('p')!;
-      expect(calculateIsNewPageMarkerAtStartOfParagraph(paragraph), true);
-    }
-    {
-      String paragraphHtml =
-          '<p class="bodytext"><span class="bld">Ādi</span>-saddena <a name="M0.0089"></a></p>';
-      Document doc = parser.parse(paragraphHtml);
-      Element paragraph = doc.querySelector('p')!;
-      expect(calculateIsNewPageMarkerAtStartOfParagraph(paragraph), true);
-    }
-    {
-      String paragraphHtml =
-          '<p class="bodytext"><a name="para233"></a><span class="paranum">233</span>. <span class="bld">Purimadiṭṭhi</span>nti <a name="M0.0133"></a></p>';
-      Document doc = parser.parse(paragraphHtml);
-      Element paragraph = doc.querySelector('p')!;
-      expect(calculateIsNewPageMarkerAtStartOfParagraph(paragraph), true);
-    }
-    {
-      String paragraphHtml =
-          '<p class="bodytext">Kathaṃ bhagavā adutiyaṭṭhena eko? Evaṃ pabbajito samāno eko araññavanapatthāni pantāni senāsanāni paṭisevati appasaddāni appanigghosāni <a name="T0.0291"></a><a name="M0.0211"></a></p>';
-      Document doc = parser.parse(paragraphHtml);
-      Element paragraph = doc.querySelector('p')!;
-      expect(calculateIsNewPageMarkerAtStartOfParagraph(paragraph), false);
-    }
-    {
-      String paragraphHtml =
-          '<p class="bodytext">Kathaṃ bhagavā<a name="M0.0211"></a></p>';
-      Document doc = parser.parse(paragraphHtml);
-      Element paragraph = doc.querySelector('p')!;
-      expect(calculateIsNewPageMarkerAtStartOfParagraph(paragraph), false);
-    }
-  });
-
   test('splitParagraphOnWordPrecedingMarker', () {
     {
       // Given: one match
