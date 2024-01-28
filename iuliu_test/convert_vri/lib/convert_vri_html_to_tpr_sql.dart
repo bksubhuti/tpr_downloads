@@ -285,3 +285,37 @@ List<String> createPageSQLImportStatements(
     return "INSERT INTO pages (bookid, page, content, paranum) VALUES('$bookId',$number,'$content','$paragraphsStr');";
   }).toList();
 }
+
+String matchFirstPrecedingWord(String string) {
+  var maybeSpace = '\\s*';
+  var maybeAnchor = '$maybeSpace(<a name=".+?"></a>){0,}$maybeSpace\$';
+  var maybeParagraphNumber =
+      '(<a name="para\\d+"></a><span class="paranum">\\d+</span>. )?';
+  var contiguousString = '[^\\s]+';
+
+  var matchWithSpan = RegExp(
+          '($maybeParagraphNumber<span class="bld">$contiguousString)$maybeAnchor')
+      .firstMatch(string);
+
+  var match = RegExp('($maybeParagraphNumber$contiguousString)$maybeAnchor')
+      .firstMatch(string);
+
+  return matchWithSpan?.group(1) ?? match?.group(1) ?? '';
+}
+
+int matchFirstPrecedingWordWithIndex(String string) {
+  var maybeSpace = '\\s*';
+  var maybeAnchor = '$maybeSpace(<a name=".+?"></a>){0,}$maybeSpace\$';
+  var maybeParagraphNumber =
+      '(<a name="para\\d+"></a><span class="paranum">\\d+</span>. )?';
+  var contiguousString = '[^\\s]+';
+
+  var matchWithSpan = RegExp(
+          '($maybeParagraphNumber<span class="bld">$contiguousString)$maybeAnchor')
+      .firstMatch(string);
+
+  var match = RegExp('($maybeParagraphNumber$contiguousString)$maybeAnchor')
+      .firstMatch(string);
+
+  return matchWithSpan?.start ?? match?.start ?? -1;
+}

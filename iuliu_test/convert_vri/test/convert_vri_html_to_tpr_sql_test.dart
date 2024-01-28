@@ -430,4 +430,39 @@ void main() {
           ]);
     }
   });
+
+  test('matchFirstPrecedingWord', () {
+    {
+      expect(matchFirstPrecedingWord('anekabhāvo veditabbo'), 'veditabbo');
+      expect(matchFirstPrecedingWord('vādaṃ nissāya '), 'nissāya');
+      expect(
+          matchFirstPrecedingWord(
+              'placeholder Ekuttarikanaye <a name="V0.0505"></a>'),
+          'Ekuttarikanaye');
+      expect(
+          matchFirstPrecedingWord(
+              'placeholder Anuvijjake <a name="T0.0396"></a><a name="P5.0160"></a>'),
+          'Anuvijjake');
+      expect(
+          matchFirstPrecedingWord(
+              'placeholder <span class="bld">Ādi</span>-saddena '),
+          '<span class="bld">Ādi</span>-saddena');
+      expect(
+          matchFirstPrecedingWord(
+              'placeholder <span class="bld">‘‘Tenevā’’</span>tiādinā '),
+          '<span class="bld">‘‘Tenevā’’</span>tiādinā');
+      expect(
+          matchFirstPrecedingWord(
+              'placeholder <span class="bld">Pīḷanasaṅkhatasantāpavipariṇāmaṭṭhena</span> '),
+          '<span class="bld">Pīḷanasaṅkhatasantāpavipariṇāmaṭṭhena</span>');
+      expect(
+          matchFirstPrecedingWord(
+              '<a name="para325"></a><span class="paranum">325</span>. Pañca '),
+          '<a name="para325"></a><span class="paranum">325</span>. Pañca');
+      expect(
+          matchFirstPrecedingWord(
+              '<a name="para321"></a><span class="paranum">321</span>. Āpattikarā <a name="T0.0294"></a><a name="P5.0115"></a>'),
+          '<a name="para321"></a><span class="paranum">321</span>. Āpattikarā');
+    }
+  });
 }
