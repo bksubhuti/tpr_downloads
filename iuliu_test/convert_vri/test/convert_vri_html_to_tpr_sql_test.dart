@@ -1,8 +1,6 @@
 import 'package:convert_vri/convert_vri_html_to_tpr_sql.dart';
 import 'package:test/test.dart';
 import 'dart:io';
-import 'package:html/parser.dart' as parser;
-import 'package:html/dom.dart';
 
 String readFile(String filePathRelativeToTestFile) {
   var currentDirectoryPath = Directory.current.path;
