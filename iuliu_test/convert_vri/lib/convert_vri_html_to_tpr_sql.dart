@@ -20,20 +20,6 @@ bool isNewPage(Element element) {
       .any((a) => a.attributes['name']?.startsWith('M') ?? false);
 }
 
-List<Map<String, dynamic>> addNewParagraphToLastPage(
-    List<Map<String, dynamic>> pages, String paragraph) {
-  var updatedLastPage = Map<String, dynamic>.from(pages.last)
-    ..update(
-      'content',
-      (content) => List<String>.from(content)..add(paragraph),
-    );
-
-  return [
-    ...pages.sublist(0, pages.length - 1),
-    updatedLastPage,
-  ];
-}
-
 List<Map<String, dynamic>> addNewPages(
     List<Map<String, dynamic>> pages, Element element) {
   var [lastPageParagraph, ...newPageParagraphs] =
@@ -47,6 +33,20 @@ List<Map<String, dynamic>> addNewPages(
     ...newPageParagraphs
         .map((newPageParagraph) => createNewPage(newPageParagraph))
         .toList()
+  ];
+}
+
+List<Map<String, dynamic>> addNewParagraphToLastPage(
+    List<Map<String, dynamic>> pages, String paragraph) {
+  var updatedLastPage = Map<String, dynamic>.from(pages.last)
+    ..update(
+      'content',
+      (content) => List<String>.from(content)..add(paragraph),
+    );
+
+  return [
+    ...pages.sublist(0, pages.length - 1),
+    updatedLastPage,
   ];
 }
 
