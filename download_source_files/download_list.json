@@ -48,20 +48,12 @@
         "size": "34 KB"
     },
     {
-        "name": "DPD November 2023 release",
-        "release_date": "27.11.2023",
+        "name": "DPD January 2024 release",
+        "release_date": "26.1.2024",
         "type": "dictionary",
         "url": "https://github.com/bksubhuti/tpr_downloads/raw/master/release_zips/dpd.zip",
         "filename": "dpd.sql",
-        "size": "22.8 MB"
-    },
-    {
-        "name": "PEU November, 2023 release 200,000 records (71% edited)",
-        "release_date": "5.11.2023",
-        "type": "dictionary",
-        "url": "https://github.com/bksubhuti/tpr_downloads/raw/master/release_zips/peu1.zip",
-        "filename": "peu1.sql",
-        "size": "6.7 MB"
+        "size": "23.2 MB"
     },
     {
         "name": "Worldnet English to English Dictionary",
@@ -121,10 +113,10 @@
     },
     {
         "name": "DPD Beta",
-        "release_date": "26.11.2023",
+        "release_date": "21.1.2024",
         "type": "dictionary",
         "url": "https://github.com/bksubhuti/tpr_downloads/raw/master/release_zips/dpd_beta.zip",
         "filename": "dpd.sql",
-        "size": "21.9 MB"
+        "size": "23.4 MB"
     }
 ]
