@@ -31,16 +31,44 @@ List<String> modifiedCreatePageSQLImportStatements(
   }).toList();
 }
 
+String replaceStartQuote(String string) {
+  return string.replaceAllMapped(
+      RegExp(r'(<p class="[^"]*">)(<.*?><.*?><.*?>\d*?<.*?>\. )?(?:")'),
+      (Match m) => "${m[1]}${m.group(2) ?? ''}");
+}
+
 List<Map<String, dynamic>> processPagesText(List<Map<String, dynamic>> pages) {
   return pages.map((page) {
     return {
       'number': page['number'],
       'content': page['content'].map((textLine) {
-        return textLine.toLowerCase();
+        var newText = textLine
+            .toLowerCase()
+            .replaceAll('‘‘', '"')
+            .replaceAll('’’', '"')
+            .replaceAll(';', ',')
+            .replaceAll(RegExp(r'name="p(?=\d.\d{4}")'), 'name="P')
+            .replaceAll(RegExp(r'name="v(?=\d.\d{4}")'), 'name="V')
+            .replaceAll(RegExp(r'name="t(?=\d.\d{4}")'), 'name="T')
+            .replaceAll(RegExp(r'name="m(?=\d.\d{4}")'), 'name="M');
+        return replaceStartQuote(newText);
       }),
       'paragraphs': page['paragraphs']
     };
   }).toList();
+}
+
+List<int> findMissingNumbers(List<int> numbers) {
+  var numbersSet = numbers.toSet();
+  List<int> missingNumbers = [];
+
+  for (int i = 1; i <= 415; i++) {
+    if (!numbersSet.contains(i)) {
+      missingNumbers.add(i);
+    }
+  }
+
+  return missingNumbers;
 }
 
 void main() {
@@ -56,10 +84,23 @@ void main() {
         modifiedCreatePageSQLImportStatements('mula_ma_01', processedPagesMN1)
             .join('\n');
 
+    print('Missing MN1 pages:');
+    print(findMissingNumbers(
+        processedPagesMN1.map((e) => e['number'] as int).toList()));
+
     writeFile('./mulapannasapali-vri-import.sql', pagesTableImportMN1);
 
     // use diffchecker.com for a more readable diff
     // expect(readFile('./mulapannasapali-vri-import.sql'),
     //     readFile('./mulapannasapali-tpr-import.sql'));
+  });
+
+  test('replaceStartQuote', () {
+    expect(replaceStartQuote('<p class="bodytext">"tejaṃ'),
+        '<p class="bodytext">tejaṃ');
+    expect(
+        replaceStartQuote(
+            '<p class="bodytext"><a name="para2"></a><span class="paranum">2</span>. "idha,'),
+        '<p class="bodytext"><a name="para2"></a><span class="paranum">2</span>. idha,');
   });
 }
