@@ -2,26 +2,6 @@ import 'package:test/test.dart';
 import 'package:convert_vri/create_sql_import_statements.dart';
 
 void main() {
-  test('createParagraphsSQLImportStatements', () {
-    expect(
-        createParagraphsSQLImportStatements('annya_sadda_18', [
-          {
-            'number': 4,
-            'paragraphs': [1]
-          },
-          {
-            'number': 98,
-            'paragraphs': [99, 100, 101]
-          }
-        ]),
-        [
-          "INSERT INTO paragraphs VALUES('annya_sadda_18',1,4);",
-          "INSERT INTO paragraphs VALUES('annya_sadda_18',99,98);",
-          "INSERT INTO paragraphs VALUES('annya_sadda_18',100,98);",
-          "INSERT INTO paragraphs VALUES('annya_sadda_18',101,98);",
-        ]);
-  });
-
   test('joinPagesCollections', () {
     expect(
         joinPagesCollections([
@@ -63,6 +43,26 @@ void main() {
             'content': ['x'],
             'paragraphs': [1, 2]
           },
+        ]);
+  });
+
+  test('createParagraphsSQLImportStatements', () {
+    expect(
+        createParagraphsSQLImportStatements('annya_sadda_18', [
+          {
+            'number': 4,
+            'paragraphs': [1]
+          },
+          {
+            'number': 98,
+            'paragraphs': [99, 100, 101]
+          }
+        ]),
+        [
+          "INSERT INTO paragraphs VALUES('annya_sadda_18',1,4);",
+          "INSERT INTO paragraphs VALUES('annya_sadda_18',99,98);",
+          "INSERT INTO paragraphs VALUES('annya_sadda_18',100,98);",
+          "INSERT INTO paragraphs VALUES('annya_sadda_18',101,98);",
         ]);
   });
 
