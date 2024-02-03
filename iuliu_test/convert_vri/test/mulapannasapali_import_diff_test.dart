@@ -39,7 +39,7 @@ List<Map<String, dynamic>> processPagesText(List<Map<String, dynamic>> pages) {
   return pages.map((page) {
     return {
       'number': page['number'],
-      'content': page['content'].map((textLine) {
+      'content': List<String>.from(page['content']).map((textLine) {
         var newText = textLine
             .toLowerCase()
             .replaceAll('‘‘', '"')
@@ -48,7 +48,12 @@ List<Map<String, dynamic>> processPagesText(List<Map<String, dynamic>> pages) {
             .replaceAll(RegExp(r'name="p(?=\d.\d{4}")'), 'name="P')
             .replaceAll(RegExp(r'name="v(?=\d.\d{4}")'), 'name="V')
             .replaceAll(RegExp(r'name="t(?=\d.\d{4}")'), 'name="T')
-            .replaceAll(RegExp(r'name="m(?=\d.\d{4}")'), 'name="M');
+            .replaceAll(RegExp(r'name="m(?=\d.\d{4}")'), 'name="M')
+            .replaceAllMapped(
+                RegExp(r'<a name="para(\d+)"></a>'),
+                (Match m) =>
+                    '<a name="para${m[1]}"></a><a name="para${m[1]}_mn1"></a>')
+            .replaceAll(RegExp(' </p>\\r\\n\$'), '</p>\\r\\n');
         return replaceStartQuote(newText);
       }),
       'paragraphs': page['paragraphs']
@@ -97,5 +102,6 @@ void main() {
         replaceStartQuote(
             '<p class="bodytext"><a name="para2"></a><span class="paranum">2</span>. "idha,'),
         '<p class="bodytext"><a name="para2"></a><span class="paranum">2</span>. idha,');
+    print('taṃ </p>\r\n'.replaceAll(RegExp(' </p>\\r\\n\$'), '</p>\\r\\n'));
   });
 }
