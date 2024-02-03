@@ -157,4 +157,10 @@
 </a>
 </xsl:template>
 
+<xsl:template match='trailer[@rend="centre"]'>
+<p class="centered">
+<xsl:apply-templates/>
+</p>
+</xsl:template>
+
 </xsl:stylesheet>

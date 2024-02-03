@@ -32,7 +32,7 @@ List<String> modifiedCreatePageSQLImportStatements(
 
 String replaceStartQuote(String string) {
   return string.replaceAllMapped(
-      RegExp(r'(<p class="[^"]*">)(<.*?><.*?><.*?>\d*?<.*?>\. )?(?:")'),
+      RegExp(r'(<p class="bodytext">)(<.*?><.*?><.*?>\d*?<.*?>\. )?(?:")'),
       (Match m) => "${m[1]}${m.group(2) ?? ''}");
 }
 
@@ -102,6 +102,5 @@ void main() {
         replaceStartQuote(
             '<p class="bodytext"><a name="para2"></a><span class="paranum">2</span>. "idha,'),
         '<p class="bodytext"><a name="para2"></a><span class="paranum">2</span>. idha,');
-    print('taṃ </p>\\r\\n'.replaceAll(RegExp(r' </p>\\r\\n$'), '</p>\\r\\n'));
   });
 }
