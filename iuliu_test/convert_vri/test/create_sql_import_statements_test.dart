@@ -86,9 +86,9 @@ void main() {
           }
         ]),
         [
-          "INSERT INTO pages (bookid, page, content, paranum) VALUES('annya_sadda_18',1,replace(replace('x\r\nx','\r',char(13)),'\n',chart(10)),'-1-');",
-          "INSERT INTO pages (bookid, page, content, paranum) VALUES('annya_sadda_18',2,replace(replace('x','\r',char(13)),'\n',chart(10)),'');",
-          "INSERT INTO pages (bookid, page, content, paranum) VALUES('annya_sadda_18',3,replace(replace('x','\r',char(13)),'\n',chart(10)),'-1-2-');",
+          "INSERT INTO pages (bookid, page, content, paranum) VALUES('annya_sadda_18',1,replace(replace('x\\r\\nx','\\r',char(13)),'\\n',chart(10)),'-1-');",
+          "INSERT INTO pages (bookid, page, content, paranum) VALUES('annya_sadda_18',2,replace(replace('x','\\r',char(13)),'\\n',chart(10)),'');",
+          "INSERT INTO pages (bookid, page, content, paranum) VALUES('annya_sadda_18',3,replace(replace('x','\\r',char(13)),'\\n',chart(10)),'-1-2-');",
         ]);
   });
 }

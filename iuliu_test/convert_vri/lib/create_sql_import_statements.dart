@@ -33,12 +33,12 @@ List<String> createPageSQLImportStatements(
     String bookId, List<Map<String, dynamic>> pages) {
   return pages.map((page) {
     var number = page['number'];
-    var content = page['content'].join('\r\n');
+    var content = page['content'].join("\\r\\n");
     var paragraphs = page['paragraphs'];
 
     var paragraphsStr =
         paragraphs.isNotEmpty ? '-${paragraphs.join('-')}-' : '';
 
-    return "INSERT INTO pages (bookid, page, content, paranum) VALUES('$bookId',$number,replace(replace('$content','\r',char(13)),'\n',chart(10)),'$paragraphsStr');";
+    return "INSERT INTO pages (bookid, page, content, paranum) VALUES('$bookId',$number,replace(replace('$content','\\r',char(13)),'\\n',chart(10)),'$paragraphsStr');";
   }).toList();
 }
