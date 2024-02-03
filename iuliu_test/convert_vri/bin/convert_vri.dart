@@ -1,4 +1,6 @@
-import 'package:convert_vri/convert_vri_html_to_tpr_sql.dart';
+import 'package:convert_vri/create_sql_import_statements.dart';
+import 'package:convert_vri/split_pages.dart';
+import 'package:convert_vri/extract_paragraphs.dart';
 import 'dart:io';
 
 void main(List<String> arguments) {
