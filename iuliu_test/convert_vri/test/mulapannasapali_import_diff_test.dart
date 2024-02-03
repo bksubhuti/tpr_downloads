@@ -25,7 +25,8 @@ List<String> modifiedCreatePageSQLImportStatements(
         paragraphs.isNotEmpty ? '-${paragraphs.join('-')}-' : '';
 
     var idNumber = number + 3039;
-    return "INSERT INTO pages VALUES($idNumber,'$bookId',$number,replace(replace('$content\\r\\n','\\r',char(13)),'\\n',char(10)),'$paragraphsStr');";
+    return "INSERT INTO pages VALUES($idNumber,'$bookId',$number,replace(replace('$content\\r\\n','\\r',char(13)),'\\n',char(10)),'$paragraphsStr');"
+        .replaceAll(RegExp(r' </p>\\r\\n'), '</p>\\r\\n');
   }).toList();
 }
 
@@ -52,8 +53,7 @@ List<Map<String, dynamic>> processPagesText(List<Map<String, dynamic>> pages) {
             .replaceAllMapped(
                 RegExp(r'<a name="para(\d+)"></a>'),
                 (Match m) =>
-                    '<a name="para${m[1]}"></a><a name="para${m[1]}_mn1"></a>')
-            .replaceAll(RegExp(' </p>\\r\\n\$'), '</p>\\r\\n');
+                    '<a name="para${m[1]}"></a><a name="para${m[1]}_mn1"></a>');
         return replaceStartQuote(newText);
       }),
       'paragraphs': page['paragraphs']
@@ -102,6 +102,6 @@ void main() {
         replaceStartQuote(
             '<p class="bodytext"><a name="para2"></a><span class="paranum">2</span>. "idha,'),
         '<p class="bodytext"><a name="para2"></a><span class="paranum">2</span>. idha,');
-    print('taṃ </p>\r\n'.replaceAll(RegExp(' </p>\\r\\n\$'), '</p>\\r\\n'));
+    print('taṃ </p>\\r\\n'.replaceAll(RegExp(r' </p>\\r\\n$'), '</p>\\r\\n'));
   });
 }
