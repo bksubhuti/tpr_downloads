@@ -1,14 +1,11 @@
 import 'package:convert_vri/create_sql_import_statements.dart';
 import 'package:convert_vri/split_pages.dart';
-import 'package:convert_vri/extract_paragraphs.dart';
 import 'dart:io';
 
 void main(List<String> arguments) {
   var pagesWithContent = extractMyanmarEditionPagesFromVriHtml(
       readFile('../../anudipanipatha/e0401n.nrf.html'));
-  var paragraphsByPage =
-      extractParagraphsByPage(readFile('../../anudipanipatha/paragraphs.txt'));
-  var pages = joinPagesCollections(pagesWithContent, paragraphsByPage);
+  var pages = addParagraphsToPages(pagesWithContent);
 
   var booksTableImport = """
 INSERT INTO books VALUES('annya_sadda_18','annya','annya_sadda','anudīpanīpāṭha',1,324,324);""";
@@ -25,8 +22,7 @@ INSERT INTO tocs VALUES('annya_sadda_18', '9. kammaṭṭhānasaṅgahaanudīpan
 INSERT INTO tocs VALUES('annya_sadda_18', 'nigamagāthāsu.', 'subhead', 322, NULL);
 INSERT INTO tocs VALUES('annya_sadda_18', 'dīpaniyā nigamagāthāsu.', 'subhead', 324, NULL);""";
   var paragraphsTableImport =
-      createParagraphsSQLImportStatements('annya_sadda_18', paragraphsByPage)
-          .join('\n');
+      createParagraphsSQLImportStatements('annya_sadda_18', pages).join('\n');
   var pagesTableImport =
       createPageSQLImportStatements('annya_sadda_18', pages).join('\n');
   var anudipanipathaImport = [
@@ -40,11 +36,9 @@ INSERT INTO tocs VALUES('annya_sadda_18', 'dīpaniyā nigamagāthāsu.', 'subhea
 
   var pagesWithContentMN1 = extractMyanmarEditionPagesFromVriHtml(
       readFile('../../mulapannasapali/s0201m.mul.html'));
-  var paragraphsByPageMN1 =
-      extractParagraphsByPage(readFile('../../mulapannasapali/paragraphs.txt'));
-  var pagesMN1 = joinPagesCollections(pagesWithContentMN1, paragraphsByPageMN1);
+  var pagesMN1 = addParagraphsToPages(pagesWithContentMN1);
   var paragraphsTableImportMN1 =
-      createParagraphsSQLImportStatements('mula_ma_81', paragraphsByPageMN1)
+      createParagraphsSQLImportStatements('mula_ma_81', pagesMN1)
           .join('\n');
   var pagesTableImportMN1 =
       createPageSQLImportStatements('mula_ma_81', pagesMN1).join('\n');

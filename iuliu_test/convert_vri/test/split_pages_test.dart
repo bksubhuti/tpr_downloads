@@ -331,4 +331,42 @@ void main() {
           '<a name="para321"></a><span class="paranum">321</span>. Āpattikarā');
     }
   });
+
+  test('addParagraphsToPages', () {
+    expect(
+        addParagraphsToPages([
+          {
+            'number': 1,
+            'content': [
+              '<p class="bodytext"><a name="para1"></a><span class="paranum">1</span></p>',
+              '<p class="bodytext">x</p>'
+            ]
+          },
+          {
+            'number': 2,
+            'content': [
+              '<p class="bodytext"><a name="para2"></a><span class="paranum">2</span></p>',
+              '<p class="bodytext"><a name="para94-95"></a><span class="paranum">94-95</span></p>'
+            ]
+          },
+        ]),
+        [
+          {
+            'number': 1,
+            'content': [
+              '<p class="bodytext"><a name="para1"></a><span class="paranum">1</span></p>',
+              '<p class="bodytext">x</p>'
+            ],
+            'paragraphs': [1]
+          },
+          {
+            'number': 2,
+            'content': [
+              '<p class="bodytext"><a name="para2"></a><span class="paranum">2</span></p>',
+              '<p class="bodytext"><a name="para94-95"></a><span class="paranum">94-95</span></p>'
+            ],
+            'paragraphs': [2, 94, 95]
+          },
+        ]);
+  });
 }

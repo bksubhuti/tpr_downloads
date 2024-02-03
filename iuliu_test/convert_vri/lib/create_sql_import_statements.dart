@@ -1,16 +1,3 @@
-List<Map<String, dynamic>> joinPagesCollections(
-    List<Map<String, dynamic>> pages, List<Map<String, dynamic>> paragraphs) {
-  var paragraphsMap = {for (var p in paragraphs) p['number']: p['paragraphs']};
-
-  return pages.map((page) {
-    var pageNumber = page['number'];
-    var mergedPage = Map<String, dynamic>.from(page);
-
-    mergedPage['paragraphs'] = paragraphsMap[pageNumber] ?? [];
-    return mergedPage;
-  }).toList();
-}
-
 List<String> createParagraphsSQLImportStatements(
     String bookId, List<dynamic> pages) {
   List<String> statements = [];
@@ -39,6 +26,6 @@ List<String> createPageSQLImportStatements(
     var paragraphsStr =
         paragraphs.isNotEmpty ? '-${paragraphs.join('-')}-' : '';
 
-    return "INSERT INTO pages (bookid, page, content, paranum) VALUES('$bookId',$number,replace(replace('$content','\\r',char(13)),'\\n',chart(10)),'$paragraphsStr');";
+    return "INSERT INTO pages (bookid, page, content, paranum) VALUES('$bookId',$number,replace(replace('$content','\\r',char(13)),'\\n',char(10)),'$paragraphsStr');";
   }).toList();
 }

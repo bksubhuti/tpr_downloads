@@ -2,50 +2,6 @@ import 'package:test/test.dart';
 import 'package:convert_vri/create_sql_import_statements.dart';
 
 void main() {
-  test('joinPagesCollections', () {
-    expect(
-        joinPagesCollections([
-          {
-            'number': 1,
-            'content': ['x', 'x']
-          },
-          {
-            'number': 2,
-            'content': ['x']
-          },
-          {
-            'number': 3,
-            'content': ['x']
-          },
-        ], [
-          {
-            'number': 1,
-            'paragraphs': [1]
-          },
-          {
-            'number': 3,
-            'paragraphs': [1, 2]
-          },
-        ]),
-        [
-          {
-            'number': 1,
-            'content': ['x', 'x'],
-            'paragraphs': [1]
-          },
-          {
-            'number': 2,
-            'content': ['x'],
-            'paragraphs': []
-          },
-          {
-            'number': 3,
-            'content': ['x'],
-            'paragraphs': [1, 2]
-          },
-        ]);
-  });
-
   test('createParagraphsSQLImportStatements', () {
     expect(
         createParagraphsSQLImportStatements('annya_sadda_18', [

@@ -166,3 +166,24 @@ RegExpMatch? matchFirstPrecedingWord(String string) {
 
   return matchWithSpan ?? match;
 }
+
+List<Map<String, dynamic>> addParagraphsToPages(
+    List<Map<String, dynamic>> pages) {
+  return pages.map((page) {
+    return {
+      'number': page['number'],
+      'content': page['content'],
+      'paragraphs': List<String>.from(page['content']).fold([],
+          (previousParagraphNumbers, textLine) {
+        var document = parser.parse(textLine);
+        var paragraphNumbers = document.body!.querySelectorAll('span.paranum');
+        return [
+          ...previousParagraphNumbers,
+          ...paragraphNumbers
+              .expand((e) => (e.text.split('-').map((e) => int.parse(e))))
+              .toList()
+        ];
+      }).toList()
+    };
+  }).toList();
+}
