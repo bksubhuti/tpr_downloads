@@ -7,7 +7,7 @@ void main() {
         joinPagesCollections([
           {
             'number': 1,
-            'content': ['x']
+            'content': ['x', 'x']
           },
           {
             'number': 2,
@@ -30,7 +30,7 @@ void main() {
         [
           {
             'number': 1,
-            'content': ['x'],
+            'content': ['x', 'x'],
             'paragraphs': [1]
           },
           {
