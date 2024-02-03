@@ -84,11 +84,11 @@ void main() {
         modifiedCreatePageSQLImportStatements('mula_ma_01', processedPagesMN1)
             .join('\n');
 
-    print('Missing MN1 pages:');
-    print(findMissingNumbers(
-        processedPagesMN1.map((e) => e['number'] as int).toList()));
+    // print('Missing MN1 pages:');
+    // print(findMissingNumbers(
+    //     processedPagesMN1.map((e) => e['number'] as int).toList()));
 
-    writeFile('./mulapannasapali-vri-import.sql', pagesTableImportMN1);
+    // writeFile('./mulapannasapali-vri-import.sql', pagesTableImportMN1);
 
     // use diffchecker.com for a more readable diff
     // expect(readFile('./mulapannasapali-vri-import.sql'),
