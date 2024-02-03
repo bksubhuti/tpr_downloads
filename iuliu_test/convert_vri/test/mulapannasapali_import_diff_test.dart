@@ -27,7 +27,19 @@ List<String> modifiedCreatePageSQLImportStatements(
         paragraphs.isNotEmpty ? '-${paragraphs.join('-')}-' : '';
 
     var idNumber = number + 3039;
-    return "INSERT INTO pages VALUES($idNumber,'$bookId',$number,replace(replace('$content','\\r',char(13)),'\\n',chart(10)),'$paragraphsStr');";
+    return "INSERT INTO pages VALUES($idNumber,'$bookId',$number,replace(replace('$content\\r\\n','\\r',char(13)),'\\n',chart(10)),'$paragraphsStr');";
+  }).toList();
+}
+
+List<Map<String, dynamic>> processPagesText(List<Map<String, dynamic>> pages) {
+  return pages.map((page) {
+    return {
+      'number': page['number'],
+      'content': page['content'].map((textLine) {
+        return textLine.toLowerCase();
+      }),
+      'paragraphs': page['paragraphs']
+    };
   }).toList();
 }
 
@@ -39,8 +51,9 @@ void main() {
         readFile('../../mulapannasapali/paragraphs.txt'));
     var pagesMN1 =
         joinPagesCollections(pagesWithContentMN1, paragraphsByPageMN1);
+    var processedPagesMN1 = processPagesText(pagesMN1);
     var pagesTableImportMN1 =
-        modifiedCreatePageSQLImportStatements('mula_ma_01', pagesMN1)
+        modifiedCreatePageSQLImportStatements('mula_ma_01', processedPagesMN1)
             .join('\n');
 
     writeFile('./mulapannasapali-vri-import.sql', pagesTableImportMN1);
