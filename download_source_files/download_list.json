@@ -48,12 +48,12 @@
         "size": "34 KB"
     },
     {
-        "name": "DPD January 2024 release",
-        "release_date": "26.1.2024",
+        "name": "DPD February 2024 release",
+        "release_date": "24.2.2024",
         "type": "dictionary",
         "url": "https://github.com/bksubhuti/tpr_downloads/raw/master/release_zips/dpd.zip",
         "filename": "dpd.sql",
-        "size": "23.2 MB"
+        "size": "18.2 MB"
     },
     {
         "name": "Worldnet English to English Dictionary",
