@@ -10,25 +10,29 @@ void main(List<String> arguments) {
   var booksTableImport = """
 INSERT INTO books VALUES('annya_sadda_18','annya','annya_sadda','anudīpanīpāṭha',1,324,324);""";
   var tocsTableImport = """
-INSERT INTO tocs VALUES('annya_sadda_18', '1. cittasaṅgahaanudīpanā', 'chapter', 1, NULL);
-INSERT INTO tocs VALUES('annya_sadda_18', '2. cetasikasaṅgahaanudīpanā', 'chapter', 79, NULL);
-INSERT INTO tocs VALUES('annya_sadda_18', '3. pakiṇṇakasaṅgahaanudīpanā', 'chapter', 108, NULL);
-INSERT INTO tocs VALUES('annya_sadda_18', '4. vīthisaṅgahaanudīpanā', 'chapter', 121, NULL);
-INSERT INTO tocs VALUES('annya_sadda_18', '5. vīthimuttasaṅgahaanudīpanā', 'chapter', 144, NULL);
-INSERT INTO tocs VALUES('annya_sadda_18', '6. rūpasaṅgahaanudīpanā', 'chapter', 190, NULL);
-INSERT INTO tocs VALUES('annya_sadda_18', '7. samuccayasaṅgahaanudīpanā', 'chapter', 230, NULL);
-INSERT INTO tocs VALUES('annya_sadda_18', '8. paccayasaṅgahaanudīpanā', 'chapter', 247, NULL);
-INSERT INTO tocs VALUES('annya_sadda_18', '9. kammaṭṭhānasaṅgahaanudīpanā', 'chapter', 276, NULL);
-INSERT INTO tocs VALUES('annya_sadda_18', 'nigamagāthāsu.', 'subhead', 322, NULL);
-INSERT INTO tocs VALUES('annya_sadda_18', 'dīpaniyā nigamagāthāsu.', 'subhead', 324, NULL);""";
+INSERT INTO tocs VALUES('annya_sadda_18', '1. cittasaṅgahaanudīpanā', 'chapter', 1);
+INSERT INTO tocs VALUES('annya_sadda_18', '2. cetasikasaṅgahaanudīpanā', 'chapter', 79);
+INSERT INTO tocs VALUES('annya_sadda_18', '3. pakiṇṇakasaṅgahaanudīpanā', 'chapter', 108);
+INSERT INTO tocs VALUES('annya_sadda_18', '4. vīthisaṅgahaanudīpanā', 'chapter', 121);
+INSERT INTO tocs VALUES('annya_sadda_18', '5. vīthimuttasaṅgahaanudīpanā', 'chapter', 144);
+INSERT INTO tocs VALUES('annya_sadda_18', '6. rūpasaṅgahaanudīpanā', 'chapter', 190);
+INSERT INTO tocs VALUES('annya_sadda_18', '7. samuccayasaṅgahaanudīpanā', 'chapter', 230);
+INSERT INTO tocs VALUES('annya_sadda_18', '8. paccayasaṅgahaanudīpanā', 'chapter', 247);
+INSERT INTO tocs VALUES('annya_sadda_18', '9. kammaṭṭhānasaṅgahaanudīpanā', 'chapter', 276);
+INSERT INTO tocs VALUES('annya_sadda_18', 'nigamagāthāsu.', 'subhead', 322);
+INSERT INTO tocs VALUES('annya_sadda_18', 'dīpaniyā nigamagāthāsu.', 'subhead', 324);""";
   var paragraphsTableImport =
       createParagraphsSQLImportStatements('annya_sadda_18', pages).join('\n');
   var pagesTableImport =
       createPageSQLImportStatements('annya_sadda_18', pages).join('\n');
   var anudipanipathaImport = [
+    "DELETE FROM books where id='annya_sadda_18';",
     booksTableImport,
+    "DELETE FROM tocs where book_id='annya_sadda_18';",
     tocsTableImport,
+    "DELETE FROM paragraphs where book_id='annya_sadda_18';",
     paragraphsTableImport,
+    "DELETE FROM pages where bookid='annya_sadda_18';",
     pagesTableImport
   ].join('\n');
 
@@ -38,8 +42,7 @@ INSERT INTO tocs VALUES('annya_sadda_18', 'dīpaniyā nigamagāthāsu.', 'subhea
       readFile('../../mulapannasapali/s0201m.mul.html'));
   var pagesMN1 = addParagraphsToPages(pagesWithContentMN1);
   var paragraphsTableImportMN1 =
-      createParagraphsSQLImportStatements('mula_ma_81', pagesMN1)
-          .join('\n');
+      createParagraphsSQLImportStatements('mula_ma_81', pagesMN1).join('\n');
   var pagesTableImportMN1 =
       createPageSQLImportStatements('mula_ma_81', pagesMN1).join('\n');
 
