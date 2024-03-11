@@ -48,6 +48,14 @@
         "size": "34 KB"
     },
     {
+      "name": "Anudīpanīpāṭha",
+      "release_date": "10.3.2024",
+      "type": "books",
+      "url": "https://github.com/bksubhuti/tpr_downloads/raw/master/release_zips/anudipanipatha.zip",
+      "filename": "anudipanipatha.sql",
+      "size": "210 KB"
+    },
+    {
         "name": "DPD February 2024 release",
         "release_date": "24.2.2024",
         "type": "dictionary",
