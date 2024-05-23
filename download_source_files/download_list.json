@@ -56,8 +56,8 @@
         "size": "210 KB"
     },
     {
-        "name": "DPD April 2024 release",
-        "release_date": "23.4.2024",
+        "name": "DPD May 2024 release",
+        "release_date": "23.5.2024",
         "type": "dictionary",
         "url": "https://github.com/bksubhuti/tpr_downloads/raw/master/release_zips/dpd.zip",
         "filename": "dpd.sql",
