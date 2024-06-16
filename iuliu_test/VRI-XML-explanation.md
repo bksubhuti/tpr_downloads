@@ -101,3 +101,9 @@ xsltproc tipitaka-latn.xsl ./anudipanipatha/e0401n.nrf.xml > ./anudipanipatha/e0
 xsltproc tipitaka-latn.xsl ./mulapannasapali/s0201m.mul.xml > ./mulapannasapali/s0201m.mul.html
 xsltproc tipitaka-latn.xsl ./niruttidipanipatha/e0201n.nrf.xml > ./niruttidipanipatha/e0201n.nrf.html
 ```
+
+
+Convert all e_texts:
+```
+xsltproc tipitaka-latn.xsl
+```
