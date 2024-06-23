@@ -369,4 +369,60 @@ void main() {
           },
         ]);
   });
+
+  test('addTocsToPagesWithParagraphs', () {
+    expect(
+        addTocsToPagesWithParagraphs([
+          {
+            'number': 1,
+            'content': [
+              '<p class="chapter">1. Mūlapariyāyavaggo</p>',
+              '<p class="title">1. Mūlapariyāyasuttaṃ</p>',
+              '<p class="bodytext">Catusaccantogadhattā ārabbha </p>'
+            ],
+            'paragraphs': [1]
+          },
+          {
+            'number': 9,
+            'content': ['<p class="subhead">Dassanā pahātabbāsavā</p>'],
+            'paragraphs': [9]
+          },
+          {
+            'number': 82,
+            'content': ['<p class="subsubhead">Dukkhasaccaniddeso</p>'],
+            'paragraphs': [82]
+          },
+        ]),
+        [
+          {
+            'number': 1,
+            'content': [
+              '<p class="chapter">1. Mūlapariyāyavaggo</p>',
+              '<p class="title">1. Mūlapariyāyasuttaṃ</p>',
+              '<p class="bodytext">Catusaccantogadhattā ārabbha </p>'
+            ],
+            'paragraphs': [1],
+            'tocs': [
+              {'title': '1. mūlapariyāyavaggo', 'type': 'chapter'},
+              {'title': '1. mūlapariyāyasuttaṃ', 'type': 'title'},
+            ]
+          },
+          {
+            'number': 9,
+            'content': ['<p class="subhead">Dassanā pahātabbāsavā</p>'],
+            'paragraphs': [9],
+            'tocs': [
+              {'title': 'dassanā pahātabbāsavā', 'type': 'subhead'},
+            ]
+          },
+          {
+            'number': 82,
+            'content': ['<p class="subsubhead">Dukkhasaccaniddeso</p>'],
+            'paragraphs': [82],
+            'tocs': [
+              {'title': 'dukkhasaccaniddeso', 'type': 'subsubhead'},
+            ]
+          },
+        ]);
+  });
 }

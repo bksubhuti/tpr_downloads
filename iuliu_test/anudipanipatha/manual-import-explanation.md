@@ -114,13 +114,15 @@ The relevant values for the toc table are:
 
 ```
 chapter
+title
 subhead
+subsubhead
 ```
 
 So I searched for those:
 
 ```
-rg 'rend="(chapter|subhead)"' iuliu_test/anudipanipatha/e0401n.nrf.xml
+rg 'rend="(chapter|title|subhead|subsubhead)"' iuliu_test/anudipanipatha/e0401n.nrf.xml
 ```
 
 Giving me this list:

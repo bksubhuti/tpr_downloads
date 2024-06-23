@@ -187,3 +187,30 @@ List<Map<String, dynamic>> addParagraphsToPages(
     };
   }).toList();
 }
+
+List<Map<String, dynamic>> addTocsToPagesWithParagraphs(
+    List<Map<String, dynamic>> pages) {
+  const allowedClasses = {'chapter', 'title', 'subhead', 'subsubhead'};
+
+  return pages.map((page) {
+    List<Map<String, String>> tocs = [];
+    for (String textLine in page['content']) {
+      RegExp regExp = RegExp(r'<p class="([^"]+)">(.+?)<\/p>');
+      Match? match = regExp.firstMatch(textLine);
+      if (match != null) {
+        String type = match.group(1)!;
+        if (allowedClasses.contains(type)) {
+          String title = match.group(2)!.toLowerCase();
+          tocs.add({'title': title, 'type': type});
+        }
+      }
+    }
+
+    return {
+      'number': page['number'],
+      'content': page['content'],
+      'paragraphs': page['paragraphs'],
+      'tocs': tocs,
+    };
+  }).toList();
+}
