@@ -43,7 +43,7 @@ void main() {
       tocsTableImport,
       "DELETE FROM paragraphs where book_id='$bookId';",
       paragraphsTableImport,
-      "DELETE FROM pages where book_id='$bookId';",
+      "DELETE FROM pages where bookid='$bookId';",
       pagesTableImport
     ].join('\n');
 

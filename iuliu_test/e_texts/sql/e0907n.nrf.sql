@@ -34,7 +34,7 @@ INSERT INTO tocs VALUES('annya_sadda_40','ekabījī sotāpanna','subhead',256);
 INSERT INTO tocs VALUES('annya_sadda_40','sakadāgāminiddesa','subhead',260);
 DELETE FROM paragraphs where book_id='annya_sadda_40';
 
-DELETE FROM pages where book_id='annya_sadda_40';
+DELETE FROM pages where bookid='annya_sadda_40';
 INSERT INTO pages (bookid, page, content, paranum) VALUES('annya_sadda_40',1,replace(replace('<p class="centered"> Namo tassa bhagavato arahato sammāsambuddhassa</p>','\r',char(13)),'\n',char(10)),'');
 INSERT INTO pages (bookid, page, content, paranum) VALUES('annya_sadda_40',25,replace(replace('<p class="chapter">Aṭṭhakathā</p>\r\n<p class="subhead">Saṃgāyanassa pucchā-vissajjanā</p>\r\n<p class="gatha1">Sadevakopi <a name="M1.0025"></a> ce loko, āgantvā tāsayeyya maṃ;</p>\r\n<p class="gathalast">Na me paṭibalo assa, janetuṃ bhayabheravaṃ.</p>\r\n<p class="gatha1">Sacepi tvaṃ mahiṃ sabbaṃ, sasamuddaṃ sapabbataṃ;</p>\r\n<p class="gatha2">Ukkhipitvā mahānāga, khipeyyāsi mamūpari;</p>\r\n<p class="gatha3">Neva me sakkuṇeyyāsi, janetuṃ bhayabheravaṃ;</p>\r\n<p class="gathalast">Aññadatthu tavevassa, vighāto uragādhipa.</p>','\r',char(13)),'\n',char(10)),'');
 INSERT INTO pages (bookid, page, content, paranum) VALUES('annya_sadda_40',26,replace(replace('<p class="gatha1">Mā <a name="M1.0026"></a> dāni kodhaṃ janayittha, ito uddhaṃ yathā pure;</p>\r\n<p class="gatha2">Sassaghātañca mākattha, sukhakāmā hi pāṇino;</p>\r\n<p class="gathalast">Karotha mettaṃ sattesu, vasantu manujā sukhaṃ.</p>','\r',char(13)),'\n',char(10)),'');

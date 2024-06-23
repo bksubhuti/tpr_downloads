@@ -417,7 +417,7 @@ INSERT INTO paragraphs VALUES('annya_sadda_75',411,145);
 INSERT INTO paragraphs VALUES('annya_sadda_75',412,146);
 INSERT INTO paragraphs VALUES('annya_sadda_75',413,146);
 INSERT INTO paragraphs VALUES('annya_sadda_75',414,146);
-DELETE FROM pages where book_id='annya_sadda_75';
+DELETE FROM pages where bookid='annya_sadda_75';
 INSERT INTO pages (bookid, page, content, paranum) VALUES('annya_sadda_75',1,replace(replace('<p class="centered"> Namo tassa bhagavato arahato sammāsambuddhassa</p>\r\n<p class="chapter">Dhammanīti</p>\r\n<p class="hangnum"><a name="para1"></a><span class="paranum">1</span>.</p>\r\n<p class="gatha1"> Vanditvā ratanaṃ </p>','\r',char(13)),'\n',char(10)),'-1-');
 INSERT INTO pages (bookid, page, content, paranum) VALUES('annya_sadda_75',1,replace(replace('<p class="gatha1">seṭṭhaṃ<a name="M0.0001"></a>, nissāya pubbake garuṃ;</p>\r\n<p class="gathalast">Nitidhammaṃpavakkhāmi, sabbalokasukhāvahaṃ.</p>\r\n<p class="hangnum"><a name="para2"></a><span class="paranum">2</span>.</p>\r\n<p class="gatha1"> Ācariyocasippañca, paññāsutaṃkathādhanaṃ;</p>\r\n<p class="gathalast">Desocanissayomittaṃ, dujjanosujanobalaṃ.</p>\r\n<p class="hangnum"><a name="para3"></a><span class="paranum">3</span>.</p>\r\n<p class="gatha1"> </p>','\r',char(13)),'\n',char(10)),'-2-3-');
 INSERT INTO pages (bookid, page, content, paranum) VALUES('annya_sadda_75',2,replace(replace('<p class="gatha1">Itthīputtocadāsoca<a name="M0.0002"></a>, gharāvāsokatākato;</p>\r\n<p class="gatha2">Ñātabbocaalaṅkāro, rājadhammopasevako;</p>\r\n<p class="gathalast">Dukādimissakoceva, pakiṇṇakotimātikā.</p>\r\n<p class="hangnum"><a name="para4"></a><span class="paranum">4</span>.</p>\r\n<p class="gatha1"> </p>','\r',char(13)),'\n',char(10)),'-4-');

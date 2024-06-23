@@ -46,6 +46,18 @@ void main() {
           "INSERT INTO pages (bookid, page, content, paranum) VALUES('annya_sadda_18',2,replace(replace('x','\\r',char(13)),'\\n',char(10)),'');",
           "INSERT INTO pages (bookid, page, content, paranum) VALUES('annya_sadda_18',3,replace(replace('x','\\r',char(13)),'\\n',char(10)),'-1-2-');",
         ]);
+
+    expect(
+        createPageSQLImportStatements('annya_sadda_18', [
+          {
+            'number': 1,
+            'content': ["'"],
+            'paragraphs': [1]
+          },
+        ]),
+        [
+          "INSERT INTO pages (bookid, page, content, paranum) VALUES('annya_sadda_18',1,replace(replace('’','\\r',char(13)),'\\n',char(10)),'-1-');",
+        ]);
   });
 
   test('createTocSQLImportStatements', () {

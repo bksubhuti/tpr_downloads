@@ -20,7 +20,7 @@ List<String> createPageSQLImportStatements(
     String bookId, List<Map<String, dynamic>> pages) {
   return pages.map((page) {
     var number = page['number'];
-    var content = page['content'].join("\\r\\n");
+    var content = page['content'].join("\\r\\n").replaceAll("'", "’");
     var paragraphs = page['paragraphs'];
 
     var paragraphsStr =

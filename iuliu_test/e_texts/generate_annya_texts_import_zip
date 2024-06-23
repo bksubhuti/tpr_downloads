@@ -1,0 +1,3 @@
+#!/bin/bash
+cat ./sql/*.sql > all_annya_texts_import.sql
+zip all_annya_texts_import.zip all_annya_texts_import.sql

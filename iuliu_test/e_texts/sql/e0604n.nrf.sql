@@ -113,7 +113,7 @@ INSERT INTO paragraphs VALUES('annya_sadda_74',107,83);
 INSERT INTO paragraphs VALUES('annya_sadda_74',108,84);
 INSERT INTO paragraphs VALUES('annya_sadda_74',109,85);
 INSERT INTO paragraphs VALUES('annya_sadda_74',111,85);
-DELETE FROM pages where book_id='annya_sadda_74';
+DELETE FROM pages where bookid='annya_sadda_74';
 INSERT INTO pages (bookid, page, content, paranum) VALUES('annya_sadda_74',1,replace(replace('<p class="centered"> Namo tassa bhagavato arahato sammāsambuddhassa</p>\r\n<p class="chapter">Suttavandanā</p>\r\n<p class="hangnum"><a name="para1"></a><span class="paranum">1</span>.</p>\r\n<p class="gatha1"> </p>','\r',char(13)),'\n',char(10)),'-1-');
 INSERT INTO pages (bookid, page, content, paranum) VALUES('annya_sadda_74',13,replace(replace('<p class="gatha1">Dhammattha <a name="M0.0013"></a> desanā vedha,</p>\r\n<p class="gatha2">Catugambhīra duddasaṃ;</p>\r\n<p class="gatha3">Dhammaṃ lokassa desentaṃ,</p>\r\n<p class="gathalast">Dhammarājaṃ namāmahaṃ;</p>\r\n<p class="hangnum"><a name="para2"></a><span class="paranum">2</span>.</p>\r\n<p class="gatha1"> </p>','\r',char(13)),'\n',char(10)),'-2-');
 INSERT INTO pages (bookid, page, content, paranum) VALUES('annya_sadda_74',14,replace(replace('<p class="gatha1">Buddho <a name="M0.0014"></a> paccekabuddho ca,</p>\r\n<p class="gatha2">Arahā cakkavattīti;</p>\r\n<p class="gatha3">Thūpāthūpārahaṃ vande,</p>\r\n<p class="gathalast">Catuthūpārahesu taṃ;</p>\r\n<p class="hangnum"><a name="para3"></a><span class="paranum">3</span>.</p>\r\n<p class="gatha1"> </p>','\r',char(13)),'\n',char(10)),'-3-');

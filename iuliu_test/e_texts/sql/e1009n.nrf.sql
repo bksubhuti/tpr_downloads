@@ -331,7 +331,7 @@ INSERT INTO paragraphs VALUES('annya_sadda_71',2,592);
 INSERT INTO paragraphs VALUES('annya_sadda_71',3,593);
 INSERT INTO paragraphs VALUES('annya_sadda_71',1,595);
 INSERT INTO paragraphs VALUES('annya_sadda_71',2,596);
-DELETE FROM pages where book_id='annya_sadda_71';
+DELETE FROM pages where bookid='annya_sadda_71';
 INSERT INTO pages (bookid, page, content, paranum) VALUES('annya_sadda_71',1,replace(replace('<p class="centered"> Namo tassa bhagavato arahato sammāsambuddhassa</p>\r\n<p class="book">Naradakkhadīpanī</p>','\r',char(13)),'\n',char(10)),'');
 INSERT INTO pages (bookid, page, content, paranum) VALUES('annya_sadda_71',8,replace(replace('<p class="gatha1">Pālito <a name="M0.0008"></a> yeva saddhammo,</p>\r\n<p class="gatha2">Pālitena varena ca;</p>\r\n<p class="gatha3">Pālite suṭṭhu yaṃ sīlaṃ,</p>\r\n<p class="gathalast">Pālitaṃ dhamma-sundaraṃ.</p>','\r',char(13)),'\n',char(10)),'');
 INSERT INTO pages (bookid, page, content, paranum) VALUES('annya_sadda_71',10,replace(replace('<p class="gatha1">Sammā <a name="M0.0010"></a> āraddhaṃ sabba-sampattīnaṃ,</p>\r\n<p class="gathalast">Mūlaṃ hotīti daṭṭhabbaṃ.</p>','\r',char(13)),'\n',char(10)),'');
