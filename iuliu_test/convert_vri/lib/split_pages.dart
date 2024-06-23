@@ -180,7 +180,16 @@ List<Map<String, dynamic>> addParagraphsToPages(
         return [
           ...previousParagraphNumbers,
           ...paragraphNumbers
-              .expand((e) => (e.text.split('-').map((e) => int.parse(e))))
+              .expand(
+                  (e) => (e.text.split('-').where((s) => s.isNotEmpty).map((e) {
+                        try {
+                          return int.parse(e);
+                        } catch (error) {
+                          print('Error parsing value: $e');
+                          print('At text line: $textLine');
+                          rethrow;
+                        }
+                      })))
               .toList()
         ];
       }).toList()

@@ -368,6 +368,26 @@ void main() {
             'paragraphs': [2, 94, 95]
           },
         ]);
+
+    expect(
+        addParagraphsToPages([
+
+          {
+            'number': 1,
+            'content': [
+              '<p class="bodytext"><a name="para94-"></a><span class="paranum">94-</span></p>'
+            ]
+          },
+        ]),
+        [
+          {
+            'number': 1,
+            'content': [
+              '<p class="bodytext"><a name="para94-"></a><span class="paranum">94-</span></p>'
+            ],
+            'paragraphs': [94]
+          },
+        ]);
   });
 
   test('addTocsToPagesWithParagraphs', () {
