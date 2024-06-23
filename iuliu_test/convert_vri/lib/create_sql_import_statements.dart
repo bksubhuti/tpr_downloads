@@ -29,3 +29,23 @@ List<String> createPageSQLImportStatements(
     return "INSERT INTO pages (bookid, page, content, paranum) VALUES('$bookId',$number,replace(replace('$content','\\r',char(13)),'\\n',char(10)),'$paragraphsStr');";
   }).toList();
 }
+
+List<String> createTocSQLImportStatements(
+    String bookId, List<Map<String, dynamic>> pages) {
+  List<String> statements = [];
+
+  for (var page in pages) {
+    int pageNumber = page['number'];
+    var tocs = List<Map<String, dynamic>>.from(page['tocs']);
+
+    for (var toc in tocs) {
+      String title = toc['title'];
+      String type = toc['type'];
+      String statement =
+          "INSERT INTO tocs VALUES('$bookId','$title','$type',$pageNumber);";
+      statements.add(statement);
+    }
+  }
+
+  return statements;
+}

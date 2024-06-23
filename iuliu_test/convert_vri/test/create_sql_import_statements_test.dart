@@ -47,4 +47,35 @@ void main() {
           "INSERT INTO pages (bookid, page, content, paranum) VALUES('annya_sadda_18',3,replace(replace('x','\\r',char(13)),'\\n',char(10)),'-1-2-');",
         ]);
   });
+
+  test('createTocSQLImportStatements', () {
+    expect(
+        createTocSQLImportStatements('mula_ma_81', [
+          {
+            'number': 1,
+            'tocs': [
+              {'title': '1. mūlapariyāyavaggo', 'type': 'chapter'},
+              {'title': '1. mūlapariyāyasuttaṃ', 'type': 'title'},
+            ]
+          },
+          {
+            'number': 9,
+            'tocs': [
+              {'title': 'dassanā pahātabbāsavā', 'type': 'subhead'},
+            ]
+          },
+          {
+            'number': 82,
+            'tocs': [
+              {'title': 'dukkhasaccaniddeso', 'type': 'subsubhead'},
+            ]
+          },
+        ]),
+        [
+          "INSERT INTO tocs VALUES('mula_ma_81','1. mūlapariyāyavaggo','chapter',1);",
+          "INSERT INTO tocs VALUES('mula_ma_81','1. mūlapariyāyasuttaṃ','title',1);",
+          "INSERT INTO tocs VALUES('mula_ma_81','dassanā pahātabbāsavā','subhead',9);",
+          "INSERT INTO tocs VALUES('mula_ma_81','dukkhasaccaniddeso','subsubhead',82);",
+        ]);
+  });
 }
