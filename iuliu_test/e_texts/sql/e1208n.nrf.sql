@@ -1,7 +1,7 @@
 DELETE FROM books where id='annya_sadda_33';
-INSERT INTO books VALUES('annya_sadda_33','annya','annya_sadda','Jinavaṃsadīpaṃ <a name="O0.0001"></a>',1,1,1);
+INSERT INTO books VALUES('annya_sadda_33','annya','annya_sadda','Jinavaṃsadīpaṃ',1,1,1);
 DELETE FROM tocs where book_id='annya_sadda_33';
-INSERT INTO tocs VALUES('annya_sadda_33','jinavaṃsadīpaṃ <a name="o0.0001"></a>','chapter',1);
+INSERT INTO tocs VALUES('annya_sadda_33','Jinavaṃsadīpaṃ','chapter',1);
 DELETE FROM paragraphs where book_id='annya_sadda_33';
 INSERT INTO paragraphs VALUES('annya_sadda_33',1,1);
 INSERT INTO paragraphs VALUES('annya_sadda_33',2,1);

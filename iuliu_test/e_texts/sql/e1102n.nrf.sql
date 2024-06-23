@@ -1,11 +1,11 @@
 DELETE FROM books where id='annya_sadda_34';
 INSERT INTO books VALUES('annya_sadda_34','annya','annya_sadda','Sīmavisodhanī',1,115,111);
 DELETE FROM tocs where book_id='annya_sadda_34';
-INSERT INTO tocs VALUES('annya_sadda_34','1. upasampadākaṇḍo','chapter',6);
-INSERT INTO tocs VALUES('annya_sadda_34','2. kappavināsakaṇḍo','chapter',69);
-INSERT INTO tocs VALUES('annya_sadda_34','3. nibbānakaṇḍo','chapter',85);
-INSERT INTO tocs VALUES('annya_sadda_34','4. samasīsikaṇḍo','chapter',98);
-INSERT INTO tocs VALUES('annya_sadda_34','pakiṇṇakakaṇḍo','chapter',108);
+INSERT INTO tocs VALUES('annya_sadda_34','1. Upasampadākaṇḍo','chapter',6);
+INSERT INTO tocs VALUES('annya_sadda_34','2. Kappavināsakaṇḍo','chapter',69);
+INSERT INTO tocs VALUES('annya_sadda_34','3. Nibbānakaṇḍo','chapter',85);
+INSERT INTO tocs VALUES('annya_sadda_34','4. Samasīsikaṇḍo','chapter',98);
+INSERT INTO tocs VALUES('annya_sadda_34','Pakiṇṇakakaṇḍo','chapter',108);
 DELETE FROM paragraphs where book_id='annya_sadda_34';
 
 DELETE FROM pages where bookid='annya_sadda_34';

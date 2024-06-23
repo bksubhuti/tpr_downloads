@@ -1,7 +1,7 @@
 DELETE FROM books where id='annya_sadda_56';
-INSERT INTO books VALUES('annya_sadda_56','annya','annya_sadda','Moggallāna <a name="O0.0001"></a> vuttivivaraṇapañcikā.',1,1,1);
+INSERT INTO books VALUES('annya_sadda_56','annya','annya_sadda','Moggallāna  vuttivivaraṇapañcikā.',1,1,1);
 DELETE FROM tocs where book_id='annya_sadda_56';
-INSERT INTO tocs VALUES('annya_sadda_56','moggallāna <a name="o0.0001"></a> vuttivivaraṇapañcikā.','chapter',1);
+INSERT INTO tocs VALUES('annya_sadda_56','Moggallāna  vuttivivaraṇapañcikā.','chapter',1);
 DELETE FROM paragraphs where book_id='annya_sadda_56';
 INSERT INTO paragraphs VALUES('annya_sadda_56',1,1);
 INSERT INTO paragraphs VALUES('annya_sadda_56',2,1);

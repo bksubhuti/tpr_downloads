@@ -1,9 +1,9 @@
 DELETE FROM books where id='annya_sadda_26';
 INSERT INTO books VALUES('annya_sadda_26','annya','annya_sadda','Namakkārapāḷi',1,226,227);
 DELETE FROM tocs where book_id='annya_sadda_26';
-INSERT INTO tocs VALUES('annya_sadda_26','namakkārapāḷi','chapter',1);
-INSERT INTO tocs VALUES('annya_sadda_26','namakkāraṭīkā','chapter',6);
-INSERT INTO tocs VALUES('annya_sadda_26','nigamana','subhead',224);
+INSERT INTO tocs VALUES('annya_sadda_26','Namakkārapāḷi','chapter',1);
+INSERT INTO tocs VALUES('annya_sadda_26','Namakkāraṭīkā','chapter',6);
+INSERT INTO tocs VALUES('annya_sadda_26','Nigamana','subhead',224);
 DELETE FROM paragraphs where book_id='annya_sadda_26';
 INSERT INTO paragraphs VALUES('annya_sadda_26',1,1);
 INSERT INTO paragraphs VALUES('annya_sadda_26',2,1);

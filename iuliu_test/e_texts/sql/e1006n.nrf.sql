@@ -1,8 +1,8 @@
 DELETE FROM books where id='annya_sadda_31';
 INSERT INTO books VALUES('annya_sadda_31','annya','annya_sadda','Suttantanīti',1,167,51);
 DELETE FROM tocs where book_id='annya_sadda_31';
-INSERT INTO tocs VALUES('annya_sadda_31','suttantanīti','chapter',1);
-INSERT INTO tocs VALUES('annya_sadda_31','vasalasutta','chapter',82);
+INSERT INTO tocs VALUES('annya_sadda_31','Suttantanīti','chapter',1);
+INSERT INTO tocs VALUES('annya_sadda_31','Vasalasutta','chapter',82);
 DELETE FROM paragraphs where book_id='annya_sadda_31';
 INSERT INTO paragraphs VALUES('annya_sadda_31',1,1);
 INSERT INTO paragraphs VALUES('annya_sadda_31',2,3);

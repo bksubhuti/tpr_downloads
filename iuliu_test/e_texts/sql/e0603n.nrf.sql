@@ -1,9 +1,9 @@
 DELETE FROM books where id='annya_sadda_63';
 INSERT INTO books VALUES('annya_sadda_63','annya','annya_sadda','Lakkhaṇāto',1,72,46);
 DELETE FROM tocs where book_id='annya_sadda_63';
-INSERT INTO tocs VALUES('annya_sadda_63','buddhathomanāgāthā','chapter',1);
-INSERT INTO tocs VALUES('annya_sadda_63','buddhavandanā','chapter',56);
-INSERT INTO tocs VALUES('annya_sadda_63','uṇṇālomikanātha vandanā','chapter',71);
+INSERT INTO tocs VALUES('annya_sadda_63','Buddhathomanāgāthā','chapter',1);
+INSERT INTO tocs VALUES('annya_sadda_63','Buddhavandanā','chapter',56);
+INSERT INTO tocs VALUES('annya_sadda_63','Uṇṇālomikanātha vandanā','chapter',71);
 DELETE FROM paragraphs where book_id='annya_sadda_63';
 INSERT INTO paragraphs VALUES('annya_sadda_63',1,1);
 INSERT INTO paragraphs VALUES('annya_sadda_63',2,19);

@@ -1,10 +1,10 @@
 DELETE FROM books where id='annya_sadda_82';
 INSERT INTO books VALUES('annya_sadda_82','annya','annya_sadda','Mahāpaṇāmapāṭha',1,214,53);
 DELETE FROM tocs where book_id='annya_sadda_82';
-INSERT INTO tocs VALUES('annya_sadda_82','mahāpaṇāmapāṭha','chapter',1);
-INSERT INTO tocs VALUES('annya_sadda_82','(buddhavandanā)','title',1);
-INSERT INTO tocs VALUES('annya_sadda_82','tigumbacetiya thomanā','chapter',52);
-INSERT INTO tocs VALUES('annya_sadda_82','vāsamālinīkya','chapter',121);
+INSERT INTO tocs VALUES('annya_sadda_82','Mahāpaṇāmapāṭha','chapter',1);
+INSERT INTO tocs VALUES('annya_sadda_82','(Buddhavandanā)','title',1);
+INSERT INTO tocs VALUES('annya_sadda_82','Tigumbacetiya thomanā','chapter',52);
+INSERT INTO tocs VALUES('annya_sadda_82','Vāsamālinīkya','chapter',121);
 DELETE FROM paragraphs where book_id='annya_sadda_82';
 INSERT INTO paragraphs VALUES('annya_sadda_82',1,1);
 INSERT INTO paragraphs VALUES('annya_sadda_82',2,41);

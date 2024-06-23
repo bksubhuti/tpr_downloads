@@ -1,11 +1,11 @@
 DELETE FROM books where id='annya_sadda_29';
-INSERT INTO books VALUES('annya_sadda_29','annya','annya_sadda','Dhātuvaṃso <a name="O0.0001"></a>',1,1,1);
+INSERT INTO books VALUES('annya_sadda_29','annya','annya_sadda','Dhātuvaṃso',1,1,1);
 DELETE FROM tocs where book_id='annya_sadda_29';
-INSERT INTO tocs VALUES('annya_sadda_29','1. tathāgatassāgamanakathā','chapter',1);
-INSERT INTO tocs VALUES('annya_sadda_29','2. <a name="o0.0011"></a> parinibbānakathā','chapter',1);
-INSERT INTO tocs VALUES('annya_sadda_29','3. <a name="o0.0024"></a> dhātuparamparākathā','chapter',1);
-INSERT INTO tocs VALUES('annya_sadda_29','4. <a name="o0.0033"></a> pakiṇṇakakathā','chapter',1);
-INSERT INTO tocs VALUES('annya_sadda_29','5. <a name="o0.0045"></a> dhātunidhānādhikāro','chapter',1);
+INSERT INTO tocs VALUES('annya_sadda_29','1. Tathāgatassāgamanakathā','chapter',1);
+INSERT INTO tocs VALUES('annya_sadda_29','2.  Parinibbānakathā','chapter',1);
+INSERT INTO tocs VALUES('annya_sadda_29','3.  Dhātuparamparākathā','chapter',1);
+INSERT INTO tocs VALUES('annya_sadda_29','4.  Pakiṇṇakakathā','chapter',1);
+INSERT INTO tocs VALUES('annya_sadda_29','5.  Dhātunidhānādhikāro','chapter',1);
 DELETE FROM paragraphs where book_id='annya_sadda_29';
 
 DELETE FROM pages where bookid='annya_sadda_29';

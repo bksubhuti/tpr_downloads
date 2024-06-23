@@ -204,13 +204,13 @@ List<Map<String, dynamic>> addTocsToPagesWithParagraphs(
   return pages.map((page) {
     List<Map<String, String>> tocs = [];
     for (String textLine in page['content']) {
-      RegExp regExp = RegExp(r'<p class="([^"]+)">(.+?)<\/p>');
-      Match? match = regExp.firstMatch(textLine);
-      if (match != null) {
-        String type = match.group(1)!;
-        if (allowedClasses.contains(type)) {
-          String title = match.group(2)!.toLowerCase();
-          tocs.add({'title': title, 'type': type});
+      Document document = parser.parse(textLine);
+      Element? pElement = document.querySelector('p');
+      if (pElement != null) {
+        String? className = pElement.className;
+        if (allowedClasses.contains(className)) {
+          String title = pElement.text.trim();
+          tocs.add({'title': title, 'type': className});
         }
       }
     }
@@ -243,19 +243,18 @@ Map<String, dynamic> extractBookInfo(List<Map<String, dynamic>> pages) {
 String? extractTitleFromContent(List<Map<String, dynamic>> pages) {
   for (var page in pages) {
     for (var paragraph in page['content']) {
-      var bookTitleMatch =
-          RegExp(r'<p class="book">(.*?)</p>').firstMatch(paragraph);
-      if (bookTitleMatch != null) {
-        return bookTitleMatch.group(1);
-      }
+      Document document = parser.parse(paragraph);
+      Element? pElement = document.querySelector('p');
 
-      var chapterTitleMatch =
-          RegExp(r'<p class="chapter">(.*?)</p>').firstMatch(paragraph);
-      if (chapterTitleMatch != null) {
-        return chapterTitleMatch.group(1);
+      if (pElement != null) {
+        if (pElement.className == 'book') {
+          return pElement.text.trim();
+        }
+        if (pElement.className == 'chapter') {
+          return pElement.text.trim();
+        }
       }
     }
   }
-
   return null;
 }

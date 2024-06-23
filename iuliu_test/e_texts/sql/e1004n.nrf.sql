@@ -1,11 +1,11 @@
 DELETE FROM books where id='annya_sadda_62';
 INSERT INTO books VALUES('annya_sadda_62','annya','annya_sadda','Mahārahanīti',1,112,109);
 DELETE FROM tocs where book_id='annya_sadda_62';
-INSERT INTO tocs VALUES('annya_sadda_62','paṇḍitakathā','chapter',1);
-INSERT INTO tocs VALUES('annya_sadda_62','sambhedakathā','chapter',36);
-INSERT INTO tocs VALUES('annya_sadda_62','mittakathā','chapter',50);
-INSERT INTO tocs VALUES('annya_sadda_62','nāyakakathā','chapter',72);
-INSERT INTO tocs VALUES('annya_sadda_62','itthikathā','chapter',86);
+INSERT INTO tocs VALUES('annya_sadda_62','Paṇḍitakathā','chapter',1);
+INSERT INTO tocs VALUES('annya_sadda_62','Sambhedakathā','chapter',36);
+INSERT INTO tocs VALUES('annya_sadda_62','Mittakathā','chapter',50);
+INSERT INTO tocs VALUES('annya_sadda_62','Nāyakakathā','chapter',72);
+INSERT INTO tocs VALUES('annya_sadda_62','Itthikathā','chapter',86);
 DELETE FROM paragraphs where book_id='annya_sadda_62';
 INSERT INTO paragraphs VALUES('annya_sadda_62',1,1);
 INSERT INTO paragraphs VALUES('annya_sadda_62',2,1);

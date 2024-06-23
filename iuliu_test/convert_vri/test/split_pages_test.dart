@@ -371,7 +371,6 @@ void main() {
 
     expect(
         addParagraphsToPages([
-
           {
             'number': 1,
             'content': [
@@ -423,8 +422,8 @@ void main() {
             ],
             'paragraphs': [1],
             'tocs': [
-              {'title': '1. mūlapariyāyavaggo', 'type': 'chapter'},
-              {'title': '1. mūlapariyāyasuttaṃ', 'type': 'title'},
+              {'title': '1. Mūlapariyāyavaggo', 'type': 'chapter'},
+              {'title': '1. Mūlapariyāyasuttaṃ', 'type': 'title'},
             ]
           },
           {
@@ -432,7 +431,7 @@ void main() {
             'content': ['<p class="subhead">Dassanā pahātabbāsavā</p>'],
             'paragraphs': [9],
             'tocs': [
-              {'title': 'dassanā pahātabbāsavā', 'type': 'subhead'},
+              {'title': 'Dassanā pahātabbāsavā', 'type': 'subhead'},
             ]
           },
           {
@@ -440,7 +439,30 @@ void main() {
             'content': ['<p class="subsubhead">Dukkhasaccaniddeso</p>'],
             'paragraphs': [82],
             'tocs': [
-              {'title': 'dukkhasaccaniddeso', 'type': 'subsubhead'},
+              {'title': 'Dukkhasaccaniddeso', 'type': 'subsubhead'},
+            ]
+          },
+        ]);
+
+    expect(
+        addTocsToPagesWithParagraphs([
+          {
+            'number': 1,
+            'content': [
+              '<p class="chapter">Samantakūṭavaṇṇanā <a name="O0.0001"></a></p>',
+            ],
+            'paragraphs': [1]
+          },
+        ]),
+        [
+          {
+            'number': 1,
+            'content': [
+              '<p class="chapter">Samantakūṭavaṇṇanā <a name="O0.0001"></a></p>',
+            ],
+            'paragraphs': [1],
+            'tocs': [
+              {'title': 'Samantakūṭavaṇṇanā', 'type': 'chapter'},
             ]
           },
         ]);
@@ -496,6 +518,22 @@ void main() {
           'firstPage': 1,
           'lastPage': 3,
           'pageCount': 3,
+        });
+
+    expect(
+        extractBookInfo([
+          {
+            'number': 1,
+            'content': [
+              '<p class="chapter">Samantakūṭavaṇṇanā <a name="O0.0001"></a></p>',
+            ]
+          },
+        ]),
+        {
+          'title': 'Samantakūṭavaṇṇanā',
+          'firstPage': 1,
+          'lastPage': 1,
+          'pageCount': 1,
         });
   });
 }

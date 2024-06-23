@@ -1,14 +1,14 @@
 DELETE FROM books where id='annya_sadda_59';
 INSERT INTO books VALUES('annya_sadda_59','annya','annya_sadda','Cūḷaganthavaṃsapāḷi',1,1,1);
 DELETE FROM tocs where book_id='annya_sadda_59';
-INSERT INTO tocs VALUES('annya_sadda_59','1. piṭakattayaparicchedo','chapter',1);
-INSERT INTO tocs VALUES('annya_sadda_59','2. ganthakārakācariya-paricchedo','chapter',1);
-INSERT INTO tocs VALUES('annya_sadda_59','3. ācariyānaṃ sañjātaṭṭhānaparicchedo','chapter',1);
-INSERT INTO tocs VALUES('annya_sadda_59','4. āyāyakācariya-paricchedo','chapter',1);
-INSERT INTO tocs VALUES('annya_sadda_59','ka. buddhaghosācariya-ganthadīpanā','subhead',1);
-INSERT INTO tocs VALUES('annya_sadda_59','kha. buddhadattācariya-ganthadīpanā','subhead',1);
-INSERT INTO tocs VALUES('annya_sadda_59','ga. dhammapālācariyena-ganthadīpanā','subhead',1);
-INSERT INTO tocs VALUES('annya_sadda_59','5. pakiṇṇaka-paricchedo','chapter',1);
+INSERT INTO tocs VALUES('annya_sadda_59','1. Piṭakattayaparicchedo','chapter',1);
+INSERT INTO tocs VALUES('annya_sadda_59','2. Ganthakārakācariya-paricchedo','chapter',1);
+INSERT INTO tocs VALUES('annya_sadda_59','3. Ācariyānaṃ sañjātaṭṭhānaparicchedo','chapter',1);
+INSERT INTO tocs VALUES('annya_sadda_59','4. Āyāyakācariya-paricchedo','chapter',1);
+INSERT INTO tocs VALUES('annya_sadda_59','Ka. buddhaghosācariya-ganthadīpanā','subhead',1);
+INSERT INTO tocs VALUES('annya_sadda_59','Kha. buddhadattācariya-ganthadīpanā','subhead',1);
+INSERT INTO tocs VALUES('annya_sadda_59','Ga. dhammapālācariyena-ganthadīpanā','subhead',1);
+INSERT INTO tocs VALUES('annya_sadda_59','5. Pakiṇṇaka-paricchedo','chapter',1);
 DELETE FROM paragraphs where book_id='annya_sadda_59';
 
 DELETE FROM pages where bookid='annya_sadda_59';

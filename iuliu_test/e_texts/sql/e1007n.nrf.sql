@@ -1,12 +1,12 @@
 DELETE FROM books where id='annya_sadda_47';
 INSERT INTO books VALUES('annya_sadda_47','annya','annya_sadda','Sūrassatīnīti',1,184,103);
 DELETE FROM tocs where book_id='annya_sadda_47';
-INSERT INTO tocs VALUES('annya_sadda_47','paṭhamo bhāgo','subhead',1);
-INSERT INTO tocs VALUES('annya_sadda_47','paṇāmagāthā','chapter',1);
-INSERT INTO tocs VALUES('annya_sadda_47','sūrassatīnīti','chapter',1);
-INSERT INTO tocs VALUES('annya_sadda_47','sūrassatīnīti','title',196);
-INSERT INTO tocs VALUES('annya_sadda_47','dutiyo bhāgo','subhead',196);
-INSERT INTO tocs VALUES('annya_sadda_47','cāṇakyanītilā gāthā','chapter',116);
+INSERT INTO tocs VALUES('annya_sadda_47','Paṭhamo bhāgo','subhead',1);
+INSERT INTO tocs VALUES('annya_sadda_47','Paṇāmagāthā','chapter',1);
+INSERT INTO tocs VALUES('annya_sadda_47','Sūrassatīnīti','chapter',1);
+INSERT INTO tocs VALUES('annya_sadda_47','Sūrassatīnīti','title',196);
+INSERT INTO tocs VALUES('annya_sadda_47','Dutiyo bhāgo','subhead',196);
+INSERT INTO tocs VALUES('annya_sadda_47','Cāṇakyanītilā gāthā','chapter',116);
 DELETE FROM paragraphs where book_id='annya_sadda_47';
 INSERT INTO paragraphs VALUES('annya_sadda_47',1,1);
 INSERT INTO paragraphs VALUES('annya_sadda_47',2,1);
