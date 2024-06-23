@@ -78,4 +78,14 @@ void main() {
           "INSERT INTO tocs VALUES('mula_ma_81','dukkhasaccaniddeso','subsubhead',82);",
         ]);
   });
+
+  test('createBookSQLImportStatement', () {
+    expect(
+        createBookSQLImportStatement({
+          'id': 'annya_sadda_17',
+          'title': 'saddatthabhedacintā',
+          'pageCount': 82,
+        }),
+        "INSERT INTO books VALUES('annya_sadda_17','annya','annya_sadda','saddatthabhedacintā',1,82,82);");
+  });
 }
