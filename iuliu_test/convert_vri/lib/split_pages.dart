@@ -214,3 +214,39 @@ List<Map<String, dynamic>> addTocsToPagesWithParagraphs(
     };
   }).toList();
 }
+
+Map<String, dynamic> extractBookInfo(List<Map<String, dynamic>> pages) {
+  String? title = extractTitleFromContent(pages);
+  if (title == null) throw Exception('No book title found');
+
+  int firstPage = pages.first['number'];
+  int lastPage = pages.last['number'];
+  int pageCount = pages.length;
+
+  return {
+    'title': title,
+    'firstPage': firstPage,
+    'lastPage': lastPage,
+    'pageCount': pageCount,
+  };
+}
+
+String? extractTitleFromContent(List<Map<String, dynamic>> pages) {
+  for (var page in pages) {
+    for (var paragraph in page['content']) {
+      var bookTitleMatch =
+          RegExp(r'<p class="book">(.*?)</p>').firstMatch(paragraph);
+      if (bookTitleMatch != null) {
+        return bookTitleMatch.group(1);
+      }
+
+      var chapterTitleMatch =
+          RegExp(r'<p class="chapter">(.*?)</p>').firstMatch(paragraph);
+      if (chapterTitleMatch != null) {
+        return chapterTitleMatch.group(1);
+      }
+    }
+  }
+
+  return null;
+}

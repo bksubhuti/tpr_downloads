@@ -81,11 +81,12 @@ void main() {
 
   test('createBookSQLImportStatement', () {
     expect(
-        createBookSQLImportStatement({
-          'id': 'annya_sadda_17',
+        createBookSQLImportStatement('annya_sadda_20', {
           'title': 'saddatthabhedacintā',
-          'pageCount': 82,
+          'firstPage': 2,
+          'lastPage': 3,
+          'pageCount': 2,
         }),
-        "INSERT INTO books VALUES('annya_sadda_17','annya','annya_sadda','saddatthabhedacintā',1,82,82);");
+        "INSERT INTO books VALUES('annya_sadda_20','annya','annya_sadda','saddatthabhedacintā',2,3,2);");
   });
 }

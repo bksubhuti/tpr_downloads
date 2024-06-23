@@ -425,4 +425,57 @@ void main() {
           },
         ]);
   });
+
+  test('extractBookInfo', () {
+    expect(
+        extractBookInfo([
+          {
+            'number': 2,
+            'content': [
+              '<p class="book">title</p>',
+              '<p class="chapter">placeholder</p>',
+            ]
+          },
+          {
+            'number': 3,
+            'content': [
+              '<p class="bodytext">placeholder</p>',
+            ]
+          }
+        ]),
+        {
+          'title': 'title',
+          'firstPage': 2,
+          'lastPage': 3,
+          'pageCount': 2,
+        });
+
+    expect(
+        extractBookInfo([
+          {
+            'number': 1,
+            'content': [
+              '<p class="chapter">title2</p>',
+            ]
+          },
+          {
+            'number': 2,
+            'content': [
+              '<p class="bodytext">placeholder</p>',
+            ]
+          },
+          {
+            'number': 3,
+            'content': [
+              '<p class="bodytext">placeholder</p>',
+            ]
+          }
+        ]),
+        {
+          'title': 'title2',
+          'firstPage': 1,
+          'lastPage': 3,
+          'pageCount': 3,
+        });
+  });
 }

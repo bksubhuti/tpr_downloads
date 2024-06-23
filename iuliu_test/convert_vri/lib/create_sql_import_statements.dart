@@ -50,10 +50,11 @@ List<String> createTocSQLImportStatements(
   return statements;
 }
 
-String createBookSQLImportStatement(Map<String, dynamic> book) {
-  String id = book['id'];
-  String title = book['title'];
-  int pageCount = book['pageCount'];
+String createBookSQLImportStatement(String id, Map<String, dynamic> bookInfo) {
+  String title = bookInfo['title'];
+  int firstPage = bookInfo['firstPage'];
+  int lastPage = bookInfo['lastPage'];
+  int pageCount = bookInfo['pageCount'];
 
-  return "INSERT INTO books VALUES('$id','annya','annya_sadda','$title',1,$pageCount,$pageCount);";
+  return "INSERT INTO books VALUES('$id','annya','annya_sadda','$title',$firstPage,$lastPage,$pageCount);";
 }
