@@ -8,6 +8,14 @@
         "size": "5.9 MB"
     },
     {
+        "name": "Pali English Dhammapada: Edited and Translated by Ānandajoti Bhikkhu",
+        "release_date": "11.12.2023",
+        "type": "books index",
+        "url": "https://github.com/bksubhuti/tpr_downloads/raw/master/release_zips/dhp_bh_anandajoti.zip",
+        "filename": "dhp_bh_anandajoti.sql",
+        "size": "69.3 KB"
+    },
+    {
         "name": "iit Chanting Book",
         "release_date": "18.6.2023",
         "type": "books",
@@ -40,26 +48,26 @@
         "size": "34 KB"
     },
     {
-        "name": "DPD August 2023 release",
-        "release_date": "1.8.2023",
-        "type": "dictionary",
-        "url": "https://github.com/bksubhuti/tpr_downloads/raw/master/release_zips/dictionaries/dpd.zip",
-        "filename": "dpd.sql",
-        "size": "22.0 MB"
+        "name": "Anudīpanīpāṭha",
+        "release_date": "10.3.2024",
+        "type": "books",
+        "url": "https://github.com/bksubhuti/tpr_downloads/raw/master/release_zips/anudipanipatha.zip",
+        "filename": "anudipanipatha.sql",
+        "size": "210 KB"
     },
     {
-        "name": "PEU June 18, 2023 release 200,000 records",
-        "release_date": "15.6.2023",
+        "name": "DPD June 2024 release",
+        "release_date": "21.6.2024",
         "type": "dictionary",
-        "url": "https://github.com/bksubhuti/tpr_downloads/raw/master/release_zips/dictionaries/peu1.zip",
-        "filename": "peu1.sql",
-        "size": "6.7 MB"
+        "url": "https://github.com/bksubhuti/tpr_downloads/raw/master/release_zips/dpd.zip",
+        "filename": "dpd.sql",
+        "size": "18.4 MB"
     },
     {
         "name": "Worldnet English to English Dictionary",
         "release_date": "5.12.2022",
         "type": "dictionary",
-        "url": "https://github.com/bksubhuti/tpr_downloads/raw/master/release_zips/dictionaries/worldnet.zip",
+        "url": "https://github.com/bksubhuti/tpr_downloads/raw/master/release_zips/worldnet.zip",
         "filename": "worldnet.sql",
         "size": "5.8 MB"
     },
@@ -67,7 +75,7 @@
         "name": "German Pali English Dictionary",
         "release_date": "5.12.2022",
         "type": "dictionary",
-        "url": "https://github.com/bksubhuti/tpr_downloads/raw/master/release_zips/dictionaries/g1.zip",
+        "url": "https://github.com/bksubhuti/tpr_downloads/raw/master/release_zips/g1.zip",
         "filename": "g1.sql",
         "size": "0.5 MB"
     },
@@ -75,7 +83,7 @@
         "name": "Hindi Pali English Dictionary",
         "release_date": "5.12.2022",
         "type": "dictionary",
-        "url": "https://github.com/bksubhuti/tpr_downloads/raw/master/release_zips/dictionaries/h1.zip",
+        "url": "https://github.com/bksubhuti/tpr_downloads/raw/master/release_zips/h1.zip",
         "filename": "h1.sql",
         "size": "0.3 MB"
     },
@@ -83,7 +91,7 @@
         "name": "Chinese Pali English Dictionary",
         "release_date": "5.12.2022",
         "type": "dictionary",
-        "url": "https://github.com/bksubhuti/tpr_downloads/raw/master/release_zips/dictionaries/pc1.zip",
+        "url": "https://github.com/bksubhuti/tpr_downloads/raw/master/release_zips/pc1.zip",
         "filename": "pc1.sql",
         "size": "0.244 MB"
     },
@@ -91,7 +99,7 @@
         "name": "Chinese 2 Pali English Dictionary",
         "release_date": "5.12.2022",
         "type": "dictionary",
-        "url": "https://github.com/bksubhuti/tpr_downloads/raw/master/release_zips/dictionaries/pc2.zip",
+        "url": "https://github.com/bksubhuti/tpr_downloads/raw/master/release_zips/pc2.zip",
         "filename": "pc2.sql",
         "size": "2.0 MB"
     },
@@ -99,7 +107,7 @@
         "name": "Vietnamese Pali English Dictionary",
         "release_date": "5.12.2022",
         "type": "dictionary",
-        "url": "https://github.com/bksubhuti/tpr_downloads/raw/master/release_zips/dictionaries/vn1.zip",
+        "url": "https://github.com/bksubhuti/tpr_downloads/raw/master/release_zips/vn1.zip",
         "filename": "vn1.sql",
         "size": "0.300 MB"
     },
@@ -107,16 +115,16 @@
         "name": "Vietnamese 2 Pali English Dictionary",
         "release_date": "5.12.2022",
         "type": "dictionary",
-        "url": "https://github.com/bksubhuti/tpr_downloads/raw/master/release_zips/dictionaries/vn2.zip",
+        "url": "https://github.com/bksubhuti/tpr_downloads/raw/master/release_zips/vn2.zip",
         "filename": "vn2.sql",
         "size": "0.07 MB"
     },
     {
         "name": "DPD Beta",
-        "release_date": "30.7.2023",
+        "release_date": "14.7.2024",
         "type": "dictionary",
-        "url": "https://github.com/bksubhuti/tpr_downloads/raw/master/release_zips/dictionaries/dpd_beta.zip",
+        "url": "https://github.com/bksubhuti/tpr_downloads/raw/master/release_zips/dpd_beta.zip",
         "filename": "dpd.sql",
-        "size": "22.0 MB"
+        "size": "19.5 MB"
     }
 ]
