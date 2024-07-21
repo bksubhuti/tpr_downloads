@@ -93,13 +93,22 @@ void main() {
 
   test('createBookSQLImportStatement', () {
     expect(
-        createBookSQLImportStatement('annya_sadda_20', {
+        createBookSQLImportStatement('annya_sadda_20', 'annya_sadda', {
           'title': 'saddatthabhedacintā',
           'firstPage': 2,
           'lastPage': 3,
           'pageCount': 2,
         }),
         "INSERT INTO books VALUES('annya_sadda_20','annya','annya_sadda','saddatthabhedacintā',2,3,2);");
+
+    expect(
+        createBookSQLImportStatement('annya_vi_05', 'annya_vi', {
+          'title': 'vinayavinicchayo',
+          'firstPage': 1,
+          'lastPage': 395,
+          'pageCount': 395,
+        }),
+        "INSERT INTO books VALUES('annya_vi_05','annya','annya_vi','vinayavinicchayo',1,395,395);");
   });
 
   test('createCategorySQLImportStatement', () {
