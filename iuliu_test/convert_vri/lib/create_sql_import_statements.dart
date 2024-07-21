@@ -50,7 +50,8 @@ List<String> createTocSQLImportStatements(
   return statements;
 }
 
-String createBookSQLImportStatement(String id, String categoryId, Map<String, dynamic> bookInfo) {
+String createBookSQLImportStatement(
+    String id, String categoryId, Map<String, dynamic> bookInfo) {
   String title = bookInfo['title'];
   int firstPage = bookInfo['firstPage'];
   int lastPage = bookInfo['lastPage'];

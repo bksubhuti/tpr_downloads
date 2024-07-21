@@ -6,8 +6,8 @@ import 'package:archive/archive.dart';
 
 void main() async {
   var currentDirectoryPath = Directory.current.resolveSymbolicLinksSync();
-  final directory = Directory('$currentDirectoryPath/../e_texts/html').absolute;
-  final List<FileSystemEntity> files = directory.listSync();
+  final inputDirectory =
+      Directory('$currentDirectoryPath/../e_texts/html').absolute;
   final outputDirectory =
       Directory('$currentDirectoryPath/../e_texts/sql').absolute;
   final extensionsDirectory =
@@ -21,44 +21,40 @@ void main() async {
     extensionsDirectory.createSync(recursive: true);
   }
 
-  print('Starting processing of ${files.length} files...');
-  final stopwatch = Stopwatch()..start();
-  await processFiles(files, outputDirectory);
-  stopwatch.stop();
-  print('Total processing time: ${stopwatch.elapsed}');
-
-  await processCategories(outputDirectory, extensionsDirectory);
+  await processCategories(inputDirectory, outputDirectory, extensionsDirectory);
 }
 
-Future<void> processCategories(
+Future<void> processCategories(Directory inputDirectory,
     Directory outputDirectory, Directory extensionsDirectory) async {
   await Future.wait([
     Category(
       id: "annya_ledi_sayadaw",
       name: "Leḍī sayāḍo gantha-saṅgaho",
       books: [
-        "e0201n.nrf.sql",
-        "e0301n.nrf.sql",
-        "e0401n.nrf.sql",
-        "e0501n.nrf.sql"
+        "e0201n.nrf.html",
+        "e0301n.nrf.html",
+        "e0401n.nrf.html",
+        "e0501n.nrf.html"
       ],
     ),
     Category(
       id: "annya_buddha_vandana",
       name: "Buddha-vandanā gantha-saṅgaho",
       books: [
-        "e0901n.nrf.sql",
-        "e0902n.nrf.sql",
-        "e0903n.nrf.sql",
-        "e0904n.nrf.sql",
-        "e0905n.nrf.sql",
-        "e0906n.nrf.sql",
-        "e0907n.nrf.sql"
+        "e0901n.nrf.html",
+        "e0902n.nrf.html",
+        "e0903n.nrf.html",
+        "e0904n.nrf.html",
+        "e0905n.nrf.html",
+        "e0906n.nrf.html",
+        "e0907n.nrf.html"
       ],
     ),
   ].map((category) async {
+    await processFiles(
+        category.id, category.books, inputDirectory, outputDirectory);
     List<String> fileContents = await Future.wait(category.books
-        .map((file) => File('${outputDirectory.path}/$file').readAsString()));
+        .map((file) => File('${outputDirectory.path}/${file.replaceAll('.html', '.sql')}').readAsString()));
     final sqlFile = File("${extensionsDirectory.path}/${category.id}.sql");
     await sqlFile.writeAsString([
       createCategorySQLImportStatement(category.id, category.name),
@@ -69,21 +65,20 @@ Future<void> processCategories(
   }));
 }
 
-Future<void> processFiles(
-    List<FileSystemEntity> files, Directory outputDirectory) async {
-  await Future.wait(files.asMap().entries.map((entry) async {
-    final index = entry.key;
-    final file = entry.value as File;
-    final bookHtml = await File(file.path).readAsString();
+Future<void> processFiles(String categoryId, List<String> books,
+    Directory inputDirectory, Directory outputDirectory) async {
+  final inputFiles = books.map((book) => File('${inputDirectory.path}/$book')).toList();
+  await Future.wait(inputFiles.map((file) async {
+    final bookHtml = await file.readAsString();
     final receivePort = ReceivePort();
     await Isolate.spawn(processInIsolate, {
       'sendPort': receivePort.sendPort,
       'bookHtml': bookHtml,
-      'name': 'annya_sadda_${index + 20}'
+      'bookId': "${categoryId}_${file.uri.pathSegments.last.replaceAll(RegExp(r'\..*'), '')}",
+      'categoryId': categoryId
     });
     final fullBookImport = await receivePort.first;
-    final outputFilePath =
-        '${outputDirectory.path}/${file.uri.pathSegments.last.replaceAll('.html', '.sql')}';
+    final outputFilePath = '${outputDirectory.path}/${file.uri.pathSegments.last.replaceAll('.html', '.sql')}';
     await File(outputFilePath).writeAsString(fullBookImport);
   }));
 }
@@ -91,12 +86,14 @@ Future<void> processFiles(
 void processInIsolate(Map<String, dynamic> data) {
   final sendPort = data['sendPort'] as SendPort;
   final bookHtml = data['bookHtml'] as String;
-  final name = data['name'] as String;
-  final result = generateFullBookImport(bookHtml, name);
+  final bookId = data['bookId'] as String;
+  final categoryId = data['categoryId'] as String;
+  final result = generateFullBookImport(bookHtml, bookId, categoryId);
   sendPort.send(result);
 }
 
-String generateFullBookImport(String bookHtml, String bookId) {
+String generateFullBookImport(
+    String bookHtml, String bookId, String categoryId) {
   final pagesWithContent = extractMyanmarEditionPagesFromVriHtml(bookHtml);
   final pagesWithContentWithParagraphs = addParagraphsToPages(pagesWithContent);
   final pagesWithContentWithParagraphsWithToc =
@@ -105,7 +102,7 @@ String generateFullBookImport(String bookHtml, String bookId) {
 
   return [
     "DELETE FROM books where id='$bookId';",
-    createBookSQLImportStatement(bookId, bookInfo),
+    createBookSQLImportStatement(bookId, categoryId, bookInfo),
     "DELETE FROM tocs where book_id='$bookId';",
     ...createTocSQLImportStatements(
         bookId, pagesWithContentWithParagraphsWithToc),
