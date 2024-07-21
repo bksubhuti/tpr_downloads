@@ -48,12 +48,12 @@ void main() async {
   ], htmlDirectory, sqlDirectory, extensionsDirectory);
 }
 
-Future<void> processCategories(
+List<Future<Null>> processCategories(
     List<Category> categories,
     Directory htmlDirectory,
     Directory sqlDirectory,
-    Directory extensionsDirectory) async {
-  await Future.wait(categories.map((category) async {
+    Directory extensionsDirectory) {
+  return categories.map((category) async {
     await processFiles(
         category.id, category.books, htmlDirectory, sqlDirectory);
     List<String> fileContents = await Future.wait(category.books.map((file) =>
@@ -66,7 +66,7 @@ Future<void> processCategories(
     ].join('\n'));
     final zipFile = File("${extensionsDirectory.path}/${category.id}.zip");
     await createZipFromFile(sqlFile, zipFile);
-  }));
+  }).toList();
 }
 
 Future<void> processFiles(String categoryId, List<String> books,
