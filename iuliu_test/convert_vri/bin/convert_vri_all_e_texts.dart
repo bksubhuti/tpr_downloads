@@ -30,7 +30,8 @@ void main() async {
   await processCategories(outputDirectory, extensionsDirectory);
 }
 
-Future<void> processCategories(Directory outputDirectory, Directory extensionsDirectory) async {
+Future<void> processCategories(
+    Directory outputDirectory, Directory extensionsDirectory) async {
   await Future.wait([
     Category(
       id: "annya_ledi_sayadaw",
@@ -56,7 +57,8 @@ Future<void> processCategories(Directory outputDirectory, Directory extensionsDi
       ],
     ),
   ].map((category) async {
-    List<String> fileContents = await Future.wait(category.books.map((file) => File('${outputDirectory.path}/$file').readAsString()));
+    List<String> fileContents = await Future.wait(category.books
+        .map((file) => File('${outputDirectory.path}/$file').readAsString()));
     final sqlFile = File("${extensionsDirectory.path}/${category.id}.sql");
     await sqlFile.writeAsString([
       createCategorySQLImportStatement(category.id, category.name),

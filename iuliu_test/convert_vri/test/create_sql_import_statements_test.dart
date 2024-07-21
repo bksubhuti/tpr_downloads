@@ -105,5 +105,8 @@ void main() {
   test('createCategorySQLImportStatement', () {
     expect(createCategorySQLImportStatement('annya_sadda', 'byākaraṇādi'),
         "DELETE FROM category WHERE id='annya_sadda';\nINSERT INTO category (id, name, basket) VALUES('annya_sadda', 'byākaraṇādi', 'annya');");
+
+    expect(createCategorySQLImportStatement('turtles', 'red'),
+        "DELETE FROM category WHERE id='turtles';\nINSERT INTO category (id, name, basket) VALUES('turtles', 'red', 'annya');");
   });
 }
