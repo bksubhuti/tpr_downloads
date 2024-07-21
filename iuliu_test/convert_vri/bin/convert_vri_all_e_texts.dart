@@ -21,12 +21,7 @@ void main() async {
     extensionsDirectory.createSync(recursive: true);
   }
 
-  await processCategories(htmlDirectory, sqlDirectory, extensionsDirectory);
-}
-
-Future<void> processCategories(Directory htmlDirectory, Directory sqlDirectory,
-    Directory extensionsDirectory) async {
-  await Future.wait([
+  await processCategories([
     Category(
       id: "annya_ledi_sayadaw",
       name: "Leḍī sayāḍo gantha-saṅgaho",
@@ -50,7 +45,15 @@ Future<void> processCategories(Directory htmlDirectory, Directory sqlDirectory,
         "e0907n.nrf.html"
       ],
     ),
-  ].map((category) async {
+  ], htmlDirectory, sqlDirectory, extensionsDirectory);
+}
+
+Future<void> processCategories(
+    List<Category> categories,
+    Directory htmlDirectory,
+    Directory sqlDirectory,
+    Directory extensionsDirectory) async {
+  await Future.wait(categories.map((category) async {
     await processFiles(
         category.id, category.books, htmlDirectory, sqlDirectory);
     List<String> fileContents = await Future.wait(category.books.map((file) =>
