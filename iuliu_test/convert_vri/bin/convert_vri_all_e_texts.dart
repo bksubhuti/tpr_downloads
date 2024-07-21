@@ -3,27 +3,23 @@ import 'package:convert_vri/split_pages.dart';
 import 'dart:io';
 import 'dart:isolate';
 
-void processInIsolate(Map<String, dynamic> data) {
-  final sendPort = data['sendPort'] as SendPort;
-  final bookHtml = data['bookHtml'] as String;
-  final name = data['name'] as String;
-  final result = generateFullBookImport(bookHtml, name);
-  sendPort.send(result);
-}
-
 void main() async {
   var currentDirectoryPath = Directory.current.resolveSymbolicLinksSync();
   final directory = Directory('$currentDirectoryPath/../e_texts/html').absolute;
   final List<FileSystemEntity> files = directory.listSync();
+  final outputDirectory = Directory('$currentDirectoryPath/../e_texts/sql').absolute;
 
-  final outputDirectory =
-      Directory('$currentDirectoryPath/../e_texts/sql').absolute;
+  print('Starting processing of ${files.length} files...');
+  final stopwatch = Stopwatch()..start();
+  await processFiles(files, outputDirectory);
+  stopwatch.stop();
+  print('Total processing time: ${stopwatch.elapsed}');
+}
+
+Future<void> processFiles(List<FileSystemEntity> files, Directory outputDirectory) async {
   if (!outputDirectory.existsSync()) {
     outputDirectory.createSync(recursive: true);
   }
-
-  final stopwatch = Stopwatch()..start();
-  print('Starting processing of ${files.length} files...');
 
   await Future.wait(files.asMap().entries.map((entry) async {
     final index = entry.key;
@@ -45,9 +41,14 @@ void main() async {
       await File(outputFilePath).writeAsString(fullBookImport);
     }
   }));
+}
 
-  stopwatch.stop();
-  print('Total processing time: ${stopwatch.elapsed}');
+void processInIsolate(Map<String, dynamic> data) {
+  final sendPort = data['sendPort'] as SendPort;
+  final bookHtml = data['bookHtml'] as String;
+  final name = data['name'] as String;
+  final result = generateFullBookImport(bookHtml, name);
+  sendPort.send(result);
 }
 
 String generateFullBookImport(String bookHtml, String bookId) {
