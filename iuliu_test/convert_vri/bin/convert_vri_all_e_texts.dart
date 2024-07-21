@@ -7,7 +7,8 @@ void main() async {
   var currentDirectoryPath = Directory.current.resolveSymbolicLinksSync();
   final directory = Directory('$currentDirectoryPath/../e_texts/html').absolute;
   final List<FileSystemEntity> files = directory.listSync();
-  final outputDirectory = Directory('$currentDirectoryPath/../e_texts/sql').absolute;
+  final outputDirectory =
+      Directory('$currentDirectoryPath/../e_texts/sql').absolute;
 
   print('Starting processing of ${files.length} files...');
   final stopwatch = Stopwatch()..start();
@@ -16,7 +17,8 @@ void main() async {
   print('Total processing time: ${stopwatch.elapsed}');
 }
 
-Future<void> processFiles(List<FileSystemEntity> files, Directory outputDirectory) async {
+Future<void> processFiles(
+    List<FileSystemEntity> files, Directory outputDirectory) async {
   if (!outputDirectory.existsSync()) {
     outputDirectory.createSync(recursive: true);
   }
@@ -27,14 +29,11 @@ Future<void> processFiles(List<FileSystemEntity> files, Directory outputDirector
     if (file is File) {
       final bookHtml = await File(file.path).readAsString();
       final receivePort = ReceivePort();
-      await Isolate.spawn(
-        processInIsolate,
-        {
-          'sendPort': receivePort.sendPort,
-          'bookHtml': bookHtml,
-          'name': 'annya_sadda_${index + 20}'
-        }
-      );
+      await Isolate.spawn(processInIsolate, {
+        'sendPort': receivePort.sendPort,
+        'bookHtml': bookHtml,
+        'name': 'annya_sadda_${index + 20}'
+      });
       final fullBookImport = await receivePort.first;
       final outputFilePath =
           '${outputDirectory.path}/${file.uri.pathSegments.last.replaceAll('.html', '.sql')}';
