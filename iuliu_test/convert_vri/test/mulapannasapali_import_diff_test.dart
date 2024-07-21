@@ -14,15 +14,13 @@ void writeFile(String relativeFilePath, String content) {
   File(fullPath).writeAsString(content);
 }
 
-List<String> modifiedCreatePageSQLImportStatements(
-    String bookId, List<Map<String, dynamic>> pages) {
+List<String> modifiedCreatePageSQLImportStatements(String bookId, List<Map<String, dynamic>> pages) {
   return pages.map((page) {
     var number = page['number'];
     var content = page['content'].join("\\r\\n");
     var paragraphs = page['paragraphs'];
 
-    var paragraphsStr =
-        paragraphs.isNotEmpty ? '-${paragraphs.join('-')}-' : '';
+    var paragraphsStr = paragraphs.isNotEmpty ? '-${paragraphs.join('-')}-' : '';
 
     var idNumber = number + 3039;
     return "INSERT INTO pages VALUES($idNumber,'$bookId',$number,replace(replace('$content\\r\\n','\\r',char(13)),'\\n',char(10)),'$paragraphsStr');"
@@ -32,8 +30,7 @@ List<String> modifiedCreatePageSQLImportStatements(
 
 String replaceStartQuote(String string) {
   return string.replaceAllMapped(
-      RegExp(r'(<p class="bodytext">)(<.*?><.*?><.*?>\d*?<.*?>\. )?(?:")'),
-      (Match m) => "${m[1]}${m.group(2) ?? ''}");
+      RegExp(r'(<p class="bodytext">)(<.*?><.*?><.*?>\d*?<.*?>\. )?(?:")'), (Match m) => "${m[1]}${m.group(2) ?? ''}");
 }
 
 List<Map<String, dynamic>> processPagesText(List<Map<String, dynamic>> pages) {
@@ -50,10 +47,8 @@ List<Map<String, dynamic>> processPagesText(List<Map<String, dynamic>> pages) {
             .replaceAll(RegExp(r'name="v(?=\d.\d{4}")'), 'name="V')
             .replaceAll(RegExp(r'name="t(?=\d.\d{4}")'), 'name="T')
             .replaceAll(RegExp(r'name="m(?=\d.\d{4}")'), 'name="M')
-            .replaceAllMapped(
-                RegExp(r'<a name="para(\d+)"></a>'),
-                (Match m) =>
-                    '<a name="para${m[1]}"></a><a name="para${m[1]}_mn1"></a>');
+            .replaceAllMapped(RegExp(r'<a name="para(\d+)"></a>'),
+                (Match m) => '<a name="para${m[1]}"></a><a name="para${m[1]}_mn1"></a>');
         return replaceStartQuote(newText);
       }),
       'paragraphs': page['paragraphs']
@@ -76,13 +71,10 @@ List<int> findMissingNumbers(List<int> numbers) {
 
 void main() {
   test('mulapannasapli import diff', () {
-    var pagesWithContentMN1 = extractMyanmarEditionPagesFromVriHtml(
-        readFile('../../mulapannasapali/s0201m.mul.html'));
+    var pagesWithContentMN1 = extractMyanmarEditionPagesFromVriHtml(readFile('../../mulapannasapali/s0201m.mul.html'));
     var pagesMN1 = addParagraphsToPages(pagesWithContentMN1);
     var processedPagesMN1 = processPagesText(pagesMN1);
-    var pagesTableImportMN1 =
-        modifiedCreatePageSQLImportStatements('mula_ma_01', processedPagesMN1)
-            .join('\n');
+    var pagesTableImportMN1 = modifiedCreatePageSQLImportStatements('mula_ma_01', processedPagesMN1).join('\n');
 
     // print('Missing MN1 pages:');
     // print(findMissingNumbers(
@@ -96,11 +88,8 @@ void main() {
   });
 
   test('replaceStartQuote', () {
-    expect(replaceStartQuote('<p class="bodytext">"tejaṃ'),
-        '<p class="bodytext">tejaṃ');
-    expect(
-        replaceStartQuote(
-            '<p class="bodytext"><a name="para2"></a><span class="paranum">2</span>. "idha,'),
+    expect(replaceStartQuote('<p class="bodytext">"tejaṃ'), '<p class="bodytext">tejaṃ');
+    expect(replaceStartQuote('<p class="bodytext"><a name="para2"></a><span class="paranum">2</span>. "idha,'),
         '<p class="bodytext"><a name="para2"></a><span class="paranum">2</span>. idha,');
   });
 }
