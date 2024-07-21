@@ -62,7 +62,6 @@ INSERT INTO tocs VALUES('annya_sadda_52','Āṭānāṭiyasutta','subhead',234);
 INSERT INTO tocs VALUES('annya_sadda_52','Saṅgītisutta','subhead',236);
 INSERT INTO tocs VALUES('annya_sadda_52','Dasuttarasutta','subhead',237);
 DELETE FROM paragraphs where book_id='annya_sadda_52';
-
 DELETE FROM pages where bookid='annya_sadda_52';
 INSERT INTO pages (bookid, page, content, paranum) VALUES('annya_sadda_52',1,replace(replace('<p class="centered"> Namo tassa bhagavato arahato sammāsambuddhassa</p>\r\n<p class="nikaya">Suttantapiṭake</p>\r\n<p class="book">Dīghanikāye</p>\r\n<p class="chapter">Sīlakkhandhavaggasutta</p>\r\n<p class="title">Saṃgāyanassa pucchā vissajjanā</p>\r\n<p class="bodytext"><span class="bld">Pucchā –</span> </p>','\r',char(13)),'\n',char(10)),'');
 INSERT INTO pages (bookid, page, content, paranum) VALUES('annya_sadda_52',1,replace(replace('<p class="bodytext">paṭhamamahādhammasaṃgītikāle <a name="M0.0001"></a> āvuso dhammasaṃgāhakā mahākassapādayo mahātheravarā paṭhamaṃ vinayaṃ saṃgāyitvā tadanantaraṃ kaṃ nāma pāvacanaṃ saṃgāyiṃsu.</p>\r\n<p class="bodytext"><span class="bld">Vissajjanā –</span> paṭhamamahādhammasaṃgītiyaṃ bhante dhammasaṃgāhakā mahākassapādayo mahātheravarā paṭhamaṃ vinayaṃ saṃgāyitvā tadanantaraṃ dhammaṃ saṃgāyiṃsu.</p>\r\n<p class="bodytext"><span class="bld">Pucchā –</span> </p>','\r',char(13)),'\n',char(10)),'');

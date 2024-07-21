@@ -136,7 +136,6 @@ INSERT INTO tocs VALUES('annya_sadda_69','Bālapaṇḍitasutta','subhead',225);
 INSERT INTO tocs VALUES('annya_sadda_69','Cūḷakammavibhaṅgasutta','subhead',242);
 INSERT INTO tocs VALUES('annya_sadda_69','Indriyabhāvanāsu','subhead',258);
 DELETE FROM paragraphs where book_id='annya_sadda_69';
-
 DELETE FROM pages where bookid='annya_sadda_69';
 INSERT INTO pages (bookid, page, content, paranum) VALUES('annya_sadda_69',1,replace(replace('<p class="centered"> Namo tassa bhagavato arahato sammāsambuddhassa</p>\r\n<p class="nikaya">Suttantapiṭaka</p>\r\n<p class="book">Majjhimanikāya</p>\r\n<p class="chapter">Mūlapaṇṇāsapāḷi</p>\r\n<p class="subhead">Saṃgāyanassa pucchā vissajjanā</p>\r\n<p class="bodytext"><span class="bld">Pucchā –</span> </p>','\r',char(13)),'\n',char(10)),'');
 INSERT INTO pages (bookid, page, content, paranum) VALUES('annya_sadda_69',1,replace(replace('<p class="bodytext">paṭhamamahāsaṃgītikāle <a name="M1.0001"></a> āvuso dhammasaṃgāhakā mahākassapādayo mahātheravarā dīghanikāyaṃ saṃgāyitvā tadanantaraṃ kiṃ nāma pāvacanaṃ saṃgāyiṃsu.</p>\r\n<p class="bodytext"><span class="bld">Vissajjanā –</span> paṭhamamahāsaṃgītikāle bhante dhammasaṃgāhakā mahākassapādayo mahātheravarā dīghanikāyaṃ saṃgāyitvā tadanantaraṃ majjhimaṃ nāma nikāyaṃ saṃgāyiṃsu.</p>\r\n<p class="bodytext"><span class="bld">Pucchā –</span> </p>','\r',char(13)),'\n',char(10)),'');

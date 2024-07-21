@@ -25,20 +25,18 @@ Future<void> processFiles(
 
   await Future.wait(files.asMap().entries.map((entry) async {
     final index = entry.key;
-    final file = entry.value;
-    if (file is File) {
-      final bookHtml = await File(file.path).readAsString();
-      final receivePort = ReceivePort();
-      await Isolate.spawn(processInIsolate, {
-        'sendPort': receivePort.sendPort,
-        'bookHtml': bookHtml,
-        'name': 'annya_sadda_${index + 20}'
-      });
-      final fullBookImport = await receivePort.first;
-      final outputFilePath =
-          '${outputDirectory.path}/${file.uri.pathSegments.last.replaceAll('.html', '.sql')}';
-      await File(outputFilePath).writeAsString(fullBookImport);
-    }
+    final file = entry.value as File;
+    final bookHtml = await File(file.path).readAsString();
+    final receivePort = ReceivePort();
+    await Isolate.spawn(processInIsolate, {
+      'sendPort': receivePort.sendPort,
+      'bookHtml': bookHtml,
+      'name': 'annya_sadda_${index + 20}'
+    });
+    final fullBookImport = await receivePort.first;
+    final outputFilePath =
+        '${outputDirectory.path}/${file.uri.pathSegments.last.replaceAll('.html', '.sql')}';
+    await File(outputFilePath).writeAsString(fullBookImport);
   }));
 }
 
@@ -70,4 +68,16 @@ String generateFullBookImport(String bookHtml, String bookId) {
     ...createPageSQLImportStatements(
         bookId, pagesWithContentWithParagraphsWithToc)
   ].join('\n');
+}
+
+class Category {
+  final String id;
+  final String name;
+  final List<String> books;
+
+  Category({
+    required this.id,
+    required this.name,
+    required this.books,
+  });
 }

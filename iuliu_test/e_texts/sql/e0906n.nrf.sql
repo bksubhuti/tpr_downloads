@@ -74,7 +74,6 @@ INSERT INTO tocs VALUES('annya_sadda_25','Dhammapaccanīyapaṭṭhāna','subhea
 INSERT INTO tocs VALUES('annya_sadda_25','Dhammānulomapaccanīyapaṭṭhāna','subhead',164);
 INSERT INTO tocs VALUES('annya_sadda_25','Dhammapaccanīyānulomapaṭṭhāna','subhead',166);
 DELETE FROM paragraphs where book_id='annya_sadda_25';
-
 DELETE FROM pages where bookid='annya_sadda_25';
 INSERT INTO pages (bookid, page, content, paranum) VALUES('annya_sadda_25',1,replace(replace('<p class="centered"> Namo tassa bhagavato arahato sammāsambuddhassa</p>\r\n<p class="chapter">Abhidhammapiṭaka</p>\r\n<p class="subhead">Saṃgāyanassa pucchā vissajjanā</p>\r\n<p class="bodytext"><span class="bld">Pucchā –</span> </p>','\r',char(13)),'\n',char(10)),'');
 INSERT INTO pages (bookid, page, content, paranum) VALUES('annya_sadda_25',1,replace(replace('<p class="bodytext">paṭhamamahāsaṃgītikāle <a name="M0.0001"></a> āvuso dhammasaṃgāhakā mahākassapādayo mahātheravarā porāṇasaṃgītikārā paṭhamaṃ vinayapiṭakaṃ saṃgāyitvā suttantapiṭake ca dīghamajjhimasaṃyuttaaṅguttarasaṃkhāte cattāro mahānikāye saṃgāyitvā tadanantaraṃ kiṃ nāma pāvacanaṃ saṃgāyiṃsu.</p>\r\n<p class="bodytext"><span class="bld">Vissajjanā –</span> paṭhamamahāsaṃgītikāle bhante dhammasaṃgāhakā mahākassapādayo mahātheravarā porāṇasaṃgītikārā paṭhamaṃ vinayapiṭakaṃ saṃgāyitvā suttantapiṭake ca dīghamajjhimasaṃyuttaaṅguttarasaṃkhāte cattāro nikāye saṃgāyitvā tadanantaraṃ abhidhammapiṭakaṃ nāma pāvacanaṃ saṃgāyiṃsu.</p>\r\n<p class="bodytext"><span class="bld">Pucchā –</span> </p>','\r',char(13)),'\n',char(10)),'');
