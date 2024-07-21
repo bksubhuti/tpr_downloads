@@ -27,6 +27,10 @@ void main() async {
   stopwatch.stop();
   print('Total processing time: ${stopwatch.elapsed}');
 
+  await processCategories(outputDirectory, extensionsDirectory);
+}
+
+Future<void> processCategories(Directory outputDirectory, Directory extensionsDirectory) async {
   await Future.wait([
     Category(
       id: "annya_ledi_sayadaw",
