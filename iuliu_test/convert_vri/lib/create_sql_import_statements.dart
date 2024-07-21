@@ -58,3 +58,7 @@ String createBookSQLImportStatement(String id, Map<String, dynamic> bookInfo) {
 
   return "INSERT INTO books VALUES('$id','annya','annya_sadda','$title',$firstPage,$lastPage,$pageCount);";
 }
+
+String createCategorySQLImportStatement(String id, String name) {
+  return "DELETE FROM category WHERE id='$id';\nINSERT INTO category (id, name, basket) VALUES('$id', '$name', 'annya');";
+}

@@ -61,14 +61,13 @@ String generateFullBookImport(String bookHtml, String bookId) {
     "DELETE FROM books where id='$bookId';",
     createBookSQLImportStatement(bookId, bookInfo),
     "DELETE FROM tocs where book_id='$bookId';",
-    createTocSQLImportStatements(bookId, pagesWithContentWithParagraphsWithToc)
-        .join('\n'),
+    ...createTocSQLImportStatements(
+        bookId, pagesWithContentWithParagraphsWithToc),
     "DELETE FROM paragraphs where book_id='$bookId';",
-    createParagraphsSQLImportStatements(
-            bookId, pagesWithContentWithParagraphsWithToc)
-        .join('\n'),
+    ...createParagraphsSQLImportStatements(
+        bookId, pagesWithContentWithParagraphsWithToc),
     "DELETE FROM pages where bookid='$bookId';",
-    createPageSQLImportStatements(bookId, pagesWithContentWithParagraphsWithToc)
-        .join('\n')
+    ...createPageSQLImportStatements(
+        bookId, pagesWithContentWithParagraphsWithToc)
   ].join('\n');
 }

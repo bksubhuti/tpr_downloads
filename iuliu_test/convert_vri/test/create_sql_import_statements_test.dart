@@ -101,4 +101,9 @@ void main() {
         }),
         "INSERT INTO books VALUES('annya_sadda_20','annya','annya_sadda','saddatthabhedacintā',2,3,2);");
   });
+
+  test('createCategorySQLImportStatement', () {
+    expect(createCategorySQLImportStatement('annya_sadda', 'byākaraṇādi'),
+        "DELETE FROM category WHERE id='annya_sadda';\nINSERT INTO category (id, name, basket) VALUES('annya_sadda', 'byākaraṇādi', 'annya');");
+  });
 }
