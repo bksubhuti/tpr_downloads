@@ -6,26 +6,26 @@ import 'package:archive/archive.dart';
 
 void main() async {
   var currentDirectoryPath = Directory.current.resolveSymbolicLinksSync();
-  final inputDirectory =
+  final htmlDirectory =
       Directory('$currentDirectoryPath/../e_texts/html').absolute;
-  final outputDirectory =
+  final sqlDirectory =
       Directory('$currentDirectoryPath/../e_texts/sql').absolute;
   final extensionsDirectory =
       Directory('$currentDirectoryPath/../e_texts/extensions').absolute;
 
-  if (!outputDirectory.existsSync()) {
-    outputDirectory.createSync(recursive: true);
+  if (!sqlDirectory.existsSync()) {
+    sqlDirectory.createSync(recursive: true);
   }
 
   if (!extensionsDirectory.existsSync()) {
     extensionsDirectory.createSync(recursive: true);
   }
 
-  await processCategories(inputDirectory, outputDirectory, extensionsDirectory);
+  await processCategories(htmlDirectory, sqlDirectory, extensionsDirectory);
 }
 
-Future<void> processCategories(Directory inputDirectory,
-    Directory outputDirectory, Directory extensionsDirectory) async {
+Future<void> processCategories(Directory htmlDirectory, Directory sqlDirectory,
+    Directory extensionsDirectory) async {
   await Future.wait([
     Category(
       id: "annya_ledi_sayadaw",
@@ -52,9 +52,10 @@ Future<void> processCategories(Directory inputDirectory,
     ),
   ].map((category) async {
     await processFiles(
-        category.id, category.books, inputDirectory, outputDirectory);
-    List<String> fileContents = await Future.wait(category.books
-        .map((file) => File('${outputDirectory.path}/${file.replaceAll('.html', '.sql')}').readAsString()));
+        category.id, category.books, htmlDirectory, sqlDirectory);
+    List<String> fileContents = await Future.wait(category.books.map((file) =>
+        File('${sqlDirectory.path}/${file.replaceAll('.html', '.sql')}')
+            .readAsString()));
     final sqlFile = File("${extensionsDirectory.path}/${category.id}.sql");
     await sqlFile.writeAsString([
       createCategorySQLImportStatement(category.id, category.name),
@@ -66,19 +67,22 @@ Future<void> processCategories(Directory inputDirectory,
 }
 
 Future<void> processFiles(String categoryId, List<String> books,
-    Directory inputDirectory, Directory outputDirectory) async {
-  final inputFiles = books.map((book) => File('${inputDirectory.path}/$book')).toList();
+    Directory htmlDirectory, Directory sqlDirectory) async {
+  final inputFiles =
+      books.map((book) => File('${htmlDirectory.path}/$book')).toList();
   await Future.wait(inputFiles.map((file) async {
     final bookHtml = await file.readAsString();
     final receivePort = ReceivePort();
     await Isolate.spawn(processInIsolate, {
       'sendPort': receivePort.sendPort,
       'bookHtml': bookHtml,
-      'bookId': "${categoryId}_${file.uri.pathSegments.last.replaceAll(RegExp(r'\..*'), '')}",
+      'bookId':
+          "${categoryId}_${file.uri.pathSegments.last.replaceAll(RegExp(r'\..*'), '')}",
       'categoryId': categoryId
     });
     final fullBookImport = await receivePort.first;
-    final outputFilePath = '${outputDirectory.path}/${file.uri.pathSegments.last.replaceAll('.html', '.sql')}';
+    final outputFilePath =
+        '${sqlDirectory.path}/${file.uri.pathSegments.last.replaceAll('.html', '.sql')}';
     await File(outputFilePath).writeAsString(fullBookImport);
   }));
 }
