@@ -18,7 +18,7 @@ void main() async {
     extensionsDirectory.createSync(recursive: true);
   }
 
-  await processCategories([
+  [
     Category(
       id: "annya_ledi_sayadaw",
       name: "Leḍī sayāḍo gantha-saṅgaho",
@@ -37,26 +37,21 @@ void main() async {
         "e0907n.nrf.html"
       ],
     ),
-  ], htmlDirectory, sqlDirectory, extensionsDirectory);
+  ].map(processCategory(htmlDirectory, sqlDirectory, extensionsDirectory));
 }
 
-List<Future<void>> processCategories(
-    List<Category> categories, Directory htmlDirectory, Directory sqlDirectory, Directory extensionsDirectory) {
-  return categories.map((category) async {
-    return processCategory(category, htmlDirectory, sqlDirectory, extensionsDirectory);
-  }).toList();
-}
-
-Future<void> processCategory(
-    Category category, Directory htmlDirectory, Directory sqlDirectory, Directory extensionsDirectory) async {
-  await processFiles(category.id, category.books, htmlDirectory, sqlDirectory);
-  List<String> fileContents = await Future.wait(
-      category.books.map((file) => File('${sqlDirectory.path}/${file.replaceAll('.html', '.sql')}').readAsString()));
-  final sqlFile = File("${extensionsDirectory.path}/${category.id}.sql");
-  await sqlFile
-      .writeAsString([createCategorySQLImportStatement(category.id, category.name), ...fileContents].join('\n'));
-  final zipFile = File("${extensionsDirectory.path}/${category.id}.zip");
-  await createZipFromFile(sqlFile, zipFile);
+Future<void> Function(Category category) processCategory(
+    Directory htmlDirectory, Directory sqlDirectory, Directory extensionsDirectory) {
+  return (Category category) async {
+    await processFiles(category.id, category.books, htmlDirectory, sqlDirectory);
+    List<String> fileContents = await Future.wait(
+        category.books.map((file) => File('${sqlDirectory.path}/${file.replaceAll('.html', '.sql')}').readAsString()));
+    final sqlFile = File("${extensionsDirectory.path}/${category.id}.sql");
+    await sqlFile
+        .writeAsString([createCategorySQLImportStatement(category.id, category.name), ...fileContents].join('\n'));
+    final zipFile = File("${extensionsDirectory.path}/${category.id}.zip");
+    await createZipFromFile(sqlFile, zipFile);
+  };
 }
 
 Future<void> processFiles(

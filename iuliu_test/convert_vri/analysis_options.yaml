@@ -15,9 +15,8 @@ include: package:lints/recommended.yaml
 
 # Uncomment the following section to specify additional rules.
 
-linter:
-  rules:
-    - lines_longer_than_80_chars: false
+# linter:
+#   rules:
 
 # analyzer:
 #   exclude:
