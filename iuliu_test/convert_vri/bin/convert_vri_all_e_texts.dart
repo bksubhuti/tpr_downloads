@@ -37,7 +37,12 @@ void main() async {
         "e0907n.nrf.html"
       ],
     ),
-  ].map(processCategory(htmlDirectory, sqlDirectory, extensionsDirectory));
+  ].map((Category category) async {
+    await Future.wait(category.books.map((book) => processBook(book, category, htmlDirectory, sqlDirectory)));
+    final fileContents = await readSqlFiles(category.books, sqlDirectory);
+    await createSqlFile(category, fileContents, extensionsDirectory);
+    await createZipFile(category, extensionsDirectory);
+  });
 }
 
 class Category {
@@ -50,16 +55,6 @@ class Category {
     required this.name,
     required this.books,
   });
-}
-
-Future<void> Function(Category category) processCategory(
-    Directory htmlDirectory, Directory sqlDirectory, Directory extensionsDirectory) {
-  return (Category category) async {
-    await Future.wait(category.books.map((book) => processBook(book, category, htmlDirectory, sqlDirectory)));
-    final fileContents = await readSqlFiles(category, sqlDirectory);
-    await createSqlFile(category, fileContents, extensionsDirectory);
-    await createZipFile(category, extensionsDirectory);
-  };
 }
 
 Future<void> processBook(String book, Category category, Directory htmlDirectory, Directory sqlDirectory) async {
@@ -107,9 +102,9 @@ String calculateBookImportSQL(String bookHtml, String bookId, String categoryId)
   ].join('\n');
 }
 
-Future<List<String>> readSqlFiles(Category category, Directory sqlDirectory) async {
+Future<List<String>> readSqlFiles(List<String> books, Directory sqlDirectory) async {
   return Future.wait(
-      category.books.map((file) => File('${sqlDirectory.path}/${file.replaceAll('.html', '.sql')}').readAsString()));
+      books.map((file) => File('${sqlDirectory.path}/${file.replaceAll('.html', '.sql')}').readAsString()));
 }
 
 Future<void> createSqlFile(Category category, List<String> fileContents, Directory extensionsDirectory) async {
