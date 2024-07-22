@@ -55,27 +55,29 @@ class Category {
 Future<void> Function(Category category) processCategory(
     Directory htmlDirectory, Directory sqlDirectory, Directory extensionsDirectory) {
   return (Category category) async {
-    await Future.wait(category.books.map((book) => File('${htmlDirectory.path}/$book')).map((file) async {
-      final bookHtml = await file.readAsString();
-      final receivePort = ReceivePort();
-      await Isolate.spawn(calculateBookImportSQLInIsolate, {
-        'sendPort': receivePort.sendPort,
-        'bookHtml': bookHtml,
-        'bookId': "${category.id}_${file.uri.pathSegments.last.replaceAll(RegExp(r'\..*'), '')}",
-        'categoryId': category.id
-      });
-      final fullBookImport = await receivePort.first;
-      final outputFilePath = '${sqlDirectory.path}/${file.uri.pathSegments.last.replaceAll('.html', '.sql')}';
-      await File(outputFilePath).writeAsString(fullBookImport);
-    }));
-    List<String> fileContents = await Future.wait(
-        category.books.map((file) => File('${sqlDirectory.path}/${file.replaceAll('.html', '.sql')}').readAsString()));
-    final sqlFile = File("${extensionsDirectory.path}/${category.id}.sql");
-    await sqlFile
-        .writeAsString([createCategorySQLImportStatement(category.id, category.name), ...fileContents].join('\n'));
-    final zipFile = File("${extensionsDirectory.path}/${category.id}.zip");
-    await createZipFromFile(sqlFile, zipFile);
+    await Future.wait(category.books.map((book) => processBook(book, category, htmlDirectory, sqlDirectory)));
+    final fileContents = await readSqlFiles(category, sqlDirectory);
+    await createSqlFile(category, fileContents, extensionsDirectory);
+    await createZipFile(category, extensionsDirectory);
   };
+}
+
+Future<void> processBook(String book, Category category, Directory htmlDirectory, Directory sqlDirectory) async {
+  final file = File('${htmlDirectory.path}/$book');
+  final bookHtml = await file.readAsString();
+  final bookId = "${category.id}_${file.uri.pathSegments.last.replaceAll(RegExp(r'\..*'), '')}";
+
+  final fullBookImport = await computeBookImportSQL(bookHtml, bookId, category.id);
+
+  final outputFilePath = '${sqlDirectory.path}/${file.uri.pathSegments.last.replaceAll('.html', '.sql')}';
+  await File(outputFilePath).writeAsString(fullBookImport);
+}
+
+Future<String> computeBookImportSQL(String bookHtml, String bookId, String categoryId) async {
+  final receivePort = ReceivePort();
+  await Isolate.spawn(calculateBookImportSQLInIsolate,
+      {'sendPort': receivePort.sendPort, 'bookHtml': bookHtml, 'bookId': bookId, 'categoryId': categoryId});
+  return await receivePort.first;
 }
 
 void calculateBookImportSQLInIsolate(Map<String, dynamic> data) {
@@ -103,6 +105,23 @@ String calculateBookImportSQL(String bookHtml, String bookId, String categoryId)
     "DELETE FROM pages where bookid='$bookId';",
     ...createPageSQLImportStatements(bookId, pagesWithContentWithParagraphsWithToc)
   ].join('\n');
+}
+
+Future<List<String>> readSqlFiles(Category category, Directory sqlDirectory) async {
+  return Future.wait(
+      category.books.map((file) => File('${sqlDirectory.path}/${file.replaceAll('.html', '.sql')}').readAsString()));
+}
+
+Future<void> createSqlFile(Category category, List<String> fileContents, Directory extensionsDirectory) async {
+  final sqlFile = File("${extensionsDirectory.path}/${category.id}.sql");
+  await sqlFile
+      .writeAsString([createCategorySQLImportStatement(category.id, category.name), ...fileContents].join('\n'));
+}
+
+Future<void> createZipFile(Category category, Directory extensionsDirectory) async {
+  final sqlFile = File("${extensionsDirectory.path}/${category.id}.sql");
+  final zipFile = File("${extensionsDirectory.path}/${category.id}.zip");
+  await createZipFromFile(sqlFile, zipFile);
 }
 
 Future<void> createZipFromFile(File sourceFile, File zipFile) async {
