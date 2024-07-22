@@ -40,10 +40,34 @@ void main() async {
   ].map(processCategory(htmlDirectory, sqlDirectory, extensionsDirectory));
 }
 
+class Category {
+  final String id;
+  final String name;
+  final List<String> books;
+
+  Category({
+    required this.id,
+    required this.name,
+    required this.books,
+  });
+}
+
 Future<void> Function(Category category) processCategory(
     Directory htmlDirectory, Directory sqlDirectory, Directory extensionsDirectory) {
   return (Category category) async {
-    await processFiles(category.id, category.books, htmlDirectory, sqlDirectory);
+    await Future.wait(category.books.map((book) => File('${htmlDirectory.path}/$book')).map((file) async {
+      final bookHtml = await file.readAsString();
+      final receivePort = ReceivePort();
+      await Isolate.spawn(calculateBookImportSQLInIsolate, {
+        'sendPort': receivePort.sendPort,
+        'bookHtml': bookHtml,
+        'bookId': "${category.id}_${file.uri.pathSegments.last.replaceAll(RegExp(r'\..*'), '')}",
+        'categoryId': category.id
+      });
+      final fullBookImport = await receivePort.first;
+      final outputFilePath = '${sqlDirectory.path}/${file.uri.pathSegments.last.replaceAll('.html', '.sql')}';
+      await File(outputFilePath).writeAsString(fullBookImport);
+    }));
     List<String> fileContents = await Future.wait(
         category.books.map((file) => File('${sqlDirectory.path}/${file.replaceAll('.html', '.sql')}').readAsString()));
     final sqlFile = File("${extensionsDirectory.path}/${category.id}.sql");
@@ -54,34 +78,16 @@ Future<void> Function(Category category) processCategory(
   };
 }
 
-Future<void> processFiles(
-    String categoryId, List<String> books, Directory htmlDirectory, Directory sqlDirectory) async {
-  final inputFiles = books.map((book) => File('${htmlDirectory.path}/$book')).toList();
-  await Future.wait(inputFiles.map((file) async {
-    final bookHtml = await file.readAsString();
-    final receivePort = ReceivePort();
-    await Isolate.spawn(processInIsolate, {
-      'sendPort': receivePort.sendPort,
-      'bookHtml': bookHtml,
-      'bookId': "${categoryId}_${file.uri.pathSegments.last.replaceAll(RegExp(r'\..*'), '')}",
-      'categoryId': categoryId
-    });
-    final fullBookImport = await receivePort.first;
-    final outputFilePath = '${sqlDirectory.path}/${file.uri.pathSegments.last.replaceAll('.html', '.sql')}';
-    await File(outputFilePath).writeAsString(fullBookImport);
-  }));
-}
-
-void processInIsolate(Map<String, dynamic> data) {
+void calculateBookImportSQLInIsolate(Map<String, dynamic> data) {
   final sendPort = data['sendPort'] as SendPort;
   final bookHtml = data['bookHtml'] as String;
   final bookId = data['bookId'] as String;
   final categoryId = data['categoryId'] as String;
-  final result = generateFullBookImport(bookHtml, bookId, categoryId);
+  final result = calculateBookImportSQL(bookHtml, bookId, categoryId);
   sendPort.send(result);
 }
 
-String generateFullBookImport(String bookHtml, String bookId, String categoryId) {
+String calculateBookImportSQL(String bookHtml, String bookId, String categoryId) {
   final pagesWithContent = extractMyanmarEditionPagesFromVriHtml(bookHtml);
   final pagesWithContentWithParagraphs = addParagraphsToPages(pagesWithContent);
   final pagesWithContentWithParagraphsWithToc = addTocsToPagesWithParagraphs(pagesWithContentWithParagraphs);
@@ -97,18 +103,6 @@ String generateFullBookImport(String bookHtml, String bookId, String categoryId)
     "DELETE FROM pages where bookid='$bookId';",
     ...createPageSQLImportStatements(bookId, pagesWithContentWithParagraphsWithToc)
   ].join('\n');
-}
-
-class Category {
-  final String id;
-  final String name;
-  final List<String> books;
-
-  Category({
-    required this.id,
-    required this.name,
-    required this.books,
-  });
 }
 
 Future<void> createZipFromFile(File sourceFile, File zipFile) async {
