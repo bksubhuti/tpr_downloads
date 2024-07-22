@@ -5,7 +5,7 @@ import 'dart:isolate';
 import 'package:archive/archive.dart';
 
 void main() async {
-  var currentDirectoryPath = Directory.current.resolveSymbolicLinksSync();
+  final currentDirectoryPath = Directory.current.resolveSymbolicLinksSync();
   final htmlDirectory = Directory('$currentDirectoryPath/../e_texts/html').absolute;
   final sqlDirectory = Directory('$currentDirectoryPath/../e_texts/sql').absolute;
   final extensionsDirectory = Directory('$currentDirectoryPath/../e_texts/extensions').absolute;
