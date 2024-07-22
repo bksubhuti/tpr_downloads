@@ -1,3 +1,7 @@
+DELETE FROM books WHERE id IN ('annya_sadda_10', 'annya_bi_07');
+DELETE FROM tocs WHERE book_id IN ('annya_sadda_10', 'annya_bi_07');
+DELETE FROM paragraphs WHERE book_id IN ('annya_sadda_10', 'annya_bi_07');
+DELETE FROM pages WHERE bookid IN ('annya_sadda_10', 'annya_bi_07');
 DELETE FROM category WHERE id='annya_ledi_sayadaw';
 INSERT INTO category (id, name, basket) VALUES('annya_ledi_sayadaw', 'Leḍī sayāḍo gantha-saṅgaho', 'annya');
 DELETE FROM books where id='annya_ledi_sayadaw_e0201n';

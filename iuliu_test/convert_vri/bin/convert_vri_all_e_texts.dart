@@ -18,11 +18,16 @@ void main() async {
     extensionsDirectory.createSync(recursive: true);
   }
 
-  [
+  await Future.wait([
     Category(
       id: "annya_ledi_sayadaw",
       name: "Leḍī sayāḍo gantha-saṅgaho",
       books: ["e0201n.nrf.html", "e0301n.nrf.html", "e0401n.nrf.html", "e0501n.nrf.html"],
+      additionalSql: """
+DELETE FROM books WHERE id IN ('annya_sadda_10', 'annya_bi_07');
+DELETE FROM tocs WHERE book_id IN ('annya_sadda_10', 'annya_bi_07');
+DELETE FROM paragraphs WHERE book_id IN ('annya_sadda_10', 'annya_bi_07');
+DELETE FROM pages WHERE bookid IN ('annya_sadda_10', 'annya_bi_07');""",
     ),
     Category(
       id: "annya_buddha_vandana",
@@ -36,24 +41,27 @@ void main() async {
         "e0906n.nrf.html",
         "e0907n.nrf.html"
       ],
+      additionalSql: "",
     ),
   ].map((Category category) async {
     await Future.wait(category.books.map((book) => processBook(book, category, htmlDirectory, sqlDirectory)));
     final fileContents = await readSqlFiles(category.books, sqlDirectory);
     await createSqlFile(category, fileContents, extensionsDirectory);
     await createZipFile(category, extensionsDirectory);
-  });
+  }));
 }
 
 class Category {
   final String id;
   final String name;
   final List<String> books;
+  final String additionalSql;
 
   Category({
     required this.id,
     required this.name,
     required this.books,
+    required this.additionalSql,
   });
 }
 
@@ -109,8 +117,11 @@ Future<List<String>> readSqlFiles(List<String> books, Directory sqlDirectory) as
 
 Future<void> createSqlFile(Category category, List<String> fileContents, Directory extensionsDirectory) async {
   final sqlFile = File("${extensionsDirectory.path}/${category.id}.sql");
-  await sqlFile
-      .writeAsString([createCategorySQLImportStatement(category.id, category.name), ...fileContents].join('\n'));
+  await sqlFile.writeAsString([
+    category.additionalSql,
+    createCategorySQLImportStatement(category.id, category.name),
+    ...fileContents
+  ].join('\n').trimLeft());
 }
 
 Future<void> createZipFile(Category category, Directory extensionsDirectory) async {
