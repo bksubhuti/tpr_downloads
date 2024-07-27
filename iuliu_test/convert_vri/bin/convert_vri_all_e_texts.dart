@@ -23,6 +23,18 @@ void main() async {
 
   await Future.wait([
     Category(
+      id: "annya_visuddhimagga",
+      name: "Visuddhimagga",
+      books: [
+        "e0101n.nrf.html",
+        "e0102n.nrf.html",
+        "e0103n.att.html",
+        "e0104n.att.html",
+        "e0105n.nrf.html",
+      ],
+      additionalSql: "",
+    ),
+    Category(
       id: "annya_sangayana_puccha_vissajjana",
       name: "Saṅgāyana-puccha vissajjanā",
       books: [
