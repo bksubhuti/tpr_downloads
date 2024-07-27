@@ -50,7 +50,21 @@ DELETE FROM books WHERE id IN ('annya_sadda_10', 'annya_bi_07');
 DELETE FROM tocs WHERE book_id IN ('annya_sadda_10', 'annya_bi_07');
 DELETE FROM paragraphs WHERE book_id IN ('annya_sadda_10', 'annya_bi_07');
 DELETE FROM pages WHERE bookid IN ('annya_sadda_10', 'annya_bi_07');""",
-    )
+    ),
+    Category(
+      id: "annya_buddha_vandana_gantha_sanggaho",
+      name: "Buddha-vandanā gantha-saṅgaho",
+      books: [
+        "e0601n.nrf.html",
+        "e0602n.nrf.html",
+        "e0603n.nrf.html",
+        "e0604n.nrf.html",
+        "e0605n.nrf.html",
+        "e0606n.nrf.html",
+        "e0607n.nrf.html"
+      ],
+      additionalSql: "",
+    ),
   ].map((Category category) async {
     await Future.wait(category.books.map(
         (book) => processBook(book, category, htmlDirectory, sqlDirectory)));
