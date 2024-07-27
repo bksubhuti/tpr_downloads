@@ -26,8 +26,8 @@ void main() async {
       id: "annya_visuddhimagga",
       name: "Visuddhimagga",
       books: [
-        "e0101n.nrf.html",
-        "e0102n.nrf.html",
+        "e0101n.mul.html",
+        "e0102n.mul.html",
         "e0103n.att.html",
         "e0104n.att.html",
         "e0105n.nrf.html",
