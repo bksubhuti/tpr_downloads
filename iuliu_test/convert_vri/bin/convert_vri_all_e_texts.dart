@@ -65,6 +65,16 @@ DELETE FROM pages WHERE bookid IN ('annya_sadda_10', 'annya_bi_07');""",
       ],
       additionalSql: "",
     ),
+    Category(
+      id: "annya_vamsa_gantha_sanggaho",
+      name: "Vaṃsa-gantha-saṅgaho",
+      books: [
+        "e0701n.nrf.html",
+        "e0703n.nrf.html",
+        "e0702n.nrf.html",
+      ],
+      additionalSql: "",
+    ),
   ].map((Category category) async {
     await Future.wait(category.books.map(
         (book) => processBook(book, category, htmlDirectory, sqlDirectory)));
