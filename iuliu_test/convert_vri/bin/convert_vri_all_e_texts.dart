@@ -64,7 +64,7 @@ DELETE FROM paragraphs WHERE book_id IN ('annya_sadda_10', 'annya_bi_07');
 DELETE FROM pages WHERE bookid IN ('annya_sadda_10', 'annya_bi_07');""",
     ),
     Category(
-      id: "annya_buddha_vandana_gantha_sanggaho",
+      id: "annya_buddha_vandana_gantha_sangaho",
       name: "Buddha-vandanā gantha-saṅgaho",
       books: [
         "e0601n.nrf.html",

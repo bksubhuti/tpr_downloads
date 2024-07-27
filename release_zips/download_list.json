@@ -120,6 +120,14 @@
         "size": "22.0 MB"
     },
     {
+      "name": "Visuddhimagga",
+      "release_date": "21.7.2024",
+      "type": "books",
+      "url": "https://github.com/bksubhuti/tpr_downloads/raw/master/release_zips/annya_visuddhimagga.zip",
+      "filename": "annya_visuddhimagga.sql",
+      "size": "4.8 MB"
+    },
+    {
       "name": "Leḍī sayāḍo gantha-saṅgaho",
       "release_date": "21.7.2024",
       "type": "books",
@@ -131,8 +139,56 @@
       "name": "Buddha-vandanā gantha-saṅgaho",
       "release_date": "21.7.2024",
       "type": "books",
-      "url": "https://github.com/bksubhuti/tpr_downloads/raw/master/release_zips/annya_buddha_vandana.zip",
-      "filename": "annya_buddha_vandana.sql",
+      "url": "https://github.com/bksubhuti/tpr_downloads/raw/master/release_zips/annya_buddha_vandana_gantha_sangaho.zip",
+      "filename": "annya_buddha_vandana_gantha_sangaho.sql",
       "size": "0.26 MB"
+    },
+    {
+      "name": "Saṅgāyana-puccha vissajjanā",
+      "release_date": "21.7.2024",
+      "type": "books",
+      "url": "https://github.com/bksubhuti/tpr_downloads/raw/master/release_zips/annya_sangayana_puccha_vissajjana.zip",
+      "filename": "annya_sangayana_puccha_vissajjana.sql",
+      "size": "1.5 MB"
+    },
+    {
+      "name": "Vaṃsa-gantha-saṅgaho",
+      "release_date": "21.7.2024",
+      "type": "books",
+      "url": "https://github.com/bksubhuti/tpr_downloads/raw/master/release_zips/annya_vamsa_gantha_sanggaho.zip",
+      "filename": "annya_vamsa_gantha_sanggaho.sql",
+      "size": "2.1 MB"
+    },
+    {
+      "name": "Byākaraṇa gantha-saṅgaho",
+      "release_date": "21.7.2024",
+      "type": "books",
+      "url": "https://github.com/bksubhuti/tpr_downloads/raw/master/release_zips/annya_byakarana_gantha_sanggaho.zip",
+      "filename": "annya_byakarana_gantha_sanggaho.sql",
+      "size": "8.0 MB"
+    },
+    {
+      "name": "Nīti-gantha-saṅgaho",
+      "release_date": "21.7.2024",
+      "type": "books",
+      "url": "https://github.com/bksubhuti/tpr_downloads/raw/master/release_zips/annya_niti_gantha_sanggaho.zip",
+      "filename": "annya_niti_gantha_sanggaho.sql",
+      "size": "1.1 MB"
+    },
+    {
+      "name": "Pakiṇṇaka-gantha-saṅgaho",
+      "release_date": "21.7.2024",
+      "type": "books",
+      "url": "https://github.com/bksubhuti/tpr_downloads/raw/master/release_zips/annya_pakinaka_gantha_sanggaho.zip",
+      "filename": "annya_pakinaka_gantha_sanggaho.sql",
+      "size": "982K"
+    },
+    {
+      "name": "Sihaḷa-gantha-saṅgaho",
+      "release_date": "21.7.2024",
+      "type": "books",
+      "url": "https://github.com/bksubhuti/tpr_downloads/raw/master/release_zips/annya_sihala_gantha_sanggaho.zip",
+      "filename": "annya_sihala_gantha_sanggaho.sql",
+      "size": "2.6 MB"
     }
 ]
