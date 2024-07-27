@@ -6,12 +6,9 @@ import 'package:archive/archive.dart';
 
 void main() async {
   final currentDirectoryPath = Directory.current.resolveSymbolicLinksSync();
-  final htmlDirectory =
-      Directory('$currentDirectoryPath/../e_texts/html').absolute;
-  final sqlDirectory =
-      Directory('$currentDirectoryPath/../e_texts/sql').absolute;
-  final extensionsDirectory =
-      Directory('$currentDirectoryPath/../e_texts/extensions').absolute;
+  final htmlDirectory = Directory('$currentDirectoryPath/../e_texts/html').absolute;
+  final sqlDirectory = Directory('$currentDirectoryPath/../e_texts/sql').absolute;
+  final extensionsDirectory = Directory('$currentDirectoryPath/../e_texts/extensions').absolute;
 
   if (!sqlDirectory.existsSync()) {
     sqlDirectory.createSync(recursive: true);
@@ -39,12 +36,7 @@ void main() async {
     Category(
       id: "annya_ledi_sayadaw",
       name: "Leḍī sayāḍo gantha-saṅgaho",
-      books: [
-        "e0201n.nrf.html",
-        "e0301n.nrf.html",
-        "e0401n.nrf.html",
-        "e0501n.nrf.html"
-      ],
+      books: ["e0201n.nrf.html", "e0301n.nrf.html", "e0401n.nrf.html", "e0501n.nrf.html"],
       additionalSql: """
 DELETE FROM books WHERE id IN ('annya_sadda_10', 'annya_bi_07');
 DELETE FROM tocs WHERE book_id IN ('annya_sadda_10', 'annya_bi_07');
@@ -95,9 +87,25 @@ DELETE FROM pages WHERE bookid IN ('annya_sadda_10', 'annya_bi_07');""",
       ],
       additionalSql: "",
     ),
+    Category(
+      id: "annya_niti_gantha_sanggaho",
+      name: "Nīti-gantha-saṅgaho",
+      books: [
+        "e1005n.nrf.html",
+        "e1006n.nrf.html",
+        "e1007n.nrf.html",
+        "e1004n.nrf.html",
+        "e1003n.nrf.html",
+        "e1001n.nrf.html",
+        "e1002n.nrf.html",
+        "e1009n.nrf.html",
+        "e1010n.nrf.html",
+        "e1008n.nrf.html",
+      ],
+      additionalSql: "",
+    ),
   ].map((Category category) async {
-    await Future.wait(category.books.map(
-        (book) => processBook(book, category, htmlDirectory, sqlDirectory)));
+    await Future.wait(category.books.map((book) => processBook(book, category, htmlDirectory, sqlDirectory)));
     final fileContents = await readSqlFiles(category.books, sqlDirectory);
     await createSqlFile(category, fileContents, extensionsDirectory);
     await createZipFile(category, extensionsDirectory);
@@ -118,30 +126,21 @@ class Category {
   });
 }
 
-Future<void> processBook(String book, Category category,
-    Directory htmlDirectory, Directory sqlDirectory) async {
+Future<void> processBook(String book, Category category, Directory htmlDirectory, Directory sqlDirectory) async {
   final file = File('${htmlDirectory.path}/$book');
   final bookHtml = await file.readAsString();
-  final bookId =
-      "${category.id}_${file.uri.pathSegments.last.replaceAll(RegExp(r'\..*'), '')}";
+  final bookId = "${category.id}_${file.uri.pathSegments.last.replaceAll(RegExp(r'\..*'), '')}";
 
-  final fullBookImport =
-      await computeBookImportSQL(bookHtml, bookId, category.id);
+  final fullBookImport = await computeBookImportSQL(bookHtml, bookId, category.id);
 
-  final outputFilePath =
-      '${sqlDirectory.path}/${file.uri.pathSegments.last.replaceAll('.html', '.sql')}';
+  final outputFilePath = '${sqlDirectory.path}/${file.uri.pathSegments.last.replaceAll('.html', '.sql')}';
   await File(outputFilePath).writeAsString(fullBookImport);
 }
 
-Future<String> computeBookImportSQL(
-    String bookHtml, String bookId, String categoryId) async {
+Future<String> computeBookImportSQL(String bookHtml, String bookId, String categoryId) async {
   final receivePort = ReceivePort();
-  await Isolate.spawn(calculateBookImportSQLInIsolate, {
-    'sendPort': receivePort.sendPort,
-    'bookHtml': bookHtml,
-    'bookId': bookId,
-    'categoryId': categoryId
-  });
+  await Isolate.spawn(calculateBookImportSQLInIsolate,
+      {'sendPort': receivePort.sendPort, 'bookHtml': bookHtml, 'bookId': bookId, 'categoryId': categoryId});
   return await receivePort.first;
 }
 
@@ -154,38 +153,30 @@ void calculateBookImportSQLInIsolate(Map<String, dynamic> data) {
   sendPort.send(result);
 }
 
-String calculateBookImportSQL(
-    String bookHtml, String bookId, String categoryId) {
+String calculateBookImportSQL(String bookHtml, String bookId, String categoryId) {
   final pagesWithContent = extractMyanmarEditionPagesFromVriHtml(bookHtml);
   final pagesWithContentWithParagraphs = addParagraphsToPages(pagesWithContent);
-  final pagesWithContentWithParagraphsWithToc =
-      addTocsToPagesWithParagraphs(pagesWithContentWithParagraphs);
+  final pagesWithContentWithParagraphsWithToc = addTocsToPagesWithParagraphs(pagesWithContentWithParagraphs);
   final bookInfo = extractBookInfo(pagesWithContentWithParagraphsWithToc);
 
   return [
     "DELETE FROM books where id='$bookId';",
     createBookSQLImportStatement(bookId, categoryId, bookInfo),
     "DELETE FROM tocs where book_id='$bookId';",
-    ...createTocSQLImportStatements(
-        bookId, pagesWithContentWithParagraphsWithToc),
+    ...createTocSQLImportStatements(bookId, pagesWithContentWithParagraphsWithToc),
     "DELETE FROM paragraphs where book_id='$bookId';",
-    ...createParagraphsSQLImportStatements(
-        bookId, pagesWithContentWithParagraphsWithToc),
+    ...createParagraphsSQLImportStatements(bookId, pagesWithContentWithParagraphsWithToc),
     "DELETE FROM pages where bookid='$bookId';",
-    ...createPageSQLImportStatements(
-        bookId, pagesWithContentWithParagraphsWithToc)
+    ...createPageSQLImportStatements(bookId, pagesWithContentWithParagraphsWithToc)
   ].join('\n');
 }
 
-Future<List<String>> readSqlFiles(
-    List<String> books, Directory sqlDirectory) async {
-  return Future.wait(books.map((file) =>
-      File('${sqlDirectory.path}/${file.replaceAll('.html', '.sql')}')
-          .readAsString()));
+Future<List<String>> readSqlFiles(List<String> books, Directory sqlDirectory) async {
+  return Future.wait(
+      books.map((file) => File('${sqlDirectory.path}/${file.replaceAll('.html', '.sql')}').readAsString()));
 }
 
-Future<void> createSqlFile(Category category, List<String> fileContents,
-    Directory extensionsDirectory) async {
+Future<void> createSqlFile(Category category, List<String> fileContents, Directory extensionsDirectory) async {
   final sqlFile = File("${extensionsDirectory.path}/${category.id}.sql");
   await sqlFile.writeAsString([
     category.additionalSql,
@@ -194,8 +185,7 @@ Future<void> createSqlFile(Category category, List<String> fileContents,
   ].join('\n').trimLeft());
 }
 
-Future<void> createZipFile(
-    Category category, Directory extensionsDirectory) async {
+Future<void> createZipFile(Category category, Directory extensionsDirectory) async {
   final sqlFile = File("${extensionsDirectory.path}/${category.id}.sql");
   final zipFile = File("${extensionsDirectory.path}/${category.id}.zip");
   await createZipFromFile(sqlFile, zipFile);
@@ -204,8 +194,7 @@ Future<void> createZipFile(
 Future<void> createZipFromFile(File sourceFile, File zipFile) async {
   final archive = Archive();
   final bytes = await sourceFile.readAsBytes();
-  final archiveFile =
-      ArchiveFile(sourceFile.path.split('/').last, bytes.length, bytes);
+  final archiveFile = ArchiveFile(sourceFile.path.split('/').last, bytes.length, bytes);
   archive.addFile(archiveFile);
   final zipData = ZipEncoder().encode(archive);
   await zipFile.writeAsBytes(zipData!);
