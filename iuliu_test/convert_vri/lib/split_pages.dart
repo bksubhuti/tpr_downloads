@@ -1,7 +1,8 @@
 import 'package:html/parser.dart' as parser;
 import 'package:html/dom.dart';
 
-List<Map<String, dynamic>> extractMyanmarEditionPagesFromVriHtml(String vriHtml) {
+List<Map<String, dynamic>> extractMyanmarEditionPagesFromVriHtml(
+    String vriHtml) {
   var document = parser.parse(vriHtml);
   var elements = document.body!.nodes.whereType<Element>();
 
@@ -14,21 +15,29 @@ List<Map<String, dynamic>> extractMyanmarEditionPagesFromVriHtml(String vriHtml)
 }
 
 bool isNewPage(Element element) {
-  return element.querySelectorAll('a').any((a) => a.attributes['name']?.startsWith('M') ?? false);
+  return element
+      .querySelectorAll('a')
+      .any((a) => a.attributes['name']?.startsWith('M') ?? false);
 }
 
-List<Map<String, dynamic>> addNewPages(List<Map<String, dynamic>> pages, Element element) {
-  var [lastPageParagraph, ...newPageParagraphs] = splitParagraphOnWordPrecedingMarker(element.outerHtml);
+List<Map<String, dynamic>> addNewPages(
+    List<Map<String, dynamic>> pages, Element element) {
+  var [lastPageParagraph, ...newPageParagraphs] =
+      splitParagraphOnWordPrecedingMarker(element.outerHtml);
 
   return [
-    ...(isParagraphNewPage(lastPageParagraph) && !isParagraphFirstPage(lastPageParagraph)
+    ...(isParagraphNewPage(lastPageParagraph) &&
+            !isParagraphFirstPage(lastPageParagraph)
         ? addNewPageWithHeaders(pages, element)
         : addNewParagraphToLastPage(pages, lastPageParagraph)),
-    ...newPageParagraphs.map((newPageParagraph) => createNewPage(newPageParagraph)).toList()
+    ...newPageParagraphs
+        .map((newPageParagraph) => createNewPage(newPageParagraph))
+        .toList()
   ];
 }
 
-List<Map<String, dynamic>> addNewParagraphToLastPage(List<Map<String, dynamic>> pages, String paragraph) {
+List<Map<String, dynamic>> addNewParagraphToLastPage(
+    List<Map<String, dynamic>> pages, String paragraph) {
   var updatedLastPage = Map<String, dynamic>.from(pages.last)
     ..update(
       'content',
@@ -44,7 +53,9 @@ List<Map<String, dynamic>> addNewParagraphToLastPage(List<Map<String, dynamic>> 
 bool isParagraphFirstPage(String paragraphHtml) {
   Document doc = parser.parse(paragraphHtml);
   Element paragraph = doc.querySelector('p')!;
-  return paragraph.querySelectorAll('a').any((a) => RegExp(r'M\d+\.0001').hasMatch(a.attributes['name'] ?? ""));
+  return paragraph
+      .querySelectorAll('a')
+      .any((a) => RegExp(r'M\d+\.0001').hasMatch(a.attributes['name'] ?? ""));
 }
 
 bool isParagraphNewPage(String paragraphHtml) {
@@ -53,15 +64,19 @@ bool isParagraphNewPage(String paragraphHtml) {
   return isNewPage(paragraph);
 }
 
-List<String> splitParagraphOnWordPrecedingMarker(String paragraphHtml, [bool didSplit = false]) {
+List<String> splitParagraphOnWordPrecedingMarker(String paragraphHtml,
+    [bool didSplit = false]) {
   var doc = parser.parse(paragraphHtml);
   var paragraph = doc.querySelector('p')!;
 
-  var matches = RegExp(r'<a name="M[^"]*"></a>').allMatches(paragraph.innerHtml);
-  var newPageMarkerMatch = didSplit ? matches.elementAtOrNull(1) : matches.elementAtOrNull(0);
+  var matches =
+      RegExp(r'<a name="M[^"]*"></a>').allMatches(paragraph.innerHtml);
+  var newPageMarkerMatch =
+      didSplit ? matches.elementAtOrNull(1) : matches.elementAtOrNull(0);
   if (newPageMarkerMatch == null) return [paragraph.outerHtml];
 
-  var precedingHtml = paragraph.innerHtml.substring(0, newPageMarkerMatch.start);
+  var precedingHtml =
+      paragraph.innerHtml.substring(0, newPageMarkerMatch.start);
   var wordIndex = matchFirstPrecedingWord(precedingHtml)?.start;
   if (wordIndex == null) return [paragraph.outerHtml];
 
@@ -71,11 +86,16 @@ List<String> splitParagraphOnWordPrecedingMarker(String paragraphHtml, [bool did
   var part2 = paragraph.innerHtml.substring(wordIndex);
 
   return part1.isNotEmpty
-      ? ['$pTagStart$part1$pTagEnd', ...splitParagraphOnWordPrecedingMarker('$pTagStart$part2$pTagEnd', true)]
+      ? [
+          '$pTagStart$part1$pTagEnd',
+          ...splitParagraphOnWordPrecedingMarker(
+              '$pTagStart$part2$pTagEnd', true)
+        ]
       : splitParagraphOnWordPrecedingMarker('$pTagStart$part2$pTagEnd', true);
 }
 
-List<Map<String, dynamic>> addNewPageWithHeaders(List<Map<String, dynamic>> pages, Element element) {
+List<Map<String, dynamic>> addNewPageWithHeaders(
+    List<Map<String, dynamic>> pages, Element element) {
   var clonedPages = List<Map<String, dynamic>>.from(pages);
 
   var lastPage = clonedPages.isNotEmpty ? clonedPages.last : {'content': []};
@@ -133,37 +153,43 @@ int extractPageNumberFromLine(Element element) {
 RegExpMatch? matchFirstPrecedingWord(String string) {
   var maybeSpace = '\\s*';
   var maybeAnchor = '$maybeSpace(<a name=".+?"></a>){0,}$maybeSpace\$';
-  var maybeParagraphNumber = '(<a name="para\\d+"></a><span class="paranum">\\d+</span>. )?';
+  var maybeParagraphNumber =
+      '(<a name="para\\d+"></a><span class="paranum">\\d+</span>. )?';
   var contiguousString = '[^\\s]+';
 
-  var matchWithSpan =
-      RegExp('($maybeParagraphNumber<span class="bld">$contiguousString)$maybeAnchor').firstMatch(string);
+  var matchWithSpan = RegExp(
+          '($maybeParagraphNumber<span class="bld">$contiguousString)$maybeAnchor')
+      .firstMatch(string);
 
-  var match = RegExp('($maybeParagraphNumber$contiguousString)$maybeAnchor').firstMatch(string);
+  var match = RegExp('($maybeParagraphNumber$contiguousString)$maybeAnchor')
+      .firstMatch(string);
 
   return matchWithSpan ?? match;
 }
 
-List<Map<String, dynamic>> addParagraphsToPages(List<Map<String, dynamic>> pages) {
+List<Map<String, dynamic>> addParagraphsToPages(
+    List<Map<String, dynamic>> pages) {
   return pages.map((page) {
     return {
       'number': page['number'],
       'content': page['content'],
-      'paragraphs': List<String>.from(page['content']).fold([], (previousParagraphNumbers, textLine) {
+      'paragraphs': List<String>.from(page['content']).fold([],
+          (previousParagraphNumbers, textLine) {
         var document = parser.parse(textLine);
         var paragraphNumbers = document.body!.querySelectorAll('span.paranum');
         return [
           ...previousParagraphNumbers,
           ...paragraphNumbers
-              .expand((e) => (e.text.split('-').where((s) => s.isNotEmpty).map((e) {
-                    try {
-                      return int.parse(e);
-                    } catch (error) {
-                      print('Error parsing value: $e');
-                      print('At text line: $textLine');
-                      rethrow;
-                    }
-                  })))
+              .expand(
+                  (e) => (e.text.split('-').where((s) => s.isNotEmpty).map((e) {
+                        try {
+                          return int.parse(e);
+                        } catch (error) {
+                          print('Error parsing value: $e');
+                          print('At text line: $textLine');
+                          rethrow;
+                        }
+                      })))
               .toList()
         ];
       }).toList()
@@ -171,7 +197,8 @@ List<Map<String, dynamic>> addParagraphsToPages(List<Map<String, dynamic>> pages
   }).toList();
 }
 
-List<Map<String, dynamic>> addTocsToPagesWithParagraphs(List<Map<String, dynamic>> pages) {
+List<Map<String, dynamic>> addTocsToPagesWithParagraphs(
+    List<Map<String, dynamic>> pages) {
   const allowedClasses = {'chapter', 'title', 'subhead', 'subsubhead'};
 
   return pages.map((page) {

@@ -115,12 +115,17 @@ void main() {
 
     // Given: a Myanmar page number that starts with M1
     // Should: detect first page and add it to first record instead of creating a duplicate
-    expect(extractMyanmarEditionPagesFromVriHtml('<p class="gatha1">Anantaññāṇaṃ <a name="M1.0001"></a> jinaṃ;</p>'), [
-      {
-        'number': 1,
-        'content': ['<p class="gatha1">Anantaññāṇaṃ <a name="M1.0001"></a> jinaṃ;</p>']
-      }
-    ]);
+    expect(
+        extractMyanmarEditionPagesFromVriHtml(
+            '<p class="gatha1">Anantaññāṇaṃ <a name="M1.0001"></a> jinaṃ;</p>'),
+        [
+          {
+            'number': 1,
+            'content': [
+              '<p class="gatha1">Anantaññāṇaṃ <a name="M1.0001"></a> jinaṃ;</p>'
+            ]
+          }
+        ]);
 
     // Given: multiple new page on first page
     // Should: split the pages
@@ -136,12 +141,15 @@ void main() {
           },
           {
             'number': 2,
-            'content': ['<p class="bodytext">kathesi <a name="M2.0002"></a> Nāmaggahaṇadivase panassa</p>']
+            'content': [
+              '<p class="bodytext">kathesi <a name="M2.0002"></a> Nāmaggahaṇadivase panassa</p>'
+            ]
           }
         ]);
 
     {
-      var pagesList = extractMyanmarEditionPagesFromVriHtml(readFile('e0401n.nrf.html'));
+      var pagesList =
+          extractMyanmarEditionPagesFromVriHtml(readFile('e0401n.nrf.html'));
 
       var pagesWithoutContentList = pagesList.map((page) {
         var newPage = Map.from(page);
@@ -165,8 +173,13 @@ void main() {
     {
       // Given: one match
       // Should: split once
-      expect(splitParagraphOnWordPrecedingMarker('<p class="bodytext">Kathaṃ bhagavā <a name="M0.0211"></a></p>'),
-          ['<p class="bodytext">Kathaṃ </p>', '<p class="bodytext">bhagavā <a name="M0.0211"></a></p>']);
+      expect(
+          splitParagraphOnWordPrecedingMarker(
+              '<p class="bodytext">Kathaṃ bhagavā <a name="M0.0211"></a></p>'),
+          [
+            '<p class="bodytext">Kathaṃ </p>',
+            '<p class="bodytext">bhagavā <a name="M0.0211"></a></p>'
+          ]);
     }
     {
       // Given: multiple matches
@@ -208,7 +221,9 @@ void main() {
       expect(
           splitParagraphOnWordPrecedingMarker(
               '<p class="bodytext">Ekuttarikanaye <a name="V0.0505"></a><a name="M0.0552"></a> placeholder</p>'),
-          ['<p class="bodytext">Ekuttarikanaye <a name="V0.0505"></a><a name="M0.0552"></a> placeholder</p>']);
+          [
+            '<p class="bodytext">Ekuttarikanaye <a name="V0.0505"></a><a name="M0.0552"></a> placeholder</p>'
+          ]);
     }
     {
       // Given: myanmar page marker preceded by multiple other page markers
@@ -226,7 +241,9 @@ void main() {
       expect(
           splitParagraphOnWordPrecedingMarker(
               '<p class="bodytext"><span class="bld">Ādi</span>-saddena <a name="M0.0089"></a> placeholder</p>'),
-          ['<p class="bodytext"><span class="bld">Ādi</span>-saddena <a name="M0.0089"></a> placeholder</p>']);
+          [
+            '<p class="bodytext"><span class="bld">Ādi</span>-saddena <a name="M0.0089"></a> placeholder</p>'
+          ]);
     }
     {
       // Given: word preceding myanmar page marker partially wrapped in span with an `’’` separator
@@ -253,8 +270,11 @@ void main() {
       // Given: word preceding myanmar page marker with quotes
       // Should: grab whole word
       expect(
-          splitParagraphOnWordPrecedingMarker('<p class="bodytext">upādāyā’’ti <a name="M0.0042"></a> placeholder</p>'),
-          ['<p class="bodytext">upādāyā’’ti <a name="M0.0042"></a> placeholder</p>']);
+          splitParagraphOnWordPrecedingMarker(
+              '<p class="bodytext">upādāyā’’ti <a name="M0.0042"></a> placeholder</p>'),
+          [
+            '<p class="bodytext">upādāyā’’ti <a name="M0.0042"></a> placeholder</p>'
+          ]);
     }
     {
       // Given: preceding word immediately following param number
@@ -271,20 +291,38 @@ void main() {
 
   test('matchFirstPrecedingWord', () {
     {
-      expect(matchFirstPrecedingWord('anekabhāvo veditabbo')?.group(1), 'veditabbo');
+      expect(matchFirstPrecedingWord('anekabhāvo veditabbo')?.group(1),
+          'veditabbo');
       expect(matchFirstPrecedingWord('vādaṃ nissāya ')?.group(1), 'nissāya');
-      expect(matchFirstPrecedingWord('placeholder Ekuttarikanaye <a name="V0.0505"></a>')?.group(1), 'Ekuttarikanaye');
-      expect(matchFirstPrecedingWord('placeholder Anuvijjake <a name="T0.0396"></a><a name="P5.0160"></a>')?.group(1),
+      expect(
+          matchFirstPrecedingWord(
+                  'placeholder Ekuttarikanaye <a name="V0.0505"></a>')
+              ?.group(1),
+          'Ekuttarikanaye');
+      expect(
+          matchFirstPrecedingWord(
+                  'placeholder Anuvijjake <a name="T0.0396"></a><a name="P5.0160"></a>')
+              ?.group(1),
           'Anuvijjake');
-      expect(matchFirstPrecedingWord('placeholder <span class="bld">Ādi</span>-saddena ')?.group(1),
+      expect(
+          matchFirstPrecedingWord(
+                  'placeholder <span class="bld">Ādi</span>-saddena ')
+              ?.group(1),
           '<span class="bld">Ādi</span>-saddena');
-      expect(matchFirstPrecedingWord('placeholder <span class="bld">‘‘Tenevā’’</span>tiādinā ')?.group(1),
+      expect(
+          matchFirstPrecedingWord(
+                  'placeholder <span class="bld">‘‘Tenevā’’</span>tiādinā ')
+              ?.group(1),
           '<span class="bld">‘‘Tenevā’’</span>tiādinā');
       expect(
-          matchFirstPrecedingWord('placeholder <span class="bld">Pīḷanasaṅkhatasantāpavipariṇāmaṭṭhena</span> ')
+          matchFirstPrecedingWord(
+                  'placeholder <span class="bld">Pīḷanasaṅkhatasantāpavipariṇāmaṭṭhena</span> ')
               ?.group(1),
           '<span class="bld">Pīḷanasaṅkhatasantāpavipariṇāmaṭṭhena</span>');
-      expect(matchFirstPrecedingWord('<a name="para325"></a><span class="paranum">325</span>. Pañca ')?.group(1),
+      expect(
+          matchFirstPrecedingWord(
+                  '<a name="para325"></a><span class="paranum">325</span>. Pañca ')
+              ?.group(1),
           '<a name="para325"></a><span class="paranum">325</span>. Pañca');
       expect(
           matchFirstPrecedingWord(
@@ -335,13 +373,17 @@ void main() {
         addParagraphsToPages([
           {
             'number': 1,
-            'content': ['<p class="bodytext"><a name="para94-"></a><span class="paranum">94-</span></p>']
+            'content': [
+              '<p class="bodytext"><a name="para94-"></a><span class="paranum">94-</span></p>'
+            ]
           },
         ]),
         [
           {
             'number': 1,
-            'content': ['<p class="bodytext"><a name="para94-"></a><span class="paranum">94-</span></p>'],
+            'content': [
+              '<p class="bodytext"><a name="para94-"></a><span class="paranum">94-</span></p>'
+            ],
             'paragraphs': [94]
           },
         ]);

@@ -3,7 +3,8 @@ import 'package:convert_vri/split_pages.dart';
 import 'dart:io';
 
 void main(List<String> arguments) {
-  var pagesWithContent = extractMyanmarEditionPagesFromVriHtml(readFile('../../anudipanipatha/e0401n.nrf.html'));
+  var pagesWithContent = extractMyanmarEditionPagesFromVriHtml(
+      readFile('../../anudipanipatha/e0401n.nrf.html'));
   var pages = addParagraphsToPages(pagesWithContent);
 
   var booksTableImport = """
@@ -20,8 +21,10 @@ INSERT INTO tocs VALUES('annya_sadda_18', '8. paccayasaṅgahaanudīpanā', 'cha
 INSERT INTO tocs VALUES('annya_sadda_18', '9. kammaṭṭhānasaṅgahaanudīpanā', 'chapter', 276);
 INSERT INTO tocs VALUES('annya_sadda_18', 'nigamagāthāsu.', 'subhead', 322);
 INSERT INTO tocs VALUES('annya_sadda_18', 'dīpaniyā nigamagāthāsu.', 'subhead', 324);""";
-  var paragraphsTableImport = createParagraphsSQLImportStatements('annya_sadda_18', pages).join('\n');
-  var pagesTableImport = createPageSQLImportStatements('annya_sadda_18', pages).join('\n');
+  var paragraphsTableImport =
+      createParagraphsSQLImportStatements('annya_sadda_18', pages).join('\n');
+  var pagesTableImport =
+      createPageSQLImportStatements('annya_sadda_18', pages).join('\n');
   var anudipanipathaImport = [
     "DELETE FROM books where id='annya_sadda_18';",
     booksTableImport,
@@ -35,12 +38,16 @@ INSERT INTO tocs VALUES('annya_sadda_18', 'dīpaniyā nigamagāthāsu.', 'subhea
 
   writeFile('./anudipanipatha-import.sql', anudipanipathaImport);
 
-  var pagesWithContentMN1 = extractMyanmarEditionPagesFromVriHtml(readFile('../../mulapannasapali/s0201m.mul.html'));
+  var pagesWithContentMN1 = extractMyanmarEditionPagesFromVriHtml(
+      readFile('../../mulapannasapali/s0201m.mul.html'));
   var pagesMN1 = addParagraphsToPages(pagesWithContentMN1);
-  var paragraphsTableImportMN1 = createParagraphsSQLImportStatements('mula_ma_81', pagesMN1).join('\n');
-  var pagesTableImportMN1 = createPageSQLImportStatements('mula_ma_81', pagesMN1).join('\n');
+  var paragraphsTableImportMN1 =
+      createParagraphsSQLImportStatements('mula_ma_81', pagesMN1).join('\n');
+  var pagesTableImportMN1 =
+      createPageSQLImportStatements('mula_ma_81', pagesMN1).join('\n');
 
-  var booksTableImportMN1 = "INSERT INTO books VALUES('mula_ma_81','mula','ma','mūlapaṇṇāsapāḷi',1,415,415);";
+  var booksTableImportMN1 =
+      "INSERT INTO books VALUES('mula_ma_81','mula','ma','mūlapaṇṇāsapāḷi',1,415,415);";
   var tocsTableImportMN1 = """
 INSERT INTO tocs VALUES('mula_ma_81','1. mūlapariyāyavaggo','chapter',1,'1. mulapariyayavaggo');
 INSERT INTO tocs VALUES('mula_ma_81','1. mūlapariyāyasuttaṃ','title',1,'1. mulapariyayasuttam');
@@ -636,8 +643,12 @@ INSERT INTO paragraphs VALUES('mula_ma_81',511,412);
 INSERT INTO paragraphs VALUES('mula_ma_81',512,412);
 INSERT INTO paragraphs VALUES('mula_ma_81',513,413);""";
 
-  var mulapannasapaliImport =
-      [booksTableImportMN1, tocsTableImportMN1, paragraphsTableImportMN1, pagesTableImportMN1].join('\n');
+  var mulapannasapaliImport = [
+    booksTableImportMN1,
+    tocsTableImportMN1,
+    paragraphsTableImportMN1,
+    pagesTableImportMN1
+  ].join('\n');
 
   writeFile('./mulapannasapali-import.sql', mulapannasapaliImport);
 }
