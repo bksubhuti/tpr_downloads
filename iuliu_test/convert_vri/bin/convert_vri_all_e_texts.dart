@@ -6,10 +6,16 @@ import 'package:archive/archive.dart';
 
 void main() async {
   final currentDirectoryPath = Directory.current.resolveSymbolicLinksSync();
-  final htmlDirectory = Directory('$currentDirectoryPath/../e_texts/html').absolute;
-  final sqlDirectory = Directory('$currentDirectoryPath/../e_texts/sql').absolute;
-  final extensionsSqlDirectory = Directory('$currentDirectoryPath/../e_texts/extensions/sql').absolute;
-  final extensionsZipDirectory = Directory('$currentDirectoryPath/../e_texts/extensions/zip').absolute;
+  final htmlDirectory =
+      Directory('$currentDirectoryPath/../e_texts/html').absolute;
+  final sqlDirectory =
+      Directory('$currentDirectoryPath/../e_texts/sql').absolute;
+  final extensionsSqlDirectory =
+      Directory('$currentDirectoryPath/../e_texts/extensions/sql').absolute;
+  final extensionsZipDirectory =
+      Directory('$currentDirectoryPath/../e_texts/extensions/zip').absolute;
+  final releaseDirectory =
+      Directory('$currentDirectoryPath/../../release_zips').absolute;
 
   if (!sqlDirectory.existsSync()) {
     sqlDirectory.createSync(recursive: true);
@@ -21,6 +27,11 @@ void main() async {
 
   if (!extensionsZipDirectory.existsSync()) {
     extensionsZipDirectory.createSync(recursive: true);
+  }
+
+  if (!releaseDirectory.existsSync()) {
+    throw FileSystemException(
+        'Release directory does not exist', releaseDirectory.path);
   }
 
   await Future.wait([
@@ -53,7 +64,12 @@ void main() async {
     Category(
       id: "annya_ledi_sayadaw",
       name: "Leḍī sayāḍo gantha-saṅgaho",
-      books: ["e0201n.nrf.html", "e0301n.nrf.html", "e0401n.nrf.html", "e0501n.nrf.html"],
+      books: [
+        "e0201n.nrf.html",
+        "e0301n.nrf.html",
+        "e0401n.nrf.html",
+        "e0501n.nrf.html"
+      ],
       additionalSql: """
 DELETE FROM books WHERE id IN ('annya_sadda_10', 'annya_bi_07');
 DELETE FROM tocs WHERE book_id IN ('annya_sadda_10', 'annya_bi_07');
@@ -154,11 +170,21 @@ DELETE FROM pages WHERE bookid IN ('annya_sadda_10', 'annya_bi_07');""",
       additionalSql: "",
     ),
   ].map((Category category) async {
-    await Future.wait(category.books.map((book) => processBook(book, category, htmlDirectory, sqlDirectory)));
+    await Future.wait(category.books.map(
+        (book) => processBook(book, category, htmlDirectory, sqlDirectory)));
     final fileContents = await readSqlFiles(category.books, sqlDirectory);
     await createSqlFile(category, fileContents, extensionsSqlDirectory);
-    await createZipFile(category, extensionsSqlDirectory, extensionsZipDirectory);
+    await createZipFile(
+        category, extensionsSqlDirectory, extensionsZipDirectory);
   }));
+
+  final extensionsZipFiles = extensionsZipDirectory.listSync();
+  for (var file in extensionsZipFiles) {
+    if (file is! File) continue;
+    final fileName = file.uri.pathSegments.last;
+    final destinationFile = File('${releaseDirectory.path}/$fileName');
+    await file.copy(destinationFile.path);
+  }
 }
 
 class Category {
@@ -175,21 +201,30 @@ class Category {
   });
 }
 
-Future<void> processBook(String book, Category category, Directory htmlDirectory, Directory sqlDirectory) async {
+Future<void> processBook(String book, Category category,
+    Directory htmlDirectory, Directory sqlDirectory) async {
   final file = File('${htmlDirectory.path}/$book');
   final bookHtml = await file.readAsString();
-  final bookId = "${category.id}_${file.uri.pathSegments.last.replaceAll(RegExp(r'\..*'), '')}";
+  final bookId =
+      "${category.id}_${file.uri.pathSegments.last.replaceAll(RegExp(r'\..*'), '')}";
 
-  final fullBookImport = await computeBookImportSQL(bookHtml, bookId, category.id);
+  final fullBookImport =
+      await computeBookImportSQL(bookHtml, bookId, category.id);
 
-  final outputFilePath = '${sqlDirectory.path}/${file.uri.pathSegments.last.replaceAll('.html', '.sql')}';
+  final outputFilePath =
+      '${sqlDirectory.path}/${file.uri.pathSegments.last.replaceAll('.html', '.sql')}';
   await File(outputFilePath).writeAsString(fullBookImport);
 }
 
-Future<String> computeBookImportSQL(String bookHtml, String bookId, String categoryId) async {
+Future<String> computeBookImportSQL(
+    String bookHtml, String bookId, String categoryId) async {
   final receivePort = ReceivePort();
-  await Isolate.spawn(calculateBookImportSQLInIsolate,
-      {'sendPort': receivePort.sendPort, 'bookHtml': bookHtml, 'bookId': bookId, 'categoryId': categoryId});
+  await Isolate.spawn(calculateBookImportSQLInIsolate, {
+    'sendPort': receivePort.sendPort,
+    'bookHtml': bookHtml,
+    'bookId': bookId,
+    'categoryId': categoryId
+  });
   return await receivePort.first;
 }
 
@@ -202,30 +237,38 @@ void calculateBookImportSQLInIsolate(Map<String, dynamic> data) {
   sendPort.send(result);
 }
 
-String calculateBookImportSQL(String bookHtml, String bookId, String categoryId) {
+String calculateBookImportSQL(
+    String bookHtml, String bookId, String categoryId) {
   final pagesWithContent = extractMyanmarEditionPagesFromVriHtml(bookHtml);
   final pagesWithContentWithParagraphs = addParagraphsToPages(pagesWithContent);
-  final pagesWithContentWithParagraphsWithToc = addTocsToPagesWithParagraphs(pagesWithContentWithParagraphs);
+  final pagesWithContentWithParagraphsWithToc =
+      addTocsToPagesWithParagraphs(pagesWithContentWithParagraphs);
   final bookInfo = extractBookInfo(pagesWithContentWithParagraphsWithToc);
 
   return [
     "DELETE FROM books where id='$bookId';",
     createBookSQLImportStatement(bookId, categoryId, bookInfo),
     "DELETE FROM tocs where book_id='$bookId';",
-    ...createTocSQLImportStatements(bookId, pagesWithContentWithParagraphsWithToc),
+    ...createTocSQLImportStatements(
+        bookId, pagesWithContentWithParagraphsWithToc),
     "DELETE FROM paragraphs where book_id='$bookId';",
-    ...createParagraphsSQLImportStatements(bookId, pagesWithContentWithParagraphsWithToc),
+    ...createParagraphsSQLImportStatements(
+        bookId, pagesWithContentWithParagraphsWithToc),
     "DELETE FROM pages where bookid='$bookId';",
-    ...createPageSQLImportStatements(bookId, pagesWithContentWithParagraphsWithToc)
+    ...createPageSQLImportStatements(
+        bookId, pagesWithContentWithParagraphsWithToc)
   ].join('\n');
 }
 
-Future<List<String>> readSqlFiles(List<String> books, Directory sqlDirectory) async {
-  return Future.wait(
-      books.map((file) => File('${sqlDirectory.path}/${file.replaceAll('.html', '.sql')}').readAsString()));
+Future<List<String>> readSqlFiles(
+    List<String> books, Directory sqlDirectory) async {
+  return Future.wait(books.map((file) =>
+      File('${sqlDirectory.path}/${file.replaceAll('.html', '.sql')}')
+          .readAsString()));
 }
 
-Future<void> createSqlFile(Category category, List<String> fileContents, Directory extensionsSqlDirectory) async {
+Future<void> createSqlFile(Category category, List<String> fileContents,
+    Directory extensionsSqlDirectory) async {
   final sqlFile = File("${extensionsSqlDirectory.path}/${category.id}.sql");
   await sqlFile.writeAsString([
     category.additionalSql,
@@ -234,7 +277,8 @@ Future<void> createSqlFile(Category category, List<String> fileContents, Directo
   ].join('\n').trimLeft());
 }
 
-Future<void> createZipFile(Category category, Directory extensionsSqlDirectory, Directory extensionsZipDirectory) async {
+Future<void> createZipFile(Category category, Directory extensionsSqlDirectory,
+    Directory extensionsZipDirectory) async {
   final sqlFile = File("${extensionsSqlDirectory.path}/${category.id}.sql");
   final zipFile = File("${extensionsZipDirectory.path}/${category.id}.zip");
   await createZipFromFile(sqlFile, zipFile);
@@ -243,7 +287,8 @@ Future<void> createZipFile(Category category, Directory extensionsSqlDirectory, 
 Future<void> createZipFromFile(File sourceFile, File zipFile) async {
   final archive = Archive();
   final bytes = await sourceFile.readAsBytes();
-  final archiveFile = ArchiveFile(sourceFile.path.split('/').last, bytes.length, bytes);
+  final archiveFile =
+      ArchiveFile(sourceFile.path.split('/').last, bytes.length, bytes);
   archive.addFile(archiveFile);
   final zipData = ZipEncoder().encode(archive);
   await zipFile.writeAsBytes(zipData!);
