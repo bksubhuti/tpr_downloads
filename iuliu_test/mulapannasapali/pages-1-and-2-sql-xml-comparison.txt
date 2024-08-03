@@ -9,16 +9,16 @@
 <p class="bodytext"><a name="para2"></a><a name="para2_mn1"></a><span class="paranum">2</span>. idha, bhikkhave, assutavā puthujjano ariyānaṃ adassāvī ariyadhammassa akovido <a name="V1.0002"></a> ariyadhamme avinīto, sappurisānaṃ adassāvī sappurisadhammassa akovido sappurisadhamme avinīto – pathaviṃ <span class="note">[paṭhaviṃ (sī. syā. kaṃ. pī.)]</span> pathavito sañjānāti, pathaviṃ pathavito saññatvā pathaviṃ maññati, pathaviyā maññati, pathavito maññati, pathaviṃ meti maññati<a name="T1.0002"></a>, pathaviṃ abhinandati. taṃ kissa hetu? ‘apariññātaṃ tassā’ti vadāmi.</p>
 <p class="bodytext">āpaṃ āpato sañjānāti, āpaṃ āpato saññatvā āpaṃ maññati, āpasmiṃ maññati, āpato maññati, āpaṃ meti maññati, āpaṃ abhinandati. taṃ kissa hetu? ‘apariññātaṃ tassā’ti vadāmi.</p>
 
-# Page 2 Content from SQL
+# Page 1 from VRI HTML
 
-<p class="bodytext">tejaṃ <a name="M1.0002"></a> tejato sañjānāti, tejaṃ tejato saññatvā tejaṃ maññati, tejasmiṃ maññati, tejato maññati, tejaṃ meti maññati, tejaṃ abhinandati. taṃ kissa hetu? ‘apariññātaṃ tassā’ti vadāmi.</p>
-<p class="bodytext">vāyaṃ vāyato sañjānāti, vāyaṃ vāyato saññatvā vāyaṃ maññati, vāyasmiṃ maññati, vāyato maññati, vāyaṃ meti maññati, vāyaṃ abhinandati. taṃ kissa hetu? ‘apariññātaṃ tassā’ti <a name="P1.0002"></a> vadāmi.</p>
-<p class="bodytext"><a name="para3"></a><a name="para3_mn1"></a><span class="paranum">3</span>. bhūte bhūtato sañjānāti, bhūte bhūtato saññatvā bhūte maññati, bhūtesu maññati, bhūtato maññati, bhūte meti maññati, bhūte abhinandati. taṃ kissa hetu? ‘apariññātaṃ tassā’ti vadāmi.</p>
-<p class="bodytext">deve devato sañjānāti, deve devato saññatvā deve maññati, devesu maññati, devato maññati, deve meti maññati, deve abhinandati. taṃ kissa hetu? ‘apariññātaṃ tassā’ti vadāmi.</p>
-<p class="bodytext">pajāpatiṃ pajāpatito sañjānāti, pajāpatiṃ pajāpatito saññatvā pajāpatiṃ maññati, pajāpatismiṃ maññati, pajāpatito maññati, pajāpatiṃ meti maññati, pajāpatiṃ abhinandati. taṃ kissa hetu? ‘apariññātaṃ tassā’ti vadāmi.</p>
-<p class="bodytext">brahmaṃ <a name="V1.0003"></a> brahmato sañjānāti, brahmaṃ brahmato saññatvā brahmaṃ maññati<a name="T1.0003"></a>, brahmasmiṃ maññati, brahmato maññati, brahmaṃ meti maññati, brahmaṃ abhinandati. taṃ kissa hetu? ‘apariññātaṃ tassā’ti vadāmi.</p>
-<p class="bodytext">ābhassare ābhassarato sañjānāti, ābhassare ābhassarato saññatvā ābhassare maññati, ābhassaresu maññati, ābhassarato maññati, ābhassare meti maññati, ābhassare abhinandati. taṃ kissa hetu? ‘apariññātaṃ tassā’ti vadāmi.</p>
-<p class="bodytext">subhakiṇhe subhakiṇhato sañjānāti, subhakiṇhe subhakiṇhato saññatvā subhakiṇhe maññati, subhakiṇhesu maññati, subhakiṇhato maññati, subhakiṇhe meti maññati, subhakiṇhe abhinandati. taṃ kissa hetu? ‘apariññātaṃ tassā’ti vadāmi.</p>
+<p class="centered"> Namo tassa bhagavato arahato sammāsambuddhassa</p>
+<p class="nikaya">Majjhimanikāyo</p>
+Mūlapaṇṇāsapāḷi
+1. Mūlapariyāyavaggo
+<p class="subhead">1. Mūlapariyāyasuttaṃ</p>
+<p class="bodytext"><a name="para1"></a><span class="paranum">1</span>. Evaṃ <a name="M1.0001"></a><a name="V1.0001"></a><a name="P1.0001"></a><a name="T1.0001"></a> me sutaṃ – ekaṃ samayaṃ bhagavā ukkaṭṭhāyaṃ viharati subhagavane sālarājamūle. Tatra kho bhagavā bhikkhū āmantesi – ‘‘bhikkhavo’’ti. ‘‘Bhadante’’ti te bhikkhū bhagavato paccassosuṃ. Bhagavā etadavoca – ‘‘sabbadhammamūlapariyāyaṃ vo, bhikkhave, desessāmi. Taṃ suṇātha, sādhukaṃ manasi karotha, bhāsissāmī’’ti. ‘‘Evaṃ, bhante’’ti kho te bhikkhū bhagavato paccassosuṃ. Bhagavā etadavoca –</p>
+<p class="bodytext"><a name="para2"></a><span class="paranum">2</span>. ‘‘Idha, bhikkhave, assutavā puthujjano ariyānaṃ adassāvī ariyadhammassa akovido <a name="V1.0002"></a> ariyadhamme avinīto, sappurisānaṃ adassāvī sappurisadhammassa akovido sappurisadhamme avinīto – pathaviṃ <span class="note">[paṭhaviṃ (sī. syā. kaṃ. pī.)]</span> pathavito sañjānāti; pathaviṃ pathavito saññatvā pathaviṃ maññati, pathaviyā maññati, pathavito maññati, pathaviṃ meti maññati<a name="T1.0002"></a>, pathaviṃ abhinandati. Taṃ kissa hetu? ‘Apariññātaṃ tassā’ti vadāmi.</p>
+<p class="bodytext">‘‘Āpaṃ āpato sañjānāti; āpaṃ āpato saññatvā āpaṃ maññati, āpasmiṃ maññati, āpato maññati, āpaṃ meti maññati, āpaṃ abhinandati. Taṃ kissa hetu? ‘Apariññātaṃ tassā’ti vadāmi.</p>
 
 # Page 1 from VRI XML
 
@@ -32,6 +32,28 @@
 <p rend="bodytext" n="1"><hi rend="paranum">1</hi><hi rend="dot">.</hi> Evaṃ <pb ed="M" n="1.0001" /><pb ed="V" n="1.0001" /><pb ed="P" n="1.0001" /><pb ed="T" n="1.0001" /> me sutaṃ – ekaṃ samayaṃ bhagavā ukkaṭṭhāyaṃ viharati subhagavane sālarājamūle. Tatra kho bhagavā bhikkhū āmantesi – ‘‘bhikkhavo’’ti. ‘‘Bhadante’’ti te bhikkhū bhagavato paccassosuṃ. Bhagavā etadavoca – ‘‘sabbadhammamūlapariyāyaṃ vo, bhikkhave, desessāmi. Taṃ suṇātha, sādhukaṃ manasi karotha, bhāsissāmī’’ti. ‘‘Evaṃ, bhante’’ti kho te bhikkhū bhagavato paccassosuṃ. Bhagavā etadavoca –</p>
 <p rend="bodytext" n="2"><hi rend="paranum">2</hi><hi rend="dot">.</hi> ‘‘Idha, bhikkhave, assutavā puthujjano ariyānaṃ adassāvī ariyadhammassa akovido <pb ed="V" n="1.0002" /> ariyadhamme avinīto, sappurisānaṃ adassāvī sappurisadhammassa akovido sappurisadhamme avinīto – pathaviṃ <note>paṭhaviṃ (sī. syā. kaṃ. pī.)</note> pathavito sañjānāti; pathaviṃ pathavito saññatvā pathaviṃ maññati, pathaviyā maññati, pathavito maññati, pathaviṃ meti maññati<pb ed="T" n="1.0002" />, pathaviṃ abhinandati. Taṃ kissa hetu? ‘Apariññātaṃ tassā’ti vadāmi.</p>
 <p rend="bodytext">‘‘Āpaṃ āpato sañjānāti; āpaṃ āpato saññatvā āpaṃ maññati, āpasmiṃ maññati, āpato maññati, āpaṃ meti maññati, āpaṃ abhinandati. Taṃ kissa hetu? ‘Apariññātaṃ tassā’ti vadāmi.</p>
+
+# Page 2 Content from SQL
+
+<p class="bodytext">tejaṃ <a name="M1.0002"></a> tejato sañjānāti, tejaṃ tejato saññatvā tejaṃ maññati, tejasmiṃ maññati, tejato maññati, tejaṃ meti maññati, tejaṃ abhinandati. taṃ kissa hetu? ‘apariññātaṃ tassā’ti vadāmi.</p>
+<p class="bodytext">vāyaṃ vāyato sañjānāti, vāyaṃ vāyato saññatvā vāyaṃ maññati, vāyasmiṃ maññati, vāyato maññati, vāyaṃ meti maññati, vāyaṃ abhinandati. taṃ kissa hetu? ‘apariññātaṃ tassā’ti <a name="P1.0002"></a> vadāmi.</p>
+<p class="bodytext"><a name="para3"></a><a name="para3_mn1"></a><span class="paranum">3</span>. bhūte bhūtato sañjānāti, bhūte bhūtato saññatvā bhūte maññati, bhūtesu maññati, bhūtato maññati, bhūte meti maññati, bhūte abhinandati. taṃ kissa hetu? ‘apariññātaṃ tassā’ti vadāmi.</p>
+<p class="bodytext">deve devato sañjānāti, deve devato saññatvā deve maññati, devesu maññati, devato maññati, deve meti maññati, deve abhinandati. taṃ kissa hetu? ‘apariññātaṃ tassā’ti vadāmi.</p>
+<p class="bodytext">pajāpatiṃ pajāpatito sañjānāti, pajāpatiṃ pajāpatito saññatvā pajāpatiṃ maññati, pajāpatismiṃ maññati, pajāpatito maññati, pajāpatiṃ meti maññati, pajāpatiṃ abhinandati. taṃ kissa hetu? ‘apariññātaṃ tassā’ti vadāmi.</p>
+<p class="bodytext">brahmaṃ <a name="V1.0003"></a> brahmato sañjānāti, brahmaṃ brahmato saññatvā brahmaṃ maññati<a name="T1.0003"></a>, brahmasmiṃ maññati, brahmato maññati, brahmaṃ meti maññati, brahmaṃ abhinandati. taṃ kissa hetu? ‘apariññātaṃ tassā’ti vadāmi.</p>
+<p class="bodytext">ābhassare ābhassarato sañjānāti, ābhassare ābhassarato saññatvā ābhassare maññati, ābhassaresu maññati, ābhassarato maññati, ābhassare meti maññati, ābhassare abhinandati. taṃ kissa hetu? ‘apariññātaṃ tassā’ti vadāmi.</p>
+<p class="bodytext">subhakiṇhe subhakiṇhato sañjānāti, subhakiṇhe subhakiṇhato saññatvā subhakiṇhe maññati, subhakiṇhesu maññati, subhakiṇhato maññati, subhakiṇhe meti maññati, subhakiṇhe abhinandati. taṃ kissa hetu? ‘apariññātaṃ tassā’ti vadāmi.</p>
+
+# Page 2 from VRI HTML
+
+<p class="bodytext">‘‘Tejaṃ <a name="M1.0002"></a> tejato sañjānāti; tejaṃ tejato saññatvā tejaṃ maññati, tejasmiṃ maññati, tejato maññati, tejaṃ meti maññati, tejaṃ abhinandati. Taṃ kissa hetu? ‘Apariññātaṃ tassā’ti vadāmi.</p>
+<p class="bodytext">‘‘Vāyaṃ vāyato sañjānāti; vāyaṃ vāyato saññatvā vāyaṃ maññati, vāyasmiṃ maññati, vāyato maññati, vāyaṃ meti maññati, vāyaṃ abhinandati. Taṃ kissa hetu? ‘Apariññātaṃ tassā’ti <a name="P1.0002"></a> vadāmi.</p>
+<p class="bodytext"><a name="para3"></a><span class="paranum">3</span>. ‘‘Bhūte bhūtato sañjānāti; bhūte bhūtato saññatvā bhūte maññati, bhūtesu maññati, bhūtato maññati, bhūte meti maññati, bhūte abhinandati. Taṃ kissa hetu? ‘Apariññātaṃ tassā’ti vadāmi.</p>
+<p class="bodytext">‘‘Deve devato sañjānāti; deve devato saññatvā deve maññati, devesu maññati, devato maññati, deve meti maññati, deve abhinandati. Taṃ kissa hetu? ‘Apariññātaṃ tassā’ti vadāmi.</p>
+<p class="bodytext">‘‘Pajāpatiṃ pajāpatito sañjānāti; pajāpatiṃ pajāpatito saññatvā pajāpatiṃ maññati, pajāpatismiṃ maññati, pajāpatito maññati, pajāpatiṃ meti maññati, pajāpatiṃ abhinandati. Taṃ kissa hetu? ‘Apariññātaṃ tassā’ti vadāmi.</p>
+<p class="bodytext">‘‘Brahmaṃ <a name="V1.0003"></a> brahmato sañjānāti; brahmaṃ brahmato saññatvā brahmaṃ maññati<a name="T1.0003"></a>, brahmasmiṃ maññati, brahmato maññati, brahmaṃ meti maññati, brahmaṃ abhinandati. Taṃ kissa hetu? ‘Apariññātaṃ tassā’ti vadāmi.</p>
+<p class="bodytext">‘‘Ābhassare ābhassarato sañjānāti; ābhassare ābhassarato saññatvā ābhassare maññati, ābhassaresu maññati, ābhassarato maññati, ābhassare meti maññati, ābhassare abhinandati. Taṃ kissa hetu? ‘Apariññātaṃ tassā’ti vadāmi.</p>
+<p class="bodytext">‘‘Subhakiṇhe subhakiṇhato sañjānāti; subhakiṇhe subhakiṇhato saññatvā subhakiṇhe maññati, subhakiṇhesu maññati, subhakiṇhato maññati, subhakiṇhe meti maññati, subhakiṇhe abhinandati. Taṃ kissa hetu? ‘Apariññātaṃ tassā’ti vadāmi.</p>
 
 # Page 2 from VRI XML
 

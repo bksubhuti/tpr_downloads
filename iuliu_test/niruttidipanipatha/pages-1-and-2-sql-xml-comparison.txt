@@ -16,21 +16,23 @@
 <p class="gatha1"> tassatthaṃ dīpayissāmi, nānārāsiṃvibhājayaṃ.</p>
 <p class="gathalast">ogāyha saddasatthāni, navaṅgaṃ satthusāsananti.</p>
 
-# Page 2 Content from SQL
+# Page 1 from VRI HTML
 
-<p class="chapter">1. sandhikaṇḍa</p>
-<p class="subhead">saññārāsi</p>
-<p class="subhead">garusaññārāsi</p>
-<p class="bodytext">vaṇṇo<a name="M0.0002"></a>, saro, savaṇṇo, dīgho, rasso, byañjano, vaggo, niggahītaṃ.</p>
-<p class="bodytext"><a name="para1"></a><span class="paranum">1</span>. <span class="bld">aādayo titālīsaṃ</span> <span class="note">[titālīsa (bahūsu)]</span> <span class="bld">vaṇṇā</span> <span class="note">[ka. 2; rū. 2; nī. 1, 2]</span>.</p>
-<p class="bodytext">aādayo bindantā tecattālīsakkharā <span class="bld">vaṇṇā</span> nāma honti.</p>
-<p class="bodytext">a, ā, i, <span class="bld">ī,</span> u, ū, eta, e, ota, o. ka, kha, ga, gha, ṅa, ca, cha, ja, jha, ña, ṭa, ṭha, ḍa, ḍha, ṇa, ta, tha, da, dha, na, pa, pha, ba, bha, ma, ya, ra, la,va sa, ha, ḷa, aṃ. atthaṃ vaṇṇenti pakāsentīti vaṇṇā, <span class="bld">akkharā</span>ti ca vuccanti, nāmapaññattirūpattā nakkharanti khayavayaṃ na gacchantīti akkharā. "nāmagottaṃ na jīratī"ti <span class="note">[saṃ. ni. 1.76]</span> hi vuttaṃ.</p>
-<p class="bodytext"><a name="para2"></a><span class="paranum">2</span>. <span class="bld">dasādo sarā</span> <span class="note">[ka. 3; rū. 3; nī. 3]</span>.</p>
-<p class="bodytext">tesu vaṇṇesu ādimhi dasa vaṇṇā <span class="bld">sarā</span> nāma honti. sayameva laddhasarūpā hutvā rājanti virocantīti sarā.</p>
-<p class="bodytext"><a name="para3"></a><span class="paranum">3</span>. <span class="bld">dve dve savaṇṇā</span>.</p>
-<p class="bodytext">tesu saresu dve dvesarā <span class="bld">savaṇṇā</span> nāma honti.</p>
-<p class="bodytext">a, ā avaṇṇo, i, ī ivaṇṇo, u, ū uvaṇṇo, eta, e etavaṇṇo, ota, o otavaṇṇo. samāno vaṇṇo suti etesanti savaṇṇā, <span class="bld">sarūpā</span>ti ca vuccanti, samānaṃ rūpaṃ suti etesanti sarūpā.</p>
-<p class="bodytext"><a name="para4"></a><span class="paranum">4</span>. <span class="bld">pubbo rasso</span> <span class="note">[ka. 4; rū. 4; nī. 4.22]</span>.</p>
+<p class="centered"> Namo tassa bhagavato arahato sammāsambuddhassa </p>
+<p class="book">Niruttidīpanīpāṭha</p>
+<p class="subsubhead">Ganthārambha</p>
+<p class="hangnum"><a name="para1"></a><span class="paranum">1</span>.</p>
+<p class="gatha1"> Caturāsītisahassa<a name="M0.0001"></a>, dhammakkhandhāpabhaṅkarā;</p>
+<p class="gathalast">Lokamhi yassa jotanti, nantavaṇṇapabhassarā.</p>
+<p class="hangnum"><a name="para2"></a><span class="paranum">2</span>.</p>
+<p class="gatha1"> Anantavaṇṇaṃ sambuddhaṃ, vande niruttipāraguṃ;</p>
+<p class="gathalast">Saddhammañcassa saṅghañca, visuddhavaṇṇabhājanaṃ.</p>
+<p class="hangnum"><a name="para3"></a><span class="paranum">3</span>.</p>
+<p class="gatha1"> Moggallāno mahāñāṇī, niruttāraññakesarī;</p>
+<p class="gathalast">Nadi byākaraṇaṃnādaṃ, sogatāraññabyāpanaṃ.</p>
+<p class="hangnum"><a name="para4"></a><span class="paranum">4</span>.</p>
+<p class="gatha1"> Tassatthaṃ dīpayissāmi, nānārāsiṃvibhājayaṃ;</p>
+<p class="gathalast">Ogāyha saddasatthāni, navaṅgaṃ satthusāsananti.</p>
 
 # Page 1 from VRI XML
 
@@ -49,12 +51,44 @@
 <p rend="hangnum" n="4"><hi rend="paranum">4</hi><hi rend="dot">.</hi></p>
 <p rend="gatha1"> Tassatthaṃ dīpayissāmi, nānārāsiṃvibhājayaṃ;</p>
 <p rend="gathalast">Ogāyha saddasatthāni, navaṅgaṃ satthusāsananti.</p>
-<p rend="chapter">1. Sandhikaṇḍa</p>
-<p rend="subhead">Saññārāsi</p>
-<p rend="subhead">Garusaññārāsi</p>
+
+# Page 2 Content from SQL
+
+<p class="chapter">1. sandhikaṇḍa</p>
+<p class="subhead">saññārāsi</p>
+<p class="subhead">garusaññārāsi</p>
+<p class="bodytext">vaṇṇo<a name="M0.0002"></a>, saro, savaṇṇo, dīgho, rasso, byañjano, vaggo, niggahītaṃ.</p>
+<p class="bodytext"><a name="para1"></a><span class="paranum">1</span>. <span class="bld">aādayo titālīsaṃ</span> <span class="note">[titālīsa (bahūsu)]</span> <span class="bld">vaṇṇā</span> <span class="note">[ka. 2; rū. 2; nī. 1, 2]</span>.</p>
+<p class="bodytext">aādayo bindantā tecattālīsakkharā <span class="bld">vaṇṇā</span> nāma honti.</p>
+<p class="bodytext">a, ā, i, <span class="bld">ī,</span> u, ū, eta, e, ota, o. ka, kha, ga, gha, ṅa, ca, cha, ja, jha, ña, ṭa, ṭha, ḍa, ḍha, ṇa, ta, tha, da, dha, na, pa, pha, ba, bha, ma, ya, ra, la,va sa, ha, ḷa, aṃ. atthaṃ vaṇṇenti pakāsentīti vaṇṇā, <span class="bld">akkharā</span>ti ca vuccanti, nāmapaññattirūpattā nakkharanti khayavayaṃ na gacchantīti akkharā. "nāmagottaṃ na jīratī"ti <span class="note">[saṃ. ni. 1.76]</span> hi vuttaṃ.</p>
+<p class="bodytext"><a name="para2"></a><span class="paranum">2</span>. <span class="bld">dasādo sarā</span> <span class="note">[ka. 3; rū. 3; nī. 3]</span>.</p>
+<p class="bodytext">tesu vaṇṇesu ādimhi dasa vaṇṇā <span class="bld">sarā</span> nāma honti. sayameva laddhasarūpā hutvā rājanti virocantīti sarā.</p>
+<p class="bodytext"><a name="para3"></a><span class="paranum">3</span>. <span class="bld">dve dve savaṇṇā</span>.</p>
+<p class="bodytext">tesu saresu dve dvesarā <span class="bld">savaṇṇā</span> nāma honti.</p>
+<p class="bodytext">a, ā avaṇṇo, i, ī ivaṇṇo, u, ū uvaṇṇo, eta, e etavaṇṇo, ota, o otavaṇṇo. samāno vaṇṇo suti etesanti savaṇṇā, <span class="bld">sarūpā</span>ti ca vuccanti, samānaṃ rūpaṃ suti etesanti sarūpā.</p>
+<p class="bodytext"><a name="para4"></a><span class="paranum">4</span>. <span class="bld">pubbo rasso</span> <span class="note">[ka. 4; rū. 4; nī. 4.22]</span>.</p>
+
+# Page 2 from VRI HTML
+
+<p class="chapter">1. Sandhikaṇḍa</p>
+<p class="subhead">Saññārāsi</p>
+<p class="subhead">Garusaññārāsi</p>
+<p class="bodytext">Vaṇṇo<a name="M0.0002"></a>, saro, savaṇṇo, dīgho, rasso, byañjano, vaggo, niggahītaṃ.</p>
+<p class="bodytext"><a name="para1"></a><span class="paranum">1</span>. <span class="bld">Aādayo titālīsaṃ</span> <span class="note">[titālīsa (bahūsu)]</span> <span class="bld">vaṇṇā</span> <span class="note">[ka. 2; rū. 2; nī. 1, 2]</span>.</p>
+<p class="bodytext">Aādayo bindantā tecattālīsakkharā <span class="bld">vaṇṇā</span> nāma honti.</p>
+<p class="bodytext">A, ā, i, <span class="bld">ī,</span> u, ū, eta, e, ota, o. Ka, kha, ga, gha, ṅa, ca, cha, ja, jha, ña, ṭa, ṭha, ḍa, ḍha, ṇa, ta, tha, da, dha, na, pa, pha, ba, bha, ma, ya, ra, la,va sa, ha, ḷa, aṃ. Atthaṃ vaṇṇenti pakāsentīti vaṇṇā, <span class="bld">akkharā</span>ti ca vuccanti, nāmapaññattirūpattā nakkharanti khayavayaṃ na gacchantīti akkharā. ‘‘Nāmagottaṃ na jīratī’’ti <span class="note">[saṃ. ni. 1.76]</span> hi vuttaṃ.</p>
+<p class="bodytext"><a name="para2"></a><span class="paranum">2</span>. <span class="bld">Dasādo sarā</span> <span class="note">[ka. 3; rū. 3; nī. 3]</span>.</p>
+<p class="bodytext">Tesu vaṇṇesu ādimhi dasa vaṇṇā <span class="bld">sarā</span> nāma honti. Sayameva laddhasarūpā hutvā rājanti virocantīti sarā.</p>
+<p class="bodytext"><a name="para3"></a><span class="paranum">3</span>. <span class="bld">Dve dve savaṇṇā</span>.</p>
+<p class="bodytext">Tesu saresu dve dvesarā <span class="bld">savaṇṇā</span> nāma honti.</p>
+<p class="bodytext">A, ā avaṇṇo, i, ī ivaṇṇo, u, ū uvaṇṇo, eta, e etavaṇṇo, ota, o otavaṇṇo. Samāno vaṇṇo suti etesanti savaṇṇā, <span class="bld">sarūpā</span>ti ca vuccanti, samānaṃ rūpaṃ suti etesanti sarūpā.</p>
+<p class="bodytext"><a name="para4"></a><span class="paranum">4</span>. <span class="bld">Pubbo rasso</span> <span class="note">[ka. 4; rū. 4; nī. 4.22]</span>.</p>
 
 # Page 2 from VRI XML
 
+<p rend="chapter">1. Sandhikaṇḍa</p>
+<p rend="subhead">Saññārāsi</p>
+<p rend="subhead">Garusaññārāsi</p>
 <p rend="bodytext">Vaṇṇo<pb ed="M" n="0.0002" />, saro, savaṇṇo, dīgho, rasso, byañjano, vaggo, niggahītaṃ.</p>
 <p rend="bodytext" n="1"><hi rend="paranum">1</hi><hi rend="dot">.</hi> <hi rend="bold">Aādayo titālīsaṃ</hi> <note>titālīsa (bahūsu)</note> <hi rend="bold">vaṇṇā</hi> <note>ka. 2; rū. 2; nī. 1, 2</note>.</p>
 <p rend="bodytext">Aādayo bindantā tecattālīsakkharā <hi rend="bold">vaṇṇā</hi> nāma honti.</p>
