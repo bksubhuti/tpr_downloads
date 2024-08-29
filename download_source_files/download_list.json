@@ -48,12 +48,12 @@
         "size": "34 KB"
     },
     {
-        "name": "Anudīpanīpāṭha",
-        "release_date": "10.3.2024",
+        "name": "SBS Chants",
+        "release_date": "29.8.2024",
         "type": "books",
-        "url": "https://github.com/bksubhuti/tpr_downloads/raw/master/release_zips/anudipanipatha.zip",
-        "filename": "anudipanipatha.sql",
-        "size": "210 KB"
+        "url": "https://github.com/bksubhuti/tpr_downloads/raw/master/release_zips/sbs_pali_recitation.sql.zip",
+        "filename": "sbs_pali_recitation.sql",
+        "size": "58 KB"
     },
     {
         "name": "DPD July 2024 release",
