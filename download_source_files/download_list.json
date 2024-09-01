@@ -198,5 +198,13 @@
         "url": "https://github.com/bksubhuti/tpr_downloads/raw/master/release_zips/annya_sihala_gantha_sangaho.zip",
         "filename": "annya_sihala_gantha_sangaho.sql",
         "size": "2.6 MB"
+    },
+    {
+        "name": "DPD Extras (alpha do not use)",
+        "release_date": "1.9.2024",
+        "type": "dictionary",
+        "url": "https://github.com/bksubhuti/tpr_downloads/raw/master/release_zips/dpd_db_tables.sql.zip",
+        "filename": "dpd_db_tables.sql",
+        "size": "30.6 MB"
     }
 ]
