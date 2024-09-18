@@ -64,6 +64,14 @@
         "size": "19.6 MB"
     },
     {
+        "name": "PEU September 18 2024 release",
+        "release_date": "18.9.2024",
+        "type": "dictionary",
+        "url": "https://github.com/bksubhuti/tpr_downloads/raw/master/release_zips/peu1.zip",
+        "filename": "peu1.sql",
+        "size": "6.9 MB"
+    },
+    {
         "name": "Worldnet English to English Dictionary",
         "release_date": "5.12.2022",
         "type": "dictionary",
