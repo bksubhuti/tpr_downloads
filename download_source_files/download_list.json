@@ -72,6 +72,15 @@
         "size": "19.6 MB"
     },
     {
+        "name": "DPD Inflections",
+        "release_date": "20.7.2024",
+        "type": "dictionary",
+        "category": "Dictionaries",
+        "url": "https://github.com/bksubhuti/tpr_downloads/raw/master/release_zips/dpd__inflections.zip",
+        "filename": "dpd__inflections.sql",
+        "size": "4.3 MB"
+    },
+    {
         "name": "PEU September 18 2024 release",
         "release_date": "18.9.2024",
         "type": "dictionary",
@@ -232,14 +241,5 @@
         "url": "https://github.com/bksubhuti/tpr_downloads/raw/master/release_zips/annya_sihala_gantha_sangaho.zip",
         "filename": "annya_sihala_gantha_sangaho.sql",
         "size": "2.6 MB"
-    },
-    {
-        "name": "DPD Inflections",
-        "release_date": "20.7.2024",
-        "type": "dictionary",
-        "category": "Dictionaries",
-        "url": "https://github.com/bksubhuti/tpr_downloads/raw/master/release_zips/dpd__inflections.zip",
-        "filename": "dpd__inflections.sql",
-        "size": "4.3 MB"
     }
 ]
