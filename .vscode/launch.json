@@ -7,7 +7,8 @@
         {
             "name": "tpr_downloads",
             "request": "launch",
-            "type": "dart"
+            "type": "dart",
+            "program": "${file}"
         }
     ]
 }
