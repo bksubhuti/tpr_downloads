@@ -1,6 +1,6 @@
 [
     {
-        "name": "Pali English 4 Sutta Nikaya (Aj Sujato)+ English dhpA (Burlingame) (dn, mn, sn, an, dhpA) and 5 Vinaya Books (Aj Brahmali)",
+        "name": "4 Sutta Nikaya (Pali English) (Aj Sujato)+ English dhpA (Burlingame) (dn, mn, sn, an, dhpA) and 5 Vinaya Books (Aj Brahmali)",
         "release_date": "18.6.2023",
         "type": "books index",
         "category": "Pali English",
@@ -9,7 +9,7 @@
         "size": "5.9 MB"
     },
     {
-        "name": "Pali English Dhammapada: Edited and Translated by Ānandajoti Bhikkhu",
+        "name": "The Dhammapada (Pali English): Edited and Translated by Ānandajoti Bhikkhu",
         "release_date": "11.12.2023",
         "type": "books index",
         "category": "Pali English",
@@ -18,7 +18,7 @@
         "size": "69.3 KB"
     },
     {
-        "name": "iit Chanting Book",
+        "name": "IIT Chanting Book",
         "release_date": "18.6.2023",
         "type": "books",
         "category": "Chanting Books",
@@ -75,7 +75,7 @@
         "name": "DPD Inflections",
         "release_date": "20.7.2024",
         "type": "dictionary",
-        "category": "Dictionaries",
+        "category": "Other Beta",
         "url": "https://github.com/bksubhuti/tpr_downloads/raw/master/release_zips/dpd__inflections.zip",
         "filename": "dpd__inflections.sql",
         "size": "4.3 MB"
@@ -93,7 +93,7 @@
         "name": "Worldnet English to English Dictionary",
         "release_date": "5.12.2022",
         "type": "dictionary",
-        "category": "English",
+        "category": "Dictionaries",
         "url": "https://github.com/bksubhuti/tpr_downloads/raw/master/release_zips/worldnet.zip",
         "filename": "worldnet.sql",
         "size": "5.8 MB"
@@ -156,7 +156,7 @@
         "name": "DPD Beta",
         "release_date": "14.7.2024",
         "type": "dictionary",
-        "category": "Beta Extra CST Books",
+        "category": "Other Beta",
         "url": "https://github.com/bksubhuti/tpr_downloads/raw/master/release_zips/dpd_beta.zip",
         "filename": "dpd.sql",
         "size": "19.5 MB"
