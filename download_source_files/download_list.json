@@ -72,15 +72,6 @@
         "size": "19.6 MB"
     },
     {
-        "name": "DPD Inflections",
-        "release_date": "20.7.2024",
-        "type": "dictionary",
-        "category": "Other Beta",
-        "url": "https://github.com/bksubhuti/tpr_downloads/raw/master/release_zips/dpd__inflections.zip",
-        "filename": "dpd__inflections.sql",
-        "size": "4.3 MB"
-    },
-    {
         "name": "PEU September 18 2024 release",
         "release_date": "18.9.2024",
         "type": "dictionary",
@@ -151,15 +142,6 @@
         "url": "https://github.com/bksubhuti/tpr_downloads/raw/master/release_zips/vn2.zip",
         "filename": "vn2.sql",
         "size": "0.07 MB"
-    },
-    {
-        "name": "DPD Beta",
-        "release_date": "14.7.2024",
-        "type": "dictionary",
-        "category": "Other Beta",
-        "url": "https://github.com/bksubhuti/tpr_downloads/raw/master/release_zips/dpd_beta.zip",
-        "filename": "dpd.sql",
-        "size": "19.5 MB"
     },
     {
         "name": "Visuddhimagga (beta)",
@@ -241,5 +223,31 @@
         "url": "https://github.com/bksubhuti/tpr_downloads/raw/master/release_zips/annya_sihala_gantha_sangaho.zip",
         "filename": "annya_sihala_gantha_sangaho.sql",
         "size": "2.6 MB"
+    },
+    {
+        "name": "DPD Inflections",
+        "release_date": "20.9.2024",
+        "type": "dictionary",
+        "category": "Other Beta",
+        "url": "https://github.com/bksubhuti/tpr_downloads/raw/master/release_zips/dpd__inflections.zip",
+        "filename": "dpd__inflections.sql",
+        "size": "4.3 MB"
+    },
+    {
+        "name": "DPD Root family",
+        "release_date": "29.9.2024",
+        "type": "dictionary",
+        "url": "https://github.com/bksubhuti/tpr_downloads/raw/master/release_zips/dpd__family_root.zip",
+        "filename": "dpd__family_root.sql",
+        "size": "674 KB"
+    },
+    {
+        "name": "DPD Beta",
+        "release_date": "14.7.2024",
+        "type": "dictionary",
+        "category": "Other Beta",
+        "url": "https://github.com/bksubhuti/tpr_downloads/raw/master/release_zips/dpd_beta.zip",
+        "filename": "dpd.sql",
+        "size": "19.5 MB"
     }
 ]
