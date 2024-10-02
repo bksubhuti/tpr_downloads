@@ -225,22 +225,13 @@
         "size": "2.6 MB"
     },
     {
-        "name": "DPD Inflections",
+        "name": "DPD Extras",
         "release_date": "20.9.2024",
         "type": "dictionary",
         "category": "Other Beta",
-        "url": "https://github.com/bksubhuti/tpr_downloads/raw/master/release_zips/dpd__inflections.zip",
+        "url": "https://github.com/bksubhuti/tpr_downloads/raw/master/release_zips/dpd__extras.zip",
         "filename": "dpd__inflections.sql",
         "size": "4.3 MB"
-    },
-    {
-        "name": "DPD Root family",
-        "release_date": "29.9.2024",
-        "type": "dictionary",
-        "url": "https://github.com/bksubhuti/tpr_downloads/raw/master/release_zips/dpd__family_root.zip",
-        "category": "Other Beta",
-        "filename": "dpd__family_root.sql",
-        "size": "674 KB"
     },
     {
         "name": "DPD Beta",
