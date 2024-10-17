@@ -63,13 +63,13 @@
         "size": "58 KB"
     },
     {
-        "name": "DPD July 2024 release",
-        "release_date": "20.7.2024",
+        "name": "DPD October 2024 release",
+        "release_date": "17.10.2024",
         "type": "dictionary",
         "category": "Dictionaries",
         "url": "https://github.com/bksubhuti/tpr_downloads/raw/master/release_zips/dpd.zip",
         "filename": "dpd.sql",
-        "size": "19.6 MB"
+        "size": "23.6 MB"
     },
     {
         "name": "PEU September 18 2024 release",
