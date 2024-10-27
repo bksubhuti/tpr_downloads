@@ -72,6 +72,15 @@
         "size": "23.6 MB"
     },
     {
+        "name": "DPD Extras For builds 82+ Only (upgrade needed)",
+        "release_date": "5.10.2024",
+        "type": "dictionary",
+        "category": "Dictionaries",
+        "url": "https://github.com/bksubhuti/tpr_downloads/raw/master/release_zips/dpd__extras.zip",
+        "filename": "dpd__extras.sql",
+        "size": "11.4 MB"
+    },
+    {
         "name": "PEU October 23, 2024 release",
         "release_date": "23.10.2024",
         "type": "dictionary",
@@ -223,15 +232,6 @@
         "url": "https://github.com/bksubhuti/tpr_downloads/raw/master/release_zips/annya_sihala_gantha_sangaho.zip",
         "filename": "annya_sihala_gantha_sangaho.sql",
         "size": "2.6 MB"
-    },
-    {
-        "name": "DPD Extras DEV-TESTING",
-        "release_date": "5.10.2024",
-        "type": "dictionary",
-        "category": "Other Beta",
-        "url": "https://github.com/bksubhuti/tpr_downloads/raw/master/release_zips/dpd__extras.zip",
-        "filename": "dpd__extras.sql",
-        "size": "11.4 MB"
     },
     {
         "name": "Pācittiya Page 133 fix",
