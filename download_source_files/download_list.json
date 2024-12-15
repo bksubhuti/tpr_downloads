@@ -63,13 +63,13 @@
         "size": "58 KB"
     },
     {
-        "name": "DPD November 2024 release",
-        "release_date": "16.11.2024",
+        "name": "DPD December 2024 release",
+        "release_date": "15.12.2024",
         "type": "dictionary",
         "category": "Dictionaries",
         "url": "https://github.com/bksubhuti/tpr_downloads/raw/master/release_zips/dpd.zip",
         "filename": "dpd.sql",
-        "size": "23.7 MB"
+        "size": "24.6 MB"
     },
     {
         "name": "DPD Extras For builds 82+ Only (upgrade needed)",
