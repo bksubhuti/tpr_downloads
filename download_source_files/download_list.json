@@ -250,5 +250,14 @@
         "url": "https://github.com/bksubhuti/tpr_downloads/raw/master/release_zips/dpd_beta.zip",
         "filename": "dpd.sql",
         "size": "24.7 MB"
+    },
+    {
+        "name": "Devamitta",
+        "release_date": "15.1.2025",
+        "type": "dictionary",
+        "category": "Other Beta",
+        "url": "https://github.com/bksubhuti/tpr_downloads/raw/master/release_zips/devamitta.zip",
+        "filename": "dpd.sql",
+        "size": "24.7 MB"
     }
 ]
