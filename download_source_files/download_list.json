@@ -63,13 +63,13 @@
         "size": "58 KB"
     },
     {
-        "name": "DPD April 2025 release",
-        "release_date": "13.4.2025",
+        "name": "DPD May 2025 release",
+        "release_date": "12.5.2025",
         "type": "dictionary",
         "category": "Dictionaries",
         "url": "https://github.com/bksubhuti/tpr_downloads/raw/master/release_zips/dpd.zip",
         "filename": "dpd.sql",
-        "size": "25.0 MB"
+        "size": "25.1 MB"
     },
     {
         "name": "DPD Extras For builds 82+ Only (upgrade needed)",
