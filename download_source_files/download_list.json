@@ -161,6 +161,7 @@
         "filename": "annya_visuddhimagga.sql",
         "size": "4.8 MB"
     },
+    
     {
         "name": "Leḍī sayāḍo gantha-saṅgaho (beta)",
         "release_date": "21.7.2024",
@@ -178,6 +179,15 @@
         "url": "https://github.com/bksubhuti/tpr_downloads/raw/master/release_zips/annya_buddha_vandana_gantha_sangaho.zip",
         "filename": "annya_buddha_vandana_gantha_sangaho.sql",
         "size": "0.26 MB"
+    },
+    {
+        "name": "Jataka Abhinavatika (beta)",
+        "release_date": "13.9.2025",
+        "type": "books",
+        "category": "Beta Extra CST Books",
+        "url": "https://github.com/bksubhuti/tpr_downloads/raw/refs/heads/master/release_zips/jataka-abhinavatika.zip",
+        "filename": "jataka_01.sql",
+        "size": "1.1 MB"
     },
     {
         "name": "Saṅgāyana-puccha vissajjanā (beta)",
