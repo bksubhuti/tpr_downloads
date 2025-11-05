@@ -63,13 +63,13 @@
         "size": "58 KB"
     },
     {
-        "name": "DPD July 2025 release",
-        "release_date": "9.7.2025",
+        "name": "DPD November 2025 release",
+        "release_date": "5.11.2025",
         "type": "dictionary",
         "category": "Dictionaries",
         "url": "https://github.com/bksubhuti/tpr_downloads/raw/master/release_zips/dpd.zip",
         "filename": "dpd.sql",
-        "size": "25.3 MB"
+        "size": "23.0 MB"
     },
     {
         "name": "DPD Extras For builds 82+ Only (upgrade needed)",
@@ -161,7 +161,6 @@
         "filename": "annya_visuddhimagga.sql",
         "size": "4.8 MB"
     },
-    
     {
         "name": "Leḍī sayāḍo gantha-saṅgaho (beta)",
         "release_date": "21.7.2024",
