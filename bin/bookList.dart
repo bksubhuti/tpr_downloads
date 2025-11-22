@@ -95,7 +95,7 @@ const booklistString = ''' [
     "basketName": "annya",
     "categoryID": "annya_pe_mn",
     "categoryName": "PE Majjhima Nikaya",
-    "bookName": "majjhimapaṇṇāsa",
+    "bookName": "Uparipaṇṇāsa",
     "bookID": "annya_pe_mn3"
   },
   {
