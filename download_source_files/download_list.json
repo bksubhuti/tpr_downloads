@@ -63,13 +63,13 @@
         "size": "58 KB"
     },
     {
-        "name": "DPD January 2026 release",
-        "release_date": "3.1.2026",
+        "name": "DPD February 2026 release",
+        "release_date": "2.2.2026",
         "type": "dictionary",
         "category": "Dictionaries",
         "url": "https://github.com/bksubhuti/tpr_downloads/raw/master/release_zips/dpd.zip",
         "filename": "dpd.sql",
-        "size": "23.1 MB"
+        "size": "23.2 MB"
     },
     {
         "name": "DPD Extras For builds 82+ Only (upgrade needed)",
@@ -253,12 +253,12 @@
     },
     {
         "name": "DPD Beta",
-        "release_date": "20.12.2025",
+        "release_date": "1.2.2026",
         "type": "dictionary",
         "category": "Other Beta",
         "url": "https://github.com/bksubhuti/tpr_downloads/raw/master/release_zips/dpd_beta.zip",
         "filename": "dpd.sql",
-        "size": "23.1 MB"
+        "size": "23.2 MB"
     },
     {
         "name": "DPD with Russian",
