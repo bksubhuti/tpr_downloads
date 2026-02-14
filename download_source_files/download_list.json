@@ -157,7 +157,7 @@
         "release_date": "14.2.2026",
         "type": "books",
         "category": "Beta PE",
-        "url": "https://github.com/bksubhuti/tpr_downloads/raw/master/release_zips/4nikaya_vinaya_ext.zip",
+        "url": "https://github.com/bksubhuti/tpr_downloads/raw/refs/heads/master/release_zips/4nikaya_vinaya_ext.zip",
         "filename": "annya_4nikaya.sql",
         "size": "6 MB"
     },
