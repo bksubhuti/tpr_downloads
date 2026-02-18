@@ -27,6 +27,15 @@
         "size": "4.8 MB"
     },
     {
+        "name": "4 Nikaya Commentary (Pāḷi English) by Epitaka.org",
+        "release_date": "18.2.2026",
+        "type": "books index",
+        "category": "Pali English",
+        "url": "https://github.com/bksubhuti/tpr_downloads/raw/refs/heads/master/release_zips/4_nikaya_commentary_complete.zip",
+        "filename": "4_nikaya_commentary_complete.zip",
+        "size": "7.4 MB"
+    },
+    {
         "name": "The Dhammapada (Pali English): Edited and Translated by Ānandajoti Bhikkhu",
         "release_date": "11.12.2023",
         "type": "books index",
