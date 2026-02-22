@@ -180,13 +180,22 @@
         "size": "0.07 MB"
     },
     {
-        "name": "epitaka one complete (beta)",
+        "name": "ePitaka English Full",
         "release_date": "22.2.2026",
         "type": "books index",
         "category": "Beta PE",
         "url": "https://www.dropbox.com/scl/fi/0mhnv9ddplbnu8k5a0fh4/full_en.zip?rlkey=c9i7oxkf98quu5vqni7hsjh0w&st=u8ri2vk4&dl=1",
         "filename": "full_en.zip",
         "size": "72 MB"
+    },
+    {
+        "name": "ePitaka Vietnamese Full",
+        "release_date": "22.2.2026",
+        "type": "books index",
+        "category": "Beta PE",
+        "url": "https://www.dropbox.com/scl/fi/6tmshoomm6mvw4xtpbqqj/full_vietnamese.zip?rlkey=6h00gb51vscox83y4fgm7wdbx&st=f2ozdcr3&dl=1",
+        "filename": "full_en.zip",
+        "size": "74 MB"
     },
     {
         "name": "epitaka 4nikaya (beta)",
