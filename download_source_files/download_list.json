@@ -179,14 +179,14 @@
         "filename": "vn2.sql",
         "size": "0.07 MB"
     },
-        {
+    {
         "name": "epitaka one complete (beta)",
-        "release_date": "15.2.2026",
+        "release_date": "22.2.2026",
         "type": "books index",
         "category": "Beta PE",
-        "url": "https://github.com/bksubhuti/tpr_downloads/raw/refs/heads/master/release_zips/pali_english_complete.sql.zip",
-        "filename": "pali_english_complete.sql",
-        "size": "6 MB"
+        "url": "https://www.dropbox.com/scl/fi/0mhnv9ddplbnu8k5a0fh4/full_en.zip?rlkey=c9i7oxkf98quu5vqni7hsjh0w&st=u8ri2vk4&dl=1",
+        "filename": "full_en.zip",
+        "size": "72 MB"
     },
     {
         "name": "epitaka 4nikaya (beta)",
