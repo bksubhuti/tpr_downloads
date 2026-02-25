@@ -41,7 +41,7 @@
         "type": "books index",
         "category": "Pali English",
         "url": "https://github.com/bksubhuti/tpr_downloads/raw/master/release_zips/dhp_bh_anandajoti.zip",
-        "filename": "dhp_bh_anandajoti.sql",
+        "filename": "dhp_bh_anandajoti.zip",
         "size": "69.3 KB"
     },
     {
@@ -50,7 +50,7 @@
         "type": "books",
         "category": "Chanting Books",
         "url": "https://github.com/bksubhuti/tpr_downloads/raw/master/release_zips/iit_chantingbook.zip",
-        "filename": "iit_chantingbook.sql",
+        "filename": "iit_chantingbook.zip",
         "size": "1 MB"
     },
     {
@@ -59,7 +59,7 @@
         "type": "books",
         "category": "Chanting Books",
         "url": "https://github.com/bksubhuti/tpr_downloads/raw/master/release_zips/Safeguard-Recitals.zip",
-        "filename": "Safeguard-Recitals.sql",
+        "filename": "Safeguard-Recitals.zip",
         "size": "114 KB"
     },
     {
@@ -68,7 +68,7 @@
         "type": "books",
         "category": "Chanting Books",
         "url": "https://github.com/bksubhuti/tpr_downloads/raw/master/release_zips/Daily_Chanting.zip",
-        "filename": "Daily_Chanting.sql",
+        "filename": "Daily_Chanting.zip",
         "size": "29 KB"
     },
     {
@@ -77,7 +77,7 @@
         "type": "books",
         "category": "Chanting Books",
         "url": "https://github.com/bksubhuti/tpr_downloads/raw/master/release_zips/Chanting_for_Meditators.zip",
-        "filename": "Chanting_for_Meditators.sql",
+        "filename": "Chanting_for_Meditators.zip",
         "size": "34 KB"
     },
     {
@@ -85,8 +85,8 @@
         "release_date": "29.8.2024",
         "type": "books",
         "category": "Chanting Books",
-        "url": "https://github.com/bksubhuti/tpr_downloads/raw/master/release_zips/sbs_pali_recitation.sql.zip",
-        "filename": "sbs_pali_recitation.sql",
+        "url": "https://github.com/bksubhuti/tpr_downloads/raw/master/release_zips/sbs_pali_recitation.zip.zip",
+        "filename": "sbs_pali_recitation.zip",
         "size": "58 KB"
     },
     {
@@ -95,7 +95,7 @@
         "type": "dictionary",
         "category": "Dictionaries",
         "url": "https://github.com/bksubhuti/tpr_downloads/raw/master/release_zips/dpd.zip",
-        "filename": "dpd.sql",
+        "filename": "dpd.zip",
         "size": "23.2 MB"
     },
     {
@@ -104,7 +104,7 @@
         "type": "dictionary",
         "category": "Dictionaries",
         "url": "https://github.com/bksubhuti/tpr_downloads/raw/master/release_zips/dpd__extras.zip",
-        "filename": "dpd__extras.sql",
+        "filename": "dpd__extras.zip",
         "size": "11.4 MB"
     },
     {
@@ -113,7 +113,7 @@
         "type": "dictionary",
         "category": "Dictionaries",
         "url": "https://github.com/bksubhuti/tpr_downloads/raw/master/release_zips/peu1.zip",
-        "filename": "peu1.sql",
+        "filename": "peu1.zip",
         "size": "6.9 MB"
     },
     {
@@ -122,7 +122,7 @@
         "type": "dictionary",
         "category": "Dictionaries",
         "url": "https://github.com/bksubhuti/tpr_downloads/raw/master/release_zips/worldnet.zip",
-        "filename": "worldnet.sql",
+        "filename": "worldnet.zip",
         "size": "5.8 MB"
     },
     {
@@ -131,7 +131,7 @@
         "type": "dictionary",
         "category": "Dictionaries",
         "url": "https://github.com/bksubhuti/tpr_downloads/raw/master/release_zips/g1.zip",
-        "filename": "g1.sql",
+        "filename": "g1.zip",
         "size": "0.5 MB"
     },
     {
@@ -140,7 +140,7 @@
         "type": "dictionary",
         "category": "Dictionaries",
         "url": "https://github.com/bksubhuti/tpr_downloads/raw/master/release_zips/h1.zip",
-        "filename": "h1.sql",
+        "filename": "h1.zip",
         "size": "0.3 MB"
     },
     {
@@ -149,7 +149,7 @@
         "type": "dictionary",
         "category": "Dictionaries",
         "url": "https://github.com/bksubhuti/tpr_downloads/raw/master/release_zips/pc1.zip",
-        "filename": "pc1.sql",
+        "filename": "pc1.zip",
         "size": "0.244 MB"
     },
     {
@@ -158,7 +158,7 @@
         "type": "dictionary",
         "category": "Dictionaries",
         "url": "https://github.com/bksubhuti/tpr_downloads/raw/master/release_zips/pc2.zip",
-        "filename": "pc2.sql",
+        "filename": "pc2.zip",
         "size": "2.0 MB"
     },
     {
@@ -167,7 +167,7 @@
         "type": "dictionary",
         "category": "Dictionaries",
         "url": "https://github.com/bksubhuti/tpr_downloads/raw/master/release_zips/vn1.zip",
-        "filename": "vn1.sql",
+        "filename": "vn1.zip",
         "size": "0.300 MB"
     },
     {
@@ -176,7 +176,7 @@
         "type": "dictionary",
         "category": "Dictionaries",
         "url": "https://github.com/bksubhuti/tpr_downloads/raw/master/release_zips/vn2.zip",
-        "filename": "vn2.sql",
+        "filename": "vn2.zip",
         "size": "0.07 MB"
     },
     {
@@ -203,7 +203,7 @@
         "type": "books index",
         "category": "Beta PE",
         "url": "https://github.com/bksubhuti/tpr_downloads/raw/refs/heads/master/release_zips/4nikaya_vinaya_ext.zip",
-        "filename": "annya_4nikaya.sql",
+        "filename": "annya_4nikaya.zip",
         "size": "6 MB"
     },
     {
@@ -212,7 +212,7 @@
         "type": "books",
         "category": "Beta Extra CST Books",
         "url": "https://github.com/bksubhuti/tpr_downloads/raw/master/release_zips/annya_visuddhimagga.zip",
-        "filename": "annya_visuddhimagga.sql",
+        "filename": "annya_visuddhimagga.zip",
         "size": "4.8 MB"
     },
     {
@@ -221,7 +221,7 @@
         "type": "books",
         "category": "Beta Extra CST Books",
         "url": "https://github.com/bksubhuti/tpr_downloads/raw/master/release_zips/annya_ledi_sayadaw.zip",
-        "filename": "annya_ledi_sayadaw.sql",
+        "filename": "annya_ledi_sayadaw.zip",
         "size": "0.94 MB"
     },
     {
@@ -230,7 +230,7 @@
         "type": "books",
         "category": "Beta Extra CST Books",
         "url": "https://github.com/bksubhuti/tpr_downloads/raw/master/release_zips/annya_buddha_vandana_gantha_sangaho.zip",
-        "filename": "annya_buddha_vandana_gantha_sangaho.sql",
+        "filename": "annya_buddha_vandana_gantha_sangaho.zip",
         "size": "0.26 MB"
     },
     {
@@ -239,7 +239,7 @@
         "type": "books",
         "category": "Beta Extra CST Books",
         "url": "https://github.com/bksubhuti/tpr_downloads/raw/refs/heads/master/release_zips/jataka-abhinavatika.zip",
-        "filename": "jataka_01.sql",
+        "filename": "jataka_01.zip",
         "size": "1.1 MB"
     },
     {
@@ -248,7 +248,7 @@
         "type": "books",
         "category": "Beta Extra CST Books",
         "url": "https://github.com/bksubhuti/tpr_downloads/raw/master/release_zips/annya_sangayana_puccha_vissajjana.zip",
-        "filename": "annya_sangayana_puccha_vissajjana.sql",
+        "filename": "annya_sangayana_puccha_vissajjana.zip",
         "size": "1.5 MB"
     },
     {
@@ -257,7 +257,7 @@
         "type": "books",
         "category": "Beta Extra CST Books",
         "url": "https://github.com/bksubhuti/tpr_downloads/raw/master/release_zips/annya_vamsa_gantha_sangaho.zip",
-        "filename": "annya_vamsa_gantha_sangaho.sql",
+        "filename": "annya_vamsa_gantha_sangaho.zip",
         "size": "2.1 MB"
     },
     {
@@ -266,7 +266,7 @@
         "type": "books",
         "category": "Beta Extra CST Books",
         "url": "https://github.com/bksubhuti/tpr_downloads/raw/master/release_zips/annya_byakarana_gantha_sangaho.zip",
-        "filename": "annya_byakarana_gantha_sangaho.sql",
+        "filename": "annya_byakarana_gantha_sangaho.zip",
         "size": "8.0 MB"
     },
     {
@@ -275,7 +275,7 @@
         "type": "books",
         "category": "Beta Extra CST Books",
         "url": "https://github.com/bksubhuti/tpr_downloads/raw/master/release_zips/annya_niti_gantha_sangaho.zip",
-        "filename": "annya_niti_gantha_sangaho.sql",
+        "filename": "annya_niti_gantha_sangaho.zip",
         "size": "1.1 MB"
     },
     {
@@ -284,7 +284,7 @@
         "type": "books",
         "category": "Beta Extra CST Books",
         "url": "https://github.com/bksubhuti/tpr_downloads/raw/master/release_zips/annya_pakinaka_gantha_sangaho.zip",
-        "filename": "annya_pakinaka_gantha_sangaho.sql",
+        "filename": "annya_pakinaka_gantha_sangaho.zip",
         "size": "982K"
     },
     {
@@ -293,7 +293,7 @@
         "type": "books",
         "category": "Beta Extra CST Books",
         "url": "https://github.com/bksubhuti/tpr_downloads/raw/master/release_zips/annya_sihala_gantha_sangaho.zip",
-        "filename": "annya_sihala_gantha_sangaho.sql",
+        "filename": "annya_sihala_gantha_sangaho.zip",
         "size": "2.6 MB"
     },
     {
@@ -302,7 +302,7 @@
         "type": "dictionary",
         "category": "Other Beta",
         "url": "https://github.com/bksubhuti/tpr_downloads/raw/master/release_zips/pac_p_133_fix.zip",
-        "filename": "pac_p_133_fix.sql",
+        "filename": "pac_p_133_fix.zip",
         "size": "1 kb"
     },
     {
@@ -311,7 +311,7 @@
         "type": "dictionary",
         "category": "Other Beta",
         "url": "https://github.com/bksubhuti/tpr_downloads/raw/master/release_zips/dpd_beta.zip",
-        "filename": "dpd.sql",
+        "filename": "dpd.zip",
         "size": "23.2 MB"
     },
     {
@@ -320,7 +320,7 @@
         "type": "dictionary",
         "category": "Other Beta",
         "url": "https://github.com/bksubhuti/tpr_downloads/raw/master/release_zips/dpd_with_rus.zip",
-        "filename": "dpd.sql",
+        "filename": "dpd.zip",
         "size": "25.1 MB"
     },
     {
