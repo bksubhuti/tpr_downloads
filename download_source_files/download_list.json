@@ -1,18 +1,18 @@
 [
     {
-      "name": "ePitaka English (Full replacement of core texts with Pāḷi / English texts)",
+      "name": "ePitaka.org English (Full replacement of core texts with Pāḷi / English texts)",
       "release_date": "24.2.2026",
       "type": "books index",
-      "category": "Full ePitaka.org Integration",
+      "category": "Full ePitaka Integration",
       "url": "https://www.dropbox.com/scl/fi/0mhnv9ddplbnu8k5a0fh4/full_en.zip?rlkey=c9i7oxkf98quu5vqni7hsjh0w&st=agjruuyp&dl=1",
       "filename": "full_en.zip",
       "size": "80.8 MB"
     },
     {
-      "name": "ePitaka Tiếng Việt (Thay thế toàn bộ các văn bản cốt lõi bằng các văn bản Pāḷi / tiếng Việt)",
+      "name": "ePitaka.org Tiếng Việt (Thay thế toàn bộ các văn bản cốt lõi bằng các văn bản Pāḷi / tiếng Việt)",
       "release_date": "26.2.2026",
       "type": "books index",
-      "category": "Full ePitaka.org Integration",
+      "category": "Full ePitaka Integration",
       "url": "https://www.dropbox.com/scl/fi/4cap396jqawiotq904pa9/full_vn.zip?rlkey=2l59knhktaqty1pwsop6s17l9&st=2bk8ahe5&dl=1",
       "filename": "full_vn.zip",
       "size": "82 MB"
