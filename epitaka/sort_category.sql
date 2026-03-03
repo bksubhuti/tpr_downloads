@@ -1,0 +1,12 @@
+BEGIN TRANSACTION;
+UPDATE category SET sort_order = 10 WHERE id = 'vi';
+UPDATE category SET sort_order = 20 WHERE id = 'di';
+UPDATE category SET sort_order = 30 WHERE id = 'ma';
+UPDATE category SET sort_order = 40 WHERE id = 'sa';
+UPDATE category SET sort_order = 50 WHERE id = 'an';
+UPDATE category SET sort_order = 60 WHERE id = 'ku';
+UPDATE category SET sort_order = 70 WHERE id = 'bi';
+UPDATE category SET sort_order = 80 WHERE id = 'annya_vi';
+UPDATE category SET sort_order = 90 WHERE id = 'annya_bi';
+UPDATE category SET sort_order = 100 WHERE id = 'annya_sadda';
+COMMIT;
