@@ -1,21 +1,21 @@
 [
     {
-      "name": "ePitaka.org English (Full replacement of core texts with Pāḷi / English texts)",
-      "release_date": "24.2.2026",
-      "type": "books index",
-      "category": "Full ePitaka Integration",
-      "url": "https://www.dropbox.com/scl/fi/0mhnv9ddplbnu8k5a0fh4/full_en.zip?rlkey=c9i7oxkf98quu5vqni7hsjh0w&st=agjruuyp&dl=1",
-      "filename": "full_en.zip",
-      "size": "80.8 MB"
+        "name": "ePitaka.org English (Full replacement of core texts with Pāḷi / English texts)",
+        "release_date": "24.2.2026",
+        "type": "books index",
+        "category": "Full ePitaka Integration",
+        "url": "https://www.dropbox.com/scl/fi/0mhnv9ddplbnu8k5a0fh4/full_en.zip?rlkey=c9i7oxkf98quu5vqni7hsjh0w&st=agjruuyp&dl=1",
+        "filename": "full_en.zip",
+        "size": "80.8 MB"
     },
     {
-      "name": "ePitaka.org Tiếng Việt (Thay thế toàn bộ các văn bản cốt lõi bằng các văn bản Pāḷi / tiếng Việt)",
-      "release_date": "26.2.2026",
-      "type": "books index",
-      "category": "Full ePitaka Integration",
-      "url": "https://www.dropbox.com/scl/fi/4cap396jqawiotq904pa9/full_vn.zip?rlkey=2l59knhktaqty1pwsop6s17l9&st=2bk8ahe5&dl=1",
-      "filename": "full_vn.zip",
-      "size": "82 MB"
+        "name": "ePitaka.org Tiếng Việt (Thay thế toàn bộ các văn bản cốt lõi bằng các văn bản Pāḷi / tiếng Việt)",
+        "release_date": "26.2.2026",
+        "type": "books index",
+        "category": "Full ePitaka Integration",
+        "url": "https://www.dropbox.com/scl/fi/4cap396jqawiotq904pa9/full_vn.zip?rlkey=2l59knhktaqty1pwsop6s17l9&st=2bk8ahe5&dl=1",
+        "filename": "full_vn.zip",
+        "size": "82 MB"
     },
     {
         "name": "4 Sutta Nikaya (Pāḷi English) by Epitaka.org (dn, mn, sn, an) and 5 Vinaya Books",
@@ -261,13 +261,13 @@
         "size": "8.0 MB"
     },
     {
-        "name": "Nīti-gantha-saṅgaho (beta)",
-        "release_date": "21.7.2024",
-        "type": "books",
-        "category": "Beta Extra CST Books",
-        "url": "https://github.com/bksubhuti/tpr_downloads/raw/master/release_zips/annya_niti_gantha_sangaho.zip",
-        "filename": "annya_niti_gantha_sangaho.zip",
-        "size": "1.1 MB"
+        "name": "DPD with Russian",
+        "release_date": "15.3.2026",
+        "type": "dictionary",
+        "category": "Other Beta",
+        "url": "https://github.com/bksubhuti/tpr_downloads/raw/master/release_zips/dpd_with_rus.zip",
+        "filename": "dpd.sql",
+        "size": "25.0 MB"
     },
     {
         "name": "Pakiṇṇaka-gantha-saṅgaho (beta)",
