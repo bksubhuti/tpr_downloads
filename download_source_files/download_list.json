@@ -108,13 +108,13 @@
         "size": "58 KB"
     },
     {
-        "name": "DPD February 2026 release",
-        "release_date": "2.2.2026",
+        "name": "DPD April 2026 release",
+        "release_date": "2.4.2026",
         "type": "dictionary",
         "category": "Dictionaries",
         "url": "https://github.com/bksubhuti/tpr_downloads/raw/master/release_zips/dpd.zip",
         "filename": "dpd.zip",
-        "size": "23.2 MB"
+        "size": "23.3 MB"
     },
     {
         "name": "DPD Extras For builds 82+ Only (upgrade needed)",
