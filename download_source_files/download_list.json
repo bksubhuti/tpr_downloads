@@ -262,12 +262,12 @@
     },
     {
         "name": "DPD with Russian",
-        "release_date": "15.3.2026",
+        "release_date": "11.4.2026",
         "type": "dictionary",
         "category": "Other Beta",
         "url": "https://github.com/bksubhuti/tpr_downloads/raw/master/release_zips/dpd_with_rus.zip",
         "filename": "dpd.sql",
-        "size": "25.0 MB"
+        "size": "25.1 MB"
     },
     {
         "name": "Pakiṇṇaka-gantha-saṅgaho (beta)",
