@@ -261,13 +261,13 @@
         "size": "8.0 MB"
     },
     {
-        "name": "DPD with Russian",
-        "release_date": "11.4.2026",
-        "type": "dictionary",
-        "category": "Other Beta",
-        "url": "https://github.com/bksubhuti/tpr_downloads/raw/master/release_zips/dpd_with_rus.zip",
-        "filename": "dpd.sql",
-        "size": "25.1 MB"
+        "name": "Nīti-gantha-saṅgaho (beta)",
+        "release_date": "21.7.2024",
+        "type": "books",
+        "category": "Beta Extra CST Books",
+        "url": "https://github.com/bksubhuti/tpr_downloads/raw/master/release_zips/annya_niti_gantha_sangaho.zip",
+        "filename": "annya_niti_gantha_sangaho.zip",
+        "size": "1.1 MB"
     },
     {
         "name": "Pakiṇṇaka-gantha-saṅgaho (beta)",
@@ -306,15 +306,6 @@
         "size": "23.2 MB"
     },
     {
-        "name": "DPD with Russian",
-        "release_date": "3.1.2026",
-        "type": "dictionary",
-        "category": "Other Beta",
-        "url": "https://github.com/bksubhuti/tpr_downloads/raw/master/release_zips/dpd_with_rus.zip",
-        "filename": "dpd.zip",
-        "size": "25.1 MB"
-    },
-    {
         "name": "Tet multiple file zips",
         "release_date": "06.04.2025",
         "type": "dictionary",
@@ -322,5 +313,14 @@
         "url": "https://github.com/bksubhuti/tpr_downloads/raw/master/release_zips/test_sql_files.zip",
         "filename": "test_sql_files.zip",
         "size": "26.8 MB"
+    },
+    {
+        "name": "DPD with Russian",
+        "release_date": "13.4.2026",
+        "type": "dictionary",
+        "category": "Other Beta",
+        "url": "https://github.com/bksubhuti/tpr_downloads/raw/master/release_zips/dpd_with_rus.zip",
+        "filename": "dpd.sql",
+        "size": "25.1 MB"
     }
 ]
