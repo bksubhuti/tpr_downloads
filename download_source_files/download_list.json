@@ -298,12 +298,12 @@
     },
     {
         "name": "DPD Beta",
-        "release_date": "15.5.2026",
+        "release_date": "7.7.2026",
         "type": "dictionary",
         "category": "Other Beta",
         "url": "https://github.com/bksubhuti/tpr_downloads/raw/master/release_zips/dpd_beta.zip",
         "filename": "dpd.zip",
-        "size": "23.4 MB"
+        "size": "23.5 MB"
     },
     {
         "name": "Tet multiple file zips",
