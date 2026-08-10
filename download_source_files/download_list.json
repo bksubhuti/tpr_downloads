@@ -18,51 +18,6 @@
         "size": "82 MB"
     },
     {
-        "name": "4 Sutta Nikaya (Pāḷi English) by Epitaka.org (dn, mn, sn, an) and 5 Vinaya Books",
-        "release_date": "18.2.2026",
-        "type": "books index",
-        "category": "Pali English",
-        "url": "https://github.com/bksubhuti/tpr_downloads/raw/refs/heads/master/release_zips/4pali_english_complete_epitaka.zip",
-        "filename": "4pali_english_complete_epitaka.zip",
-        "size": "6 MB"
-    },
-    {
-        "name": "Dhammapada Commentary (Pāḷi English) by Epitaka.org",
-        "release_date": "18.2.2026",
-        "type": "books index",
-        "category": "Pali English",
-        "url": "https://github.com/bksubhuti/tpr_downloads/raw/refs/heads/master/release_zips/dhpa_complete.zip",
-        "filename": "dhpa_complete.zip",
-        "size": "1.5 MB"
-    },
-    {
-        "name": "Jātaka Commentary (Pāḷi English) by Epitaka.org",
-        "release_date": "18.2.2026",
-        "type": "books index",
-        "category": "Pali English",
-        "url": "https://github.com/bksubhuti/tpr_downloads/raw/refs/heads/master/release_zips/jataka_complete.zip",
-        "filename": "jataka_complete.zip",
-        "size": "4.8 MB"
-    },
-    {
-        "name": "4 Nikaya Commentary (Pāḷi English) by Epitaka.org",
-        "release_date": "18.2.2026",
-        "type": "books index",
-        "category": "Pali English",
-        "url": "https://github.com/bksubhuti/tpr_downloads/raw/refs/heads/master/release_zips/4_nikaya_commentary_complete.zip",
-        "filename": "4_nikaya_commentary_complete.zip",
-        "size": "7.4 MB"
-    },
-    {
-        "name": "The Dhammapada (Pali English): Edited and Translated by Ānandajoti Bhikkhu",
-        "release_date": "11.12.2023",
-        "type": "books index",
-        "category": "Pali English",
-        "url": "https://github.com/bksubhuti/tpr_downloads/raw/master/release_zips/dhp_bh_anandajoti.zip",
-        "filename": "dhp_bh_anandajoti.zip",
-        "size": "69.3 KB"
-    },
-    {
         "name": "IIT Chanting Book",
         "release_date": "18.6.2023",
         "type": "books",
