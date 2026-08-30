@@ -5,7 +5,7 @@
         "type": "books index",
         "category": "Full Translations",
         "url": "https://www.dropbox.com/scl/fi/jfr93gi4k8hnv9016bjw1/epitaka_full_en.zip?rlkey=8ovolzb3eo1n9jp4fl2vw47qd&st=onglx7un&dl=1",
-        "filename": "full_en.zip",
+        "filename": "epitaka_full_en.zip",
         "size": "80.8 MB"
     },
     {
@@ -14,8 +14,17 @@
         "type": "books index",
         "category": "Full Translations",
         "url": "https://www.dropbox.com/scl/fi/yvhu1iam74yur34t5v77w/epitaka_viet_full.zip?rlkey=9znil7d8xoair4hw7wyyywx21&st=fouasv7o&dl=1",
-        "filename": "full_vn.zip",
+        "filename": "epitaka_full_vn.zip",
         "size": "91 MB"
+    },
+    {
+        "name": "ePitaka.org සිංහල (මූලික ත්‍රිපිටක ග්‍රන්ථ, පාලි / සිංහල ග්‍රන්ථ මගින් සම්පූර්ණයෙන්ම ප්‍රතිස්ථාපනය කිරීම)",
+        "release_date": "30.8.2026",
+        "type": "books index",
+        "category": "Full Translations",
+        "url": "https://www.dropbox.com/scl/fi/ybig3pcj0xdavejhf5lnp/epitaka_full_si.zip?rlkey=hpipbcg6kk27h4l08hlsp2zh8&st=oujk5q7q&dl=1",
+        "filename": "epitaka_full_si.zip",
+        "size": "85 MB"
     },
     {
         "name": "IIT Chanting Book",
