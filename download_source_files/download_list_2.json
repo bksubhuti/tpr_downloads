@@ -40,8 +40,8 @@
         "release_date": "30.8.2026",
         "type": "books index",
         "category": "Full Translations",
-        "url": "https://www.dropbox.com/scl/fi/m85spwgwtz3hv54dzqaj0/epitaka_full_th.zip?rlkey=zjgrjbqry6630ue0r7scrhzpy&st=oksraf2z&dl=1",
-        "filename": "epitaka_full_my.zip",
+        "url": "https://github.com/bksubhuti/tpr_downloads/releases/download/ext_122/epitaka_full_th.zip",
+        "filename": "epitaka_full_th.zip",
         "size": "86 MB"
     },
     {
@@ -50,16 +50,7 @@
         "type": "books index",
         "category": "Full Translations",
         "url": "https://www.dropbox.com/scl/fi/61w3zaqltzmk4zyl93nn4/epitaka_full_km.zip?rlkey=q9ldyu139ea4r598yv2iplvv2&st=rygvuw9r&dl=1",
-        "filename": "epitaka_full_my.zip",
-        "size": "51 MB"
-    },
-    {
-        "name": "ePitaka.org ລາວ (ປ່ຽນແທນຄຳພີຫຼັກທັງໝົດດ້ວຍຄຳພີປາລີ / ລາວ)",
-        "release_date": "30.8.2026",
-        "type": "books index",
-        "category": "Full Translations",
-        "url": "https://www.dropbox.com/scl/fi/0thwzr4657mgn2nc7pbcp/epitaka_full_lo.zip?rlkey=56l10hydwvzvw6l3x0oz9egql&st=8fnjc06h&dl=1",
-        "filename": "epitaka_full_my.zip",
+        "filename": "epitaka_full_km.zip",
         "size": "51 MB"
     },
     {
