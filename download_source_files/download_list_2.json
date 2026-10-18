@@ -288,6 +288,15 @@
         "size": "2.6 MB"
     },
     {
+        "name": "Abhidhamma handbooks: Abhidhammāvatāra and its ṭīkās, Nāmarūpapariccheda, Paramatthavinicchaya, Saccasaṅkhepa, Abhidhammamātikā, Mohavicchedanī (app 3.0.5+)",
+        "release_date": "18.10.2026",
+        "type": "package",
+        "category": "Beta Extra CST Books",
+        "url": "https://cdn.jsdelivr.net/gh/bksubhuti/tpr_downloads@master/release_zips/missing_books.pkg.zip",
+        "filename": "missing_books.pkg.zip",
+        "size": "0.2 MB"
+    },
+    {
         "name": "Pācittiya Page 133 fix",
         "release_date": "11.10.2024",
         "type": "dictionary",
