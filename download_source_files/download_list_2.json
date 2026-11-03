@@ -9,6 +9,33 @@
         "size": "61.5 MB"
     },
     {
+        "name": "DPD October 2026 release",
+        "release_date": "26.10.2026",
+        "type": "dictionary",
+        "category": "Legacy (build 128 or lower)",
+        "url": "https://github.com/bksubhuti/tpr_downloads/releases/download/dpd/dpd.zip",
+        "filename": "dpd.zip",
+        "size": "23.5 MB"
+    },
+    {
+        "name": "DPD Extras",
+        "release_date": "5.10.2024",
+        "type": "dictionary",
+        "category": "Legacy (build 128 or lower)",
+        "url": "https://cdn.jsdelivr.net/gh/bksubhuti/tpr_downloads@master/release_zips/dpd__extras.zip",
+        "filename": "dpd__extras.zip",
+        "size": "11.4 MB"
+    },
+    {
+        "name": "DPD Beta",
+        "release_date": "25.9.2026",
+        "type": "dictionary",
+        "category": "Legacy (build 128 or lower)",
+        "url": "https://github.com/bksubhuti/tpr_downloads/releases/download/dpd/dpd_beta.zip",
+        "filename": "dpd.zip",
+        "size": "23.5 MB"
+    },
+    {
         "name": "ePitaka.org English (Full replacement of core texts with Pāḷi / English texts)",
         "release_date": "24.2.2026",
         "type": "books index",
@@ -115,24 +142,6 @@
         "url": "https://cdn.jsdelivr.net/gh/bksubhuti/tpr_downloads@master/release_zips/sbs_pali_recitation.zip.zip",
         "filename": "sbs_pali_recitation.zip",
         "size": "58 KB"
-    },
-    {
-        "name": "DPD October 2026 release (legacy, build 128 or lower)",
-        "release_date": "26.10.2026",
-        "type": "dictionary",
-        "category": "Dictionaries",
-        "url": "https://github.com/bksubhuti/tpr_downloads/releases/download/dpd/dpd.zip",
-        "filename": "dpd.zip",
-        "size": "23.5 MB"
-    },
-    {
-        "name": "DPD Extras (legacy, build 128 or lower)",
-        "release_date": "5.10.2024",
-        "type": "dictionary",
-        "category": "Dictionaries",
-        "url": "https://cdn.jsdelivr.net/gh/bksubhuti/tpr_downloads@master/release_zips/dpd__extras.zip",
-        "filename": "dpd__extras.zip",
-        "size": "11.4 MB"
     },
     {
         "name": "PEU October 23, 2024 release",
@@ -304,15 +313,6 @@
         "url": "https://cdn.jsdelivr.net/gh/bksubhuti/tpr_downloads@master/release_zips/pac_p_133_fix.zip",
         "filename": "pac_p_133_fix.zip",
         "size": "1 kb"
-    },
-    {
-        "name": "DPD Beta (legacy, build 128 or lower)",
-        "release_date": "25.9.2026",
-        "type": "dictionary",
-        "category": "Other Beta",
-        "url": "https://github.com/bksubhuti/tpr_downloads/releases/download/dpd/dpd_beta.zip",
-        "filename": "dpd.zip",
-        "size": "23.5 MB"
     },
     {
         "name": "Tet multiple file zips",
