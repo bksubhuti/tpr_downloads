@@ -1,5 +1,14 @@
 [
     {
+        "name": "DPD October 2026 All-in-One with Extras",
+        "release_date": "26.10.2026",
+        "type": "package",
+        "category": "For build 129 and above",
+        "url": "https://github.com/bksubhuti/tpr_downloads/releases/download/dpd/dpd.pkg.zip",
+        "filename": "dpd.pkg.zip",
+        "size": "61.5 MB"
+    },
+    {
         "name": "ePitaka.org English (Full replacement of core texts with Pāḷi / English texts)",
         "release_date": "24.2.2026",
         "type": "books index",
@@ -108,7 +117,7 @@
         "size": "58 KB"
     },
     {
-        "name": "DPD October 2026 release",
+        "name": "DPD October 2026 release (legacy, build 128 or lower)",
         "release_date": "26.10.2026",
         "type": "dictionary",
         "category": "Dictionaries",
@@ -117,16 +126,7 @@
         "size": "23.5 MB"
     },
     {
-        "name": "DPD October 2026 All-in-One with Extras (build 129+)",
-        "release_date": "26.10.2026",
-        "type": "package",
-        "category": "Dictionaries",
-        "url": "https://github.com/bksubhuti/tpr_downloads/releases/download/dpd/dpd.pkg.zip",
-        "filename": "dpd.pkg.zip",
-        "size": "61.5 MB"
-    },
-    {
-        "name": "DPD Extras For builds 82+ Only (upgrade needed)",
+        "name": "DPD Extras (legacy, build 128 or lower)",
         "release_date": "5.10.2024",
         "type": "dictionary",
         "category": "Dictionaries",
@@ -306,7 +306,7 @@
         "size": "1 kb"
     },
     {
-        "name": "DPD Beta",
+        "name": "DPD Beta (legacy, build 128 or lower)",
         "release_date": "25.9.2026",
         "type": "dictionary",
         "category": "Other Beta",
