@@ -117,6 +117,15 @@
         "size": "23.5 MB"
     },
     {
+        "name": "DPD October 2026 All-in-One with Extras (build 129+)",
+        "release_date": "26.10.2026",
+        "type": "package",
+        "category": "Dictionaries",
+        "url": "https://github.com/bksubhuti/tpr_downloads/releases/download/dpd/dpd.pkg.zip",
+        "filename": "dpd.pkg.zip",
+        "size": "61.5 MB"
+    },
+    {
         "name": "DPD Extras For builds 82+ Only (upgrade needed)",
         "release_date": "5.10.2024",
         "type": "dictionary",
@@ -322,14 +331,5 @@
         "url": "https://cdn.jsdelivr.net/gh/bksubhuti/tpr_downloads@master/release_zips/dpd_with_rus.zip",
         "filename": "dpd.sql",
         "size": "25.4 MB"
-    },
-    {
-        "name": "DPD with Extras (experimental package, TPR 3.0.5+)",
-        "release_date": "26.10.2026",
-        "type": "package",
-        "category": "Other Beta",
-        "url": "https://github.com/bksubhuti/tpr_downloads/releases/download/dpd/dpd.pkg.zip",
-        "filename": "dpd.pkg.zip",
-        "size": "61.5 MB"
     }
 ]
