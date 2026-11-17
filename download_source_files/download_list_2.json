@@ -9,15 +9,6 @@
         "size": "latest version"
     },
     {
-        "name": "DPD October 2026 All-in-One with Extras",
-        "release_date": "26.10.2026",
-        "type": "package",
-        "category": "For build 129 and above",
-        "url": "https://github.com/bksubhuti/tpr_downloads/releases/download/dpd/dpd.pkg.zip",
-        "filename": "dpd.pkg.zip",
-        "size": "61.5 MB"
-    },
-    {
         "name": "IIT Chanting Book",
         "release_date": "3.11.2026",
         "type": "package",
@@ -124,6 +115,15 @@
         "url": "https://github.com/bksubhuti/tpr_downloads/releases/download/ext_122/epitaka_full_zh.zip",
         "filename": "epitaka_full_zh.zip",
         "size": "72 MB"
+    },
+    {
+        "name": "DPD October 2026 All-in-One with Extras",
+        "release_date": "26.10.2026",
+        "type": "package",
+        "category": "Dictionaries",
+        "url": "https://github.com/bksubhuti/tpr_downloads/releases/download/dpd/dpd.pkg.zip",
+        "filename": "dpd.pkg.zip",
+        "size": "61.5 MB"
     },
     {
         "name": "PEU October 23, 2024 release",
