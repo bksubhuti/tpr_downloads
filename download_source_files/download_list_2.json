@@ -117,13 +117,31 @@
         "size": "72 MB"
     },
     {
-        "name": "DPD October 2026 All-in-One with Extras",
+        "name": "DPD English October 2026 All-in-One with Extras",
         "release_date": "26.10.2026",
         "type": "package",
         "category": "Dictionaries",
         "url": "https://github.com/bksubhuti/tpr_downloads/releases/download/dpd/dpd.pkg.zip",
         "filename": "dpd.pkg.zip",
         "size": "61.5 MB"
+    },
+    {
+        "name": "DPD සිංහල November 2026 (AI translation, beta)",
+        "release_date": "17.11.2026",
+        "type": "package",
+        "category": "Dictionaries",
+        "url": "https://github.com/bksubhuti/tpr_downloads/releases/download/dpd/dpd_si.pkg.zip",
+        "filename": "dpd_si.pkg.zip",
+        "size": "62.9 MB"
+    },
+    {
+        "name": "DPD ภาษาไทย November 2026 (AI translation, beta)",
+        "release_date": "17.11.2026",
+        "type": "package",
+        "category": "Dictionaries",
+        "url": "https://github.com/bksubhuti/tpr_downloads/releases/download/dpd/dpd_th.pkg.zip",
+        "filename": "dpd_th.pkg.zip",
+        "size": "62.8 MB"
     },
     {
         "name": "PEU October 23, 2024 release",
