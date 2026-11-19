@@ -126,42 +126,6 @@
         "size": "61.5 MB"
     },
     {
-        "name": "DPD සිංහල November 2026 (AI translation, beta)",
-        "release_date": "17.11.2026",
-        "type": "package",
-        "category": "Dictionaries",
-        "url": "https://github.com/bksubhuti/tpr_downloads/releases/download/dpd/dpd_si.pkg.zip",
-        "filename": "dpd_si.pkg.zip",
-        "size": "62.9 MB"
-    },
-    {
-        "name": "DPD ภาษาไทย November 2026 (AI translation, beta)",
-        "release_date": "17.11.2026",
-        "type": "package",
-        "category": "Dictionaries",
-        "url": "https://github.com/bksubhuti/tpr_downloads/releases/download/dpd/dpd_th.pkg.zip",
-        "filename": "dpd_th.pkg.zip",
-        "size": "62.8 MB"
-    },
-    {
-        "name": "DPD हिन्दी November 2026 (AI translation, beta)",
-        "release_date": "18.11.2026",
-        "type": "package",
-        "category": "Dictionaries",
-        "url": "https://github.com/bksubhuti/tpr_downloads/releases/download/dpd/dpd_hi.pkg.zip",
-        "filename": "dpd_hi.pkg.zip",
-        "size": "62.7 MB"
-    },
-    {
-        "name": "DPD မြန်မာ November 2026 (AI translation, beta)",
-        "release_date": "18.11.2026",
-        "type": "package",
-        "category": "Dictionaries",
-        "url": "https://github.com/bksubhuti/tpr_downloads/releases/download/dpd/dpd_my.pkg.zip",
-        "filename": "dpd_my.pkg.zip",
-        "size": "62.8 MB"
-    },
-    {
         "name": "PEU October 23, 2024 release",
         "release_date": "23.10.2024",
         "type": "dictionary",
