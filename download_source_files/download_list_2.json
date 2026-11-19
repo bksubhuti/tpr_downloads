@@ -1,15 +1,5 @@
 [
     {
-        "name": "Please update TPR to get extensions",
-        "release_date": "11.11.2026",
-        "type": "dictionary",
-        "category": "Update TPR (build 128 and older)",
-        "url": "https://github.com/bksubhuti/tipitaka-pali-reader/releases",
-        "filename": "update_tpr.zip",
-        "size": "latest version",
-        "max_compatibility_ver": 128
-    },
-    {
         "name": "IIT Chanting Book",
         "release_date": "3.11.2026",
         "type": "package",
