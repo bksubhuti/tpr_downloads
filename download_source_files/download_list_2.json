@@ -6,7 +6,8 @@
         "category": "Update TPR (build 128 and older)",
         "url": "https://github.com/bksubhuti/tipitaka-pali-reader/releases",
         "filename": "update_tpr.zip",
-        "size": "latest version"
+        "size": "latest version",
+        "max_compatibility_ver": 128
     },
     {
         "name": "IIT Chanting Book",
